@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="Keywords" content="{$keywords}" />
+  <meta name="Description" content="{$description}" />
+  <!-- TemplateBeginEditable name="doctitle" -->
+  <!-- TemplateEndEditable -->
+  <!-- TemplateBeginEditable name="head" -->
+  <!-- TemplateEndEditable -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="animated_favicon.gif" type="image/gif" />
+  <link rel="alternate" type="application/rss+xml" title="RSS|{$page_title}" href="{$feed_url}" />
+  <link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+  <title>{$page_title}</title>
+  {* 包含脚本文件 *}{insert_scripts files='common.js,index.js'}
+	<script type="text/javascript" src="js/action.js"></script>
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="Area clearfix">
+  <div class="EarLeft f_l">
+	<!-- #BeginLibraryItem "/library/index_ad.lbi" --><!-- #EndLibraryItem -->	
+	</div>
+	<div class="EarRight f_r">
+	<!-- #BeginLibraryItem "/library/top10.lbi" --><!-- #EndLibraryItem -->	
+	</div>
+</div>
+<div class="Blank10"></div>
+<div class="Area clearfix">
+  <div class="LeftRow f_l">
+		<!-- TemplateBeginEditable name="左侧区域" -->
+<!-- #BeginLibraryItem "/library/category_tree.lbi" --> <!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/new_articles.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/invoice_query.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/order_query.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/email_list.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/promotion_info.lbi" --><!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+	</div>
+	<div class="RightRow f_r">
+	 <div class="clearfix">
+	  <div class="f_l">
+		<!-- TemplateBeginEditable name="广告图片一" -->
+<!-- TemplateEndEditable -->
+		</div>
+   	<div class="f_l centerad">
+		<!-- TemplateBeginEditable name="广告图片二" -->
+<!-- TemplateEndEditable -->
+		</div>
+  	<div class="f_r">
+		<!-- TemplateBeginEditable name="广告图片三" -->
+<!-- TemplateEndEditable -->
+		</div>
+	</div>
+	<div class="Blank10"></div>
+	<div>
+	<!-- TemplateBeginEditable name="右侧区域" -->
+<!-- #BeginLibraryItem "/library/brands.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/recommend_best.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/recommend_new.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/recommend_hot.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/recommend_promotion.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/group_buy.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/auction.lbi" --><!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+	</div>
+	</div>
+</div>
+<div class="Blank10"></div>
+<!--{if $img_links  or $txt_links }-->
+<div class="Area">
+  <!--开始图片类型的友情链接{foreach from=$img_links item=link}-->
+ <a href="{$link.url}" target="_blank" title="{$link.name}"><img src="{$link.logo}" alt="{$link.name}" /></a>
+ <!--结束图片类型的友情链接{/foreach}-->
+ <!-- {if $txt_links} -->
+ <!--开始文字类型的友情链接{foreach from=$txt_links item=link}-->
+ <span>[<a href="{$link.url}" target="_blank" title="{$link.name}">{$link.name}</a>]</span>
+ <!--结束文字类型的友情链接{/foreach}-->
+ <!-- {/if} -->
+</div>
+<!--{/if}-->
+<div class="Blank10"></div>
+<!-- #BeginLibraryItem "/library/help.lbi" --><!-- #EndLibraryItem -->
+	<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

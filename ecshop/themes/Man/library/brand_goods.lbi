@@ -1,0 +1,23 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $brand_goods} -->
+<div class="box">
+	<div class="tit">
+	<h2>{$goods_brand.name|escape:html}</h2>	
+	</div>	     
+</div>
+<div class="PublicModule padding10">
+<!--{foreach from=$brand_goods item=goods}-->
+  <div class="goodsbox">
+   <div class="imgbox"><a href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}" /></a></div>
+   <p><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.short_name|escape:html}</a></p>
+   <!-- {if $goods.promote_price neq ""} -->
+   {$lang.promote_price}<font class="shop">{$goods.promote_price}</font><br>
+   <!-- {else}-->
+   {$lang.shop_price}<font class="shop">{$goods.shop_price}</font><br>
+   <!--{/if}-->
+  </div>
+<!--{/foreach}-->
+<div class="more tr"><a href="{$goods_brand.url}"><img src="images/more.gif" alt="more"></a></div>
+</div>
+<div class="Blank10"></div>
+<!--{/if}-->               

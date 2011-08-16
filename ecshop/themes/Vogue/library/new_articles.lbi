@@ -1,0 +1,16 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="WebNew">
+  <ul class="WebNewBlank">
+ <!-- {if $new_articles} -->
+  <!-- {foreach name=new_articles from=$new_articles item=article} -->  
+  <!-- {if $smarty.foreach.new_articles.index lt 5} 限制文章显示数量 -->
+  <li class="DotList">
+  [<a href="{$article.cat_url}">{$article.cat_name}</a>] <a href="{$article.url}" title="{$article.title|escape:html}">{$article.short_title|truncate:9}</a>
+  </li>
+  <!-- {/if} -->   
+  <!--{/foreach}-->
+  <!--{else}-->
+  当前没有最新文章！
+  <!-- {/if} -->  
+ </ul>
+</div>

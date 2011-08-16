@@ -1,0 +1,37 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $best_goods} -->
+<!-- {if $cat_rec_sign neq 1} -->
+<div class="Blank10"></div>
+<div class="Best">
+  <span class="L"></span>
+	<span class="R"></span>
+	<div  class="Text" id="itemBest">
+   {if $cat_rec[1]}
+      <h2><a href="javascript:void(0)" onclick="change_tab_style('itemBest', 'h2', this);get_cat_recommend(1, 0);">{$lang.all_goods}</a></h2>
+      {foreach from=$cat_rec[1] item=rec_data}
+      <h2 class="h2bg"><a href="javascript:void(0)" onclick="change_tab_style('itemBest', 'h2', this);get_cat_recommend(1, {$rec_data.cat_id})">{$rec_data.cat_name}</a></h2>
+      {/foreach}
+      {/if}   
+   </div>
+</div>
+<div class="recommendContent"  id="show_best_area">
+  <!-- {/if} -->
+   <!--{foreach from=$best_goods item=goods}-->
+   <div class="goodsbox">
+    <div class="imgbox"><a href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}" /></a></div>
+    <a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.short_style_name}</a><br />
+    <!-- {if $goods.promote_price neq ""} -->
+    {$lang.promote_price}<b class="f1">{$goods.promote_price}</b><br />
+    <!-- {else}-->
+    {$lang.shop_price}<b class="f1">{$goods.shop_price}</b><br />
+    <!--{/if}-->
+    <a href="javascript:collect({$goods.id})"><acronym class="collect">收藏</acronym></a> 
+    <a href="javascript:addToCart({$goods.id})"><acronym class="addToCart">购买</acronym></a>
+   </div>
+  <!--{/foreach}-->
+	<p class="tr"><a href="../search.php?intro=best"> <img src="../images/more.gif" /></a></p>
+  <!-- {if $cat_rec_sign neq 1} -->
+  </div>
+
+<!-- {/if} -->
+<!-- {/if} -->

@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+
+{* 包含脚本文件 *}
+{insert_scripts files='common.js,lefttime.js'}
+<script type="text/javascript" src="js/action.js"></script>
+<script type="text/javascript">
+  {foreach from=$lang.js_languages item=item key=key}
+    var {$key} = "{$item}";
+  {/foreach}
+</script>
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<!--主体内容 start-->
+<div class="block clearfix">
+   <div class="EarLeft fl">
+ <div class="cateTit">{$lang.your_choice}</div>
+ <div class="Conwid" id="pick">
+ <!--{foreach from = $picks item=pick }-->
+ <a href="{$pick.url}">{$pick.name}</a><br />
+ <!--{/foreach}-->
+ </div> 
+ <!-- TemplateBeginEditable name="左边区域" -->
+   <!-- #BeginLibraryItem "/library/categorys.lbi" --><!-- #EndLibraryItem -->
+  <!-- #BeginLibraryItem "/library/history.lbi" --><!-- #EndLibraryItem -->
+  <!-- #BeginLibraryItem "/library/promotion_info.lbi" --><!-- #EndLibraryItem -->
+ <!-- TemplateEndEditable -->
+ </div>
+<div class="EarRight fr">
+   <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
+  <!--搜索结果 start-->
+ <div>
+      <div class="goodsTitle"> 
+   <span class="fwhite f14b">{$lang.search_result} ({$count})</span>      
+   </div>   
+   <div class="grid">
+    <!--{foreach from=$pickout_goods item=goods name=goods}-->
+     <div class="goodsbox">
+      <div class="imgbox"><a href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}" /></a></div>
+      <a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.short_name}</a><br />
+      <!-- {if $goods.promote_price neq ""} -->
+      {$lang.promote_price}<b class="price">{$goods.promote_price}</b><br>
+      <!-- {else}-->
+      {$lang.shop_price}<b class="price">{$goods.shop_price}</b><br>
+      <!--{/if}-->
+     </div>
+    <!--{/foreach}-->
+   </div>
+   <div class="more tr">
+   <!--{if $count > 4}--><a href="{$url}" style="color:#000;">more</a><!--{/if}-->
+   </div>
+  </div>
+  <!--搜索结果 end-->
+  
+ <div class="goodsTitle clearfix"><span class="fwhite f14b">{$lang.pick_out}</span></div>
+  <table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd" style="margin-bottom:8px;">
+      <!--{foreach from=$condition item=caption}-->
+      <tr>
+        <td bgcolor="#e5ecfb">
+          <img src="images/note.gif" alt="no alt" style="position: relative;top:3px;" />&nbsp;&nbsp;<font class="f2">{$caption.name}</font></td>
+      </tr>
+      <!--{foreach from=$caption.cat item=cat}-->
+      <tr>
+        <td bgcolor="#ffffff">&nbsp;&nbsp;<strong>{$cat.cat_name}</strong></td>
+      </tr>
+      <tr>
+        <td bgcolor="#ffffff">&nbsp;&nbsp;
+          <!--{foreach from = $cat.list item=list}-->
+          &nbsp;&nbsp;<a href="{$list.url}">{$list.name}</a>
+          <!--{/foreach}-->
+        </td>
+      </tr>
+      <!--{/foreach}-->
+      <!--{/foreach}-->
+    </table>
+  
+ </div>
+</div>
+<!--主体内容 end-->
+<!-- #BeginLibraryItem "/library/help.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+<script type="text/javascript">
+var gmt_end_time = "{$group_buy.gmt_end_date|default:0}";
+{foreach from=$lang.goods_js item=item key=key}
+var {$key} = "{$item}";
+{/foreach}
+var btn_buy = "{$lang.btn_buy}";
+var is_cancel = "{$lang.is_cancel}";
+var select_spe = "{$lang.select_spe}";
+<!-- {literal} -->
+
+onload = function()
+{
+  try
+  {
+    onload_leftTime();
+  }
+  catch (e)
+  {}
+}
+<!-- {/literal} -->
+</script>
+</html>

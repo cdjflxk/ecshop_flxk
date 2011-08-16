@@ -1,0 +1,33 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--{if $invoice_list}-->
+<div class="blank10"></div>
+<style type="text/css">
+.QueryList{
+border-bottom:1px dashed #ccc;
+margin-bottom:8px;
+padding-bottom:5px;
+}
+.QueryList form{display:inline;}
+.QueryList form a{ text-decoration:underline;}
+</style>
+<div class="CommonBorder" id="mod2">
+ <em class="TL"></em>
+ <em class="TR"></em>
+ <em class="BL"></em>
+ <em class="BR"></em>  
+ <h3 class="Invoice"></h3>
+ <div class="Conwid">
+  <!-- 发货单查询{foreach name=invoice from=$invoice_list item=invoice} -->
+ <div class="QueryList">
+  <!-- {if $smarty.foreach.invoice.index lt 10} 限制显示数量 -->
+  <strong>{$lang.order_number}</strong> {$invoice.order_sn}<br />
+   <strong>{$lang.consignment}</strong> {$invoice.invoice_no}<br />
+    <!-- {/if} -->
+  </div>
+   <!-- 结束发货单查询{/foreach}-->
+ </div>
+ </div>
+ <script type="text/javascript">divheight("mod2");</script>
+<!-- {/if} -->
+
+

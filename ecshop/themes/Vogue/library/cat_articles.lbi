@@ -1,0 +1,19 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="CommonBorder clearfix" id="mod15">
+ <em class="TL"></em>
+ <em class="TR"></em>
+ <em class="BL"></em>
+ <em class="BR"></em>
+ <h3 class="vote tc">{$articles_cat.name|escape:html}</h3>
+ <div class="Conwid2">
+  <ul>
+  <!--{foreach from=$articles item=article_item}-->  
+ <li class="DotList">
+ <a href="{$article_item.url}" title="{$article_item.title|escape:html}">{$article_item.short_title|truncate:15}</a>
+ </li>
+ <!--{/foreach}-->
+ </ul>
+ <a href="{$articles_cat.url}"><span class="more f_r"></span></a>
+ </div>
+ </div>
+ <script type="text/javascript">divheight("mod15");</script>

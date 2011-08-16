@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js'}
+<script type="text/javascript" src="js/action.js"></script>
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="Area clearfix">
+  <div class="LeftRow f_l">
+  <!-- TemplateBeginEditable name="左边区域" -->
+  <!-- #BeginLibraryItem "/library/category_tree.lbi" --><!-- #EndLibraryItem --> 
+  <!-- #BeginLibraryItem "/library/history.lbi" --><!-- #EndLibraryItem -->
+  <!-- #BeginLibraryItem "/library/promotion_info.lbi" --><!-- #EndLibraryItem -->
+   <!-- TemplateEndEditable -->
+ </div>
+ <div class="RightRow f_r">
+   <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
+  <div class="box">
+	<div class="tit">
+	<h2>{$lang.group_buy_goods}</h2>	
+	</div>	
+	<div class="contant">
+   <!-- {if $gb_list} 如果有团购活动 -->
+  <!-- {foreach from=$gb_list item=group_buy} 循环团购活动开始 -->
+  <ul class="auctionList clearfix">
+  <li class="auctionImg"><a href="{$group_buy.url}"><img src="{$group_buy.goods_thumb}"  alt="{$group_buy.goods_name|escape:html}" /></a></li>
+  <li class="auctionTxt">
+      {$lang.gb_goods_name}<a href="{$group_buy.url}"><font class="f12b">{$group_buy.goods_name|escape:html}</font></a><br />
+      {$lang.act_time}：<font class="fred">{$group_buy.formated_start_date} -- {$group_buy.formated_end_date}</font><br />
+      {$lang.gb_price_ladder}<br />
+   <table width="98%" border="0" cellpadding="2" cellspacing="1" bgcolor="#dddddd" style="margin:0 auto;">
+       <tr>
+          <th width="29%" bgcolor="#FFFFFF">{$lang.gb_ladder_amount}</th>
+         <th width="71%" bgcolor="#FFFFFF">{$lang.gb_ladder_price}</th>
+        </tr>
+        <!-- {foreach from=$group_buy.price_ladder item=item} -->
+        <tr>
+          <td width="29%" bgcolor="#FFFFFF" align="center">{$item.amount}</td>
+         <td width="71%" bgcolor="#FFFFFF" align="center">{$item.formated_price}</td>
+        </tr>
+        <!-- {/foreach} -->
+      </table>   
+  </li>  
+  </ul>
+  <!--{/foreach}-->
+  <!-- #BeginLibraryItem "/library/pages.lbi" --><!-- #EndLibraryItem -->
+  <!-- {else} -->
+     <div class="tips">{$lang.group_goods_empty}</div>   
+    <!-- {/if} --> 
+ </div>     
+  </div>
+ </div>
+</div>
+<!-- #BeginLibraryItem "/library/help.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

@@ -1,0 +1,14 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $cat_list} -->
+<div class="PublicModule2">
+ <span class="R"></span>
+ <h3 class="Txt">{$lang.goods_category}</h3> 
+</div>
+<div class="PublicBoder">
+ <div class="BorderBlank">
+<!-- {foreach from=$cat_list item=cat} -->
+    <a href="{$cat.url}"><b>{$cat.cat_name|escape:html}</b> {if $cat.goods_num}({$cat.goods_num}){/if}</a><br />
+   <!--{/foreach}-->
+ </div>
+ </div>
+<!-- {/if} -->

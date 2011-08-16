@@ -1,0 +1,13 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<div class="Blank10"></div>
+<div class="box">
+	<div class="tit">
+	<h2>{$lang.new_price}</h2>	
+	</div>	     
+</div>
+<div class="PublicModule padding10">
+  <!--{foreach from=$price_list item=item}-->
+    {$item.user_name}&nbsp;&nbsp;<font class="f1">{$item.bid_price}</font><br />
+  <!--{/foreach}-->
+</div>
+

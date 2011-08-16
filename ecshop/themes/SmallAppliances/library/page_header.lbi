@@ -1,0 +1,55 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript">
+var process_request = "{$lang.process_request}";
+var btn_buy = "{$lang.btn_buy}";
+var is_cancel = "{$lang.is_cancel}";
+var select_spe = "{$lang.select_spe}";
+</script>
+
+ <div class="block clearfix">
+   <div class="TopNav f_r"> 
+	  <span class="L"></span>
+	    <!--{if $navigator_list.top}-->
+				<!-- {foreach name=nav_top_list from=$navigator_list.top item=nav} -->
+					 <a href="{$nav.url}" <!-- {if $nav.opennew eq 1} --> target="_blank" <!-- {/if} -->>{$nav.name}</a>
+						<!-- {if !$smarty.foreach.nav_top_list.last} -->
+							|
+					 <!-- {/if} -->
+				<!-- {/foreach} -->
+		 <!-- {/if} -->
+		</div>
+	</div>
+	 <div class="block clearfix">
+   <ul>
+	   <li class="f_l Logo"><a href="../index.php" name="top"><img src="images/logo.gif" alt="{$page_title}" /></a></li>
+		 <li class="f_r Login">
+		 {insert_scripts files='transport.js,utils.js'}
+	   <font id="ECS_MEMBERZONE">{* ECSHOP 提醒您：根据用户id来调用member_info.lbi显示不同的界面  *}{insert name='member_info'} </font>
+		 </li>
+	 </ul>
+	 </div>
+	 <div class="MenuBorder blank23">
+	   <div class="Menu">
+		 <ul class="MenuWid f_l">
+      <li {if $navigator_list.config.index eq 1} class="cur"{/if}><a href="../index.php">{$lang.home}</a><span></span></li>
+      <!-- {foreach name=nav_middle_list from=$navigator_list.middle item=nav} -->
+       <li {if $nav.active eq 1}class="cur"{/if}>
+      <a href="{$nav.url}" {if $nav.opennew eq 1}target="_blank" {/if}>{$nav.name}</a><span></span> 
+     </li> 
+     <!-- {/foreach} --> 
+     </ul>
+		 <ul class="SearchWid f_l">
+		  <li>
+			<form id="searchForm" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()" >   
+   <input name="keywords" type="text" id="keyword" value="{$search_keywords|escape}" size="20" class="TextInput"/>
+   <input name="imageField" type="submit" value="" class="go"  /> 
+  <font class="advan"><a href="search.php?act=advanced_search">{$lang.advanced_search}</a></font>
+   </form>
+			</li>
+		 </ul>
+		 </div>
+		 </div>
+
+   
+	 
+

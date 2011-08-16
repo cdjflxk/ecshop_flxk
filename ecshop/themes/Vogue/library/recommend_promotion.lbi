@@ -1,0 +1,18 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="blank10"></div>
+<!-- {if $promotion_goods} -->
+<div class="ModelBorder clearfix">
+<div class="f_l Sale">
+<a href="../search.php?intro=promotion"><span class="more"></span></a>
+</div>
+<div class="SaleWid f_l">
+<!--{foreach from=$promotion_goods item=goods name="promotion_foreach"}-->
+ <div class="goodsbox">
+  <div class="imgbox"><a href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}" /></a></div>
+  <a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.short_style_name}</a><br />
+  <strong class="shop">{$lang.promote_price}{$goods.promote_price}</strong>
+ </div>
+<!--{/foreach}-->
+</div>
+</div>
+<!-- {/if} -->

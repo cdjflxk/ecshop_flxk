@@ -1,0 +1,38 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript">
+var process_request = "{$lang.process_request}";
+var btn_buy = "{$lang.btn_buy}";
+var is_cancel = "{$lang.is_cancel}";
+var select_spe = "{$lang.select_spe}";
+</script>
+<div class="Area clearfix">
+  <ul>
+   <li class="Logo f_l"><a href="../index.php"><img src="images/logo.gif" alt="{$page_title}" /></a></li>
+  <li class="Right f_r">
+  <div class="HeadNav f_r clearfix">
+  <span class="RLine"></span>
+    <!--{if $navigator_list.top}-->
+      <ul>
+      <!-- {foreach name=nav_top_list from=$navigator_list.top item=nav} -->
+      <li>
+      ·<a href="{$nav.url}" <!-- {if $nav.opennew eq 1} --> target="_blank" <!-- {/if} -->>{$nav.name}</a>      
+      </li>
+     <!-- {/foreach} -->
+     </ul>
+    <!-- {/if} -->
+  </div>
+  <div class="blank10"></div>
+  <div class="Menu f_r">
+     <ul>
+      <li {if $navigator_list.config.index eq 1} class="cur"{/if}><a href="../index.php">{$lang.home}</a><span></span></li>
+        <!-- {foreach name=nav_middle_list from=$navigator_list.middle item=nav} -->
+      <li {if $nav.active eq 1}class="cur"{/if}>
+       <a href="{$nav.url}" {if $nav.opennew eq 1}target="_blank" {/if}>{$nav.name}</a><span></span>
+      </li> 
+        <!-- {/foreach} --> 
+     </ul>
+  </div>
+  </li>  
+ </ul>
+</div>
+<div class="blank10"></div>

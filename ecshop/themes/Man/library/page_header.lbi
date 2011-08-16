@@ -1,0 +1,102 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript">
+var process_request = "{$lang.process_request}";
+var btn_buy = "{$lang.btn_buy}";
+var is_cancel = "{$lang.is_cancel}";
+var select_spe = "{$lang.select_spe}";
+</script>
+<div class="TopBg">
+ <div class="Area clearfix">
+   <div class="Logo f_l"><a href="../index.php"><img src="images/logo.gif" alt="{$page_title}" /></a>
+	 </div>
+   <div class="f_r" style="width:771px">
+     <div class="TopRight tr"><img src="../images/logo400.gif" /></div>
+     <div class="TopNav">
+		   <ul>
+			   <li class="f_l">
+				 <!--登录 注册 start-->
+         {insert_scripts files='transport.js,utils.js'}
+         <div id="ECS_MEMBERZONE">{* ECSHOP 提醒您：根据用户id来调用member_info.lbi显示不同的界面  *}{insert name='member_info'}</div>
+         <!-- 登录 注册 end-->
+				 </li>
+				 <li class="f_r">
+				 <!--{if $navigator_list.top}-->
+         <!-- {foreach name=nav_top_list from=$navigator_list.top item=nav} -->
+         <a href="{$nav.url}" <!-- {if $nav.opennew eq 1} --> target="_blank" <!-- {/if} -->>{$nav.name}</a>
+         <!-- {if !$smarty.foreach.nav_top_list.last} -->
+        <font class="FontA">|</font>
+         <!-- {/if} -->
+         <!-- {/foreach} -->
+         <!-- {/if} -->				 
+					 	</li>
+			
+			 </ul>   
+		 </div>
+  </div>
+ </div>
+ <div class="Menu Area clearfix">
+   <ul>
+	 <li {if $navigator_list.config.index eq 1} class="cur"{/if}><a href="../index.php">{$lang.home}</a><span></span></li>
+   <!-- {foreach name=nav_middle_list from=$navigator_list.middle item=nav} -->
+     <li {if $nav.active eq 1}class="cur"{/if}>
+     <a href="{$nav.url}" {if $nav.opennew eq 1}target="_blank" {/if}>{$nav.name}</a><span></span> 
+     </li> 
+    <!-- {/foreach} --> 
+ </ul>
+ </div>
+ <div class="Bann">
+   <ul>
+	   <li class="car">
+		 <div id="ECS_CARTINFO" style="display:none;">
+			{insert_scripts files='transport.js'}
+	    {insert name='cart_info'}
+     </div>
+		 您的购物车中有<span id="number"></span>件商品<a href="flow.php"><img src="../images/jiesuan.gif" /></a>
+		 <script language="javascript">
+      var a=document.getElementById('ECS_CARTINFO').innerHTML;
+      var b= /(\d+\.\d+)|(\d+)/g;
+      var c=a.match(b);
+      document.getElementById("number").innerHTML = (c[0]);
+     </script>
+
+		 </li>
+		 <li class="search">
+		   <form style="display:inline" id="searchForm" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()" >
+         <input name="keywords" type="text" id="keyword" value="{$search_keywords|escape}" size="24" class="input" maxlength="11"/>
+         <input name="imageField" type="submit" value="" class="bnt"  /> 
+         <font class="Adbnt"><a href="search.php?act=advanced_search"><img src="../images/ad.gif" /> </a></font>
+       </form>
+			 <script type="text/javascript">
+    {literal}
+    <!--
+    function checkSearchForm()
+    {
+        if(document.getElementById('keyword').value)
+        {
+            return true;
+        }
+        else
+        {
+            alert("{$lang.no_keywords}");
+            return false;
+        }
+    }
+    -->
+    {/literal}
+    </script>
+    {if $searchkeywords}
+   {foreach from=$searchkeywords item=val}
+   <a href="search.php?keywords={$val|escape:url}">{$val}</a>
+   {/foreach}
+   {/if}  
+		 </li>
+		 <li class="server">
+		  <!-- QQ 号码 {foreach from=$qq item=im} -->
+      <!-- {if $im} -->
+      <a href="http://wpa.qq.com/msgrd?V=1&amp;Uin={$im}&amp;Site={$shop_name}&amp;Menu=yes" target="_blank"> <img src="../images/kefu.gif" /></a>
+      <!-- {/if} -->
+      <!-- {/foreach} 结束QQ号码 -->		
+		 </li>
+	 </ul>
+ </div>
+</div>

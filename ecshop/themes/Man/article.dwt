@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js'}
+<script type="text/javascript" language="javascript">
+function articleSize(size,lineheight){
+var article = document.getElementById("article");
+article.style.fontSize = size+"px";
+article.style.lineHeight = lineheight+"px";
+}
+</script>
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="Area clearfix">
+<div class="Article f_l">
+<!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
+<div class="box">
+ <div class="TxtTit clearfix">
+ <h6 class="tc">{$article.title|escape:html}</h6>
+   <div class="tc des">
+  {$article.author|escape:html} / {$article.add_time}
+  <div class="tr">
+  [<a href="javascript:articleSize('16','30')">大</a>] [<a href="javascript:articleSize('14','24')">中</a>] [<a href="javascript:articleSize('12','21')">小</a>]
+  </div>
+  </div>
+ <!-- {if $article.content } -->
+  <div id="article" class="word">
+   {$article.content}
+  </div> 
+  <!-- {/if} -->  
+ {if $article.open_type eq 2 or $article.open_type eq 1}<br />
+    <div class="tr"><a href="{$article.file_url}" target="_blank"><u class="fred">{$lang.relative_file}</u></a></div>
+   {/if}
+        
+ </div>     
+</div>
+<div class="box">
+ <div class="TxtTit clearfix">
+  <!-- 上一篇文章 -->
+       {$lang.next_article}：
+       {if $next_article}
+       <a href="{$next_article.url}">{$next_article.title}</a>
+       {else}
+       Empty！
+       {/if}<br />
+     <!-- 下一篇文章 -->
+      {$lang.prev_article}：
+      {if $prev_article}
+      <a href="{$prev_article.url}">{$prev_article.title}</a>
+      {else}
+       Empty！
+      {/if}  
+ </div>     
+</div>
+  <!-- #BeginLibraryItem "/library/comments.lbi" --><!-- #EndLibraryItem -->
+ </div>
+<div class="LeftRow f_r">   
+<div class="box">
+	<div class="tit">
+	<h2>{$lang.releate_goods}</h2>	
+	</div>	     
+</div>
+<div class="PublicModule padding10 related"> 
+<!-- #BeginLibraryItem "/library/goods_related.lbi" --><!-- #EndLibraryItem -->
+	</div>
+   <!-- TemplateBeginEditable name="右边区域" -->   
+    <!-- #BeginLibraryItem "/library/history.lbi" --><!-- #EndLibraryItem -->
+   <!-- TemplateEndEditable -->
+ </div>
+</div>
+<!-- #BeginLibraryItem "/library/help.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

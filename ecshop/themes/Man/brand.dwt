@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js,global.js,compare.js'}
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="area">
+<!-- TemplateBeginEditable name="导航下通栏广告（960X60）" -->
+<!-- TemplateEndEditable -->
+</div>
+<div class="Area clearfix">
+<div class="LeftRow f_l">
+ <!-- TemplateBeginEditable name="左边区域" -->
+<!-- #BeginLibraryItem "/library/category_tree.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/promotion_info.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/history.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/top10.lbi" --><!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+ </div>
+<div class="RightRow f_r"> 
+<div class="box">
+ <div class="tit">
+ <h2>{$brand.brand_name}</h2>
+ </div>
+ <div class="contant clearfix">
+ <div class="SnatchImg f_l">
+       <!-- {if $brand.brand_logo} -->
+         <img src="data/brandlogo/{$brand.brand_logo}" />
+       <!-- {/if} -->
+      </div>
+      <div class="SnatchInfo f_r">
+      {$brand.brand_desc|nl2br}<br />
+      <!-- {if $brand.site_url} -->
+      {$lang.official_site} <a href="{$brand.site_url}" target="_blank">{$brand.site_url}</a><br />
+      <!-- {/if} -->
+      <font class="fred">{$lang.brand_category}</font><br />
+      <!-- {foreach from=$brand_cat_list item=cat} -->
+      <a href="{$cat.url}">{$cat.cat_name|escape:html} {if $cat.goods_count}({$cat.goods_count}){/if}</a>
+      <!-- {/foreach} -->
+      </div> 
+ </div>     
+</div>
+    <!-- TemplateBeginEditable name="右边区域" -->
+<!-- #BeginLibraryItem "/library/recommend_best.lbi" --> <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+    <!-- #BeginLibraryItem "/library/goods_list.lbi" --><!-- #EndLibraryItem -->
+    <!-- #BeginLibraryItem "/library/pages.lbi" --><!-- #EndLibraryItem -->
+ </div>
+</div>
+<div class="area">
+<div class="blank10"></div>
+<!-- #BeginLibraryItem "/library/help.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</div>
+</body>
+</html>

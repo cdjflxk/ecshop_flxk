@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js'}
+<script type="text/javascript" src="js/action.js"></script>
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="Area clearfix">
+  <div class="LeftRow f_l">
+  <!-- TemplateBeginEditable name="左边区域" -->
+  <!-- #BeginLibraryItem "/library/category_tree.lbi" --><!-- #EndLibraryItem --> 
+  <!-- #BeginLibraryItem "/library/history.lbi" --><!-- #EndLibraryItem -->
+  <!-- #BeginLibraryItem "/library/promotion_info.lbi" --><!-- #EndLibraryItem -->
+   <!-- TemplateEndEditable -->
+ </div>
+ <div class="RightRow f_r">
+   <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
+<div class="box">
+ <div class="tit">
+ <h2>{$lang.auction_goods}</h2>
+ </div>
+ <div class="contant">
+  <!-- {if $auction_list} 如果有拍卖活动 -->
+  <!-- {foreach from=$auction_list item=auction} 循环拍卖活动开始 -->
+  <ul class="auctionList clearfix">
+  <li class="auctionImg"><a href="{$auction.url}"><img src="{$auction.goods_thumb}" border="0" alt="{$auction.goods_name|escape:html}" /></a></li>
+  <li class="auctionTxt">
+  {$lang.goods_name}：<a href="{$auction.url}"><font class="f12b">{$auction.goods_name|escape:html}</font></a><br />
+      {$lang.act_status}：
+    <!-- {if $auction.status_no eq 0} -->
+            <font class="fred">{$lang.au_pre_start}</font><br>
+            <!-- {elseif $auction.status_no eq 1} -->
+            <font class="fred">{$lang.au_under_way_1}</font><br>
+            <!-- {else} -->
+            <font class="fred">{$lang.au_finished}</font><br>
+            <!-- {/if} -->
+    {$lang.au_start_price}：<font class="shop">{$auction.formated_start_price}</font><br>
+    <!-- {if $auction.end_price gt 0} -->
+    {$lang.au_end_price}：<font class="shop">{$auction.formated_end_price}</font>
+          <!-- {/if} -->
+  </li>
+  </ul>
+  <!--{/foreach}-->
+   <!-- #BeginLibraryItem "/library/pages.lbi" --><!-- #EndLibraryItem -->
+  <!-- {else} -->
+     <div class="tips">{$lang.no_auction}</div>  
+<!-- {/if} -->
+
+ </div>
+   
+ </div>
+ </div>
+</div>
+
+<!-- #BeginLibraryItem "/library/help.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

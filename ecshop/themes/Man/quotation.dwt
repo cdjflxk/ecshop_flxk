@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js,myship.js'}
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<!--主体内容 start-->
+<div class="Area clearfix">
+<div class="Blank10"></div>
+<div class="box">
+ <div class="tit">
+ <h2>{$lang.print_quotation}</h2>
+ </div>
+ <div class="contant clearfix tc">
+  <form action="quotation.php" method="post" name="searchForm" target="_blank">
+      <!-- 分类 -->
+      <select name="cat_id">
+      <option value="0">{$lang.all_category}</option>{$cat_list}</select>
+      <!-- 品牌 -->
+      <select name="brand_id">
+      <option value="0">{$lang.all_brand}</option>{html_options options=$brand_list}</select>
+      <!-- 关键字 -->
+      <span class="vertical">{$lang.keywords}</span> <input type="text" name="keyword" class="TextInput"/>
+      <!-- 搜索 -->
+      <input type="submit" name="print_quotation" id="print_quotation" value="{$lang.print_quotation}"  class="bnt_num6 vertical"/>
+      <input name="act" type="hidden" value="print_quotation" />
+    </form> 
+ </div>     
+</div>
+</div>
+<!--主体内容 end-->
+<div class="area">
+<div class="blank10"></div>
+<!-- #BeginLibraryItem "/library/help.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</div>
+</body>
+</html>

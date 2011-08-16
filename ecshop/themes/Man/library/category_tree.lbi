@@ -1,0 +1,25 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="Category clearfix">
+	<em class="lt"></em>
+	<em class="lb"></em>
+	<em class="rt"></em>
+	<em class="rb"></em>
+	 <h2></h2>
+	 <div class="padding10">
+		<!--{foreach from=$categories item=cat}-->
+	   <div>
+		 <a href="{$cat.url}"><strong>{$cat.name|escape:html}</strong></a><br />
+		 <!--{if $cat.cat_id}-->
+		 <div class="CategoryChilid">
+     <!--{foreach name=childs from=$cat.cat_id item=child}-->
+     <a href="{$child.url}" title="{$child.name|escape:html}">{$child.name|escape:html}</a>
+		 <!-- {if !$smarty.foreach.childs.last} -->
+		  | 
+		 <!--{/if}-->
+     <!--{/foreach}-->
+		 </div>
+		 <!--{/if}-->
+	  </div>	 
+   <!--{/foreach}-->
+	 </div>
+	</div>

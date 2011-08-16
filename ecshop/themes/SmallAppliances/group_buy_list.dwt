@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js'}
+<script type="text/javascript" src="js/action.js"></script>
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="block clearfix">
+ <div class="PageLeft f_l">
+	 <!-- TemplateBeginEditable name="左边区域" -->
+<!-- #BeginLibraryItem "/library/category_tree.lbi" -->
+
+<script type="text/javascript">
+function chg(id){
+ var str= "a"+id
+ var oa = document.getElementById(id);
+ var ob = document.getElementById(str);
+ if(oa){
+  if(oa.style.display == "block"){
+   oa.style.display = "none";
+   ob.innerHTML = "<em style='padding-right:5px;'>+<\/em>";
+  }else{
+   oa.style.display = "block";
+   ob.innerHTML = "<em style='padding-right:10px'>-<\/em>";
+  }
+ }
+ return false;
+}
+</script>
+<div id="Category" class="blank clearfix">
+  <span class="TL"></span>
+	<span class="TR"></span> 
+	<span class="BL"></span> 
+	<span class="BR"></span> 
+	<div class="Tit"></div>
+ <ul>
+<!--{foreach name=parent-cat from=$categories item=cat}-->
+ <li>
+ <div class="clearfix">
+  <span id="acat{$smarty.foreach.parent-cat.iteration}" onclick="return chg('cat{$smarty.foreach.parent-cat.iteration}');" style="cursor:pointer; float:right;">
+	  <em>
+	    <!--{if $cat.cat_id}-->
+			+
+			<!--{else}-->
+			-
+			<!--{/if}-->   
+	</em>
+	</span>	
+	<a href="{$cat.url}" style="float:left;">{$cat.name|escape:html}</a></div>
+  <!--{if $cat.cat_id}-->
+   <div class="child_cat" id="cat{$smarty.foreach.parent-cat.iteration}" style="display:none;">
+    <ul>
+   <!--{foreach from=$cat.cat_id item=child}--> 
+    <li>
+    <a href="{$child.url}">{$child.name|escape:html}</a>
+    </li>
+      <!--{/foreach}-->
+    </ul>
+ </div>
+  <!--{/if}-->
+ </li>
+ <!--{/foreach}-->
+	</ul>	
+</div>
+
+ <!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/history.lbi" -->
+
+<div id='history_div'>
+<div class="ModelBox blank" id="historybox">
+	<h3>{$lang.view_history}</h3>
+	<div id='history_list' class="history_list ModelContant">
+	 {insert name='history'}
+  </div>
+</div>
+</div>
+<script type="text/javascript">
+divheight("historybox");
+if (document.getElementById('history_list').innerHTML.replace(/\s/g,'').length<1)
+{
+    document.getElementById('history_div').style.display='none';
+}
+else
+{
+    document.getElementById('history_div').style.display='block';
+}
+function clear_history()
+{
+Ajax.call('user.php', 'act=clear_history',clear_history_Response, 'GET', 'TEXT',1,1);
+}
+function clear_history_Response(res)
+{
+document.getElementById('history_list').innerHTML = '{$lang.no_history}';
+}
+</script>
+
+ <!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/promotion_info.lbi" -->
+
+<!-- {if $promotion_info} -->
+<div class="ModelBox  blank">
+<h3>{$lang.promotion_info}</h3>
+<div class="ModelContant">
+	<!-- {foreach from=$promotion_info item=item key=key} -->
+	<!-- {if $item.type eq "snatch"} -->
+    <a href="snatch.php" title="{$lang.$item.type}" class="TxtDot">{$lang.snatch_promotion}</a>
+    <!-- {elseif $item.type eq "group_buy"} -->
+    <a href="group_buy.php" title="{$lang.$item.type}" class="TxtDot">{$lang.group_promotion}</a>
+    <!-- {elseif $item.type eq "auction"} -->
+    <a href="auction.php" title="{$lang.$item.type}" class="TxtDot">{$lang.auction_promotion}</a>
+    <!-- {elseif $item.type eq "favourable"} -->
+    <a href="activity.php" title="{$lang.$item.type}" class="TxtDot">{$lang.favourable_promotion}</a>
+		<!-- {elseif $item.type eq "package"} -->
+    <a href="package.php" title="{$lang.$item.type}" class="TxtDot">{$lang.package_promotion}</a>
+    <!-- {/if} -->
+    <a href="{$item.url}" title="{$lang.$item.type} {$item.act_name}{$item.time}">{$item.act_name|truncate:8}</a><br />
+	<!-- {/foreach} -->
+</div>
+</div>
+<!-- {/if} -->			
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+	</div>
+	<div class="PageRight f_r">
+	<!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
+
+	<div class="ModBox2" id="GroupList">
+	 <span class="TL"></span>
+	 <span class="TR"></span>
+	 <span class="BL"></span>
+	 <span class="BR"></span>
+	 <h2 class="ModTit">{$lang.group_buy_goods}</h2>
+	 <div class="grouplist clearfix">
+			 <!-- {if $gb_list} 如果有团购活动 -->
+				<!-- {foreach from=$gb_list item=group_buy} 循环团购活动开始 -->
+				<div class="group_buy_list clearfix">
+					<div class="f_l groupImg">
+						<a href="{$group_buy.url}"><img src="{$group_buy.goods_thumb}" border="0" alt="{$group_buy.goods_name|escape:html}" /></a>
+					</div>
+					<div class="f_l txtwid">
+					{$lang.gb_goods_name}<a href="{$group_buy.url}"><font class="f14b">{$group_buy.goods_name|escape:html}</font></a><br />
+					{$lang.act_time}：<font class="f1">{$group_buy.formated_start_date} -- {$group_buy.formated_end_date}</font><br />
+					{$lang.gb_price_ladder}<br />
+					<br />
+					<table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd">
+					 <tr>
+							<th width="29%" bgcolor="#FFFFFF">{$lang.gb_ladder_amount}</th>
+						 <th width="71%" bgcolor="#FFFFFF">{$lang.gb_ladder_price}</th>
+						</tr>
+						<!-- {foreach from=$group_buy.price_ladder item=item} -->
+						<tr>
+							<td width="29%" bgcolor="#FFFFFF">{$item.amount}</td>
+						 <td width="71%" bgcolor="#FFFFFF">{$item.formated_price}</td>
+						</tr>
+						<!-- {/foreach} -->
+					</table>
+					</div>
+				</div>
+				<!--{/foreach}-->
+				<!-- {else} -->
+				 <div class="tips">{$lang.group_goods_empty}</div>
+				<!-- {/if} -->	
+	</div>			
+	</div>
+	 <!-- TemplateBeginEditable name="右边区域" -->
+<!-- #BeginLibraryItem "/library/cat_goods.lbi" -->
+
+<h1 class="Classification"><div class="ClassTitTxt f_l">{$goods_cat.name|escape:html}</div><div class="f_r"><a href="group_buy.php">更多 >></a></div></h1>	
+	<div class="ModelContent">
+		<!--{foreach from=$cat_goods item=goods name=cat_goods_list}-->		
+	 <div class="ModelGoos">
+		<div class="imgbox">
+		{if $smarty.foreach.cat_goods_list.index lt 1}
+		<a href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}" /></a>
+		{else}
+		<a href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}" class="Shmllimg" /></a>
+		 {/if}
+		</div>
+   <a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.short_name|escape:html}</a><br />
+   <!-- {if $goods.promote_price neq ""} -->
+  <b class="f1">{$goods.promote_price}</b><br>
+   <!-- {else}-->
+   <b  class="f1">{$goods.shop_price}</b><br>
+   <!--{/if}-->
+	</div>
+ <!--{/foreach}-->
+</div>
+
+ <!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/brand_goods.lbi" -->
+
+ <div class="ModBox4 ModelContant">
+		<div class="ModTit2"><b><font class="f_l">{$goods_brand.name|escape:html}</font></b><div class="f_r more"><a href="{$goods_brand.url}">更多</a></div></div>
+		<div class="mod2Content Goodpromotion">
+<!--{foreach from=$brand_goods item=goods}-->
+	 <div class="goodsbox">
+	  <div class="imgbox"><a href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}" /></a></div>
+   <a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.short_name|escape:html}</a><br />
+   <!-- {if $goods.promote_price neq ""} -->
+   {$lang.promote_price}<b class="f1">{$goods.promote_price}</b><br>
+   <!-- {else}-->
+   {$lang.shop_price}<b  class="f1">{$goods.shop_price}</b><br>
+   <!--{/if}-->
+	</div>
+ <!--{/foreach}-->
+</div>
+		</div>
+
+
+
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+	<script type="text/javascript">divheight("GroupList");</script>	
+	<!-- #BeginLibraryItem "/library/pages.lbi" --><!-- #EndLibraryItem -->
+	</div>
+</div>
+<div class="block">
+<div class="blank23"></div>
+<!-- #BeginLibraryItem "/library/help.lbi" --><!-- #EndLibraryItem -->
+</div>
+<div class="blank23"></div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

@@ -1,0 +1,23 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="box">
+	<div class="tit">
+	<h2>{$lang.message_board}</h2>
+	</div>
+	<div class="contant clearfix">
+		<ul class="comments">
+     <!--{foreach name=message_lists from=$msg_lists key=key item=msg}-->
+      <li style="position:relative;">
+       [<b>{$msg.msg_type}</b>] {$msg.user_name}<!-- {if $msg.user_name eq ''} -->{$lang.anonymous}<!-- {/if} -->：<!-- {if $msg.id_value gt 0} -->{$lang.feed_user_comment}<b><a class="f3" href="{$msg.goods_url}" target="_blank" title="{$msg.goods_name}">{$msg.goods_name}</a></b><!-- {/if} --><font class="f4">{$msg.msg_title}</font> ({$msg.msg_time})<!-- {if $msg.comment_rank gt 0} --><img style="position:absolute; right:5px; padding-top:5px;" src="../images/stars{$msg.comment_rank}.gif" alt="{$msg.comment_rank}" /><!-- {/if} -->
+        <br>{$msg.msg_content}
+				 <!-- {if $msg.re_content} -->
+		  <div class="messagecont word">      
+       <font class="fred">{$lang.shopman_reply}</font><br />
+       {$msg.re_content}      
+      </div>
+			<!-- {/if} -->
+      </li>
+      <!-- {/foreach} -->
+  </ul>	
+	</div>     
+</div>
+

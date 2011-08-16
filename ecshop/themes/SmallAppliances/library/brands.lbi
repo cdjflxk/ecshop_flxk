@@ -1,0 +1,16 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $brand_list} -->
+<div class="brands clearfix blank">
+  <h1 class="brandTit clearfix"><div class="f_l">品牌专区</div></h1>
+	 <div class="clearfix">
+		 <!-- {foreach from=$brand_list item=brand name="brand_foreach"} -->		
+      <!-- {if $brand.brand_logo} -->
+			<a href="{$brand.url}"><img src="data/brandlogo/{$brand.brand_logo}" alt="{$brand.brand_name|escape:html} ({$brand.goods_num})" /></a>
+      <!-- {else} -->
+        <a href="{$brand.url}" class="brandtxt">{$brand.brand_name|escape:html} {if $brand.goods_num}({$brand.goods_num}){/if}</a>
+      <!-- {/if} -->
+   <!-- {/foreach} -->
+	 </div>
+	 <p class="tr more"><a href="../brand.php" style="color:#FF0000;">全部品牌 >></a></p>
+</div>
+<!-- {/if} -->

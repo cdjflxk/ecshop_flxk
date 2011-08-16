@@ -1,0 +1,10 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="ModelBox blank">
+<h3>{$lang.new_price}</h3>
+<div class="ModelContant blank">
+    <!--{foreach from=$price_list item=item}-->
+    {$item.user_name}&nbsp;&nbsp;<font class="f1">{$item.bid_price}</font><br />
+    <!--{/foreach}-->
+</div>
+</div>
+

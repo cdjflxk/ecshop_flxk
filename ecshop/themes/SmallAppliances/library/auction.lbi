@@ -1,0 +1,19 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $auction_list} -->
+	<h1 class="Auction"><div class="AuctionTitTxt f_l">{$lang.auction_goods}</div><div class="f_r"><a href="auction.php">更多 >></a></div></h1>
+	<div class="ModelContent">
+		<!--{foreach from=$auction_list item=auction name="auction_foreach"}-->
+			<div class="ModelGoos">
+			<div class="imgbox">
+			{if $smarty.foreach.auction_foreach.index lt 1}
+     <a href="{$auction.url}"><img src="{$auction.thumb}" alt="{$auction.goods_name|escape:html}"/></a>
+		 {else}
+		  <a href="{$auction.url}"><img src="{$auction.thumb}" alt="{$auction.goods_name|escape:html}" class="Shmllimg"/></a>
+			 {/if}
+		 </div>
+    <a href="{$auction.url}" title="{$auction.goods_name|escape:html}">{$auction.short_style_name|escape:html}</a><br />
+    <b class="f1">{$auction.formated_start_price}</b>
+	 </div>	
+   <!--{/foreach}-->
+	</div>
+<!-- {/if} -->

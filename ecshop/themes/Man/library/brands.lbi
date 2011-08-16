@@ -1,0 +1,20 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $brand_list} -->
+<div class="Blank10"></div>
+<div class="brands clearfix">
+  <em class="lt"></em>
+	<em class="lb"></em>
+	<em class="rt"></em>
+	<em class="rb"></em>
+  <!-- {foreach from=$brand_list item=brand name="brand_foreach"} -->
+    {if $smarty.foreach.brand_foreach.index <= 8}
+      <!-- {if $brand.brand_logo} -->
+   <a href="{$brand.url}"><img src="data/brandlogo/{$brand.brand_logo}" alt="{$brand.brand_name|escape:html} ({$brand.goods_num})" /></a>
+      <!-- {else} -->
+        <a href="{$brand.url}">{$brand.brand_name|escape:html} {if $brand.goods_num}({$brand.goods_num}){/if}</a>
+      <!-- {/if} -->
+    {/if}
+  <!-- {/foreach} -->
+ <span><a  href="../brand.php"><font class="username">更多...</font></a></span>
+</div>
+<!-- {/if} -->

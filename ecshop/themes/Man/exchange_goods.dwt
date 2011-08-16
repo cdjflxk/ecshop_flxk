@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js'}
+<script type="text/javascript">
+function $(element) {
+  return document.getElementById(element);
+}
+//切屏--是按钮，_v是内容平台，_h是内容库
+function reg(str){
+  var bt=$(str+"_b").getElementsByTagName("h2");
+  for(var i=0;i<bt.length;i++){
+    bt[i].subj=str;
+    bt[i].pai=i;
+    bt[i].style.cursor="pointer";
+    bt[i].onclick=function(){
+      $(this.subj+"_v").innerHTML=$(this.subj+"_h").getElementsByTagName("blockquote")[this.pai].innerHTML;
+      for(var j=0;j<$(this.subj+"_b").getElementsByTagName("h2").length;j++){
+        var _bt=$(this.subj+"_b").getElementsByTagName("h2")[j];
+        var ison=j==this.pai;
+        _bt.className=(ison?"":"h2bg");
+      }
+    }
+  }
+  $(str+"_h").className="none";
+  $(str+"_v").innerHTML=$(str+"_h").getElementsByTagName("blockquote")[0].innerHTML;
+}
+
+</script>
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="Area clearfix">
+<div class="LeftRow f_l">
+ <!-- TemplateBeginEditable name="左边区域" -->
+<!-- #BeginLibraryItem "/library/category_tree.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/promotion_info.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/history.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/goods_article.lbi" --><!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+ </div>
+<div class="RightRow f_r"> 
+  <div class="GoodsDetails clearfix">
+	<h1 class="goodsName">
+  {$goods.goods_style_name} 
+   </h1>
+ <div class="clearfix">
+ <div class="goodImg f_l">
+    <div class="imgInfo">
+       <img src="{$goods.goods_img}" alt="{$goods.goods_name|escape:html}" id="goodsimg" style="width:300px; cursor:pointer;" onclick="window.open('gallery.php?id={$goods.goods_id}'); return false;"  />
+   </div>
+ <div class="tr up"> 
+ {if $prev_good}
+  <a href="{$prev_good.url}"><img alt="prev" src="images/up.gif" /></a>
+  {/if}
+  {if $next_good}
+  <a href="{$next_good.url}"><img alt="next" src="images/down.gif" /></a>
+  {/if} 
+ </div>
+   </div> 
+  <div class="goodTextInfo f_r"> 
+   <form action="exchange.php?act=buy" method="post" name="ECS_FORMBUY" id="ECS_FORMBUY" >
+  <div class="GoodBuy clearfix">
+  <!-- {if $cfg.show_goodssn} 显示商品货号-->    
+{$lang.goods_sn}{$goods.goods_sn}<br />
+        <!-- {/if} -->    
+        <!-- {if $goods.goods_brand neq "" and $cfg.show_brand} 显示商品品牌-->
+        {$lang.goods_brand}<a href="{$goods.goods_brand_url}" >{$goods.goods_brand}</a><br />
+        <!--{/if}-->
+        <!-- {if $cfg.show_goodsweight} 商品重量-->
+        {$lang.goods_weight}{$goods.goods_weight}<br />
+        <!-- {/if} -->
+        {$lang.exchange_integral}<font class="F1">{$goods.exchange_integral}</font><br />
+        <!-- {* 开始循环所有可选属性 *} -->
+        <!-- {foreach from=$specification item=spec key=spec_key} 循环规格开始 -->
+        {$spec.name}:<br />
+        <!-- {if $cfg.goodsattr_style eq 1} 规格显示方式：单选按钮 -->
+        <!-- {foreach from=$spec.values item=value key=key} -->
+<label for="spec_value_{$value.id}">
+        <input type="radio" name="spec_{$spec_key}" value="{$value.id}" id="spec_value_{$value.id}" {if $key eq 0}checked{/if} />
+        {$value.label} </label></li>
+        <!-- {/foreach} -->    
+        <!-- {else} 规格显示方式：下拉列表 -->
+        <select name="spec_{$spec_key}" class="TextInput">
+          <!-- {foreach from=$spec.values item=value key=key} -->
+          <option label="{$value.label}" value="{$value.id}">{$value.label} </option>
+          <!-- {/foreach} -->
+        </select><br />
+    <br />
+        <!-- {/if} 规格显示方式 -->
+        <!-- {/foreach} 循环规格结束 -->
+        <!-- {* 结束循环可选属性 *} -->
+    <br />
+        <input type="hidden" name="goods_id" value="{$goods.goods_id}" />
+        <input type="submit" value="{$lang.exchange_goods}" class="bnt_num4"/>
+	</div>
+    </form>  
+  </div>
+	 </div> 
+  <!--商品属性系列 START--> 
+</div>
+<div class="goods_attr">
+  <div class="attrTit clearfix"  id="com_b">
+    <h2>{$lang.goods_brief}</h2>
+    <h2 class="h2bg">{$lang.goods_attr}</h2>
+  </div>
+  <div class="attr_content" id="com_v"></div>
+  <div id="com_h">
+       <blockquote>
+        {$goods.goods_desc}
+       </blockquote>
+       <blockquote>
+        <table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd">
+        <!-- {foreach from=$properties item=property_group key=key} -->
+        <tr>
+          <th colspan="2" bgcolor="#FFFFFF">{$key|escape}</th>
+        </tr>
+        <!-- {foreach from=$property_group item=property} -->
+        <tr>
+          <td bgcolor="#FFFFFF" align="left" width="30%" class="f1">[{$property.name|escape:html}]</td>
+          <td bgcolor="#FFFFFF" align="left" width="70%">{$property.value|escape:html}</td>
+        </tr>
+        <!-- {/foreach}-->
+        <!-- {/foreach}-->
+      </table>
+       </blockquote>
+      
+    </div> 
+  <script type="text/javascript">
+    <!--
+    reg("com");
+    //-->
+  </script>
+  <!--商品属性系列 END-->
+  <!-- #BeginLibraryItem "/library/comments.lbi" --><!-- #EndLibraryItem -->
+ </div>
+ </div>
+<div class="blank10"></div>
+<!-- #BeginLibraryItem "/library/help.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</div>
+</body>
+<script type="text/javascript">
+<!-- {literal} -->
+onload = function()
+{
+  fixpng();
+}
+<!-- {/literal} -->
+</script>
+</html>

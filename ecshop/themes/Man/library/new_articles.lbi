@@ -1,0 +1,19 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $new_articles} -->
+<div class="Blank10"></div>
+<div class="PublicModule clearfix">
+ <div class="Contan">
+   <h2 class="News"><span class="Tit"></span></h2>
+	 <div class="ContantWid">
+	   <ul>
+	    <!-- {foreach name=new_articles from=$new_articles item=article} -->
+      <li class="Arrow">
+      <a href="{$article.url}" title="{$article.title|escape:html}">{$article.short_title}</a>
+      </li> 
+	<!-- {/foreach} -->
+	</ul>
+	</div>
+ </ul>
+ </div>
+</div>
+<!-- {/if} -->

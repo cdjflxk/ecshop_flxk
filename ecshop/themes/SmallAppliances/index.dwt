@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="RSS|{$page_title}" href="{$feed_url}" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js,index.js'}
+<script type="text/javascript" src="js/action.js"></script>
+
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="block clearfix">
+  <div class="PageLeft f_l">
+	<!-- #BeginLibraryItem "/library/category_tree.lbi" --><!-- #EndLibraryItem -->
+	<!-- #BeginLibraryItem "/library/top10.lbi" --><!-- #EndLibraryItem -->
+	<!-- #BeginLibraryItem "/library/brands.lbi" --><!-- #EndLibraryItem -->
+	</div>
+	<div class="PageRight f_r">
+	<div class="clearfix blank">
+	  <div class="FlashWid f_l"><!-- #BeginLibraryItem "/library/index_ad.lbi" --><!-- #EndLibraryItem --></div>
+		<div class="CartWid f_r">
+		<!-- #BeginLibraryItem "/library/cart.lbi" --><!-- #EndLibraryItem -->
+		 <!-- TemplateBeginEditable name="购物车下面的广告图片" -->
+<!-- TemplateEndEditable -->
+		</div>
+		</div>
+		<div class="clearfix">
+		<!-- #BeginLibraryItem "/library/recommend_best.lbi" --><!-- #EndLibraryItem -->
+		<!-- #BeginLibraryItem "/library/recommend_new.lbi" --><!-- #EndLibraryItem -->
+		</div>
+	</div>
+</div>
+<div class="Layout block clearfix">
+ <span class="TL"></span>
+ <span class="TR"></span>
+ <span class="BL"></span>
+ <span class="BR"></span>
+ <div class="clearfix">
+ <div class="Group ModelWid f_l">
+ <!-- TemplateBeginEditable name="团购编辑区一" -->
+<!-- #BeginLibraryItem "/library/group_buy.lbi" -->
+
+<!-- {if $group_buy_goods} -->
+	<h1 class="GoundTit"><div class="GoundTitTxt f_l">{$lang.group_buy_goods}</div><div class="f_r"><a href="group_buy.php">更多 >></a></div></h1>		
+	<div class="ModelContent clearfix">	
+	<!--{foreach from=$group_buy_goods item=goods name=groud_list}-->	
+	<div class="ModelGoos">
+	<div class="imgbox">
+	{if $smarty.foreach.groud_list.index lt 1}
+	<a href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.goods_name|escape:html}" /></a>
+	{else}
+	 <a href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.goods_name|escape:html}" class="Shmllimg" />		 
+	 {/if}
+	 </div>
+	 <a href="{$goods.url}" title="{$goods.goods_name|escape:html}">{$goods.short_style_name|escape:html}</a><br />
+   {$lang.last_price}<b class="f1">{$goods.last_price}</b>
+	</div>		
+ <!--{/foreach}-->
+	</div>
+<!-- {/if} -->
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+ </div>
+ <div class="ModelWid f_r">
+  <!-- TemplateBeginEditable name="可编辑区二" -->
+<!-- #BeginLibraryItem "/library/recommend_promotion.lbi" -->
+
+<!-- {if $promotion_goods} -->
+<h1 class="Specials"><div class="SpecialsTitTxt f_l">{$lang.promotion_goods}</div><div class="f_r"><a href="group_buy.php">更多 >></a></div></h1>
+<div class="ModelContent">
+		 <!--{foreach from=$promotion_goods item=goods name="promotion_foreach"}-->
+			<div class="ModelGoos">
+			<div class="imgbox">
+	{if $smarty.foreach.promotion_foreach.index lt 1}
+	 <a href="{$goods.url}"><img src="{$goods.thumb}" border="0" alt="{$goods.name|escape:html}"/></a>
+	 {else}
+	 <a href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}" class="Shmllimg" />
+	 {/if}
+	 </div>
+			 <a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.short_style_name}</a><br />
+			 <!-- {if $goods.promote_price neq ""} -->
+			 <b class="f1">{$goods.promote_price}</b><br />
+			 <!-- {else}-->
+			 <b class="f1">{$goods.shop_price}</b><br />
+			 <!--{/if}-->
+			</div>
+		<!--{/foreach}-->
+</div>
+<!-- {/if} -->
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+ </div>
+ </div>
+ <div class="clearfix">
+ <div class="HengLine clearfix block blank"></div>
+ <div class="Group ModelWid f_l">
+  <!-- TemplateBeginEditable name="可编辑区三" -->
+<!-- #BeginLibraryItem "/library/auction.lbi" -->
+
+<!-- {if $auction_list} -->
+	<h1 class="Auction"><div class="AuctionTitTxt f_l">{$lang.auction_goods}</div><div class="f_r"><a href="group_buy.php">更多 >></a></div></h1>
+	<div class="ModelContent">
+		<!--{foreach from=$auction_list item=auction name="auction_foreach"}-->
+			<div class="ModelGoos">
+			<div class="imgbox">
+			{if $smarty.foreach.auction_foreach.index lt 1}
+     <a href="{$auction.url}"><img src="{$auction.thumb}" alt="{$auction.goods_name|escape:html}"/></a>
+		 {else}
+		  <a href="{$auction.url}"><img src="{$auction.thumb}" alt="{$auction.goods_name|escape:html}" class="Shmllimg"/></a>
+			 {/if}
+		 </div>
+    <a href="{$auction.url}" title="{$auction.goods_name|escape:html}">{$auction.short_style_name|escape:html}</a><br />
+    <b class="f1">{$auction.formated_start_price}</b>
+	 </div>	
+   <!--{/foreach}-->
+	</div>
+<!-- {/if} -->
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+ </div>
+ <div class="ModelWid f_r">
+ <!-- TemplateBeginEditable name="可编辑区四" -->
+<!-- #BeginLibraryItem "/library/cat_goods.lbi" -->
+
+<h1 class="Classification"><div class="ClassTitTxt f_l">{$goods_cat.name|escape:html}</div><div class="f_r"><a href="{$goods_cat.url}">更多 >></a></div></h1>	
+	<div class="ModelContent clearfix">
+		<!--{foreach from=$cat_goods item=goods name=cat_goods_list}-->		
+	 <div class="ModelGoos">
+		<div class="imgbox">
+		{if $smarty.foreach.cat_goods_list.index lt 1}
+		<a href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}" /></a>
+		{else}
+		<a href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}" class="Shmllimg" /></a>
+		 {/if}
+		</div>
+   <a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.short_name|escape:html}</a><br />
+   <!-- {if $goods.promote_price neq ""} -->
+  <b class="f1">{$goods.promote_price}</b><br>
+   <!-- {else}-->
+   <b  class="f1">{$goods.shop_price}</b><br>
+   <!--{/if}-->
+	</div>
+ <!--{/foreach}-->
+</div>
+
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+ </div>
+ </div>
+</div>
+<div class="blank"></div>
+<div class="BottomBlank block clearfix">
+  <span class="TL"></span>
+  <span class="TR"></span>
+  <span class="BL"></span>
+  <span class="BR"></span>
+	<ul>
+	  <li class="ModelW f_l"><!-- #BeginLibraryItem "/library/new_articles.lbi" --><!-- #EndLibraryItem --></li>
+		<li class="ModelW f_l"><img src="images/ad3.gif"  /></li>
+		<li class="ModelW f_l">		
+		<!-- {if $helps} -->
+	  <div class="helpbox">
+		 <!-- {foreach from=$helps item=help_cat name=helps_list} -->
+		 <!-- {if $smarty.foreach.helps_list.index lt 4} 限制文章显示数量 -->
+			<div class="goodsbox">
+			 <div class="helpTit">
+			 <span class="R"></span>
+			 {$help_cat.cat_name}</div>
+			 <div class="helpList tl">
+				<!-- {foreach from=$help_cat.article item=item} -->
+				<a href="{$item.url}" title="{$item.title|escape:html}">{$item.short_title}</a><br />
+				<!-- {/foreach} -->
+			 </div>
+			</div>
+			<!-- {/if} -->
+		 <!-- {/foreach} -->	
+		</div>
+<!-- {/if} -->
+		
+		
+		</li>
+	</ul>
+</div>
+<div class="blank23"></div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

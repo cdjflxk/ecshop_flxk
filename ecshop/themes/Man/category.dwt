@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<!-- {if $cat_style} -->
+<link href="{$cat_style}" rel="stylesheet" type="text/css" />
+<!-- {/if} -->
+{* 包含脚本文件 *}
+{insert_scripts files='common.js,global.js,compare.js'}
+<script type="text/javascript" src="js/action.js"></script>
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="Area clearfix">
+  <div class="LeftRow f_l">
+  <!-- TemplateBeginEditable name="左边区域" -->
+  <!-- #BeginLibraryItem "/library/category_tree.lbi" --><!-- #EndLibraryItem --> 
+  <!-- #BeginLibraryItem "/library/history.lbi" --><!-- #EndLibraryItem -->
+  <!-- #BeginLibraryItem "/library/promotion_info.lbi" --><!-- #EndLibraryItem -->
+   <!-- TemplateEndEditable -->
+ </div>
+ <div class="RightRow f_r">
+   <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->  
+ <!--{if $brands.1 || $price_grade.1 || $filter_attr_list}-->
+ <div class="box">
+ <div class="tit">
+ <h2>{$lang.goods_filter}</h2>
+ </div>
+ <div class="contant">
+   <!--{if $brands.1}-->
+   <div class="screeBox">
+     <strong>{$lang.brand}：</strong>
+    <!--{foreach from=$brands item=brand}-->
+     <!-- {if $brand.selected} -->
+     <span>{$brand.brand_name}</span>
+     <!-- {else} -->
+     <a href="{$brand.url}">{$brand.brand_name}</a> 
+     <!-- {/if} -->
+    <!--{/foreach}-->
+   </div>
+   <!--{/if}-->
+   <!--{if $price_grade.1}-->
+   <div class="screeBox">
+   <strong>{$lang.price}：</strong>
+   <!--{foreach from=$price_grade item=grade}-->
+    <!-- {if $grade.selected} -->
+    <span>{$grade.price_range}</span>
+    <!-- {else} -->
+    <a href="{$grade.url}">{$grade.price_range}</a> 
+    <!-- {/if} -->
+   <!--{/foreach}-->
+   </div>
+   <!--{/if}-->
+   <!--{foreach from=$filter_attr_list item=filter_attr}-->
+      <div class="screeBox">
+   <strong>{$filter_attr.filter_attr_name|escape:html} :</strong>
+   <!--{foreach from=$filter_attr.attr_list item=attr}-->
+    <!-- {if $attr.selected} -->
+    <span>{$attr.attr_value}</span>
+    <!-- {else} -->
+    <a href="{$attr.url}">{$attr.attr_value}</a> 
+    <!-- {/if} -->
+   <!--{/foreach}-->
+   </div>
+      <!--{/foreach}-->
+ </div>     
+    </div>
+<!--{/if}-->
+  <!-- #BeginLibraryItem "/library/goods_list.lbi" --><!-- #EndLibraryItem -->
+  <!-- #BeginLibraryItem "/library/pages.lbi" --><!-- #EndLibraryItem -->
+  <!-- TemplateBeginEditable name="商品列表下可编辑区域" -->  
+  <!-- TemplateEndEditable -->
+ </div>
+</div>
+<!-- #BeginLibraryItem "/library/help.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+<script type="text/javascript" src="js/tips.js"></script>
+</html>

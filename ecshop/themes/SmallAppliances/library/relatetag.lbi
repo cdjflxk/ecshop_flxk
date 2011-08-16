@@ -1,0 +1,23 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+{if $tag_nums}
+<!--{foreach from=$tag_list item=data key=key}-->
+{if $key neq $appid}
+{if $data.type eq "ecshop"}
+	 <div class="ModBox4 ModelContant blank">
+		<div class="ModTit2"><b>{$data.name}</b></div>
+		<!--{foreach from=$data.data item=tag key=key}-->
+    <img src="{$tag.image}" width="100" height="100" /><br />
+    <a href="{$tag.url}">{$tag.goods_name}</a>
+  <!--{/foreach}-->
+		</div>
+{elseif $data.type eq "discuz"}
+	 <div class="ModBox4 ModelContant">
+		<div class="ModTit2"><b>{$data.name}</b></div>
+		<!--{foreach from=$data.data item=tag key=key}-->
+	<a href="{$tag.url}">{$tag.subject}</a><br />
+	<!--{/foreach}-->
+		</div>
+{/if}
+{/if}    
+<!--{/foreach}-->
+{/if}

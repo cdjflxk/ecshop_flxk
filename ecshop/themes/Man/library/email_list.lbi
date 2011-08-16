@@ -1,0 +1,56 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<div class="PublicModule2">
+ <span class="R"></span>
+ <h3 class="email"></h3> 
+</div>
+
+<div class="PublicBoder">
+ <div class="BorderBlank tc">
+ <br />
+ <input type="text" id="user_email" class="TextInput2" size="16" /><br />
+  <div class="Blank10"></div>
+<input type="button" value="{$lang.email_list_ok}" class="bnt_number2" onclick="add_email_list();" />
+<input type="button"  value="{$lang.email_list_cancel}" class="bnt_number2" onclick="cancel_email_list();" />
+ </div>
+ </div>
+ <div class="Blank10"></div>
+<script type="text/javascript">
+//<![CDATA[
+var email = document.getElementById('user_email');
+function add_email_list()
+{
+  if (check_email())
+  {
+    Ajax.call('user.php?act=email_list&job=add&email=' + email.value, '', rep_add_email_list, 'GET', 'TEXT');
+  }
+}
+function rep_add_email_list(text)
+{
+  alert(text);
+}
+function cancel_email_list()
+{
+  if (check_email())
+  {
+    Ajax.call('user.php?act=email_list&job=del&email=' + email.value, '', rep_cancel_email_list, 'GET', 'TEXT');
+  }
+}
+function rep_cancel_email_list(text)
+{
+  alert(text);
+}
+function check_email()
+{
+  if (Utils.isEmail(email.value))
+  {
+    return true;
+  }
+  else
+  {
+    alert('{$lang.email_invalid}');
+    return false;
+  }
+}
+//]]>
+</script>

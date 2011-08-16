@@ -1,0 +1,98 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript">
+var process_request = "{$lang.process_request}";
+var btn_buy = "{$lang.btn_buy}";
+var is_cancel = "{$lang.is_cancel}";
+var select_spe = "{$lang.select_spe}";
+</script>
+<div class="header">
+<div class="block">
+ <div class="logo"><a href="../index.php"><img src="images/logo.gif" alt="{$page_title}" /></a></div>
+ <div class="topnav">
+ <div class="tr">
+  <!--登录 注册 start-->
+ {insert_scripts files='transport.js,utils.js'}
+ <div id="ECS_MEMBERZONE">{* ECSHOP 提醒您：根据用户id来调用member_info.lbi显示不同的界面  *}{insert name='member_info'}</div>
+ <!-- 登录 注册 end-->
+ </div>
+ <div class="nue tr f_r"> 
+ <!--{if $navigator_list.top}-->
+   <ul>
+    <!-- {foreach name=nav_top_list from=$navigator_list.top item=nav} -->
+  <li>
+      <a href="{$nav.url}" <!-- {if $nav.opennew eq 1} --> target="_blank" <!-- {/if} -->>{$nav.name}</a>      
+  </li>
+    <!-- {/foreach} -->
+ </ul>
+   <!-- {/if} -->
+ </div>
+</div>
+</div>
+<div class="menu block">
+<span class="L"></span>
+<span class="R"></span>
+ <ul>
+  <li {if $navigator_list.config.index eq 1} class="cur"{/if}><a href="../index.php">{$lang.home}</a><span></span></li>
+ <!-- {foreach name=nav_middle_list from=$navigator_list.middle item=nav} -->
+  <li {if $nav.active eq 1}class="cur"{/if}>
+  <a href="{$nav.url}" {if $nav.opennew eq 1}target="_blank" {/if}>{$nav.name}</a><span></span> 
+  </li> 
+ <!-- {/foreach} --> 
+ </ul>
+</div>
+<div class="searchbox block">
+<span class="L"></span>
+<span class="R"></span>
+<div class="sear f_l">
+<form id="searchForm" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()" >
+   <select name="category" id="category">
+      <option value="0">{$lang.all_category}</option>
+      {$category_list}
+    </select>
+   <input name="keywords" type="text" id="keyword" value="{$search_keywords|escape}" size="30" class="TextInput"/>
+   <input name="imageField" type="submit" value="搜索" class="go" style="position:relative;_top:-2px;*top:-2px; _padding-top:4px;*padding-top:4px;" /> 
+  <font class="advan"><a href="search.php?act=advanced_search">{$lang.advanced_search}</a></font>
+   </form>
+</div>
+<div class="key f_l">
+<script type="text/javascript">
+    {literal}
+    <!--
+    function checkSearchForm()
+    {
+        if(document.getElementById('keyword').value)
+        {
+            return true;
+        }
+        else
+        {
+            alert("{$lang.no_keywords}");
+            return false;
+        }
+    }
+    -->
+    {/literal}
+    </script>
+    {if $searchkeywords}
+   {$lang.hot_search} ：
+   {foreach from=$searchkeywords item=val}
+   <a href="search.php?keywords={$val|escape:url}">{$val}</a>
+   {/foreach}
+   {/if}  
+</div>
+<div class="cart f_r" id="enter">
+  <div id="cartInfo">购物车</div>
+  <div id="flying"></div>
+  <div id=all-links style="display:none;">
+   <div id="ECS_CARTINFO">
+   {insert_scripts files='transport.js'}
+     {insert name='cart_info'}
+   </div>
+  </div>  
+  <script type="text/javascript">
+  CartMenu();
+  </script>
+</div>
+</div>
+</div>
+<div class="blank10"></div>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<regions>
+  <file name="22.html"/>
+  <file name="activity.dwt"/>
+  <file name="article.dwt">
+    <region name="右边区域">
+      <lib>promotion_info</lib>
+      <lib>history</lib>
+    </region>
+  </file>
+  <file name="article_cat.dwt">
+    <region name="左边区域">
+      <lib>article_category_tree</lib>
+      <lib>promotion_info</lib>
+    </region>
+    <region name="文章列表下可编辑区域"/>
+  </file>
+  <file name="article_pro.dwt"/>
+  <file name="auction.dwt">
+    <region name="左边区域">
+      <lib>category_tree</lib>
+      <lib>history</lib>
+      <lib>promotion_info</lib>
+    </region>
+  </file>
+  <file name="auction_list.dwt">
+    <region name="左边区域">
+      <lib>category_tree</lib>
+      <lib>history</lib>
+      <lib>promotion_info</lib>
+    </region>
+  </file>
+  <file name="BIAOTI.psd"/>
+  <file name="brand.dwt">
+    <region name="左边区域">
+      <lib>category_tree</lib>
+      <lib>promotion_info</lib>
+      <lib>history</lib>
+    </region>
+  </file>
+  <file name="brand_list.dwt"/>
+  <file name="catalog.dwt"/>
+  <file name="category.dwt">
+    <region name="左边区域">
+      <lib>category_tree</lib>
+      <lib>history</lib>
+      <lib>promotion_info</lib>
+    </region>
+    <region name="商品列表下可编辑区域"/>
+  </file>
+  <file name="compare.dwt"/>
+  <file name="exchange_goods.dwt">
+    <region name="左边区域">
+      <lib>category_tree</lib>
+      <lib>goods_attrlinked</lib>
+      <lib>history</lib>
+      <lib>goods_article</lib>
+    </region>
+    <region name="右边区域">
+      <lib>comments</lib>
+    </region>
+  </file>
+  <file name="exchange_list.dwt">
+    <region name="左边区域">
+      <lib>category_tree</lib>
+      <lib>history</lib>
+      <lib>promotion_info</lib>
+    </region>
+    <region name="商品列表上可编辑区域">
+      <lib>exchange_hot</lib>
+    </region>
+    <region name="商品列表下可编辑区域"/>
+  </file>
+  <file name="flow.dwt"/>
+  <file name="gallery.dwt"/>
+  <file name="goods.dwt">
+    <region name="左边区域">
+      <lib>category_tree</lib>
+      <lib>goods_attrlinked</lib>
+      <lib>goods_article</lib>
+      <lib>history</lib>
+      <lib>promotion_info</lib>
+    </region>
+    <region name="右边区域">
+      <lib>comments</lib>
+    </region>
+  </file>
+  <file name="group_buy_goods.dwt">
+    <region name="左边区域">
+      <lib>category_tree</lib>
+      <lib>history</lib>
+      <lib>promotion_info</lib>
+    </region>
+  </file>
+  <file name="group_buy_list.dwt">
+    <region name="左边区域">
+      <lib>category_tree</lib>
+      <lib>history</lib>
+      <lib>promotion_info</lib>
+    </region>
+  </file>
+  <file name="index.dwt">
+    <region name="左侧可编辑区域">
+      <lib>category_tree</lib>
+      <lib>order_query</lib>
+      <lib>invoice_query</lib>
+      <lib>email_list</lib>
+      <lib>promotion_info</lib>
+      <lib>vote_list</lib>
+      <lib>brands</lib>
+      <lib>top10</lib>
+    </region>
+    <region name="右侧可编辑区域">
+      <lib>recommend_new</lib>
+      <lib>recommend_best</lib>
+      <lib>recommend_promotion</lib>
+      <lib>recommend_hot</lib>
+      <lib>group_buy</lib>
+      <lib>auction</lib>
+      <lib>cat_goods</lib>
+    </region>
+  </file>
+  <file name="libs.xml"/>
+  <file name="message.dwt"/>
+  <file name="message_board.dwt">
+    <region name="左边区域">
+      <lib>category_tree</lib>
+      <lib>history</lib>
+      <lib>promotion_info</lib>
+    </region>
+  </file>
+  <file name="myship.dwt"/>
+  <file name="pick_out.dwt">
+    <region name="左边区域">
+      <lib>categorys</lib>
+      <lib>history</lib>
+      <lib>promotion_info</lib>
+    </region>
+  </file>
+  <file name="quotation.dwt"/>
+  <file name="receive.dwt"/>
+  <file name="respond.dwt"/>
+  <file name="search.dwt">
+    <region name="左边区域">
+      <lib>category_tree</lib>
+      <lib>history</lib>
+      <lib>promotion_info</lib>
+    </region>
+  </file>
+  <file name="snatch.dwt">
+    <region name="左边区域">
+      <lib>category_tree</lib>
+      <lib>promotion_info</lib>
+    </region>
+  </file>
+  <file name="style.css"/>
+  <file name="tag_cloud.dwt"/>
+  <file name="tit.psd"/>
+  <file name="topic.dwt"/>
+  <file name="user_clips.dwt"/>
+  <file name="user_passport.dwt"/>
+  <file name="user_transaction.dwt"/>
+  <file name="wholesale_list.dwt"/>
+</regions>

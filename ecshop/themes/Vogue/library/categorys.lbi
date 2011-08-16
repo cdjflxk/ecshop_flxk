@@ -1,0 +1,17 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $cat_list} -->
+
+  <div class="PublicBorderTwo">
+    <h3 class="F14B">{$lang.goods_category}
+    </h3>
+    <div class="clearfix Conwid4">
+  <ul>
+  <!-- {foreach from=$cat_list item=cat} -->
+ <li class="dot porlist">
+    <a href="{$cat.url}"><b>{$cat.cat_name|escape:html}</b> {if $cat.goods_num}({$cat.goods_num}){/if}</a>
+   <!--{/foreach}-->
+  </li>
+ </ul>
+  </div>
+  </div>
+<!-- {/if} -->

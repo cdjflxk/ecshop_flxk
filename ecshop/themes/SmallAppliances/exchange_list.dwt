@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js,global.js,compare.js'}
+<script type="text/javascript" src="js/action.js"></script>
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="block clearfix">
+  <div class="PageLeft f_l">
+	 <!-- TemplateBeginEditable name="左边区域" -->
+	 <!-- #BeginLibraryItem "/library/category_tree.lbi" --><!-- #EndLibraryItem --> 
+	 <!-- #BeginLibraryItem "/library/top10.lbi" --><!-- #EndLibraryItem -->
+	 <!-- #BeginLibraryItem "/library/history.lbi" --><!-- #EndLibraryItem -->
+	 <!-- #BeginLibraryItem "/library/promotion_info.lbi" --><!-- #EndLibraryItem -->
+	 <!-- #BeginLibraryItem "/library/promotion_info.lbi" --><!-- #EndLibraryItem -->
+   <!-- TemplateEndEditable -->
+	</div>
+	<div class="PageRight f_r">	
+	<!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
+	<!-- TemplateBeginEditable name="商品列表上可编辑区域" --> 
+	<!-- #BeginLibraryItem "/library/exchange_hot.lbi" --><!-- #EndLibraryItem -->
+  <!-- TemplateEndEditable -->
+	<!-- 商品列表 -->
+    <script type="text/javascript">
+      window.onload = function()
+      {
+        Compare.init();
+        fixpng();
+      }
+      var button_compare = '';
+    </script>
+		<div class="ModBox2 blank" id="ExchangeH">
+	 <span class="TL"></span>
+	 <span class="TR"></span>
+	 <span class="BL"></span>
+	 <span class="BR"></span>
+	 <h2 class="ModTit">{$lang.goods_list}</h2>
+	 <div class="mod2Content GoodslR">
+	 <form name="compareForm" method="post">
+				 <!--{foreach from=$goods_list item=goods}-->
+          <!-- {if $goods.goods_id} -->
+          <div class="goodsbox">
+           <div class="imgbox"><a href="{$goods.url}"><img src="{$goods.goods_thumb}" alt="{$goods.goods_name}"/></a></div>
+           <a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.goods_name}</a><br />
+						{$lang.exchange_integral}<font class="price">{$goods.exchange_integral}</font><br />
+          </div>
+					 <!--{/if}-->
+          <!--{/foreach}-->
+   </form>
+	 </div>
+	</div>	
+	<script type="text/javascript">divheight("ExchangeH");</script>
+
+	<!-- #BeginLibraryItem "/library/pages.lbi" --><!-- #EndLibraryItem -->
+	<!-- TemplateBeginEditable name="商品列表下可编辑区域" -->  
+  <!-- TemplateEndEditable -->
+	</div>
+</div>
+<div class="block">
+<div class="blank23"></div>
+<!-- #BeginLibraryItem "/library/help.lbi" --><!-- #EndLibraryItem -->
+</div>
+<div class="blank23"></div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

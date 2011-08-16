@@ -1,0 +1,14 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $article_categories } -->
+<div class="ModelBox blank">
+<h3>{$lang.article_cat}</h3>
+<div class="ModelContant">
+	<!--{foreach from=$article_categories item=cat}-->
+ <a href="{$cat.url}" class="TxtDot">{$cat.name|escape:html}</a><br />
+ <!--{foreach from=$cat.children item=child}-->
+			&nbsp;&nbsp;·<a href="{$child.url}">{$child.name|escape:html}</a><br />
+ <!--{/foreach}-->
+<!--{/foreach}-->
+</div>
+</div>
+<!--{/if} -->	

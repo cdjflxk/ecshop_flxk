@@ -1,0 +1,109 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--search start-->
+	<script type="text/javascript">
+    {literal}
+    <!--
+    function checkSearchForm()
+    {
+        if(document.getElementById('keyword').value)
+        {
+            return true;
+        }
+        else
+        {
+				    alert("{$lang.no_keywords}");
+            return false;
+        }
+    }
+    -->
+    {/literal}
+    </script>
+<script type="text/javascript">
+function clearBubble(e){
+		if(e){			
+			e.stopPropagation();
+		}else{
+			window.event.cancelBubble = true;
+		}	
+	}
+function makeSelect(){
+	this.s;
+	this.info = function(o){
+		this.s = document.getElementById(o);//提取ID为category的SELECT对象；
+		var input = document.createElement("input");//创建一个新标签INPUT；
+		input.setAttribute("type","hidden");//将新创建的新标签的TYPE设置为HIDDEN；
+		input.id = o;//给新创建的标签设置id；
+		var span = document.createElement("span");//行创建2个span；
+		var spanv = document.createElement("span");
+		spanv.style.cssText = "padding-left:5px;padding-right:5px;width:72px;line-height:18px;float:left;height:18px;overflow:hidden;";//设置行间样式；
+		var opt = this.s.getElementsByTagName("option");//提取SELECT标签下option；
+		for(var i = 0 ; i < opt.length ; i++){
+			if(opt[i].selected == true){
+				spanv.innerHTML = opt[i].innerHTML;
+				input.value = opt[i].value;
+			}
+		}
+		var img = document.createElement("img");//创建img标签；
+		var ul = document.createElement("ul");//创建ul标签；
+		
+		for(var i = 0 ; i < opt.length ; i++){
+			var li = document.createElement("li");//有多少个option就创建多少个li标签；
+			if(opt[i].selected == true){
+				li.style.cssText = "padding:2px;margin:0px;cursor:pointer;background:#EEE;";
+			}else{
+				li.style.cssText = "padding:2px;margin:0px;cursor:pointer;background:#FFF;";
+			}			
+			li.innerHTML = opt[i].innerHTML;
+			li.value = opt[i].value;
+			li.onmouseover = function(){
+				for(var j = 0 ; j < ul.getElementsByTagName("li").length ; j++){
+					//alert(j);
+					ul.getElementsByTagName("li")[j].style.background = "#FFF";
+				}
+				this.style.background = "#EEE";
+			};
+			
+			li.onclick = function(){this.style.background="#EEE";input.value=this.value;spanv.innerHTML = this.innerHTML;ul.style.display = "none";};
+			ul.appendChild(li);		
+		}
+		ul.style.cssText = "width:150px;padding:0px;margin:0px;position:absolute;display:none;top:18px;left:-1px;overflow:hidden;border:1px solid #CCC;z-index:9999;"
+		ul.style.display = "none";
+		img.src="images/arr.jpg";
+		img.style.cssText = "float:right;display:block;cursor:pointer;border-bottom:1px solid #CCC;";
+		img.onclick = function(e){
+			clearBubble(e);
+			ul.style.display = "block";
+		}
+		span.appendChild(spanv);
+		span.appendChild(ul);
+		span.appendChild(img);
+		span.style.cssText = "border:1px solid #CCC;display:block;font-size:12px;position:relative;line-height:18px;height:18px;width:100px;float:left;"
+		this.s.parentNode.appendChild(input);
+		this.s.parentNode.replaceChild(span,this.s);
+		
+		//alert(this.s.innerHTML);
+		document.onclick = function(){ul.style.display = "none";};
+	};
+}
+/*window.onload = function(){
+	var ms = new makeSelect();
+	ms.info("category");
+	
+}*/
+</script>		
+	 <form id="searchForm" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()" >
+	 <strong>商品搜索：</strong> 
+   <select name="category" id="category">
+      <option value="0">{$lang.all_category}</option>
+      {$category_list}
+    </select>
+   <input name="keywords" type="text" id="keyword" value="{$search_keywords|escape}" class="InputBorder fl"/>
+   <input name="imageField" type="image" src="../images/search_submit.jpg" style="position:relative; top:6px;" class="fl" />
+   <a href="search.php?act=advanced_search">{$lang.advanced_search}</a>
+   </form>
+<script type="text/javascript">
+	var ms = new makeSelect();
+	ms.info("category");
+</script>	  
+
+<!--search end-->

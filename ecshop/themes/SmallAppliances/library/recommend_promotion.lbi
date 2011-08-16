@@ -1,0 +1,23 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $promotion_goods} -->
+<h1 class="Specials"><div class="SpecialsTitTxt f_l">{$lang.promotion_goods}</div><div class="f_r"><a href="../search.php?intro=promotion">更多 >></a></div></h1>
+<div class="ModelContent">
+		 <!--{foreach from=$promotion_goods item=goods name="promotion_foreach"}-->
+			<div class="ModelGoos">
+			<div class="imgbox">
+	{if $smarty.foreach.promotion_foreach.index lt 1}
+	 <a href="{$goods.url}"><img src="{$goods.thumb}" border="0" alt="{$goods.name|escape:html}"/></a>
+	 {else}
+	 <a href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}" class="Shmllimg" />
+	 {/if}
+	 </div>
+			 <a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.short_style_name}</a><br />
+			 <!-- {if $goods.promote_price neq ""} -->
+			 <b class="f1">{$goods.promote_price}</b><br />
+			 <!-- {else}-->
+			 <b class="f1">{$goods.shop_price}</b><br />
+			 <!--{/if}-->
+			</div>
+		<!--{/foreach}-->
+</div>
+<!-- {/if} -->

@@ -1,0 +1,27 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--{if empty($order_query)}-->
+<script>var invalid_order_sn = "{$lang.invalid_order_sn}"</script>
+ <div class="ModBox4 ModelContant">
+		<div class="ModTit2"><b>{$lang.order_query}</b></div>
+			 <form name="ecsOrderQuery">
+    <input type="text" name="order_sn" class="InputBorder blank" size="22"  /><br />
+    <input type="button" value="{$lang.query_order}" class="bnt_number6 blank" onclick="orderQuery();" />
+  </form>
+  <div id="ECS_ORDER_QUERY" style="margin-bottom:9px;">
+      <!--{else}-->
+      <!--{if $order_query.user_id}-->
+			{$lang.order_number}：<a href="user.php?act=order_detail&order_id={$order_query.order_id}">{$order_query.order_sn}</a><br>
+				<!--{else}-->
+			{$lang.order_number}：{$order_query.order_sn}<br>
+				<!--{/if}-->
+			{$lang.order_status}：<font class="f1">{$order_query.order_status}</font><br>
+				<!--{if $order_query.invoice_no } 发货单-->
+			{$lang.consignment}：{$order_query.invoice_no}<br>
+				<!--{/if}-->
+				<!--{if $order_query.shipping_date} 发货日期-->
+			{$lang.shipping_date}： {$order_query.shipping_date}<br>
+				<!--{/if}-->
+				
+			 <!--{/if}-->
+	  </div>
+		</div>

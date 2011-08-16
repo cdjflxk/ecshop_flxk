@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js'}
+<script type="text/javascript" src="js/action.js"></script>
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="block clearfix">
+  <div class="PageLeft f_l">
+ <!-- TemplateBeginEditable name="左侧编辑区" -->
+ <!-- #BeginLibraryItem "/library/article_category_tree.lbi" --><!-- #EndLibraryItem --> 
+ <!-- #BeginLibraryItem "/library/history.lbi" --><!-- #EndLibraryItem --> 
+ <!-- TemplateEndEditable -->	
+  <!-- {if $related_goods} -->
+ <div class="ModelBox blank">
+<h3>{$lang.releate_goods}</h3>
+ <!--{foreach from=$related_goods item=releated_goods_data}-->
+     <ul class="attribute">
+      <li>
+       <a href="{$releated_goods_data.url}"><img src="{$releated_goods_data.goods_thumb}" alt="{$releated_goods_data.goods_name}" align="left" /></a>
+    <a href="{$releated_goods_data.url}" title="{$releated_goods_data.goods_name}">{$releated_goods_data.short_name}</a><br />
+    <!-- {if $releated_goods_data.promote_price neq 0} -->
+    <b class="price">{$releated_goods_data.formated_promote_price}</b><br />
+    <!-- {else} -->
+    <b class="price">{$releated_goods_data.shop_price}</b><br />
+    <!-- {/if} -->
+      </li>
+     </ul>
+  <!--{/foreach}--> 
+</div>
+ <!-- {/if} --> 
+	</div>
+	<div class="PageRight f_r">
+	<!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
+	<div class="articleBox blank">
+	  <h1 class="articleTit tc">{$article.title|escape:html}</h1>
+	  <div class="author tc">
+		  {$article.author|escape:html} / {$article.add_time}
+		  <div class="articleSize tr">[<a href="javascript:articleSize('16','30')">大</a>] [<a href="javascript:articleSize('14','24')">中</a>] [<a href="javascript:articleSize('12','21')">小</a>]</div>
+	  </div>
+		<!-- {if $article.content } -->
+		<div id="article" class="word">
+		 {$article.content}
+		</div> 
+		<!-- {/if} -->
+		{if $article.open_type eq 2 or $article.open_type eq 1}
+			<div class="tr"><a href="{$article.file_url}" target="_blank"><u>{$lang.relative_file}</u></a></div>
+		{/if}
+		 <div class="articlePrev">
+			<!-- 上一篇文章 -->
+				 {$lang.next_article}：
+				 {if $next_article}
+				 <a href="{$next_article.url}">{$next_article.title}</a>
+				 {else}
+				 Empty！
+				 {/if}<br />
+			 <!-- 下一篇文章 -->
+				{$lang.prev_article}：
+				{if $prev_article}
+				<a href="{$prev_article.url}">{$prev_article.title}</a>
+				{else}
+				 Empty！
+				{/if}
+		 </div>
+	</div>	
+	<!-- #BeginLibraryItem "/library/comments.lbi" --><!-- #EndLibraryItem -->
+	<!-- TemplateBeginEditable name="右边区域" -->
+
+  <!-- TemplateEndEditable -->
+	</div>
+ </div>
+ <div class="block">
+<div class="blank23"></div>
+<!-- #BeginLibraryItem "/library/help.lbi" --><!-- #EndLibraryItem -->
+</div>
+<div class="blank23"></div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

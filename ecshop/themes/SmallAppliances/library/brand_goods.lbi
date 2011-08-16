@@ -1,0 +1,19 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <div class="ModBox4 ModelContant">
+		<div class="ModTit2"><b><font class="f_l">{$goods_brand.name|escape:html}</font></b><div class="f_r more"><a href="{$goods_brand.url}">更多</a></div></div>
+		<div class="mod2Content Goodpromotion">
+<!--{foreach from=$brand_goods item=goods}-->
+	 <div class="goodsbox">
+	  <div class="imgbox"><a href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}" /></a></div>
+   <a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.short_name|escape:html}</a><br />
+   <!-- {if $goods.promote_price neq ""} -->
+   {$lang.promote_price}<b class="f1">{$goods.promote_price}</b><br>
+   <!-- {else}-->
+   {$lang.shop_price}<b  class="f1">{$goods.shop_price}</b><br>
+   <!--{/if}-->
+	</div>
+ <!--{/foreach}-->
+</div>
+		</div>
+
+

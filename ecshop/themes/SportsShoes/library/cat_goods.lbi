@@ -1,0 +1,21 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="blank10"></div>
+<h3 class="modTit1">
+ <div class="LPor">{$goods_cat.name|escape:html}</div>
+ <div class="R">&nbsp;</div>
+</h3>
+<div class="blank10"></div>
+<div class="new">
+  <!--{foreach from=$cat_goods item=goods}-->
+  <div class="goodsbox">
+   <div class="imgbox"><a href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}" /></a></div>
+   <a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.short_name|escape:html}</a><br />
+   <!-- {if $goods.promote_price neq ""} -->
+   {$lang.promote_price}<strong class="price">{$goods.promote_price}</strong><br>
+   <!-- {else}-->
+   {$lang.shop_price}<strong class="price">{$goods.shop_price}</strong>
+   <!--{/if}-->
+ </div>
+ <!--{/foreach}-->
+<div class="more tr"><a href="{$goods_cat.url}"><img src="images/more.gif" alt="more"></a></div>
+</div>

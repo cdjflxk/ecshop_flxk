@@ -1,0 +1,8 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+ <div class="ModBox4 ModelContant">
+		<div class="ModTit2"><b><font class="f_l"><a href="{$articles_cat.url}">{$articles_cat.name|escape:html}</a></font></b><div class="f_r"><a href="{$articles_cat.url}" class="more">更多</a></div></div>
+		 <!--{foreach from=$articles item=article_item}-->
+   <a href="{$article_item.url}" title="{$article_item.title|escape:html}" class="TxtDot">{$article_item.short_title|truncate:14}</a><br />
+   <!--{/foreach}-->
+		</div>

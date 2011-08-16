@@ -1,0 +1,24 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $article_categories } -->
+<div class="PublicModule2">
+ <span class="R"></span>
+ <h3 class="Txt">{$lang.article_cat}</h3> 
+</div>
+<div class="PublicBoder">
+ <div class="BorderBlank">
+	<ul>
+	 <!--{foreach from=$article_categories item=cat}-->
+	 <li>
+    ·<a href="{$cat.url}"><strong>{$cat.name|escape:html}</strong></a>
+      <div style="margin-left:5px;">
+      <!--{foreach from=$cat.children item=child}-->
+      <a href="{$child.url}" style="background:none;">{$child.name|escape:html}</a><br>
+      <!--{/foreach}-->
+      </div>
+			</li>
+    <!--{/foreach}-->	
+				</ul>
+ </div>
+ </div>
+<div class="Blank10"></div>
+<!--{/if} -->

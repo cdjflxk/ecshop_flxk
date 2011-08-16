@@ -1,0 +1,174 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript">
+var process_request = "{$lang.process_request}";
+</script>
+
+
+<script language="javascript"> 
+<!--
+/*屏蔽所有的js错误*/
+function killerrors() { 
+return true; 
+} 
+window.onerror = killerrors; 
+//-->
+</script>
+ <div class="width100h" style="height:130px;">
+   <div class="width972" style="margin:0 auto;">
+      <div class="left padleft20" style="margin-top:35px; width:250px;"><a href="index.php"><img src="images/logo.jpg" border="0" /></a></div>
+      
+    
+      <div class="right" align="right" style="line-height:30px; width:400px; ">
+        <!--{if $navigator_list.top}-->
+            <!-- {foreach name=nav_top_list from=$navigator_list.top item=nav} -->
+            <a href="{$nav.url}" <!-- {if $nav.opennew eq 1} --> target="_blank" <!-- {/if} -->>{$nav.name}</a>
+            <!-- {if !$smarty.foreach.nav_top_list.last} -->
+             |
+            <!-- {/if} -->
+    <!-- {/foreach} -->
+     <!-- {/if} -->
+     <div align="right" style="height: 60px; padding-top: 20px;" class="clr">
+     <img src="../images/tel.jpg">
+      </div>
+      </div>
+      
+      <div class="left" style="width:280px;  margin-top:100px; text-align:center;">
+        {insert_scripts files='utils.js'}
+   <font id="ECS_MEMBERZONE">{* ECSHOP 提醒您：根据用户id来调用member_info.lbi显示不同的界面  *}{insert name='member_info'} </font>
+       </div>
+      </div>  
+  </div>
+  <div class="width100h nav_bg">
+ <div id="Nav" class="clearfix">
+<div id="mainNav" class="f_l" style="width:800px;">
+<ul class="nav_con">
+ <li class="nav_top"><a href="../index.php"{if $navigator_list.config.index eq 1} class="cur"{/if} ><span style="padding:8px;">首&nbsp;&nbsp;&nbsp;页</span></a></li>
+  <!-- {foreach name=nav_middle_list from=$navigator_list.middle item=nav} -->
+  <li class="nav_top" onMouseOver="sw_nav(this,1);" onMouseOut="sw_nav(this,0);"><a href="{$nav.url}" {if $nav.opennew eq 1}target="_blank" {/if} {if $nav.active eq 1} class="cur"{/if} ><span style="padding:8px;">{$nav.name}</span></a>
+  </li>
+ <!-- {/foreach} -->
+ </ul>
+</div>
+<script type="text/javascript">
+      //初始化主菜单
+		function sw_nav(obj,tag)
+		{
+
+			var subdivs = obj.getElementsByTagName("ul");
+			var subiframes = obj.getElementsByTagName("iframe");
+			
+			if(subdivs.length>0)
+			{
+
+				if(tag==1)
+				{
+					subdivs[0].style.display = "block";
+					subiframes[0].style.display = "block";
+					
+				}
+				else
+				{
+					subdivs[0].style.display = "none";
+					subiframes[0].style.display = "none";
+				}
+				
+			}
+		}
+
+      </script>
+
+<div class="right f18 pad8"><a class="about" href="article.php?id=4" target="_blank">About US </a></div>
+</div>
+
+  </div>
+  <div class="seach_bg clearfix" >
+   <div class="" style="margin:0 auto; background:#CAA667; padding-left:9px; padding-right:8px; padding-top:0px; width:964px; height:28px; *height:30px; " >
+      <script type="text/javascript">
+    {literal}
+    <!--
+    function checkSearchForm()
+    {
+        if(document.getElementById('keyword').value !="请输入产品编号或关键词" && document.getElementById('keyword').value !='')
+        {
+            return true;
+        }
+        else
+        {
+            alert("{$lang.no_keywords}");
+            return false;
+        }
+    }
+    -->
+    {/literal}
+    </script>
+   <FORM id="searchForm"  name="searchForm" action="search.php" onsubmit="return checkSearchForm()">
+          <div class="searchcon">
+            <label>
+              <input type="text" class="inp_ser2" id="keyword" name="keywords" onfocus="if(this.value=='请输入产品编号或关键词'){this.value='';}" onblur="if(this.value==''){this.value='请输入产品编号或关键词';}" value="请输入产品编号或关键词"/>
+            </label>
+            <label>
+              <input type="submit" class="btn_ser" title="搜索" value="搜索" />
+            </label> &nbsp;&nbsp;&nbsp;
+           {$lang.hot_search} ：        {foreach from=$searchkeywords item=val}
+   <a href="search.php?keywords={$val|escape:url}">{$val}</a>&nbsp;&nbsp;
+   {/foreach}
+        </div>
+          <div class="shopcart" style=" padding-top:0px;">{insert name='cart_info'}
+
+ 
+          </div>  </FORM>
+          <div style="height:0px; line-height:0px; clear:both;"></div>
+          </div>         
+  </div>
+
+<?php
+function get_subcate_byurl($url)
+{
+	$rs = strpos($url,"category");
+	if($rs!==false)
+	{
+		preg_match("/\d+/i",$url,$matches);
+		$cid = $matches[0];
+		$cat_arr = array();
+		$sql = "select * from ".$GLOBALS['ecs']->table('category')." where parent_id=".$cid." and is_show=1 ORDER BY sort_order ASC, cat_id ASC";
+		$res = $GLOBALS['db']->getAll($sql);
+		
+		foreach($res as $idx => $row)
+		{
+			$cat_arr[$idx]['id']   = $row['cat_id'];
+            $cat_arr[$idx]['name'] = $row['cat_name'];
+            $cat_arr[$idx]['url']  = build_uri('category', array('cid' => $row['cat_id']), $row['cat_name']);
+			$cat_arr[$idx]['children'] = get_clild_list($row['cat_id']);
+		}
+
+		return $cat_arr;
+	}
+	else 
+	{
+		return false;
+	}
+}
+
+function get_clild_list($pid)
+{
+    $sql_sub = "select * from ".$GLOBALS['ecs']->table('category')." where parent_id=".$pid." and is_show=1 ORDER BY sort_order ASC, cat_id ASC";
+
+	$subres = $GLOBALS['db']->getAll($sql_sub);
+	if($subres)
+	{
+		foreach ($subres as $sidx => $subrow)
+		{
+			$children[$sidx]['id']=$subrow['cat_id'];
+			$children[$sidx]['name']=$subrow['cat_name'];
+			$children[$sidx]['url']=build_uri('category', array('cid' => $subrow['cat_id']), $subrow['cat_name']);
+		}
+	}
+	else 
+	{
+		$children = null;
+	}
+			
+	return $children;
+}
+?>
+<div class="blank"></div>

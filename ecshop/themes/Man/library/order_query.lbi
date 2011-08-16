@@ -1,0 +1,41 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="Blank10"></div>
+<!--{if empty($order_query)}-->
+<script>var invalid_order_sn = "{$lang.invalid_order_sn}"</script>
+<div class="PublicModule2">
+ <span class="R"></span>
+ <h3 class="invoice"></h3> 
+</div>
+<div class="PublicBoder">
+ <div class="BorderBlank tc">
+<br />
+	  <form name="ecsOrderQuery">
+    <input type="text" name="order_sn" class="InputBorder" /><br />
+    <div class="Blank10"></div>
+    <input type="button" value="{$lang.query_order}" class="bnt_number6" onclick="orderQuery()" />
+    </form>
+    <div id="ECS_ORDER_QUERY" style="margin-top:8px;">
+      <!--{else}-->
+      <!--{if $order_query.user_id}-->
+{$lang.order_number}：<a href="user.php?act=order_detail&order_id={$order_query.order_id} class="fblck"">{$order_query.order_sn}</a><br>
+  <!--{else}-->
+{$lang.order_number}：{$order_query.order_sn}<br>
+  <!--{/if}-->
+{$lang.order_status}：<br><font class="fblck">{$order_query.order_status}</font><br>
+  <!--{if $order_query.invoice_no }-->
+{$lang.consignment}：{$order_query.invoice_no}<br>
+  <!--{/if}-->
+      <!--{if $order_query.shipping_date}-->
+			{$lang.shipping_date}： {$order_query.shipping_date}<br>
+  <!--{/if}-->
+  <!--{/if}-->
+  </div>
+	</div>
+</div>
+<div class="Blank10"></div>
+
+
+
+ 
+    
+ 

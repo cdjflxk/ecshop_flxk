@@ -1,0 +1,19 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <div class="PublicBorderTwo">
+   <h3 class="F14B">{$goods_cat.name|escape:html}
+   <a href="{$goods_cat.url}"><span class="MorePic"></span></a>
+   </h3>
+   <div class="clearfix Conwid4">
+   <!--{foreach from=$cat_goods item=goods}-->
+   <div class="goodsbox">
+   <div class="imgbox"><a href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}" /></a></div>
+   <a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.short_name|escape:html}</a><br />
+   <!-- {if $goods.promote_price neq ""} -->
+   {$lang.promote_price}<strong class="price">{$goods.promote_price}</strong><br>
+   <!-- {else}-->
+   {$lang.shop_price}<strong class="price">{$goods.shop_price}</strong>
+   <!--{/if}-->
+   </div>
+ <!--{/foreach}-->
+ </div>
+ </div>

@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js'}
+<script type="text/javascript" src="js/action.js"></script>
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="block clearfix">
+  <div class="PageLeft f_l">
+	 <!-- TemplateBeginEditable name="左边区域" -->
+ <!-- #BeginLibraryItem "/library/category_tree.lbi" --><!-- #EndLibraryItem --> 
+	 <!-- #BeginLibraryItem "/library/cart.lbi" --><!-- #EndLibraryItem -->
+	  <!-- #BeginLibraryItem "/library/article_category_tree.lbi" --><!-- #EndLibraryItem -->
+	 <!-- #BeginLibraryItem "/library/history.lbi" --><!-- #EndLibraryItem -->
+	 <!-- #BeginLibraryItem "/library/promotion_info.lbi" --><!-- #EndLibraryItem -->
+	 	<!-- #BeginLibraryItem "/library/vote_list.lbi" --><!-- #EndLibraryItem -->	
+   <!-- TemplateEndEditable -->
+	</div>
+	<div class="PageRight f_r">	
+	<!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
+	
+	<div class="ModBox2" id="ArticleCat">
+	 <span class="TL"></span>
+	 <span class="TR"></span>
+	 <span class="BL"></span>
+	 <span class="BR"></span>
+	 <h2 class="ModTit">{$lang.article_list}</h2>
+	  <div class="grouplist clearfix">
+	<form action="{$search_url}" name="search_form" method="post" class="fr">
+        <input name="keywords" type="text" id="requirement" value="{$search_value}" size="60" class="InputBorder" />
+        <input name="id" type="hidden" value="{$cat_id}" />
+        <input name="cur_url" id="cur_url" type="hidden" value="" />
+        <input type="submit" value="{$lang.button_search}" class="bnt_number4" />
+  </form>
+	<br />
+	<table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd">
+      <tr>
+        <th bgcolor="#ffffff">{$lang.article_title}</th>
+          <th bgcolor="#ffffff">{$lang.article_author}</th>
+          <th bgcolor="#ffffff">{$lang.article_add_time}</th>
+        </tr>
+      <!-- {foreach from=$artciles_list item=article} -->
+      <tr>
+        <td bgcolor="#ffffff"><a href="{$article.url}" title="{$article.title|escape:html}">{$article.short_title}</a></td>
+          <td bgcolor="#ffffff">{$article.author}</td>
+          <td bgcolor="#ffffff" align="center">{$article.add_time}</td>
+        </tr>
+      <!-- {/foreach} -->
+    </table>
+	</div>
+	</div>
+<script type="text/javascript">divheight("ArticleCat");</script>
+	<!-- #BeginLibraryItem "/library/pages.lbi" --><!-- #EndLibraryItem -->
+	<!-- TemplateBeginEditable name="文章列表下可编辑区域" -->  
+	<!-- #BeginLibraryItem "/library/recommend_best.lbi" --><!-- #EndLibraryItem -->
+	<!-- #BeginLibraryItem "/library/recommend_new.lbi" --><!-- #EndLibraryItem -->
+  <!-- TemplateEndEditable -->
+	</div>
+</div>
+<div class="block">
+<div class="blank23"></div>
+<!-- #BeginLibraryItem "/library/help.lbi" --><!-- #EndLibraryItem -->
+</div>
+<div class="blank23"></div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+<script type="text/javascript">
+document.getElementById('cur_url').value = window.location.href;
+</script>
+</html>

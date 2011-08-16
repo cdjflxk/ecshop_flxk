@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js'}
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<!--主体内容 start-->
+<div class="Area clearfix">
+<div class="box">
+ <div class="tit">
+ <h2>{$lang.system_info}</h2>
+ </div>
+ <div class="contant clearfix">
+ <div class="tips">{$message}</div>
+      <div class="tl">
+        <!--{if $virtual_card}-->
+         <!--{foreach from=$virtual_card item=vgoods}-->
+          <font class="f12b fred">{$vgoods.goods_name}</font><br />
+            <!--{foreach from=$vgoods.info item=card}-->
+              <!--{if $card.card_sn}-->
+              {$lang.card_sn}：<font class="f12b">{$card.card_sn}</font><br />
+              <!--{/if}-->
+              <!--{if $card.card_password}-->
+              {$lang.card_password}：<font class="f12b">{$card.card_password}</font><br />
+              <!--{/if}-->
+              <!--{if $card.end_date}-->
+              {$lang.end_date}：{$card.end_date}<br />
+              <!--{/if}-->
+            <!--{/foreach}-->
+          <!--{/foreach}-->
+       <!--{/if}-->
+       <a href="{$shop_url}">{$lang.back_home}</a>
+      </div>  
+ </div>     
+</div>
+</div>
+<!--主体内容 end-->
+<!-- #BeginLibraryItem "/library/help.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

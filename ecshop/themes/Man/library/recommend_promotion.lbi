@@ -1,0 +1,131 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $promotion_goods} -->
+<div id="promotin">
+ <h3></h3><a href="../search.php?intro=promotion"><span class="titmore"></span></a>
+ <div class="cont clearfix">
+  <div class="bggoud">
+	<div class="clearfix scrollBox">
+			  <div class="scroL" onmouseover="moveLeft(); this.className='scroL_1'" onmousedown="clickLeft()" onmouseup="moveLeft()" onmouseout="scrollStop();this.className='scroL'"></div>
+				<div class="scroMid">
+				  <div id="demo">
+          <div id="demo1" style="float:left">
+					<ul>
+					<!--{foreach from=$promotion_goods item=goods name="promotion_foreach"}-->
+					<li>
+            <div class="today">
+            <div class="photo"><a href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}" /></a></div>
+            <p><a href="{$goods.url}">{$goods.short_name|escape:html}</a></p>
+            <font class="shop">{$lang.promote_price}{$goods.promote_price}</font>				   
+            </div>
+						</li>
+<!--{/foreach}-->
+</ul>
+					</div>
+          <div id="demo2" style="display:inline; overflow:visible;"></div>
+          </div>
+				</div>
+				<div class="scroR" onmouseover="moveRight(); this.className='scroR_1'" onmousedown="clickRight()" onmouseup="moveRight()" onmouseout="scrollStop(); this.className='scroR';"></div>	
+			</div>
+  </div>
+ </div>
+</div>
+<div class="blank5"></div>
+<script type="text/javascript">
+      function $(id){  
+        return (document.getElementById) ? document.getElementById(id): document.all[id]
+      }
+      
+      var boxwidth=166;//跟图片的实际尺寸相符
+      
+      var box=$("demo");
+      var obox=$("demo1");
+      var dulbox=$("demo2");
+      obox.style.width=obox.getElementsByTagName("li").length*boxwidth+'px';
+      dulbox.style.width=obox.getElementsByTagName("li").length*boxwidth+'px';
+      box.style.width=obox.getElementsByTagName("li").length*boxwidth*3+'px';
+      var canroll = false;
+      if (obox.getElementsByTagName("li").length >= 4) {
+        canroll = true;
+        dulbox.innerHTML=obox.innerHTML;
+      }
+      var step=5;temp=1;speed=50;
+      var awidth=obox.offsetWidth;
+      var mData=0;
+      var isStop = 1;
+      var dir = 1;
+      
+      function s(){
+        if (!canroll) return;
+        if (dir) {
+      if((awidth+mData)>=0)
+      {
+      mData=mData-step;
+      }
+      else
+      {
+      mData=-step;
+      }
+      } else {
+        if(mData>=0)
+        {
+        mData=-awidth;
+        }
+        else
+        {
+        mData+=step;
+        }
+      }
+      
+      obox.style.marginLeft=mData+"px";
+      
+      if (isStop) return;
+      
+      setTimeout(s,speed)
+      }
+      
+      
+      function moveLeft() {
+          var wasStop = isStop;
+          dir = 1;
+          speed = 50;
+          isStop=0;
+          if (wasStop) {
+            setTimeout(s,speed);
+          }
+      }
+      
+      function moveRight() {
+          var wasStop = isStop;
+          dir = 0;
+          speed = 50;
+          isStop=0;
+          if (wasStop) {
+            setTimeout(s,speed);
+          }
+      }
+      
+      function scrollStop() {
+        isStop=1;
+      }
+      
+      function clickLeft() {
+          var wasStop = isStop;
+          dir = 1;
+          speed = 25;
+          isStop=0;
+          if (wasStop) {
+            setTimeout(s,speed);
+          }
+      }
+      
+      function clickRight() {
+          var wasStop = isStop;
+          dir = 0;
+          speed = 25;
+          isStop=0;
+          if (wasStop) {
+            setTimeout(s,speed);
+          }
+      }
+      </script>
+<!-- {/if} -->

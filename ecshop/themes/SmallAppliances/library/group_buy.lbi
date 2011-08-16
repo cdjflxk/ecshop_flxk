@@ -1,0 +1,19 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $group_buy_goods} -->
+	<h1 class="GoundTit"><div class="GoundTitTxt f_l">{$lang.group_buy_goods}</div><div class="f_r"><a href="group_buy.php">更多 >></a></div></h1>		
+	<div class="ModelContent clearfix">	
+	<!--{foreach from=$group_buy_goods item=goods name=groud_list}-->	
+	<div class="ModelGoos">
+	<div class="imgbox">
+	{if $smarty.foreach.groud_list.index lt 1}
+	<a href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.goods_name|escape:html}" /></a>
+	{else}
+	 <a href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.goods_name|escape:html}" class="Shmllimg" />		 
+	 {/if}
+	 </div>
+	 <a href="{$goods.url}" title="{$goods.goods_name|escape:html}">{$goods.short_style_name|escape:html}</a><br />
+   {$lang.last_price}<b class="f1">{$goods.last_price}</b>
+	</div>		
+ <!--{/foreach}-->
+	</div>
+<!-- {/if} -->

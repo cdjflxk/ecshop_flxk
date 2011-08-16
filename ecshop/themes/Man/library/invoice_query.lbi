@@ -1,0 +1,28 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--{if $invoice_list}-->
+<style type="text/css">
+.vote{
+border-bottom:1px dashed #ccc;
+margin:0 6px;
+padding:6px;
+background-color:#FFFFFF;
+}
+.vote form{display:inline;}
+.vote form a{ text-decoration:underline;}
+</style>
+<div class="Blank10"></div>
+<div class="PublicModule2">
+ <span class="R"></span>
+ <h3 class="order"></h3> 
+</div>
+<div class="PublicBoder">
+  <!-- 发货单查询{foreach name=invoice from=$invoice_list item=invoice} -->
+  <!-- {if $smarty.foreach.invoice.index lt 10} 限制显示数量 -->
+  <div class="vote">
+   <strong>{$lang.order_number}</strong> {$invoice.order_sn}<br />
+   <strong>{$lang.consignment}</strong> {$invoice.invoice_no}<br />
+  </div>
+  <!-- {/if} -->
+   <!-- 结束发货单查询{/foreach}-->
+</div>
+<!-- {/if} -->

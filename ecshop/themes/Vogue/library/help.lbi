@@ -1,0 +1,18 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="blank10"></div>
+<div class="Area clearfix">
+<!--{if $helps}-->
+<div class="help clearfix">
+<div class="Rightline"></div>
+<!-- {foreach from=$helps item=help_cat} -->
+<dl>
+<dt>{$help_cat.cat_name}</dt>
+<!-- {foreach from=$help_cat.article item=item} -->
+<dd>·<a href="{$item.url}" title="{$item.title|escape:html}">{$item.short_title}</a></dd>
+ <!-- {/foreach} -->
+</dl>
+<!-- {/foreach} -->
+</div>
+<!--{/if}-->
+</div>
+<div class="blank10"></div>

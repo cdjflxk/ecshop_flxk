@@ -1,0 +1,19 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="CategoryTree">
+ <span class="Top"></span>
+ <span class="Bottom"></span>
+  <!--{foreach from=$categories item=cat}-->
+    <div class="Categories clearfix">
+   <a href="{$cat.url}"><strong>{$cat.name|escape:html}</strong></a>
+   <!--{if $cat.cat_id}-->   
+   <ul> 
+     <li>
+     <!--{foreach name=childs from=$cat.cat_id item=child}-->   
+     ·<a href="{$child.url}" title="{$child.name|escape:html}">{$child.name|escape:html}</a>    
+   <!--{/foreach}--> 
+   </li>
+   </ul>   
+   <!--{/if}-->
+   </div>  
+   <!--{/foreach}-->
+</div>

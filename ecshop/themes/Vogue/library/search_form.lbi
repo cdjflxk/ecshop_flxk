@@ -1,0 +1,81 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="SearchBg">
+ <!--search start-->
+ <ul class="Area">
+ {insert_scripts files='transport.js,utils.js'}
+   <li class="UserWid f_l" id="ECS_MEMBERZONE">
+
+   {* ECSHOP 提醒您：根据用户id来调用member_info.lbi显示不同的界面  *}{insert name='member_info'}
+  </li>
+  <li class="f_r">
+    <div class="Find">
+   <form id="searchForm" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()"  style="_position:relative; top:6px;">
+   <select name="category" id="category">
+      <option value="0">{$lang.all_category}</option>
+      {$category_list}
+    </select>
+   <input name="keywords" type="text" id="keyword" value="{$search_keywords|escape}" class="UserInput" size="30"/>
+   <input name="imageField" type="submit" value="搜索" class="bnt_number2" style="cursor:pointer;" /> 
+  <a href="search.php?act=advanced_search"><img src="../images/gj.gif" style=" position:relative; top:3px;" ></a>
+   </form>
+    <ul class="searchkeywords">
+    <li class="keyslist f_l">
+   <script type="text/javascript">
+    {literal}
+    <!--
+    function checkSearchForm()
+    {
+        if(document.getElementById('keyword').value)
+        {
+            return true;
+        }
+        else
+        {
+            alert("{$lang.no_keywords}");
+            return false;
+        }
+    }
+    -->
+    {/literal}
+    </script>
+    {if $searchkeywords}
+    {$lang.hot_search} ：
+    {foreach from=$searchkeywords item=val}
+    <a href="search.php?keywords={$val|escape:url}">{$val}</a>
+    {/foreach}
+    {/if} 
+   </li>
+   <li>
+   <div id="ECS_CARTINFO">
+     <span></span>
+     {insert_scripts files='transport.js'}
+     {insert name='cart_info'}
+     </div>
+   </li>
+   </ul>
+   </div>   
+  </li>
+ </ul>
+<!--search end-->
+</div>
+<div class="blank2"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="blank10"></div>
+<!-- {if $hot_goods} -->
+<div class="clearfix">
+<h3 class="RecHot f_l"></h3>
+<a href="../search.php?intro=hot"><span class="more f_r"></span></a>
+</div>
+<div class="LineOne"></div>
+  <ul class="Hot">
+   <li class="f_l Conwid3">
+    <!--{foreach from=$hot_goods item=goods}-->
+      <div class="goodsbox">
+      <div class="imgbox"><a href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}" /></a></div>
+      <a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.short_style_name}</a><br />
+      <!-- {if $goods.promote_price neq ""} -->
+      {$lang.promote_price}<strong class="price">{$goods.promote_price}</strong><br />
+      <!-- {else}-->
+      {$lang.shop_price}<strong class="price">{$goods.shop_price}</strong>
+      <!--{/if}-->
+      </div>
+      <!--{/foreach}-->
+  </li>
+  <li class="f_r HotAd"><img src="../images/hotad.gif" /></li>
+ </ul>
+<!-- {/if} -->

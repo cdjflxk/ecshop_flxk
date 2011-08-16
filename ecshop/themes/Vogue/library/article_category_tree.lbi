@@ -1,0 +1,17 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $article_categories } -->
+<div class="Attrbox">
+ <span class="Top"><h2 class="tc">{$lang.article_cat}</h2></span>
+ <span class="Bottom"></span>
+   <ul class="ContMenu">
+  <!--{foreach from=$article_categories item=cat}-->
+   <li>
+  <a href="{$cat.url}"><strong>{$cat.name|escape:html}</strong></a><br />
+  <!--{foreach from=$cat.children item=child}-->
+   &nbsp;&nbsp;·<a href="{$child.url}">{$child.name|escape:html}</a><br />
+  <!--{/foreach}-->
+  </li>  
+  <!--{/foreach}-->
+  </ul>
+</div>
+<!--{/if} -->

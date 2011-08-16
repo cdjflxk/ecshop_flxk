@@ -1,0 +1,28 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $new_articles} -->
+<div class="News">
+	  <h2>{$lang.new_article}</h2>
+		<ul id="newArt">
+		<!-- {foreach name=new_articles from=$new_articles item=article} -->
+		<!-- {if $smarty.foreach.new_articles.index lt 6} 限制文章显示数量 -->
+		<li>
+		·<a href="{$article.url}" title="{$article.title|escape:html}" class="txtdot">{$article.short_title|truncate:14}</a>
+		</li>
+		<!-- {/if} -->	
+		<!--{/foreach}-->
+		</ul>
+</div>
+<script type="text/javascript">
+var newArt = document.getElementById("newArt");
+var itemA = newArt.getElementsByTagName("li");
+var linum = itemA.length;
+for(var i=0;i<linum;i++){
+
+ if(i%2==0){
+  itemA[i].className= "LinksOne";
+  }else{
+	itemA[i].className= "LinksTwo";
+	}
+}
+</script>
+<!-- {/if} -->
