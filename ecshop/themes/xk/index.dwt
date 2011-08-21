@@ -1,14 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
+<!-- saved from url=(0023)/ -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta name="Generator" content="ECSHOP v2.7.2" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <title>月夜星空软件工作室</title>
 <meta name="keywords" content="域名注册|网络实名|主机租赁|企业邮局|网站策划|企业邮局|主机托管|主机租用|服务器租用">
 <meta name="description" content="虚拟主机服务商，提供南北互通的双线单IP虚拟主机、域名注册服务、企业邮局、CDN网页加速等服务">
-<link href="themes/xk/style.css" rel="stylesheet" type="text/css">
+<link href="style.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" async="" src="themes/xk/js/ga.js"></script>
 <script src="themes/xk/js/flashobj.js" type="text/javascript"></script>
 <script type="text/javascript" src="themes/xk/js/dme_input.js"></script>
@@ -120,11 +119,11 @@
             <table width="90%" height="217" border="0" cellpadding="0" cellspacing="0">
 			  <tbody><tr>
 				<td align="left" valign="top">
-					
+					<!-- @News Tag -->
 					<ul class="infoul">
 						&nbsp;
 					</ul>
-					
+					<!-- #News Tag -->
 				</td>
 			  </tr>
 			</tbody></table>
@@ -150,11 +149,11 @@
             <table width="90%" border="0" cellpadding="0" cellspacing="0">
 			  <tbody><tr>
 				<td align="left" height="198" valign="top">
-					
+					<!-- @News Tag -->
 					<ul class="infoul">
 						&nbsp;
 					</ul>
-					
+					<!-- #News Tag -->
 				</td>
 			  </tr>
 			</tbody></table>
@@ -555,11 +554,11 @@
 			<table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
 			  <tbody><tr>
 				<td align="left" valign="top">
-					
+					<!-- @indexguideList Tag -->
 					<ul class="infoul" valign="top">
 						<li><a title="互联网网站接入备案中心" href="http://www.miibeian.gov.cn/" target="_target">互联网网站接入备案中心</a></li><li><a title="所有产品及价格列表" href="/help/price.asp" target="_self">所有产品及价格列表</a></li><li><a title="产品管理平台入口" href="http://www.idccenter.net/" target="_target">产品管理平台入口</a></li><li><a title="在线咨询反馈" href="/help/postQues.asp" target="_self">在线咨询反馈</a></li>
 					</ul>
-					
+					<!-- #indexguideList Tag -->
 				</td>
 			  </tr>
 			</tbody></table>
@@ -590,11 +589,11 @@
         <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
 		  <tbody><tr>
 			<td align="left" valign="top">
-				
+				<!-- @HelpList Tag -->
 				<ul class="infoul">
 					<li><a title="如何购买虚拟主机空间？" href="/help/hst_b.asp" target="_self">如何购买虚拟主机空间？</a></li><li><a title="如何解析域名到我的主机？" href="/help/dme_g.asp#2" target="_self">如何解析域名到我的主机？</a></li><li><a title="如何解析泛域名？" href="/help/dme_g.asp#4" target="_self">如何解析泛域名？</a></li><li><a title="如何作邮件交换记录(MX)？" href="/help/dme_d.asp" target="_self">如何作邮件交换记录(MX)？</a></li><li><a title="提供何种域名管理功能？" href="/help/dme_b.asp" target="_self">提供何种域名管理功能？</a></li><li><a title="如何修改主机上传密码？" href="/help/hst_d.asp#2" target="_self">如何修改主机上传密码？</a></li><li><a title="怎么样申请企业邮局？" href="/help/eml_b.asp#1" target="_self">怎么样申请企业邮局？</a></li><li><a title="怎么样发送附件？" href="/help/eml_e.asp#2" target="_self">怎么样发送附件？</a></li><li><a title="1分钱体验在线支付平台购物" href="/help/pay.asp" target="_self">1分钱体验在线支付平台购物</a></li>
 				</ul>
-				
+				<!-- #HelpList Tag -->
 			</td>
 		  </tr>
 		</tbody></table>
