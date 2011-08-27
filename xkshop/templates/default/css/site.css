@@ -18,7 +18,7 @@
     line-height: 32px;
     padding: 5px;
     width: 750px;
-	font-family:Verdana,Arial,Helvetica,sans-serif,'宋体';
+	font-family:Verdana,Arial,Helvetica,sans-serif,'瀹嬩綋';
 	font-size:12px; 
 }
 
@@ -28,7 +28,7 @@
 #page1 a:hover{background:url(/ucenter/skins/common/images/page_li_hover_bg.gif); color:#fff;}
 
 /* CSS Document */
-/*首页*/
+/*棣栭〉*/
 #web_top,#web_diy,#web_make{ width:943px; height:342px; margin:0px auto; overflow:hidden; background:url(../images/topimg.jpg) no-repeat top right;}
 	#web_diy{ background:url(../images/topimg_diy.jpg) no-repeat top right;}
 	#web_make{ background:url(../images/topimg_web.jpg) no-repeat top right;}
@@ -50,7 +50,7 @@
 	
 #webmain{width:98%; margin:0px auto; overflow:hidden; margin-top:10px; }
 	#web_left{ width:743px; float:left;}
-	/*套餐*/
+	/*濂楅*/
 		#s_page,#b_page{ width:743px;overflow:hidden; position: relative; line-height:25px; }
 		#s_page .feature, #b_page .feature { position: absolute; left: 8px; top: 218px; color: #999; line-height:20px; font-size:12px;font-family:"Microsoft YaHei", SimSun, Arial, Helvetica, sans-serif; /* padding-bottom: 1px; */ }
 		#s_page .feature { color: #c32323; /* border-bottom: 1px solid #c32323; */ }
@@ -72,7 +72,7 @@
 				#page .page_pro tr .webbuy{background:url(../images/bg.gif) no-repeat 0px -549px; width:82px; height:20px; display:block; float:left; margin-right:5px;}
 				#page .page_pro tr .webmore{background:url(../images/bg.gif) no-repeat 0px -569px; width:72px; height:20px; display:block;float:left;}
 	
-	/*模板展示*/
+	/*妯℃澘灞曠ず*/
 	#template_show{width:743px; margin-top:10px;overflow:hidden; padding-top:25px;}
 		#template_show .top{ height:35px;margin-bottom:10px;}
 		#template_show .top .l{font-family:"Microsoft Yahei"; color:#e93002; font-size:16px; padding-left:6px; padding-right:6px;margin-left:2px; float:left; line-height:35px; border-bottom:solid 2px #f5be89;}
@@ -147,7 +147,7 @@
 	#web_contact li textarea{ width:160px; height:80px; background:#fff; border-bottom:#e2e3e2 solid 1px;border-RIGHT:#e2e3e2 solid 1px;border-TOP:#a2a2a2 solid 1px;border-LEFT:#a2a2a2 solid 1px;color:#333333; color:#bea991; line-height:18px; font-size:12px; padding:5px;}
 	#web_contact li textarea:hover{ width:160px; height:80px; background:#fffced; border:#ffd48f solid 1px; color:#956c3a; line-height:18px;}
 	
-	/* 产品列表*/
+	/* 浜у搧鍒楄〃*/
 #web_pro{overflow:hidden;}
 	#web_pro .prott,#web_pro .prott .l,#web_pro .prott .r{ height:43px;line-height:43px; margin-top:4px; overflow:hidden}
 		#web_pro .prott .l{font-size:18px;font-family:"Microsoft Yahei"; color:#e1390c; padding-left:15px; float:left}
@@ -180,7 +180,7 @@
 	#webtitle .l span,#webbuy .l span{color:#f15209;}
 	#webtitle .r,#webbuy .r{ float:right; padding-top:10px;}
 	
-/* 提示*/
+/* 鎻愮ず*/
 #tishi{ border:#ffd99b 1px solid; background:#fff3d6; padding:0px; margin-top:10px; overflow:hidden}
 	#tishi .bg{background:#fffced; height:120px; overflow:hidden;}
 	#tishi .bg .left{ width:101px; color:#c94112; float:left; line-height:123px; font-weight:bold; text-align:center; background:url(../images/!.gif) no-repeat 25px 24px;;}
@@ -189,7 +189,7 @@
 	#tishi .bg .right li{ padding-bottom:10px; padding-top:10px; line-height:18px; }
 	#tishi .bg .right li a{ color:#C00; text-decoration:underline}
 	
-/* 购买*/
+/* 璐拱*/
 #buydomain{ }
 	#buydomain .bz1,#buydomain .bz2,#buydomain .bz3,#buydomain .bz4,#buydomain .bz5{ width:110px; height:85px; background:url(../images/buybg.gif) no-repeat 40px -132px; overflow:hidden; float:left; margin-left:25px; margin-right:25px }
 		#buydomain .bz2{ background:url(../images/buybg.gif) no-repeat -41px -132px;}
@@ -220,7 +220,7 @@
 		#buydomain .buylist select,#buydomain .buylist input{vertical-align:middle;color:#444444; font-family:Arial, Helvetica, sans-serif;}
 	
 	
-/* 在线咨询*/
+/* 鍦ㄧ嚎鍜ㄨ*/
 #con{ background:url(/cn/server/images/sn6.gif) repeat-y; width:190px; overflow:hidden; color:#314a72;font-family:MingLiU;font-size:11px; text-align:left; margin-bottom:10px; }
 	#con h1{background:url(/cn/server/images/sn5.gif) no-repeat; height:41px; display:block;  line-height:41px; padding-left:15px; font-weight:normal;font-size:11px;}
 	#con h1 span{ font-family:Arial, Helvetica, sans-serif; font-size:11px;}

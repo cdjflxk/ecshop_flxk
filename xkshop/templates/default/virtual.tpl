@@ -10,18 +10,18 @@
         <table width="85%" height="31" border="0" align="center" cellpadding="0" cellspacing="0">
           <tbody><tr>
             <td width="12%" class="dashed"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-            <td width="88%" align="left" class="dashed"><span class="title">»áÔ±µÇÂ¼</span></td>
+            <td width="88%" align="left" class="dashed"><span class="title">ä¼šå‘˜ç™»å½•</span></td>
           </tr>
         </tbody></table>
           <table width="85%" height="73" border="0" align="center" cellpadding="0" cellspacing="0">
             
             <tbody><tr>
-              <td width="17%" class="blue">ÕÊºÅ:</td>
+              <td width="17%" class="blue">å¸å·:</td>
               <td width="62%"><input name="usrname" type="text" class="input" id="textfield" tabindex="1"></td>
               <td width="21%" rowspan="2"><input type="image" src="./templates/default/images/login.gif" width="40" height="40" tabindex="4"></td>
             </tr>
             <tr>
-              <td class="blue">ÃÜÂë:</td>
+              <td class="blue">å¯†ç :</td>
               <td><input name="usrpass" type="password" class="input" id="textfield2" tabindex="2"></td>
               </tr>
 			
@@ -44,14 +44,14 @@
 		    <table width="98%" height="31" border="0" cellpadding="0" cellspacing="0">
             <tbody><tr>
               <td width="12%" class="dashed"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="88%" align="left" class="dashed"><span class="title">²úÆ··ÖÀà</span></td>
+              <td width="88%" align="left" class="dashed"><span class="title">äº§å“åˆ†ç±»</span></td>
             </tr>
             </tbody></table>
             <table width="90%" border="0" cellpadding="0" cellspacing="0">
               <tbody><tr>
                 <td align="left" valign="top">
 							<!-- @productClass Tag -->
-							<ul id="pdtclslist"><li><a href="http://www.flxkdns.com/pdtshw/hstshw/index.asp?pcid=53&pcnme=%C8%AB%C4%DC%D6%F7%BB%FA">È«ÄÜÖ÷»ú</a></li><li><a href="http://www.flxkdns.com/pdtshw/hstshw/index.asp?pcid=57&pcnme=%BE%B2%CC%AC%D6%F7%BB%FA">¾²Ì¬Ö÷»ú</a></li><li><a href="http://www.flxkdns.com/pdtshw/hstshw/index.asp?pcid=58&pcnme=%2ENET%D6%F7%BB%FA">.NETÖ÷»ú</a></li><li><a href="http://www.flxkdns.com/pdtshw/hstshw/index.asp?pcid=65&pcnme=LINUX%D6%F7%BB%FA">LINUXÖ÷»ú</a></li><li><a href="http://www.flxkdns.com/pdtshw/hstshw/index.asp?pcid=64&pcnme=JSP%D6%F7%BB%FA">JSPÖ÷»ú</a></li><li><a href="http://www.flxkdns.com/pdtshw/hstshw/index.asp?pcid=12&pcnme=%CB%AB%CF%DF%C8%AB%C4%DC%D6%F7%BB%FA">Ë«ÏßÈ«ÄÜÖ÷»ú</a></li><li><a href="http://www.flxkdns.com/pdtshw/hstshw/index.asp?pcid=18&pcnme=%CB%AB%CF%DF%BE%B2%CC%AC%D6%F7%BB%FA">Ë«Ïß¾²Ì¬Ö÷»ú</a></li><li><a href="http://www.flxkdns.com/pdtshw/hstshw/index.asp?pcid=50&pcnme=%CB%AB%CF%DF%2ENET%D6%F7%BB%FA">Ë«Ïß.NETÖ÷»ú</a></li><li><a href="http://www.flxkdns.com/pdtshw/hstshw/index.asp?pcid=14&pcnme=%CB%AB%CF%DFLINUX%D6%F7%BB%FA">Ë«ÏßLINUXÖ÷»ú</a></li><li><a href="http://www.flxkdns.com/pdtshw/hstshw/index.asp?pcid=20&pcnme=%CB%AB%CF%DFJSP%D6%F7%BB%FA">Ë«ÏßJSPÖ÷»ú</a></li><li><a href="http://www.flxkdns.com/pdtshw/hstshw/index.asp?pcid=81&pcnme=%CF%E3%B8%DB%2ENET%D6%F7%BB%FA">Ïã¸Û.NETÖ÷»ú</a></li><li><a href="http://www.flxkdns.com/pdtshw/hstshw/index.asp?pcid=82&pcnme=%CF%E3%B8%DBJSP%D6%F7%BB%FA">Ïã¸ÛJSPÖ÷»ú</a></li><li><a href="http://www.flxkdns.com/pdtshw/hstshw/index.asp?pcid=83&pcnme=%CF%E3%B8%DBLINUX%D6%F7%BB%FA">Ïã¸ÛLINUXÖ÷»ú</a></li><li><a href="http://www.flxkdns.com/pdtshw/hstshw/index.asp?pcid=85&pcnme=%CF%E3%B8%DB%C8%AB%C4%DC%D6%F7%BB%FA">Ïã¸ÛÈ«ÄÜÖ÷»ú</a></li><li><a href="http://www.flxkdns.com/pdtshw/hstshw/index.asp?pcid=86&pcnme=%C3%C0%B9%FA%C8%AB%C4%DC%D6%F7%BB%FA">ÃÀ¹úÈ«ÄÜÖ÷»ú</a></li><li><a href="http://www.flxkdns.com/pdtshw/hstshw/index.asp?pcid=89&pcnme=%C3%C0%B9%FA%2ENET%D6%F7%BB%FA">ÃÀ¹ú.NETÖ÷»ú</a></li></ul>
+							<ul id="pdtclslist"><li><a href="http://www.flxkdns.com/pdtshw/hstshw/index.asp?pcid=53&pcnme=%C8%AB%C4%DC%D6%F7%BB%FA">å…¨èƒ½ä¸»æœº</a></li><li><a href="http://www.flxkdns.com/pdtshw/hstshw/index.asp?pcid=57&pcnme=%BE%B2%CC%AC%D6%F7%BB%FA">é™æ€ä¸»æœº</a></li><li><a href="http://www.flxkdns.com/pdtshw/hstshw/index.asp?pcid=58&pcnme=%2ENET%D6%F7%BB%FA">.NETä¸»æœº</a></li><li><a href="http://www.flxkdns.com/pdtshw/hstshw/index.asp?pcid=65&pcnme=LINUX%D6%F7%BB%FA">LINUXä¸»æœº</a></li><li><a href="http://www.flxkdns.com/pdtshw/hstshw/index.asp?pcid=64&pcnme=JSP%D6%F7%BB%FA">JSPä¸»æœº</a></li><li><a href="http://www.flxkdns.com/pdtshw/hstshw/index.asp?pcid=12&pcnme=%CB%AB%CF%DF%C8%AB%C4%DC%D6%F7%BB%FA">åŒçº¿å…¨èƒ½ä¸»æœº</a></li><li><a href="http://www.flxkdns.com/pdtshw/hstshw/index.asp?pcid=18&pcnme=%CB%AB%CF%DF%BE%B2%CC%AC%D6%F7%BB%FA">åŒçº¿é™æ€ä¸»æœº</a></li><li><a href="http://www.flxkdns.com/pdtshw/hstshw/index.asp?pcid=50&pcnme=%CB%AB%CF%DF%2ENET%D6%F7%BB%FA">åŒçº¿.NETä¸»æœº</a></li><li><a href="http://www.flxkdns.com/pdtshw/hstshw/index.asp?pcid=14&pcnme=%CB%AB%CF%DFLINUX%D6%F7%BB%FA">åŒçº¿LINUXä¸»æœº</a></li><li><a href="http://www.flxkdns.com/pdtshw/hstshw/index.asp?pcid=20&pcnme=%CB%AB%CF%DFJSP%D6%F7%BB%FA">åŒçº¿JSPä¸»æœº</a></li><li><a href="http://www.flxkdns.com/pdtshw/hstshw/index.asp?pcid=81&pcnme=%CF%E3%B8%DB%2ENET%D6%F7%BB%FA">é¦™æ¸¯.NETä¸»æœº</a></li><li><a href="http://www.flxkdns.com/pdtshw/hstshw/index.asp?pcid=82&pcnme=%CF%E3%B8%DBJSP%D6%F7%BB%FA">é¦™æ¸¯JSPä¸»æœº</a></li><li><a href="http://www.flxkdns.com/pdtshw/hstshw/index.asp?pcid=83&pcnme=%CF%E3%B8%DBLINUX%D6%F7%BB%FA">é¦™æ¸¯LINUXä¸»æœº</a></li><li><a href="http://www.flxkdns.com/pdtshw/hstshw/index.asp?pcid=85&pcnme=%CF%E3%B8%DB%C8%AB%C4%DC%D6%F7%BB%FA">é¦™æ¸¯å…¨èƒ½ä¸»æœº</a></li><li><a href="http://www.flxkdns.com/pdtshw/hstshw/index.asp?pcid=86&pcnme=%C3%C0%B9%FA%C8%AB%C4%DC%D6%F7%BB%FA">ç¾Žå›½å…¨èƒ½ä¸»æœº</a></li><li><a href="http://www.flxkdns.com/pdtshw/hstshw/index.asp?pcid=89&pcnme=%C3%C0%B9%FA%2ENET%D6%F7%BB%FA">ç¾Žå›½.NETä¸»æœº</a></li></ul>
 							<!-- #productClass Tag -->
 				</td>
 			  </tr>
@@ -67,7 +67,7 @@
         <tbody><tr>
           <td width="11" height="27" align="left"><img src="./templates/default/images/titlel.gif" width="2" height="29"></td>
           <td width="25"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-          <td width="174" align="left"><span class="title1">Êý¾Ý¿â²úÆ·</span></td>
+          <td width="174" align="left"><span class="title1">æ•°æ®åº“äº§å“</span></td>
           <td width="15" align="right"><img src="./templates/default/images/titler.gif" width="2" height="29"></td>
         </tr>
       </tbody></table>
@@ -79,7 +79,7 @@
 				<td align="left" height="198" valign="top">
 					<!-- @sql productclasslist Tag -->
 					<ul class="infoul">
-						<li><a href="http://www.flxkdns.com/pdtshw/sqlshw/index.asp?pcid=54&pcnme=mysql+4%2E1+%CA%FD%BE%DD%BF%E2">mysql 4.1 Êý¾Ý¿â</a></li><li><a href="http://www.flxkdns.com/pdtshw/sqlshw/index.asp?pcid=55&pcnme=Sql+Server+2000">Sql Server 2000</a></li><li><a href="http://www.flxkdns.com/pdtshw/sqlshw/index.asp?pcid=34&pcnme=%CB%AB%CF%DFmysql5%2E0+%CA%FD%BE%DD%BF%E2">Ë«Ïßmysql5.0 Êý¾Ý¿â</a></li><li><a href="http://www.flxkdns.com/pdtshw/sqlshw/index.asp?pcid=36&pcnme=%CB%AB%CF%DFSql+Server+2005">Ë«ÏßSql Server 2005</a></li><li><a href="http://www.flxkdns.com/pdtshw/sqlshw/index.asp?pcid=69&pcnme=%B5%E7%D0%C5mysql5%2E0+%CA%FD%BE%DD%BF%E2">µçÐÅmysql5.0 Êý¾Ý¿â</a></li><li><a href="http://www.flxkdns.com/pdtshw/sqlshw/index.asp?pcid=70&pcnme=%B5%E7%D0%C5Sql+Server+2005">µçÐÅSql Server 2005</a></li><li><a href="http://www.flxkdns.com/pdtshw/sqlshw/index.asp?pcid=90&pcnme=%CF%E3%B8%DBmysql5%2E0+%CA%FD%BE%DD%BF%E2">Ïã¸Ûmysql5.0 Êý¾Ý¿â</a></li><li><a href="http://www.flxkdns.com/pdtshw/sqlshw/index.asp?pcid=91&pcnme=%CF%E3%B8%DBmssql2000%CA%FD%BE%DD%BF%E2">Ïã¸Ûmssql2000Êý¾Ý¿â</a></li><li><a href="http://www.flxkdns.com/pdtshw/sqlshw/index.asp?pcid=92&pcnme=%CF%E3%B8%DBmssql2005%CA%FD%BE%DD%BF%E2">Ïã¸Ûmssql2005Êý¾Ý¿â</a></li><li><a href="http://www.flxkdns.com/pdtshw/sqlshw/index.asp?pcid=93&pcnme=%C3%C0%B9%FAmysql5%2E0+%CA%FD%BE%DD%BF%E2">ÃÀ¹úmysql5.0 Êý¾Ý¿â</a></li><li><a href="http://www.flxkdns.com/pdtshw/sqlshw/index.asp?pcid=94&pcnme=%C3%C0%B9%FAmssql2000%CA%FD%BE%DD%BF%E2">ÃÀ¹úmssql2000Êý¾Ý¿â</a></li>
+						<li><a href="http://www.flxkdns.com/pdtshw/sqlshw/index.asp?pcid=54&pcnme=mysql+4%2E1+%CA%FD%BE%DD%BF%E2">mysql 4.1 æ•°æ®åº“</a></li><li><a href="http://www.flxkdns.com/pdtshw/sqlshw/index.asp?pcid=55&pcnme=Sql+Server+2000">Sql Server 2000</a></li><li><a href="http://www.flxkdns.com/pdtshw/sqlshw/index.asp?pcid=34&pcnme=%CB%AB%CF%DFmysql5%2E0+%CA%FD%BE%DD%BF%E2">åŒçº¿mysql5.0 æ•°æ®åº“</a></li><li><a href="http://www.flxkdns.com/pdtshw/sqlshw/index.asp?pcid=36&pcnme=%CB%AB%CF%DFSql+Server+2005">åŒçº¿Sql Server 2005</a></li><li><a href="http://www.flxkdns.com/pdtshw/sqlshw/index.asp?pcid=69&pcnme=%B5%E7%D0%C5mysql5%2E0+%CA%FD%BE%DD%BF%E2">ç”µä¿¡mysql5.0 æ•°æ®åº“</a></li><li><a href="http://www.flxkdns.com/pdtshw/sqlshw/index.asp?pcid=70&pcnme=%B5%E7%D0%C5Sql+Server+2005">ç”µä¿¡Sql Server 2005</a></li><li><a href="http://www.flxkdns.com/pdtshw/sqlshw/index.asp?pcid=90&pcnme=%CF%E3%B8%DBmysql5%2E0+%CA%FD%BE%DD%BF%E2">é¦™æ¸¯mysql5.0 æ•°æ®åº“</a></li><li><a href="http://www.flxkdns.com/pdtshw/sqlshw/index.asp?pcid=91&pcnme=%CF%E3%B8%DBmssql2000%CA%FD%BE%DD%BF%E2">é¦™æ¸¯mssql2000æ•°æ®åº“</a></li><li><a href="http://www.flxkdns.com/pdtshw/sqlshw/index.asp?pcid=92&pcnme=%CF%E3%B8%DBmssql2005%CA%FD%BE%DD%BF%E2">é¦™æ¸¯mssql2005æ•°æ®åº“</a></li><li><a href="http://www.flxkdns.com/pdtshw/sqlshw/index.asp?pcid=93&pcnme=%C3%C0%B9%FAmysql5%2E0+%CA%FD%BE%DD%BF%E2">ç¾Žå›½mysql5.0 æ•°æ®åº“</a></li><li><a href="http://www.flxkdns.com/pdtshw/sqlshw/index.asp?pcid=94&pcnme=%C3%C0%B9%FAmssql2000%CA%FD%BE%DD%BF%E2">ç¾Žå›½mssql2000æ•°æ®åº“</a></li>
 					</ul>
 					<!-- #sql productclasslist Tag -->
 				</td>
@@ -98,7 +98,7 @@
         <table width="90%" height="39" border="0" align="center" cellpadding="0" cellspacing="0">
           <tbody><tr>
             <td width="12%" class="dashed"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-            <td width="88%" align="left" class="dashed"><span class="title">ÔÚÏß×ÉÑ¯</span></td>
+            <td width="88%" align="left" class="dashed"><span class="title">åœ¨çº¿å’¨è¯¢</span></td>
           </tr>
         </tbody></table>
         <table width="90%" height="135" border="0" align="center" cellpadding="0" cellspacing="0">
@@ -134,23 +134,23 @@
 		  <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./templates/default/images/mailbg.gif">
             <tbody><tr>
               <td width="9%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="91%" height="35" align="left"><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxbz100_0807" target="_blank"><span class="title">±ê×¼100ÐÍË«Ïß(200807)</span></a></td>
+              <td width="91%" height="35" align="left"><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxbz100_0807" target="_blank"><span class="title">æ ‡å‡†100åž‹åŒçº¿(200807)</span></a></td>
             </tr>
             </tbody></table>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody><tr>
               <td width="35%" height="90" align="center" class="dashed"><img src="./templates/default/images/hosting.gif" width="54" height="64"></td>
               <td width="65%" class="dashed" align="left" height="150" style="line-height: 21px;">
-				¿Õ¼ä´óÐ¡£º100M <br> IISÁ¬½ÓÊý£º²»ÏÞ <br>
-				Á÷Á¿´óÐ¡£º8G <br> ²Ù×÷ÏµÍ³£ºWindows <br>
-				½Å±¾Ö§³Ö£ºASP,PHP <br>
-				ÔùËÍ100MÓÊ¾Ö£¬5ÓÃ»§<br>
+				ç©ºé—´å¤§å°ï¼š100M <br> IISè¿žæŽ¥æ•°ï¼šä¸é™ <br>
+				æµé‡å¤§å°ï¼š8G <br> æ“ä½œç³»ç»Ÿï¼šWindows <br>
+				è„šæœ¬æ”¯æŒï¼šASP,PHP <br>
+				èµ é€100Mé‚®å±€ï¼Œ5ç”¨æˆ·<br>
 				
 				
 			  </td>
             </tr>
             <tr>
-              <td height="46" align="center">£¤<span class="red">198Ôª/Äê</span> </td>
+              <td height="46" align="center">ï¿¥<span class="red">198å…ƒ/å¹´</span> </td>
               <td align="right"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=hst&prd=sxbz100_0807&prc=198&pdtnme=%B1%EA%D7%BC100%D0%CD%CB%AB%CF%DF%28200807%29"><img src="./templates/default/images/buy.gif" width="69" height="27"></a><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxbz100_0807" target="_blank"><img src="./templates/default/images/more.gif" width="69" height="27"></a></td>
             </tr>
           </tbody></table>
@@ -160,23 +160,23 @@
 		  <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./templates/default/images/mailbg.gif">
             <tbody><tr>
               <td width="9%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="91%" height="35" align="left"><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxbz200_0807" target="_blank"><span class="title">±ê×¼200ÐÍË«Ïß(200807)</span></a></td>
+              <td width="91%" height="35" align="left"><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxbz200_0807" target="_blank"><span class="title">æ ‡å‡†200åž‹åŒçº¿(200807)</span></a></td>
             </tr>
             </tbody></table>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody><tr>
               <td width="35%" height="90" align="center" class="dashed"><img src="./templates/default/images/hosting.gif" width="54" height="64"></td>
               <td width="65%" class="dashed" align="left" height="150" style="line-height: 21px;">
-				¿Õ¼ä´óÐ¡£º200M <br> IISÁ¬½ÓÊý£º²»ÏÞ <br>
-				Á÷Á¿´óÐ¡£º10G <br> ²Ù×÷ÏµÍ³£ºWindows <br>
-				½Å±¾Ö§³Ö£ºASP,PHP <br>
-				ÔùËÍ200MÓÊ¾Ö£¬10ÓÃ»§<br>
+				ç©ºé—´å¤§å°ï¼š200M <br> IISè¿žæŽ¥æ•°ï¼šä¸é™ <br>
+				æµé‡å¤§å°ï¼š10G <br> æ“ä½œç³»ç»Ÿï¼šWindows <br>
+				è„šæœ¬æ”¯æŒï¼šASP,PHP <br>
+				èµ é€200Mé‚®å±€ï¼Œ10ç”¨æˆ·<br>
 				
 				
 			  </td>
             </tr>
             <tr>
-              <td height="46" align="center">£¤<span class="red">298Ôª/Äê</span> </td>
+              <td height="46" align="center">ï¿¥<span class="red">298å…ƒ/å¹´</span> </td>
               <td align="right"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=hst&prd=sxbz200_0807&prc=298&pdtnme=%B1%EA%D7%BC200%D0%CD%CB%AB%CF%DF%28200807%29"><img src="./templates/default/images/buy.gif" width="69" height="27"></a><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxbz200_0807" target="_blank"><img src="./templates/default/images/more.gif" width="69" height="27"></a></td>
             </tr>
           </tbody></table>
@@ -186,23 +186,23 @@
 		  <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./templates/default/images/mailbg.gif">
             <tbody><tr>
               <td width="9%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="91%" height="35" align="left"><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxbz300_0807" target="_blank"><span class="title">±ê×¼300ÐÍË«Ïß(200807)</span></a></td>
+              <td width="91%" height="35" align="left"><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxbz300_0807" target="_blank"><span class="title">æ ‡å‡†300åž‹åŒçº¿(200807)</span></a></td>
             </tr>
             </tbody></table>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody><tr>
               <td width="35%" height="90" align="center" class="dashed"><img src="./templates/default/images/hosting.gif" width="54" height="64"></td>
               <td width="65%" class="dashed" align="left" height="150" style="line-height: 21px;">
-				¿Õ¼ä´óÐ¡£º300M <br> IISÁ¬½ÓÊý£º²»ÏÞ <br>
-				Á÷Á¿´óÐ¡£º15G <br> ²Ù×÷ÏµÍ³£ºWindows <br>
-				½Å±¾Ö§³Ö£ºASP,PHP <br>
-				ÔùËÍ300MÓÊ¾Ö£¬15ÓÃ»§<br>
+				ç©ºé—´å¤§å°ï¼š300M <br> IISè¿žæŽ¥æ•°ï¼šä¸é™ <br>
+				æµé‡å¤§å°ï¼š15G <br> æ“ä½œç³»ç»Ÿï¼šWindows <br>
+				è„šæœ¬æ”¯æŒï¼šASP,PHP <br>
+				èµ é€300Mé‚®å±€ï¼Œ15ç”¨æˆ·<br>
 				
 				
 			  </td>
             </tr>
             <tr>
-              <td height="46" align="center">£¤<span class="red">398Ôª/Äê</span> </td>
+              <td height="46" align="center">ï¿¥<span class="red">398å…ƒ/å¹´</span> </td>
               <td align="right"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=hst&prd=sxbz300_0807&prc=398&pdtnme=%B1%EA%D7%BC300%D0%CD%CB%AB%CF%DF%28200807%29"><img src="./templates/default/images/buy.gif" width="69" height="27"></a><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxbz300_0807" target="_blank"><img src="./templates/default/images/more.gif" width="69" height="27"></a></td>
             </tr>
           </tbody></table>
@@ -212,23 +212,23 @@
 		  <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./templates/default/images/mailbg.gif">
             <tbody><tr>
               <td width="9%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="91%" height="35" align="left"><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxbz400_0807" target="_blank"><span class="title">±ê×¼400ÐÍË«Ïß(200807)</span></a></td>
+              <td width="91%" height="35" align="left"><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxbz400_0807" target="_blank"><span class="title">æ ‡å‡†400åž‹åŒçº¿(200807)</span></a></td>
             </tr>
             </tbody></table>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody><tr>
               <td width="35%" height="90" align="center" class="dashed"><img src="./templates/default/images/hosting.gif" width="54" height="64"></td>
               <td width="65%" class="dashed" align="left" height="150" style="line-height: 21px;">
-				¿Õ¼ä´óÐ¡£º400M <br> IISÁ¬½ÓÊý£º²»ÏÞ <br>
-				Á÷Á¿´óÐ¡£º20G <br> ²Ù×÷ÏµÍ³£ºWindows <br>
-				½Å±¾Ö§³Ö£ºASP,PHP <br>
-				ÔùËÍ400MÓÊ¾Ö£¬20ÓÃ»§<br>
+				ç©ºé—´å¤§å°ï¼š400M <br> IISè¿žæŽ¥æ•°ï¼šä¸é™ <br>
+				æµé‡å¤§å°ï¼š20G <br> æ“ä½œç³»ç»Ÿï¼šWindows <br>
+				è„šæœ¬æ”¯æŒï¼šASP,PHP <br>
+				èµ é€400Mé‚®å±€ï¼Œ20ç”¨æˆ·<br>
 				
 				
 			  </td>
             </tr>
             <tr>
-              <td height="46" align="center">£¤<span class="red">498Ôª/Äê</span> </td>
+              <td height="46" align="center">ï¿¥<span class="red">498å…ƒ/å¹´</span> </td>
               <td align="right"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=hst&prd=sxbz400_0807&prc=498&pdtnme=%B1%EA%D7%BC400%D0%CD%CB%AB%CF%DF%28200807%29"><img src="./templates/default/images/buy.gif" width="69" height="27"></a><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxbz400_0807" target="_blank"><img src="./templates/default/images/more.gif" width="69" height="27"></a></td>
             </tr>
           </tbody></table>
@@ -238,23 +238,23 @@
 		  <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./templates/default/images/mailbg.gif">
             <tbody><tr>
               <td width="9%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="91%" height="35" align="left"><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxbz500_0807" target="_blank"><span class="title">±ê×¼500ÐÍË«Ïß(200807)</span></a></td>
+              <td width="91%" height="35" align="left"><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxbz500_0807" target="_blank"><span class="title">æ ‡å‡†500åž‹åŒçº¿(200807)</span></a></td>
             </tr>
             </tbody></table>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody><tr>
               <td width="35%" height="90" align="center" class="dashed"><img src="./templates/default/images/hosting.gif" width="54" height="64"></td>
               <td width="65%" class="dashed" align="left" height="150" style="line-height: 21px;">
-				¿Õ¼ä´óÐ¡£º500M <br> IISÁ¬½ÓÊý£º²»ÏÞ <br>
-				Á÷Á¿´óÐ¡£º25G <br> ²Ù×÷ÏµÍ³£ºWindows <br>
-				½Å±¾Ö§³Ö£ºASP,PHP <br>
-				ÔùËÍ500MÓÊ¾Ö£¬25ÓÃ»§<br>
+				ç©ºé—´å¤§å°ï¼š500M <br> IISè¿žæŽ¥æ•°ï¼šä¸é™ <br>
+				æµé‡å¤§å°ï¼š25G <br> æ“ä½œç³»ç»Ÿï¼šWindows <br>
+				è„šæœ¬æ”¯æŒï¼šASP,PHP <br>
+				èµ é€500Mé‚®å±€ï¼Œ25ç”¨æˆ·<br>
 				
 				
 			  </td>
             </tr>
             <tr>
-              <td height="46" align="center">£¤<span class="red">598Ôª/Äê</span> </td>
+              <td height="46" align="center">ï¿¥<span class="red">598å…ƒ/å¹´</span> </td>
               <td align="right"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=hst&prd=sxbz500_0807&prc=598&pdtnme=%B1%EA%D7%BC500%D0%CD%CB%AB%CF%DF%28200807%29"><img src="./templates/default/images/buy.gif" width="69" height="27"></a><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxbz500_0807" target="_blank"><img src="./templates/default/images/more.gif" width="69" height="27"></a></td>
             </tr>
           </tbody></table>
@@ -264,23 +264,23 @@
 		  <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./templates/default/images/mailbg.gif">
             <tbody><tr>
               <td width="9%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="91%" height="35" align="left"><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxqya_0807" target="_blank"><span class="title">ÆóÒµÉÌÎñAÐÍË«Ïß(200807)</span></a></td>
+              <td width="91%" height="35" align="left"><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxqya_0807" target="_blank"><span class="title">ä¼ä¸šå•†åŠ¡Aåž‹åŒçº¿(200807)</span></a></td>
             </tr>
             </tbody></table>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody><tr>
               <td width="35%" height="90" align="center" class="dashed"><img src="./templates/default/images/hosting.gif" width="54" height="64"></td>
               <td width="65%" class="dashed" align="left" height="150" style="line-height: 21px;">
-				¿Õ¼ä´óÐ¡£º600M <br> IISÁ¬½ÓÊý£º²»ÏÞ <br>
-				Á÷Á¿´óÐ¡£º30G <br> ²Ù×÷ÏµÍ³£ºWindows <br>
-				½Å±¾Ö§³Ö£ºASP,PHP <br>
-				ÔùËÍ600MÓÊ¾Ö£¬30ÓÃ»§<br>
-				ÔùËÍ100M MySQLÊý¾Ý¿â<br>
-				ÔùËÍ60M MSSQLÊý¾Ý¿â<br>
+				ç©ºé—´å¤§å°ï¼š600M <br> IISè¿žæŽ¥æ•°ï¼šä¸é™ <br>
+				æµé‡å¤§å°ï¼š30G <br> æ“ä½œç³»ç»Ÿï¼šWindows <br>
+				è„šæœ¬æ”¯æŒï¼šASP,PHP <br>
+				èµ é€600Mé‚®å±€ï¼Œ30ç”¨æˆ·<br>
+				èµ é€100M MySQLæ•°æ®åº“<br>
+				èµ é€60M MSSQLæ•°æ®åº“<br>
 			  </td>
             </tr>
             <tr>
-              <td height="46" align="center">£¤<span class="red">698Ôª/Äê</span> </td>
+              <td height="46" align="center">ï¿¥<span class="red">698å…ƒ/å¹´</span> </td>
               <td align="right"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=hst&prd=sxqya_0807&prc=698&pdtnme=%C6%F3%D2%B5%C9%CC%CE%F1A%D0%CD%CB%AB%CF%DF%28200807%29"><img src="./templates/default/images/buy.gif" width="69" height="27"></a><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxqya_0807" target="_blank"><img src="./templates/default/images/more.gif" width="69" height="27"></a></td>
             </tr>
           </tbody></table>
@@ -290,23 +290,23 @@
 		  <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./templates/default/images/mailbg.gif">
             <tbody><tr>
               <td width="9%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="91%" height="35" align="left"><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxqyb_0807" target="_blank"><span class="title">ÆóÒµÉÌÎñBÐÍË«Ïß(200807)</span></a></td>
+              <td width="91%" height="35" align="left"><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxqyb_0807" target="_blank"><span class="title">ä¼ä¸šå•†åŠ¡Båž‹åŒçº¿(200807)</span></a></td>
             </tr>
             </tbody></table>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody><tr>
               <td width="35%" height="90" align="center" class="dashed"><img src="./templates/default/images/hosting.gif" width="54" height="64"></td>
               <td width="65%" class="dashed" align="left" height="150" style="line-height: 21px;">
-				¿Õ¼ä´óÐ¡£º700M <br> IISÁ¬½ÓÊý£º²»ÏÞ <br>
-				Á÷Á¿´óÐ¡£º35G <br> ²Ù×÷ÏµÍ³£ºWindows <br>
-				½Å±¾Ö§³Ö£ºASP,PHP <br>
-				ÔùËÍ700MÓÊ¾Ö£¬35ÓÃ»§<br>
-				ÔùËÍ100M MySQLÊý¾Ý¿â<br>
-				ÔùËÍ70M MSSQLÊý¾Ý¿â<br>
+				ç©ºé—´å¤§å°ï¼š700M <br> IISè¿žæŽ¥æ•°ï¼šä¸é™ <br>
+				æµé‡å¤§å°ï¼š35G <br> æ“ä½œç³»ç»Ÿï¼šWindows <br>
+				è„šæœ¬æ”¯æŒï¼šASP,PHP <br>
+				èµ é€700Mé‚®å±€ï¼Œ35ç”¨æˆ·<br>
+				èµ é€100M MySQLæ•°æ®åº“<br>
+				èµ é€70M MSSQLæ•°æ®åº“<br>
 			  </td>
             </tr>
             <tr>
-              <td height="46" align="center">£¤<span class="red">798Ôª/Äê</span> </td>
+              <td height="46" align="center">ï¿¥<span class="red">798å…ƒ/å¹´</span> </td>
               <td align="right"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=hst&prd=sxqyb_0807&prc=798&pdtnme=%C6%F3%D2%B5%C9%CC%CE%F1B%D0%CD%CB%AB%CF%DF%28200807%29"><img src="./templates/default/images/buy.gif" width="69" height="27"></a><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxqyb_0807" target="_blank"><img src="./templates/default/images/more.gif" width="69" height="27"></a></td>
             </tr>
           </tbody></table>
@@ -316,23 +316,23 @@
 		  <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./templates/default/images/mailbg.gif">
             <tbody><tr>
               <td width="9%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="91%" height="35" align="left"><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxqyc_0807" target="_blank"><span class="title">ÆóÒµÉÌÎñCÐÍË«Ïß(200807)</span></a></td>
+              <td width="91%" height="35" align="left"><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxqyc_0807" target="_blank"><span class="title">ä¼ä¸šå•†åŠ¡Cåž‹åŒçº¿(200807)</span></a></td>
             </tr>
             </tbody></table>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody><tr>
               <td width="35%" height="90" align="center" class="dashed"><img src="./templates/default/images/hosting.gif" width="54" height="64"></td>
               <td width="65%" class="dashed" align="left" height="150" style="line-height: 21px;">
-				¿Õ¼ä´óÐ¡£º800M <br> IISÁ¬½ÓÊý£º²»ÏÞ <br>
-				Á÷Á¿´óÐ¡£º40G <br> ²Ù×÷ÏµÍ³£ºWindows <br>
-				½Å±¾Ö§³Ö£ºASP,PHP <br>
-				ÔùËÍ800MÓÊ¾Ö£¬40ÓÃ»§<br>
-				ÔùËÍ100M MySQLÊý¾Ý¿â<br>
-				ÔùËÍ80M MSSQLÊý¾Ý¿â<br>
+				ç©ºé—´å¤§å°ï¼š800M <br> IISè¿žæŽ¥æ•°ï¼šä¸é™ <br>
+				æµé‡å¤§å°ï¼š40G <br> æ“ä½œç³»ç»Ÿï¼šWindows <br>
+				è„šæœ¬æ”¯æŒï¼šASP,PHP <br>
+				èµ é€800Mé‚®å±€ï¼Œ40ç”¨æˆ·<br>
+				èµ é€100M MySQLæ•°æ®åº“<br>
+				èµ é€80M MSSQLæ•°æ®åº“<br>
 			  </td>
             </tr>
             <tr>
-              <td height="46" align="center">£¤<span class="red">898Ôª/Äê</span> </td>
+              <td height="46" align="center">ï¿¥<span class="red">898å…ƒ/å¹´</span> </td>
               <td align="right"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=hst&prd=sxqyc_0807&prc=898&pdtnme=%C6%F3%D2%B5%C9%CC%CE%F1C%D0%CD%CB%AB%CF%DF%28200807%29"><img src="./templates/default/images/buy.gif" width="69" height="27"></a><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxqyc_0807" target="_blank"><img src="./templates/default/images/more.gif" width="69" height="27"></a></td>
             </tr>
           </tbody></table>
@@ -342,23 +342,23 @@
 		  <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./templates/default/images/mailbg.gif">
             <tbody><tr>
               <td width="9%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="91%" height="35" align="left"><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxqyd_0807" target="_blank"><span class="title">ÆóÒµÉÌÎñDÐÍË«Ïß(200807)</span></a></td>
+              <td width="91%" height="35" align="left"><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxqyd_0807" target="_blank"><span class="title">ä¼ä¸šå•†åŠ¡Dåž‹åŒçº¿(200807)</span></a></td>
             </tr>
             </tbody></table>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody><tr>
               <td width="35%" height="90" align="center" class="dashed"><img src="./templates/default/images/hosting.gif" width="54" height="64"></td>
               <td width="65%" class="dashed" align="left" height="150" style="line-height: 21px;">
-				¿Õ¼ä´óÐ¡£º900M <br> IISÁ¬½ÓÊý£º²»ÏÞ <br>
-				Á÷Á¿´óÐ¡£º45G <br> ²Ù×÷ÏµÍ³£ºWindows <br>
-				½Å±¾Ö§³Ö£ºASP,PHP <br>
-				ÔùËÍ900MÓÊ¾Ö£¬45ÓÃ»§<br>
-				ÔùËÍ100M MySQLÊý¾Ý¿â<br>
-				ÔùËÍ90M MSSQLÊý¾Ý¿â<br>
+				ç©ºé—´å¤§å°ï¼š900M <br> IISè¿žæŽ¥æ•°ï¼šä¸é™ <br>
+				æµé‡å¤§å°ï¼š45G <br> æ“ä½œç³»ç»Ÿï¼šWindows <br>
+				è„šæœ¬æ”¯æŒï¼šASP,PHP <br>
+				èµ é€900Mé‚®å±€ï¼Œ45ç”¨æˆ·<br>
+				èµ é€100M MySQLæ•°æ®åº“<br>
+				èµ é€90M MSSQLæ•°æ®åº“<br>
 			  </td>
             </tr>
             <tr>
-              <td height="46" align="center">£¤<span class="red">998Ôª/Äê</span> </td>
+              <td height="46" align="center">ï¿¥<span class="red">998å…ƒ/å¹´</span> </td>
               <td align="right"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=hst&prd=sxqyd_0807&prc=998&pdtnme=%C6%F3%D2%B5%C9%CC%CE%F1D%D0%CD%CB%AB%CF%DF%28200807%29"><img src="./templates/default/images/buy.gif" width="69" height="27"></a><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxqyd_0807" target="_blank"><img src="./templates/default/images/more.gif" width="69" height="27"></a></td>
             </tr>
           </tbody></table>
@@ -368,23 +368,23 @@
 		  <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./templates/default/images/mailbg.gif">
             <tbody><tr>
               <td width="9%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="91%" height="35" align="left"><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxjpa_0807" target="_blank"><span class="title">¾«Æ·ÉÌÎñAÐÍË«Ïß(200807)</span></a></td>
+              <td width="91%" height="35" align="left"><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxjpa_0807" target="_blank"><span class="title">ç²¾å“å•†åŠ¡Aåž‹åŒçº¿(200807)</span></a></td>
             </tr>
             </tbody></table>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody><tr>
               <td width="35%" height="90" align="center" class="dashed"><img src="./templates/default/images/hosting.gif" width="54" height="64"></td>
               <td width="65%" class="dashed" align="left" height="150" style="line-height: 21px;">
-				¿Õ¼ä´óÐ¡£º1G <br> IISÁ¬½ÓÊý£º²»ÏÞ <br>
-				Á÷Á¿´óÐ¡£º50G <br> ²Ù×÷ÏµÍ³£ºWindows <br>
-				½Å±¾Ö§³Ö£ºASP,PHP <br>
-				ÔùËÍ1000MÓÊ¾Ö£¬50ÓÃ»§<br>
-				ÔùËÍ100M MySQLÊý¾Ý¿â<br>
-				ÔùËÍ100M MSSQLÊý¾Ý¿â<br>
+				ç©ºé—´å¤§å°ï¼š1G <br> IISè¿žæŽ¥æ•°ï¼šä¸é™ <br>
+				æµé‡å¤§å°ï¼š50G <br> æ“ä½œç³»ç»Ÿï¼šWindows <br>
+				è„šæœ¬æ”¯æŒï¼šASP,PHP <br>
+				èµ é€1000Mé‚®å±€ï¼Œ50ç”¨æˆ·<br>
+				èµ é€100M MySQLæ•°æ®åº“<br>
+				èµ é€100M MSSQLæ•°æ®åº“<br>
 			  </td>
             </tr>
             <tr>
-              <td height="46" align="center">£¤<span class="red">1098Ôª/Äê</span> </td>
+              <td height="46" align="center">ï¿¥<span class="red">1098å…ƒ/å¹´</span> </td>
               <td align="right"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=hst&prd=sxjpa_0807&prc=1098&pdtnme=%BE%AB%C6%B7%C9%CC%CE%F1A%D0%CD%CB%AB%CF%DF%28200807%29"><img src="./templates/default/images/buy.gif" width="69" height="27"></a><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxjpa_0807" target="_blank"><img src="./templates/default/images/more.gif" width="69" height="27"></a></td>
             </tr>
           </tbody></table>
@@ -394,23 +394,23 @@
 		  <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./templates/default/images/mailbg.gif">
             <tbody><tr>
               <td width="9%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="91%" height="35" align="left"><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxjpb_0807" target="_blank"><span class="title">¾«Æ·ÉÌÎñBÐÍË«Ïß(200807)</span></a></td>
+              <td width="91%" height="35" align="left"><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxjpb_0807" target="_blank"><span class="title">ç²¾å“å•†åŠ¡Båž‹åŒçº¿(200807)</span></a></td>
             </tr>
             </tbody></table>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody><tr>
               <td width="35%" height="90" align="center" class="dashed"><img src="./templates/default/images/hosting.gif" width="54" height="64"></td>
               <td width="65%" class="dashed" align="left" height="150" style="line-height: 21px;">
-				¿Õ¼ä´óÐ¡£º1.5G <br> IISÁ¬½ÓÊý£º²»ÏÞ <br>
-				Á÷Á¿´óÐ¡£º55G <br> ²Ù×÷ÏµÍ³£ºWindows <br>
-				½Å±¾Ö§³Ö£ºASP,PHP <br>
-				ÔùËÍ1GÓÊ¾Ö£¬55ÓÃ»§<br>
-				ÔùËÍ150M MySQLÊý¾Ý¿â<br>
-				ÔùËÍ150M MSSQLÊý¾Ý¿â<br>
+				ç©ºé—´å¤§å°ï¼š1.5G <br> IISè¿žæŽ¥æ•°ï¼šä¸é™ <br>
+				æµé‡å¤§å°ï¼š55G <br> æ“ä½œç³»ç»Ÿï¼šWindows <br>
+				è„šæœ¬æ”¯æŒï¼šASP,PHP <br>
+				èµ é€1Gé‚®å±€ï¼Œ55ç”¨æˆ·<br>
+				èµ é€150M MySQLæ•°æ®åº“<br>
+				èµ é€150M MSSQLæ•°æ®åº“<br>
 			  </td>
             </tr>
             <tr>
-              <td height="46" align="center">£¤<span class="red">1598Ôª/Äê</span> </td>
+              <td height="46" align="center">ï¿¥<span class="red">1598å…ƒ/å¹´</span> </td>
               <td align="right"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=hst&prd=sxjpb_0807&prc=1598&pdtnme=%BE%AB%C6%B7%C9%CC%CE%F1B%D0%CD%CB%AB%CF%DF%28200807%29"><img src="./templates/default/images/buy.gif" width="69" height="27"></a><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxjpb_0807" target="_blank"><img src="./templates/default/images/more.gif" width="69" height="27"></a></td>
             </tr>
           </tbody></table>
@@ -420,23 +420,23 @@
 		  <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./templates/default/images/mailbg.gif">
             <tbody><tr>
               <td width="9%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="91%" height="35" align="left"><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxjpc_0807" target="_blank"><span class="title">¾«Æ·ÉÌÎñCÐÍË«Ïß(200807)</span></a></td>
+              <td width="91%" height="35" align="left"><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxjpc_0807" target="_blank"><span class="title">ç²¾å“å•†åŠ¡Cåž‹åŒçº¿(200807)</span></a></td>
             </tr>
             </tbody></table>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody><tr>
               <td width="35%" height="90" align="center" class="dashed"><img src="./templates/default/images/hosting.gif" width="54" height="64"></td>
               <td width="65%" class="dashed" align="left" height="150" style="line-height: 21px;">
-				¿Õ¼ä´óÐ¡£º2G <br> IISÁ¬½ÓÊý£º²»ÏÞ <br>
-				Á÷Á¿´óÐ¡£º60G <br> ²Ù×÷ÏµÍ³£ºWindows <br>
-				½Å±¾Ö§³Ö£ºASP,PHP <br>
-				ÔùËÍ2GÓÊ¾Ö£¬60ÓÃ»§<br>
-				ÔùËÍ200M MSSQLÊý¾Ý¿â<br>
-				ÔùËÍ200M MySQLÊý¾Ý¿â<br>
+				ç©ºé—´å¤§å°ï¼š2G <br> IISè¿žæŽ¥æ•°ï¼šä¸é™ <br>
+				æµé‡å¤§å°ï¼š60G <br> æ“ä½œç³»ç»Ÿï¼šWindows <br>
+				è„šæœ¬æ”¯æŒï¼šASP,PHP <br>
+				èµ é€2Gé‚®å±€ï¼Œ60ç”¨æˆ·<br>
+				èµ é€200M MSSQLæ•°æ®åº“<br>
+				èµ é€200M MySQLæ•°æ®åº“<br>
 			  </td>
             </tr>
             <tr>
-              <td height="46" align="center">£¤<span class="red">2098Ôª/Äê</span> </td>
+              <td height="46" align="center">ï¿¥<span class="red">2098å…ƒ/å¹´</span> </td>
               <td align="right"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=hst&prd=sxjpc_0807&prc=2098&pdtnme=%BE%AB%C6%B7%C9%CC%CE%F1C%D0%CD%CB%AB%CF%DF%28200807%29"><img src="./templates/default/images/buy.gif" width="69" height="27"></a><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxjpc_0807" target="_blank"><img src="./templates/default/images/more.gif" width="69" height="27"></a></td>
             </tr>
           </tbody></table>
@@ -446,23 +446,23 @@
 		  <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./templates/default/images/mailbg.gif">
             <tbody><tr>
               <td width="9%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="91%" height="35" align="left"><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxqn_0807" target="_blank"><span class="title">¾«Æ·ÉÌÎñDÐÍË«Ïß(200807)</span></a></td>
+              <td width="91%" height="35" align="left"><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxqn_0807" target="_blank"><span class="title">ç²¾å“å•†åŠ¡Dåž‹åŒçº¿(200807)</span></a></td>
             </tr>
             </tbody></table>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody><tr>
               <td width="35%" height="90" align="center" class="dashed"><img src="./templates/default/images/hosting.gif" width="54" height="64"></td>
               <td width="65%" class="dashed" align="left" height="150" style="line-height: 21px;">
-				¿Õ¼ä´óÐ¡£º3G <br> IISÁ¬½ÓÊý£º²»ÏÞ <br>
-				Á÷Á¿´óÐ¡£º80G <br> ²Ù×÷ÏµÍ³£ºWindows <br>
-				½Å±¾Ö§³Ö£ºASP,PHP <br>
-				ÔùËÍ2GÓÊ¾Ö£¬60ÓÃ»§<br>
-				ÔùËÍ300M MSSQLÊý¾Ý¿â<br>
-				ÔùËÍ300M MySQLÊý¾Ý¿â<br>
+				ç©ºé—´å¤§å°ï¼š3G <br> IISè¿žæŽ¥æ•°ï¼šä¸é™ <br>
+				æµé‡å¤§å°ï¼š80G <br> æ“ä½œç³»ç»Ÿï¼šWindows <br>
+				è„šæœ¬æ”¯æŒï¼šASP,PHP <br>
+				èµ é€2Gé‚®å±€ï¼Œ60ç”¨æˆ·<br>
+				èµ é€300M MSSQLæ•°æ®åº“<br>
+				èµ é€300M MySQLæ•°æ®åº“<br>
 			  </td>
             </tr>
             <tr>
-              <td height="46" align="center">£¤<span class="red">3098Ôª/Äê</span> </td>
+              <td height="46" align="center">ï¿¥<span class="red">3098å…ƒ/å¹´</span> </td>
               <td align="right"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=hst&prd=sxqn_0807&prc=3098&pdtnme=%BE%AB%C6%B7%C9%CC%CE%F1D%D0%CD%CB%AB%CF%DF%28200807%29"><img src="./templates/default/images/buy.gif" width="69" height="27"></a><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxqn_0807" target="_blank"><img src="./templates/default/images/more.gif" width="69" height="27"></a></td>
             </tr>
           </tbody></table>
@@ -472,23 +472,23 @@
 		  <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./templates/default/images/mailbg.gif">
             <tbody><tr>
               <td width="9%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="91%" height="35" align="left"><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxjpe_1011" target="_blank"><span class="title">¾«Æ·ÉÌÎñEÐÍË«Ïß(201011)</span></a></td>
+              <td width="91%" height="35" align="left"><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxjpe_1011" target="_blank"><span class="title">ç²¾å“å•†åŠ¡Eåž‹åŒçº¿(201011)</span></a></td>
             </tr>
             </tbody></table>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody><tr>
               <td width="35%" height="90" align="center" class="dashed"><img src="./templates/default/images/hosting.gif" width="54" height="64"></td>
               <td width="65%" class="dashed" align="left" height="150" style="line-height: 21px;">
-				¿Õ¼ä´óÐ¡£º5G <br> IISÁ¬½ÓÊý£º²»ÏÞ <br>
-				Á÷Á¿´óÐ¡£º100G <br> ²Ù×÷ÏµÍ³£ºWindows <br>
-				½Å±¾Ö§³Ö£ºASP,PHP <br>
-				ÔùËÍ5GÓÊ¾Ö£¬80ÓÃ»§<br>
-				ÔùËÍ500M MySQLÊý¾Ý¿â<br>
-				ÔùËÍ500M MSSQLÊý¾Ý¿â<br>
+				ç©ºé—´å¤§å°ï¼š5G <br> IISè¿žæŽ¥æ•°ï¼šä¸é™ <br>
+				æµé‡å¤§å°ï¼š100G <br> æ“ä½œç³»ç»Ÿï¼šWindows <br>
+				è„šæœ¬æ”¯æŒï¼šASP,PHP <br>
+				èµ é€5Gé‚®å±€ï¼Œ80ç”¨æˆ·<br>
+				èµ é€500M MySQLæ•°æ®åº“<br>
+				èµ é€500M MSSQLæ•°æ®åº“<br>
 			  </td>
             </tr>
             <tr>
-              <td height="46" align="center">£¤<span class="red">4498Ôª/Äê</span> </td>
+              <td height="46" align="center">ï¿¥<span class="red">4498å…ƒ/å¹´</span> </td>
               <td align="right"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=hst&prd=sxjpe_1011&prc=4498&pdtnme=%BE%AB%C6%B7%C9%CC%CE%F1E%D0%CD%CB%AB%CF%DF%28201011%29"><img src="./templates/default/images/buy.gif" width="69" height="27"></a><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxjpe_1011" target="_blank"><img src="./templates/default/images/more.gif" width="69" height="27"></a></td>
             </tr>
           </tbody></table>
@@ -498,23 +498,23 @@
 		  <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./templates/default/images/mailbg.gif">
             <tbody><tr>
               <td width="9%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="91%" height="35" align="left"><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxjph_1011" target="_blank"><span class="title">¾«Æ·ÉÌÎñHÐÍË«Ïß(201011)</span></a></td>
+              <td width="91%" height="35" align="left"><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxjph_1011" target="_blank"><span class="title">ç²¾å“å•†åŠ¡Håž‹åŒçº¿(201011)</span></a></td>
             </tr>
             </tbody></table>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody><tr>
               <td width="35%" height="90" align="center" class="dashed"><img src="./templates/default/images/hosting.gif" width="54" height="64"></td>
               <td width="65%" class="dashed" align="left" height="150" style="line-height: 21px;">
-				¿Õ¼ä´óÐ¡£º8G <br> IISÁ¬½ÓÊý£º²»ÏÞ <br>
-				Á÷Á¿´óÐ¡£º180G <br> ²Ù×÷ÏµÍ³£ºWindows <br>
-				½Å±¾Ö§³Ö£ºASP,PHP <br>
-				ÔùËÍ8GÓÊ¾Ö£¬90ÓÃ»§<br>
-				ÔùËÍ800M MySQLÊý¾Ý¿â<br>
-				ÔùËÍ800M MSSQLÊý¾Ý¿â<br>
+				ç©ºé—´å¤§å°ï¼š8G <br> IISè¿žæŽ¥æ•°ï¼šä¸é™ <br>
+				æµé‡å¤§å°ï¼š180G <br> æ“ä½œç³»ç»Ÿï¼šWindows <br>
+				è„šæœ¬æ”¯æŒï¼šASP,PHP <br>
+				èµ é€8Gé‚®å±€ï¼Œ90ç”¨æˆ·<br>
+				èµ é€800M MySQLæ•°æ®åº“<br>
+				èµ é€800M MSSQLæ•°æ®åº“<br>
 			  </td>
             </tr>
             <tr>
-              <td height="46" align="center">£¤<span class="red">5998Ôª/Äê</span> </td>
+              <td height="46" align="center">ï¿¥<span class="red">5998å…ƒ/å¹´</span> </td>
               <td align="right"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=hst&prd=sxjph_1011&prc=5998&pdtnme=%BE%AB%C6%B7%C9%CC%CE%F1H%D0%CD%CB%AB%CF%DF%28201011%29"><img src="./templates/default/images/buy.gif" width="69" height="27"></a><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxjph_1011" target="_blank"><img src="./templates/default/images/more.gif" width="69" height="27"></a></td>
             </tr>
           </tbody></table>
@@ -524,23 +524,23 @@
 		  <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./templates/default/images/mailbg.gif">
             <tbody><tr>
               <td width="9%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="91%" height="35" align="left"><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxjpi_1011" target="_blank"><span class="title">¾«Æ·ÉÌÎñIÐÍË«Ïß(201011)</span></a></td>
+              <td width="91%" height="35" align="left"><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxjpi_1011" target="_blank"><span class="title">ç²¾å“å•†åŠ¡Iåž‹åŒçº¿(201011)</span></a></td>
             </tr>
             </tbody></table>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody><tr>
               <td width="35%" height="90" align="center" class="dashed"><img src="./templates/default/images/hosting.gif" width="54" height="64"></td>
               <td width="65%" class="dashed" align="left" height="150" style="line-height: 21px;">
-				¿Õ¼ä´óÐ¡£º10G <br> IISÁ¬½ÓÊý£º²»ÏÞ <br>
-				Á÷Á¿´óÐ¡£º200G <br> ²Ù×÷ÏµÍ³£ºWindows <br>
-				½Å±¾Ö§³Ö£ºASP,PHP <br>
-				ÔùËÍ98GÓÊ¾Ö£¬100ÓÃ»§<br>
-				ÔùËÍ1000M MSSQLÊý¾Ý¿â<br>
-				ÔùËÍ1000M MySQLÊý¾Ý¿â<br>
+				ç©ºé—´å¤§å°ï¼š10G <br> IISè¿žæŽ¥æ•°ï¼šä¸é™ <br>
+				æµé‡å¤§å°ï¼š200G <br> æ“ä½œç³»ç»Ÿï¼šWindows <br>
+				è„šæœ¬æ”¯æŒï¼šASP,PHP <br>
+				èµ é€98Gé‚®å±€ï¼Œ100ç”¨æˆ·<br>
+				èµ é€1000M MSSQLæ•°æ®åº“<br>
+				èµ é€1000M MySQLæ•°æ®åº“<br>
 			  </td>
             </tr>
             <tr>
-              <td height="46" align="center">£¤<span class="red">7498Ôª/Äê</span> </td>
+              <td height="46" align="center">ï¿¥<span class="red">7498å…ƒ/å¹´</span> </td>
               <td align="right"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=hst&prd=sxjpi_1011&prc=7498&pdtnme=%BE%AB%C6%B7%C9%CC%CE%F1I%D0%CD%CB%AB%CF%DF%28201011%29"><img src="./templates/default/images/buy.gif" width="69" height="27"></a><a href="http://www.flxkdns.com/pdtshw/hstshw/hst_dtl.asp?prd=sxjpi_1011" target="_blank"><img src="./templates/default/images/more.gif" width="69" height="27"></a></td>
             </tr>
           </tbody></table>
@@ -576,7 +576,7 @@
 		    <table width="98%" height="39" border="0" align="center" cellpadding="0" cellspacing="0">
               <tbody><tr>
                 <td width="12%" class="dashed"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-                <td width="88%" align="left" class="dashed"><span class="title">²úÆ·ÓÅÊÆÁÐ±í</span></td>
+                <td width="88%" align="left" class="dashed"><span class="title">äº§å“ä¼˜åŠ¿åˆ—è¡¨</span></td>
               </tr>
             </tbody></table>
               <table width="90%" border="0" cellpadding="0" cellspacing="0" align="center">
@@ -584,7 +584,7 @@
                   <td align="left" valign="top">
 							<!-- @domainreg advantage Tag -->
 							<ul class="infoul">
-								<li>ÊµÊ±¿ªÍ¨Á¢¼´Ê¹ÓÃ</li><li>³¬Ç¿µÄÖ÷»ú¿ØÖÆÃæ°å</li><li>Êý¾Ý¶¨Ê±±¸·Ý±ÜÃâÔÖÄÑ</li><li>ÒâµÂÆ·ÅÆ·þÎñÆ÷Æ·ÖÊ×¿Ô½</li><li>2.5G¸ßËÙ´ø¿í½ÓÈë</li><li>ÈÎÒâÐÞ¸Ä°ó¶¨ÓòÃû</li><li>ÈÎÒâÐÞ¸ÄÄ¬ÈÏÎÄµµ</li><li>ÈÎÒâÐÞ¸ÄFTPÃÜÂë</li><li>×Ô¶¨ÒåIIS´íÎóÐÅÏ¢</li><li>ÉèÖÃÎÄ¼þ±£»¤²»±»ÏÂÔØ</li><li>Ç¿´óµÄÍøÂç·À»ðÇ½</li><li>×¨ÒµµÄÍøÂç°²È«Î¬»¤</li><li>ÒµÄÚ¶À¼ÒÍÆ³ö¶àÏî¹ÜÀí¹¦ÄÜ</li><li>Ãâ·ÑÔùËÍÆóÒµÓÊ¾Ö</li>
+								<li>å®žæ—¶å¼€é€šç«‹å³ä½¿ç”¨</li><li>è¶…å¼ºçš„ä¸»æœºæŽ§åˆ¶é¢æ¿</li><li>æ•°æ®å®šæ—¶å¤‡ä»½é¿å…ç¾éš¾</li><li>æ„å¾·å“ç‰ŒæœåŠ¡å™¨å“è´¨å“è¶Š</li><li>2.5Gé«˜é€Ÿå¸¦å®½æŽ¥å…¥</li><li>ä»»æ„ä¿®æ”¹ç»‘å®šåŸŸå</li><li>ä»»æ„ä¿®æ”¹é»˜è®¤æ–‡æ¡£</li><li>ä»»æ„ä¿®æ”¹FTPå¯†ç </li><li>è‡ªå®šä¹‰IISé”™è¯¯ä¿¡æ¯</li><li>è®¾ç½®æ–‡ä»¶ä¿æŠ¤ä¸è¢«ä¸‹è½½</li><li>å¼ºå¤§çš„ç½‘ç»œé˜²ç«å¢™</li><li>ä¸“ä¸šçš„ç½‘ç»œå®‰å…¨ç»´æŠ¤</li><li>ä¸šå†…ç‹¬å®¶æŽ¨å‡ºå¤šé¡¹ç®¡ç†åŠŸèƒ½</li><li>å…è´¹èµ é€ä¼ä¸šé‚®å±€</li>
 							</ul>
 							<!-- #domainreg advantage Tag -->
 				  </td>
@@ -629,8 +629,8 @@
 		
       </tr> -->
       <tbody><tr>
-        <td height="53" colspan="6" class="jiange">ÓÑÇéÁ´½Ó£º
-		<a target="_blank" href="http://www.google.com/">Google</a> &nbsp; <a target="_blank" href="http://www.baidu.com/">°Ù¶È</a> &nbsp; 
+        <td height="53" colspan="6" class="jiange">å‹æƒ…é“¾æŽ¥ï¼š
+		<a target="_blank" href="http://www.google.com/">Google</a> &nbsp; <a target="_blank" href="http://www.baidu.com/">ç™¾åº¦</a> &nbsp; 
 		</td>
         </tr>
     </tbody></table></td>
@@ -642,20 +642,20 @@
   <tbody><tr>
     <td width="232" height="114" valign="bottom"><img src="./templates/default/images/logof.gif"></td>
     <td width="748" class="jiange">
-    <a href="http://www.flxkdns.com/help/pay.asp">¸¶¿î·½Ê½</a>¡¡|¡¡<a href="http://www.flxkdns.com/help/price.asp">¼Û¸ñ×ÜÀÀ</a>¡¡|¡¡<a href="http://www.flxkdns.com/help/job.asp">³ÏÆ¸Ó¢²Å</a>¡¡|¡¡<a href="http://www.flxkdns.com/help/aboutus.asp">¹ØÓÚÎÒÃÇ</a>¡¡|¡¡<a href="http://www.flxkdns.com/help/contact.asp">ÁªÏµÎÒÃÇ</a>¡¡|¡¡<a href="http://www.flxkdns.com/help/postQues.asp">×ÉÑ¯·´À¡</a>		
+    <a href="http://www.flxkdns.com/help/pay.asp">ä»˜æ¬¾æ–¹å¼</a>ã€€|ã€€<a href="http://www.flxkdns.com/help/price.asp">ä»·æ ¼æ€»è§ˆ</a>ã€€|ã€€<a href="http://www.flxkdns.com/help/job.asp">è¯šè˜è‹±æ‰</a>ã€€|ã€€<a href="http://www.flxkdns.com/help/aboutus.asp">å…³äºŽæˆ‘ä»¬</a>ã€€|ã€€<a href="http://www.flxkdns.com/help/contact.asp">è”ç³»æˆ‘ä»¬</a>ã€€|ã€€<a href="http://www.flxkdns.com/help/postQues.asp">å’¨è¯¢åé¦ˆ</a>		
 		<br>
-    <font color="#333333">µç»°£º18701132241 ´«Õæ£º ×ÉÑ¯ÐÅÏä£ºchangdejie2007@126.com ×ÉÑ¯QQ£º736233152 ±¸°¸ºÅ: <a href="http://www.miibeian.gov.cn/">¾©ICP±¸11030135ºÅ</a></font>
+    <font color="#333333">ç”µè¯ï¼š18701132241 ä¼ çœŸï¼š å’¨è¯¢ä¿¡ç®±ï¼šchangdejie2007@126.com å’¨è¯¢QQï¼š736233152 å¤‡æ¡ˆå·: <a href="http://www.miibeian.gov.cn/">äº¬ICPå¤‡11030135å·</a></font>
 	
 	<br>
-	<font color="#333333">copyright &#169; 2006-2011  http://www.flxkdns.com All Rights Reserved. °æÈ¨ËùÓÐ£ºÐÇ¿ÕÈí¼þ¹¤×÷ÊÒ</font>
+	<font color="#333333">copyright &#169; 2006-2011  http://www.flxkdns.com All Rights Reserved. ç‰ˆæƒæ‰€æœ‰ï¼šæ˜Ÿç©ºè½¯ä»¶å·¥ä½œå®¤</font>
     </td>
   </tr>
 </tbody></table>
 
 <!-- start http://count.knowsky.com -->
-<script src="./templates/default/images/count.asp" language="JavaScript" charset="gb2312"></script><a href="http://www.gold678.com/" target="_blank" title="½ñÌì·ÃÎÊ£º1
-ÀÛ¼Æ·ÃÎÊ£º217
-µã»÷ÉêÇë¼ÆÊýÆ÷"><img border="0" src="./templates/default/images/2.gif"><img border="0" src="./templates/default/images/1.gif"><img border="0" src="./templates/default/images/7.gif"></a><iframe frameborder="no" scrolling="no" name="abc" width="0" height="0" src="./templates/default/images/js.htm"></iframe>
+<script src="./templates/default/images/count.asp" language="JavaScript" charset="gb2312"></script><a href="http://www.gold678.com/" target="_blank" title="ä»Šå¤©è®¿é—®ï¼š1
+ç´¯è®¡è®¿é—®ï¼š217
+ç‚¹å‡»ç”³è¯·è®¡æ•°å™¨"><img border="0" src="./templates/default/images/2.gif"><img border="0" src="./templates/default/images/1.gif"><img border="0" src="./templates/default/images/7.gif"></a><iframe frameborder="no" scrolling="no" name="abc" width="0" height="0" src="./templates/default/images/js.htm"></iframe>
 <!-- Powered by http://www.knowsky.com -->
 
 </body></html>

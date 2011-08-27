@@ -77,7 +77,7 @@ var submitform = function(formname) {
 
 
             
-<!---------------------------------��վ�ײ�--------------------------------->          
+<!---------------------------------建站套餐--------------------------------->          
     		<div id="pro">
 				<script type="text/javascript"> 
                     function setTab03Syn ( i )
@@ -107,8 +107,8 @@ var submitform = function(formname) {
 
 <!--domestic_hk_title-->
 <div class="domestic_hk_title">
-<div id="domestic_hk_01" class="domestic_hk_bg" onmouseover="setTab03Syn(1);"><span>���ڽ�վ</span></div>
-<div id="domestic_hk_02" onmouseover="setTab03Syn(2);"><span>��۽�վ</span></div>
+<div id="domestic_hk_01" class="domestic_hk_bg" onmouseover="setTab03Syn(1);"><span>国内建站</span></div>
+<div id="domestic_hk_02" onmouseover="setTab03Syn(2);"><span>香港建站</span></div>
 </div>
 
 
@@ -134,17 +134,17 @@ var submitform = function(formname) {
 <!-- Block 1-1 -->
 <div class="page_pro">
 <form name="bzjz200_0907" action="http://www.flxkdns.com/pdtshw/ot5shw/steps.asp#formview" method="post">
-    <h5>��׼�ͽ�վ200(0907)</h5>
+    <h5>标准型建站200(0907)</h5>
     <table width="183" border="0" align="right" cellpadding="0" cellspacing="2">
        <tbody><tr>
-        	<td width="183">�۸�<span>518Ԫ</span></td>
+        	<td width="183">价格：<span>518元</span></td>
         </tr>
    
         <!-- tr>
-        	<td>&nbsp;&nbsp;����ģ��ɹ�ѡ��</td>
+        	<td>&nbsp;&nbsp;海量模板可供选择</td>
         </tr -->
         <tr>
-        	<td>�ռ��С:200M<br>����ģ������ѡ��<br>�˰汾�ʺϸ��˺���ҵչʾ<br>��������һ��,������������!</td>
+        	<td>空间大小:200M<br>海量模板任由选择<br>此版本适合个人和企业展示<br>买两年送一年,买三年送两年!</td>
         </tr>
 
         <tr>
@@ -165,16 +165,16 @@ var submitform = function(formname) {
 <!-- Block 1-2 -->
 <div class="page_pro">
 <form name="bzjz500_0907" action="http://www.flxkdns.com/pdtshw/ot5shw/steps.asp" method="post">
-    <h5 class="hh">��׼�ͽ�վ500(0907)</h5>
+    <h5 class="hh">标准型建站500(0907)</h5>
     <table width="183" border="0" align="right" cellpadding="0" cellspacing="2">
        <tbody><tr>
-        <td width="183">�۸�<span>658Ԫ</span></td>
+        <td width="183">价格：<span>658元</span></td>
       </tr>
       <!-- tr>
-        	<td>&nbsp;&nbsp;����ģ��ɹ�ѡ��</td>
+        	<td>&nbsp;&nbsp;海量模板可供选择</td>
         </tr -->
       <tr>
-        <td>�ռ��С:500M<br>����ģ������ѡ��<br>�˰汾�ʺϸ��˺���ҵչʾ<br>��������һ��,������������!</td>
+        <td>空间大小:500M<br>海量模板任由选择<br>此版本适合个人和企业展示<br>买两年送一年,买三年送两年!</td>
       </tr>
 
       <tr>
@@ -195,17 +195,17 @@ var submitform = function(formname) {
 
 <div class="page_pro">
 <form name="bzjz800_0907" action="http://www.flxkdns.com/pdtshw/ot5shw/steps.asp" method="post">
-    <h5 class="hh">��׼�ͽ�վ800(0907)</h5>
+    <h5 class="hh">标准型建站800(0907)</h5>
     <table width="183" border="0" align="right" cellpadding="0" cellspacing="2">
       
       <tbody><tr>
-        <td width="183">�۸�<span>798Ԫ</span></td>
+        <td width="183">价格：<span>798元</span></td>
       </tr>
       <!-- tr>
-        	<td>&nbsp;&nbsp;����ģ��ɹ�ѡ��</td>
+        	<td>&nbsp;&nbsp;海量模板可供选择</td>
         </tr -->
       <tr>
-        <td>�ռ��С:800M<br>����ģ������ѡ��<br>�˰汾�ʺϸ��˺���ҵչʾ<br>��������һ��,������������!</td>
+        <td>空间大小:800M<br>海量模板任由选择<br>此版本适合个人和企业展示<br>买两年送一年,买三年送两年!</td>
       </tr>
 
       <tr>
@@ -226,18 +226,18 @@ var submitform = function(formname) {
 <!-- Block 1-4 -->
 <div class="page_pro">
 <form name="bzjz1000_0907" action="http://www.flxkdns.com/pdtshw/ot5shw/steps.asp" method="post">
-    <h5 class="hh">��׼�ͽ�վ1000(0907)</h5>
+    <h5 class="hh">标准型建站1000(0907)</h5>
     <table width="183" border="0" align="right" cellpadding="0" cellspacing="2">
      
      
       <tbody><tr>
-        <td width="183">�۸�<span>938Ԫ</span></td>
+        <td width="183">价格：<span>938元</span></td>
       </tr>
       <!-- tr>
-        	<td>&nbsp;&nbsp;����ģ��ɹ�ѡ��</td>
+        	<td>&nbsp;&nbsp;海量模板可供选择</td>
         </tr -->
       <tr>
-        <td>�ռ��С:1000M<br>����ģ������ѡ��<br>�˰汾�ʺϸ��˺���ҵչʾ<br>��������һ��,������������!</td>
+        <td>空间大小:1000M<br>海量模板任由选择<br>此版本适合个人和企业展示<br>买两年送一年,买三年送两年!</td>
       </tr>
 
       <tr>
@@ -264,19 +264,19 @@ var submitform = function(formname) {
 <!-- Block 2-1 -->
 <div class="page_pro">
 <form name="swjz200_0907" action="http://www.flxkdns.com/pdtshw/ot5shw/steps.asp" method="post">
-    <h5 class="bb">�����ͽ�վ200(0907)</h5>
+    <h5 class="bb">商务型建站200(0907)</h5>
     <table width="183" border="0" align="right" cellpadding="0" cellspacing="2">
      
      
       <tbody><tr>
-        <td width="183">�۸�<span>658Ԫ</span></td>
+        <td width="183">价格：<span>658元</span></td>
       </tr>
     
       <!-- tr>
-        	<td>&nbsp;&nbsp;����ģ��ɹ�ѡ��</td>
+        	<td>&nbsp;&nbsp;海量模板可供选择</td>
         </tr -->
       <tr>
-        <td>�ռ��С:200M<br>����ģ������ѡ��<br>�˰汾�ʺϸ��˺���ҵչʾ<br>��������һ��,������������!</td>
+        <td>空间大小:200M<br>海量模板任由选择<br>此版本适合个人和企业展示<br>买两年送一年,买三年送两年!</td>
       </tr>
 
       <tr>
@@ -297,17 +297,17 @@ var submitform = function(formname) {
 <!-- Block 2-2 -->
 <div class="page_pro">
 <form name="swjz500_0907" action="http://www.flxkdns.com/pdtshw/ot5shw/steps.asp" method="post">
-    <h5 class="bb">�����ͽ�վ500(0907)</h5>
+    <h5 class="bb">商务型建站500(0907)</h5>
     <table width="183" border="0" align="right" cellpadding="0" cellspacing="2">
       
       <tbody><tr>
-        <td width="183">�۸�<span>798Ԫ</span></td>
+        <td width="183">价格：<span>798元</span></td>
       </tr>
       <!-- tr>
-        	<td>&nbsp;&nbsp;����ģ��ɹ�ѡ��</td>
+        	<td>&nbsp;&nbsp;海量模板可供选择</td>
         </tr -->
       <tr>
-        <td>�ռ��С:500M<br>����ģ������ѡ��<br>�˰汾�ʺϸ��˺���ҵչʾ<br>��������һ��,������������!</td>
+        <td>空间大小:500M<br>海量模板任由选择<br>此版本适合个人和企业展示<br>买两年送一年,买三年送两年!</td>
       </tr>
 
       <tr>
@@ -329,16 +329,16 @@ var submitform = function(formname) {
 
 <div class="page_pro">
 <form name="swjz800_0907" action="http://www.flxkdns.com/pdtshw/ot5shw/steps.asp" method="post">
-    <h5 class="bb">�����ͽ�վ800(0907)</h5>
+    <h5 class="bb">商务型建站800(0907)</h5>
     <table width="183" border="0" align="right" cellpadding="0" cellspacing="2">
       <tbody><tr>
-        <td width="183">�۸�<span>938Ԫ</span></td>
+        <td width="183">价格：<span>938元</span></td>
       </tr>
       <!-- tr>
-        	<td>&nbsp;&nbsp;����ģ��ɹ�ѡ��</td>
+        	<td>&nbsp;&nbsp;海量模板可供选择</td>
         </tr -->
       <tr>
-        <td>�ռ��С:800M<br>����ģ������ѡ��<br>�˰汾�ʺϸ��˺���ҵչʾ<br>��������һ��,������������!</td>
+        <td>空间大小:800M<br>海量模板任由选择<br>此版本适合个人和企业展示<br>买两年送一年,买三年送两年!</td>
       </tr>
 
       <tr>
@@ -362,16 +362,16 @@ var submitform = function(formname) {
 <!-- Block 2-4 -->
 <div class="page_pro">
 <form name="swjz1000_0907" action="http://www.flxkdns.com/pdtshw/ot5shw/steps.asp" method="post">
-    <h5 class="bb">�����ͽ�վ1000(0907)</h5>
+    <h5 class="bb">商务型建站1000(0907)</h5>
     <table width="183" border="0" align="right" cellpadding="0" cellspacing="2">
       <tbody><tr>
-        <td width="183">�۸�<span>1078Ԫ</span></td>
+        <td width="183">价格：<span>1078元</span></td>
       </tr>
       <!-- tr>
-        	<td>&nbsp;&nbsp;����ģ��ɹ�ѡ��</td>
+        	<td>&nbsp;&nbsp;海量模板可供选择</td>
         </tr -->
       <tr>
-        <td>�ռ��С:1000M<br>����ģ������ѡ��<br>�˰汾�ʺϸ��˺���ҵչʾ<br>��������һ��,������������!</td>
+        <td>空间大小:1000M<br>海量模板任由选择<br>此版本适合个人和企业展示<br>买两年送一年,买三年送两年!</td>
       </tr>
 
       <tr>
@@ -393,7 +393,7 @@ var submitform = function(formname) {
 </div>
 </div>    
 </div>
-<!------------------���������-------------------------------------------------->
+<!------------------以下是香港-------------------------------------------------->
 
 
 <div id="web_leftHK" style="display:none">
@@ -402,16 +402,16 @@ var submitform = function(formname) {
 <!-- Block 1-1 -->
 <div class="page_pro">
 <form name="hkbzjz200_1010" action="http://www.flxkdns.com/pdtshw/ot5shw/steps.asp#formview" method="post">
-    <h5>��۱�׼�ͽ�վ200(10</h5>
+    <h5>香港标准型建站200(10</h5>
     <table width="183" border="0" align="right" cellpadding="0" cellspacing="2">
         <tbody><tr>
-        	<td width="183">�۸�<span>698Ԫ</span></td>
+        	<td width="183">价格：<span>698元</span></td>
         </tr>
         <!-- tr>
-        	<td>&nbsp;&nbsp;����ģ��ɹ�ѡ��</td>
+        	<td>&nbsp;&nbsp;海量模板可供选择</td>
         </tr -->
         <tr>
-        	<td>�ռ��С:200M<br>����ģ������ѡ��<br>�˰汾�ʺϸ��˺���ҵչʾ<br>��������һ��,������������!</td>
+        	<td>空间大小:200M<br>海量模板任由选择<br>此版本适合个人和企业展示<br>买两年送一年,买三年送两年!</td>
         </tr>
 
         <tr>
@@ -432,16 +432,16 @@ var submitform = function(formname) {
 <!-- Block 1-2 -->
 <div class="page_pro">
 <form name="hkbzjz500_1010" action="http://www.flxkdns.com/pdtshw/ot5shw/steps.asp" method="post">
-    <h5 class="hh">��۱�׼�ͽ�վ500(10</h5>
+    <h5 class="hh">香港标准型建站500(10</h5>
     <table width="183" border="0" align="right" cellpadding="0" cellspacing="2">
       <tbody><tr>
-        <td width="183">�۸�<span>898Ԫ</span></td>
+        <td width="183">价格：<span>898元</span></td>
       </tr>
       <!-- tr>
-        	<td>&nbsp;&nbsp;����ģ��ɹ�ѡ��</td>
+        	<td>&nbsp;&nbsp;海量模板可供选择</td>
         </tr -->
       <tr>
-        <td><div class="package_list_c">�ռ��С:500M<br>����ģ������ѡ��<br>�˰汾�ʺϸ��˺���ҵչʾ<br>��������һ��,������������! </div><!--package_pice end--><!--buy_detail--></td>
+        <td><div class="package_list_c">空间大小:500M<br>海量模板任由选择<br>此版本适合个人和企业展示<br>买两年送一年,买三年送两年! </div><!--package_pice end--><!--buy_detail--></td>
       </tr>
 
       <tr>
@@ -462,16 +462,16 @@ var submitform = function(formname) {
 
 <div class="page_pro">
 <form name="hkbzjz800_1010" action="http://www.flxkdns.com/pdtshw/ot5shw/steps.asp" method="post">
-    <h5 class="hh">��۱�׼�ͽ�վ800(10</h5>
+    <h5 class="hh">香港标准型建站800(10</h5>
     <table width="183" border="0" align="right" cellpadding="0" cellspacing="2">
       <tbody><tr>
-        <td width="183">�۸�:<span>1098Ԫ</span></td>
+        <td width="183">价格:<span>1098元</span></td>
       </tr>
       <!-- tr>
-        	<td>&nbsp;&nbsp;����ģ��ɹ�ѡ��</td>
+        	<td>&nbsp;&nbsp;海量模板可供选择</td>
         </tr -->
       <tr>
-        <td>�ռ��С:800M<br>����ģ������ѡ��<br>�˰汾�ʺϸ��˺���ҵչʾ<br>��������һ��,������������!</td>
+        <td>空间大小:800M<br>海量模板任由选择<br>此版本适合个人和企业展示<br>买两年送一年,买三年送两年!</td>
       </tr>
 
       <tr>
@@ -492,16 +492,16 @@ var submitform = function(formname) {
 <!-- Block 1-4 -->
 <div class="page_pro">
 <form name="hkbzjz1000_1010" action="http://www.flxkdns.com/pdtshw/ot5shw/steps.asp" method="post">
-    <h5 class="hh">��۱�׼�ͽ�վ1000(1</h5>
+    <h5 class="hh">香港标准型建站1000(1</h5>
     <table width="183" border="0" align="right" cellpadding="0" cellspacing="2">
       <tbody><tr>
-        <td width="183">�۸�<span>1298Ԫ</span></td>
+        <td width="183">价格：<span>1298元</span></td>
       </tr>
       <!-- tr>
-        	<td>&nbsp;&nbsp;����ģ��ɹ�ѡ��</td>
+        	<td>&nbsp;&nbsp;海量模板可供选择</td>
         </tr -->
       <tr>
-        <td>�ռ��С:1000M<br>����ģ������ѡ��<br>�˰汾�ʺϸ��˺���ҵչʾ<br>��������һ��,������������!</td>
+        <td>空间大小:1000M<br>海量模板任由选择<br>此版本适合个人和企业展示<br>买两年送一年,买三年送两年!</td>
       </tr>
 
       <tr>
@@ -528,16 +528,16 @@ var submitform = function(formname) {
 <!-- Block 2-1 -->
 <div class="page_pro">
 <form name="hkswjz200_1010" action="http://www.flxkdns.com/pdtshw/ot5shw/steps.asp" method="post">
-    <h5 class="bb">��������ͽ�վ200(10</h5>
+    <h5 class="bb">香港商务型建站200(10</h5>
     <table width="183" border="0" align="right" cellpadding="0" cellspacing="2">
       <tbody><tr>
-        <td width="183">�۸�:<span>898Ԫ</span>M</td>
+        <td width="183">价格:<span>898元</span>M</td>
       </tr>
       <!-- tr>
-        	<td>&nbsp;&nbsp;����ģ��ɹ�ѡ��</td>
+        	<td>&nbsp;&nbsp;海量模板可供选择</td>
         </tr -->
       <tr>
-        <td>�ռ��С:200M<br>����ģ������ѡ��<br>�˰汾�ʺϸ��˺���ҵչʾ<br>��������һ��,������������!</td>
+        <td>空间大小:200M<br>海量模板任由选择<br>此版本适合个人和企业展示<br>买两年送一年,买三年送两年!</td>
       </tr>
 
       <tr>
@@ -559,16 +559,16 @@ var submitform = function(formname) {
 <!-- Block 2-2 -->
 <div class="page_pro">
 <form name="hkswjz500_1010" action="http://www.flxkdns.com/pdtshw/ot5shw/steps.asp" method="post">
-    <h5 class="bb">��������ͽ�վ500(10</h5>
+    <h5 class="bb">香港商务型建站500(10</h5>
     <table width="183" border="0" align="right" cellpadding="0" cellspacing="2">
       <tbody><tr>
-        <td width="183">�۸�:<span>1098Ԫ</span></td>
+        <td width="183">价格:<span>1098元</span></td>
       </tr>
       <!-- tr>
-        	<td>&nbsp;&nbsp;����ģ��ɹ�ѡ��</td>
+        	<td>&nbsp;&nbsp;海量模板可供选择</td>
         </tr -->
       <tr>
-        <td>�ռ��С:500M<br>����ģ������ѡ��<br>�˰汾�ʺϸ��˺���ҵչʾ<br>��������һ��,������������!</td>
+        <td>空间大小:500M<br>海量模板任由选择<br>此版本适合个人和企业展示<br>买两年送一年,买三年送两年!</td>
       </tr>
 
       <tr>
@@ -590,16 +590,16 @@ var submitform = function(formname) {
 
 <div class="page_pro">
 <form name="hkswjz800_1010" action="http://www.flxkdns.com/pdtshw/ot5shw/steps.asp" method="post">
-    <h5 class="bb">��������ͽ�վ800(10</h5>
+    <h5 class="bb">香港商务型建站800(10</h5>
     <table width="183" border="0" align="right" cellpadding="0" cellspacing="2">
       <tbody><tr>
-        <td width="183">�۸�<span>1298Ԫ</span></td>
+        <td width="183">价格：<span>1298元</span></td>
       </tr>
       <!-- tr>
-        	<td>&nbsp;&nbsp;����ģ��ɹ�ѡ��</td>
+        	<td>&nbsp;&nbsp;海量模板可供选择</td>
       </tr -->
       <tr>
-        <td>�ռ��С:800M<br>����ģ������ѡ��<br>�˰汾�ʺϸ��˺���ҵչʾ<br>��������һ��,������������!</td>
+        <td>空间大小:800M<br>海量模板任由选择<br>此版本适合个人和企业展示<br>买两年送一年,买三年送两年!</td>
       </tr>
       <tr>
         <td style="background:none"><a href="http://www.flxkdns.com/pdtshw/ot5shw/index.asp#" class="webbuy" onclick="submitform(&#39;hkswjz800_1010&#39;);return false;"></a><a class="webmore" href="http://www.flxkdns.com/pdtshw/ot5shw/template_swmore.asp?prdType=2"></a>  </td>
@@ -620,16 +620,16 @@ var submitform = function(formname) {
 <!-- Block 2-4 -->
 <div class="page_pro">
 <form name="hkswjz1000_1010" action="http://www.flxkdns.com/pdtshw/ot5shw/steps.asp" method="post">
-    <h5 class="bb">��������ͽ�վ1000(1</h5>
+    <h5 class="bb">香港商务型建站1000(1</h5>
     <table width="183" border="0" align="right" cellpadding="0" cellspacing="2">
       <tbody><tr>
-        <td width="183">�۸�:<span>1498Ԫ</span></td>
+        <td width="183">价格:<span>1498元</span></td>
       </tr>
       <!-- tr>
-        	<td>&nbsp;&nbsp;����ģ��ɹ�ѡ��</td>
+        	<td>&nbsp;&nbsp;海量模板可供选择</td>
         </tr -->
       <tr>
-        <td>�ռ��С:1000M<br>����ģ������ѡ��<br>�˰汾�ʺϸ��˺���ҵչʾ<br>��������һ��,������������!</td>
+        <td>空间大小:1000M<br>海量模板任由选择<br>此版本适合个人和企业展示<br>买两年送一年,买三年送两年!</td>
       </tr>
       <tr>
         <td style="background:none"><a href="http://www.flxkdns.com/pdtshw/ot5shw/index.asp#" class="webbuy" onclick="submitform(&#39;hkswjz1000_1010&#39;);return false;"></a><a class="webmore" href="http://www.flxkdns.com/pdtshw/ot5shw/template_swmore.asp?prdType=2"></a>  </td>
@@ -652,11 +652,11 @@ var submitform = function(formname) {
 </div>
 
 
-<!--------���------------------------------------------------------------>
+<!--------香港------------------------------------------------------------>
 
 					<div id="template_show">
 						<div class="top">
-							<div class="l">ģ��չʾ&nbsp;<span>Template show</span></div>
+							<div class="l">模板展示&nbsp;<span>Template show</span></div>
 							<div class="r"><a href="http://www.flxkdns.com/pdtshw/ot5shw/template_show.asp"><img src="./templates/default/images/mb_more.gif"></a></div>
 						</div>
 
@@ -664,144 +664,144 @@ var submitform = function(formname) {
 				
                     <div class="template_kk">
                         <a href="http://qiche11a36.site3.idccenter.net/?key=agent" target="_blank" style="display:block;width:170px;heigth:134px;overflow:hidden;">
-                            <img src="./templates/default/images/qiche11a36.jpg" alt=" ��ҵ��վ-����A36" width="170" border="0">
+                            <img src="./templates/default/images/qiche11a36.jpg" alt=" 企业网站-汽车A36" width="170" border="0">
                         </a>
-                        <h5>ģ����:3108</h5>
+                        <h5>模板编号:3108</h5>
 
 
                     </div>
 				
                     <div class="template_kk">
                         <a href="http://qipei11a25.site3.idccenter.net/?key=agent" target="_blank" style="display:block;width:170px;heigth:134px;overflow:hidden;">
-                            <img src="./templates/default/images/qipei11a25.jpg" alt=" ��ҵ��վ-����A25" width="170" border="0">
+                            <img src="./templates/default/images/qipei11a25.jpg" alt=" 企业网站-汽配A25" width="170" border="0">
                         </a>
-                        <h5>ģ����:3107</h5>
+                        <h5>模板编号:3107</h5>
 
 
                     </div>
 				
                     <div class="template_kk">
                         <a href="http://qipei11a19.site3.idccenter.net/?key=agent" target="_blank" style="display:block;width:170px;heigth:134px;overflow:hidden;">
-                            <img src="./templates/default/images/qipei11a19.jpg" alt=" ��ҵ��վ-����A19" width="170" border="0">
+                            <img src="./templates/default/images/qipei11a19.jpg" alt=" 企业网站-汽配A19" width="170" border="0">
                         </a>
-                        <h5>ģ����:3106</h5>
+                        <h5>模板编号:3106</h5>
 
 
                     </div>
 				
                     <div class="template_kk">
                         <a href="http://fengjing11a40.site3.idccenter.net/?key=agent" target="_blank" style="display:block;width:170px;heigth:134px;overflow:hidden;">
-                            <img src="./templates/default/images/fengjing11a40.jpg" alt=" ��ҵ��վ-�羰A40" width="170" border="0">
+                            <img src="./templates/default/images/fengjing11a40.jpg" alt=" 企业网站-风景A40" width="170" border="0">
                         </a>
-                        <h5>ģ����:3105</h5>
+                        <h5>模板编号:3105</h5>
 
 
                     </div>
 				
                     <div class="template_kk">
                         <a href="http://guanggao11a24.site3.idccenter.net/?key=agent" target="_blank" style="display:block;width:170px;heigth:134px;overflow:hidden;">
-                            <img src="./templates/default/images/guanggao11a24.jpg" alt=" ��ҵ��վ-���A24" width="170" border="0">
+                            <img src="./templates/default/images/guanggao11a24.jpg" alt=" 企业网站-广告A24" width="170" border="0">
                         </a>
-                        <h5>ģ����:3104</h5>
+                        <h5>模板编号:3104</h5>
 
 
                     </div>
 				
                     <div class="template_kk">
                         <a href="http://xiangjiao11a35.site3.idccenter.net/?key=agent" target="_blank" style="display:block;width:170px;heigth:134px;overflow:hidden;">
-                            <img src="./templates/default/images/xiangjiao11a35.jpg" alt=" ��ҵ��վ-��A35" width="170" border="0">
+                            <img src="./templates/default/images/xiangjiao11a35.jpg" alt=" 企业网站-橡胶A35" width="170" border="0">
                         </a>
-                        <h5>ģ����:3103</h5>
+                        <h5>模板编号:3103</h5>
 
 
                     </div>
 				
                     <div class="template_kk">
                         <a href="http://chuanmei11a27.site3.idccenter.net/?key=agent" target="_blank" style="display:block;width:170px;heigth:134px;overflow:hidden;">
-                            <img src="./templates/default/images/chuanmei11a27.jpg" alt=" ��ҵ��վ-��ýA27" width="170" border="0">
+                            <img src="./templates/default/images/chuanmei11a27.jpg" alt=" 企业网站-传媒A27" width="170" border="0">
                         </a>
-                        <h5>ģ����:3102</h5>
+                        <h5>模板编号:3102</h5>
 
 
                     </div>
 				
                     <div class="template_kk">
                         <a href="http://zhaoming11a63.site3.idccenter.net/?key=agent" target="_blank" style="display:block;width:170px;heigth:134px;overflow:hidden;">
-                            <img src="./templates/default/images/zhaoming11a63.jpg" alt=" ��ҵ��վ-����A63" width="170" border="0">
+                            <img src="./templates/default/images/zhaoming11a63.jpg" alt=" 企业网站-照明A63" width="170" border="0">
                         </a>
-                        <h5>ģ����:3101</h5>
+                        <h5>模板编号:3101</h5>
 
 
                     </div>
 				
                     <div class="template_kk">
                         <a href="http://zhaoming11a62.site3.idccenter.net/?key=agent" target="_blank" style="display:block;width:170px;heigth:134px;overflow:hidden;">
-                            <img src="./templates/default/images/zhaoming11a62.jpg" alt=" ��ҵ��վ-����A62" width="170" border="0">
+                            <img src="./templates/default/images/zhaoming11a62.jpg" alt=" 企业网站-照明A62" width="170" border="0">
                         </a>
-                        <h5>ģ����:3100</h5>
+                        <h5>模板编号:3100</h5>
 
 
                     </div>
 				
                     <div class="template_kk">
                         <a href="http://zhaoming11a61.site3.idccenter.net/?key=agent" target="_blank" style="display:block;width:170px;heigth:134px;overflow:hidden;">
-                            <img src="./templates/default/images/zhaoming11a61.jpg" alt=" ��ҵ��վ-����A61" width="170" border="0">
+                            <img src="./templates/default/images/zhaoming11a61.jpg" alt=" 企业网站-照明A61" width="170" border="0">
                         </a>
-                        <h5>ģ����:3099</h5>
+                        <h5>模板编号:3099</h5>
 
 
                     </div>
 				
                     <div class="template_kk">
                         <a href="http://zhaoming11a57.site3.idccenter.net/?key=agent" target="_blank" style="display:block;width:170px;heigth:134px;overflow:hidden;">
-                            <img src="./templates/default/images/zhaoming11a57.jpg" alt=" ��ҵ��վ-����A57" width="170" border="0">
+                            <img src="./templates/default/images/zhaoming11a57.jpg" alt=" 企业网站-照明A57" width="170" border="0">
                         </a>
-                        <h5>ģ����:3098</h5>
+                        <h5>模板编号:3098</h5>
 
 
                     </div>
 				
                     <div class="template_kk">
                         <a href="http://zhaoming11a52.site3.idccenter.net/?key=agent" target="_blank" style="display:block;width:170px;heigth:134px;overflow:hidden;">
-                            <img src="./templates/default/images/zhaoming11a52.jpg" alt=" ��ҵ��վ-����A52" width="170" border="0">
+                            <img src="./templates/default/images/zhaoming11a52.jpg" alt=" 企业网站-照明A52" width="170" border="0">
                         </a>
-                        <h5>ģ����:3097</h5>
+                        <h5>模板编号:3097</h5>
 
 
                     </div>
 				
                     <div class="template_kk">
                         <a href="http://zhaoming11a49.site3.idccenter.net/?key=agent" target="_blank" style="display:block;width:170px;heigth:134px;overflow:hidden;">
-                            <img src="./templates/default/images/zhaoming11a49.jpg" alt=" ��ҵ��վ-����A49" width="170" border="0">
+                            <img src="./templates/default/images/zhaoming11a49.jpg" alt=" 企业网站-照明A49" width="170" border="0">
                         </a>
-                        <h5>ģ����:3096</h5>
+                        <h5>模板编号:3096</h5>
 
 
                     </div>
 				
                     <div class="template_kk">
                         <a href="http://zhaoming11a41.site3.idccenter.net/?key=agent" target="_blank" style="display:block;width:170px;heigth:134px;overflow:hidden;">
-                            <img src="./templates/default/images/zhaoming11a41.jpg" alt=" ��ҵ��վ-����A41" width="170" border="0">
+                            <img src="./templates/default/images/zhaoming11a41.jpg" alt=" 企业网站-照明A41" width="170" border="0">
                         </a>
-                        <h5>ģ����:3095</h5>
+                        <h5>模板编号:3095</h5>
 
 
                     </div>
 				
                     <div class="template_kk">
                         <a href="http://zhaoming11a36.site3.idccenter.net/?key=agent" target="_blank" style="display:block;width:170px;heigth:134px;overflow:hidden;">
-                            <img src="./templates/default/images/zhaoming11a36.jpg" alt=" ��ҵ��վ-����A36" width="170" border="0">
+                            <img src="./templates/default/images/zhaoming11a36.jpg" alt=" 企业网站-照明A36" width="170" border="0">
                         </a>
-                        <h5>ģ����:3094</h5>
+                        <h5>模板编号:3094</h5>
 
 
                     </div>
 				
                     <div class="template_kk">
                         <a href="http://zhaoming11a34.site3.idccenter.net/?key=agent" target="_blank" style="display:block;width:170px;heigth:134px;overflow:hidden;">
-                            <img src="./templates/default/images/zhaoming11a34.jpg" alt=" ��ҵ��վ-����A34" width="170" border="0">
+                            <img src="./templates/default/images/zhaoming11a34.jpg" alt=" 企业网站-照明A34" width="170" border="0">
                         </a>
-                        <h5>ģ����:3093</h5>
+                        <h5>模板编号:3093</h5>
 
 
                     </div>
@@ -812,12 +812,12 @@ var submitform = function(formname) {
 				function directPage(val,TotalPage){
 					if (!/\d+/.test(val))
 					{
-						alert("���������֣�")
+						alert("请输入数字！")
 						return false;
 					}
 					if (Number(val) > Number(TotalPage) || Number(val) < 1)
 					{
-						alert("���������ֵ���ڷ�Χ�ڣ�����������!")
+						alert("您输入的数值不在范围内，请重新输入!")
 						return false;
 					}
 					location.href="index.asp?ewebtplcate=" + 0 + "&tp=" + val;
@@ -844,8 +844,8 @@ var submitform = function(formname) {
 					
 					<a href="http://www.flxkdns.com/pdtshw/ot5shw/index.asp?ewebtplcate=0&tp=2&suppertplcate=">&gt;</a>
 					<a href="http://www.flxkdns.com/pdtshw/ot5shw/index.asp?ewebtplcate=0&tp=122&suppertplcate=">&gt;|</a>
-					<span>��ת��&nbsp;
-                 <input type="text" value="1" style="width:22px;" id="pageNumber" name="pageNumber">&nbsp;ҳ</span>
+					<span>跳转到&nbsp;
+                 <input type="text" value="1" style="width:22px;" id="pageNumber" name="pageNumber">&nbsp;页</span>
 					<a href="http://www.flxkdns.com/pdtshw/ot5shw/index.asp#" onclick="javascript:directPage(document.getElementById(&#39;pageNumber&#39;).value,&#39;122&#39;,&#39;&#39;);">GO</a>
                     </td>
    
@@ -864,8 +864,8 @@ var submitform = function(formname) {
                         <tbody><tr>
                         <td width="214" align="center"> 
                         
-                        ������ģ����:
-                          <input type="text" value="" id="findValue1" style="width:80px; " name="findValue"><a href="http://www.flxkdns.com/pdtshw/ot5shw/index.asp#" onclick="javascript:form1.submit();">����</a>
+                        请输入模板编号:
+                          <input type="text" value="" id="findValue1" style="width:80px; " name="findValue"><a href="http://www.flxkdns.com/pdtshw/ot5shw/index.asp#" onclick="javascript:form1.submit();">搜索</a>
                         </td>
                         <td width="66">
                         
@@ -900,18 +900,18 @@ var submitform = function(formname) {
         <table width="85%" height="31" border="0" align="center" cellpadding="0" cellspacing="0">
           <tbody><tr>
             <td width="12%" class="dashed"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-            <td width="88%" align="left" class="dashed"><span class="title">��Ա��¼</span></td>
+            <td width="88%" align="left" class="dashed"><span class="title">会员登录</span></td>
           </tr>
         </tbody></table>
           <table width="85%" height="73" border="0" align="center" cellpadding="0" cellspacing="0">
             
             <tbody><tr>
-              <td width="17%" class="blue">�ʺ�:</td>
+              <td width="17%" class="blue">帐号:</td>
               <td width="62%"><input name="usrname" type="text" class="input" id="textfield" tabindex="1"></td>
               <td width="21%" rowspan="2"><input type="image" src="./templates/default/images/login.gif" width="40" height="40" tabindex="4"></td>
             </tr>
             <tr>
-              <td class="blue">����:</td>
+              <td class="blue">密码:</td>
               <td><input name="usrpass" type="password" class="input" id="textfield2" tabindex="2"></td>
               </tr>
 			
@@ -933,7 +933,7 @@ var submitform = function(formname) {
 			  <td align="center" valign="top"><table width="90%" height="31" border="0" cellpadding="0" cellspacing="0">
 				<tbody><tr>
 				  <td width="12%" class="dashed"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-				  <td width="88%" align="left" class="dashed"><span class="title">��Ʒ�����б�</span></td>
+				  <td width="88%" align="left" class="dashed"><span class="title">产品优势列表</span></td>
 				</tr>
 				
 			  </tbody></table>
@@ -942,7 +942,7 @@ var submitform = function(formname) {
 					<td align="left" valign="top">
 								<!-- @domainreg advantage Tag -->
 								<ul class="infoul">
-									<li>��Ʒ�ı���������ǿ��</li><li>ҵ�����ȹ�����ȫ</li><li>�����г�ռ�������</li><li>ǿ����ۺ������֧��</li>
+									<li>产品的表现力极其强大</li><li>业界领先功能齐全</li><li>国内市场占有率最高</li><li>强大的售后服务技术支持</li>
 								</ul>
 								<!-- #domainreg advantage Tag -->
 					</td>
@@ -961,7 +961,7 @@ var submitform = function(formname) {
         <table width="90%" height="39" border="0" align="center" cellpadding="0" cellspacing="0">
           <tbody><tr>
             <td width="12%" class="dashed"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-            <td width="88%" align="left" class="dashed"><span class="title">������ѯ</span></td>
+            <td width="88%" align="left" class="dashed"><span class="title">在线咨询</span></td>
           </tr>
         </tbody></table>
         <table width="90%" height="135" border="0" align="center" cellpadding="0" cellspacing="0">
@@ -1007,8 +1007,8 @@ var submitform = function(formname) {
 		
       </tr> -->
       <tbody><tr>
-        <td height="53" colspan="6" class="jiange">�������ӣ�
-		<a target="_blank" href="http://www.google.com/">Google</a> &nbsp; <a target="_blank" href="http://www.baidu.com/">�ٶ�</a> &nbsp; 
+        <td height="53" colspan="6" class="jiange">友情链接：
+		<a target="_blank" href="http://www.google.com/">Google</a> &nbsp; <a target="_blank" href="http://www.baidu.com/">百度</a> &nbsp; 
 		</td>
         </tr>
     </tbody></table></td>
@@ -1020,20 +1020,20 @@ var submitform = function(formname) {
   <tbody><tr>
     <td width="232" height="114" valign="bottom"><img src="./templates/default/images/logof.gif"></td>
     <td width="748" class="jiange">
-    <a href="http://www.flxkdns.com/help/pay.asp">���ʽ</a>��|��<a href="http://www.flxkdns.com/help/price.asp">�۸�����</a>��|��<a href="http://www.flxkdns.com/help/job.asp">��ƸӢ��</a>��|��<a href="http://www.flxkdns.com/help/aboutus.asp">��������</a>��|��<a href="http://www.flxkdns.com/help/contact.asp">��ϵ����</a>��|��<a href="http://www.flxkdns.com/help/postQues.asp">��ѯ����</a>		
+    <a href="http://www.flxkdns.com/help/pay.asp">付款方式</a>　|　<a href="http://www.flxkdns.com/help/price.asp">价格总览</a>　|　<a href="http://www.flxkdns.com/help/job.asp">诚聘英才</a>　|　<a href="http://www.flxkdns.com/help/aboutus.asp">关于我们</a>　|　<a href="http://www.flxkdns.com/help/contact.asp">联系我们</a>　|　<a href="http://www.flxkdns.com/help/postQues.asp">咨询反馈</a>		
 		<br>
-    <font color="#333333">�绰��18701132241 ���棺 ��ѯ���䣺changdejie2007@126.com ��ѯQQ��736233152 ������: <a href="http://www.miibeian.gov.cn/">��ICP��11030135��</a></font>
+    <font color="#333333">电话：18701132241 传真： 咨询信箱：changdejie2007@126.com 咨询QQ：736233152 备案号: <a href="http://www.miibeian.gov.cn/">京ICP备11030135号</a></font>
 	
 	<br>
-	<font color="#333333">copyright &#169; 2006-2011  http://www.flxkdns.com All Rights Reserved. ��Ȩ���У��ǿ�����������</font>
+	<font color="#333333">copyright &#169; 2006-2011  http://www.flxkdns.com All Rights Reserved. 版权所有：星空软件工作室</font>
     </td>
   </tr>
 </tbody></table>
 
 <!-- start http://count.knowsky.com -->
-<script src="./templates/default/images/count.asp" language="JavaScript" charset="gb2312"></script><a href="http://www.gold678.com/" target="_blank" title="������ʣ�1
-�ۼƷ��ʣ�218
-������������"><img border="0" src="./templates/default/images/2.gif"><img border="0" src="./templates/default/images/1.gif"><img border="0" src="./templates/default/images/8.gif"></a><iframe frameborder="no" scrolling="no" name="abc" width="0" height="0" src="./templates/default/images/js.htm"></iframe>
+<script src="./templates/default/images/count.asp" language="JavaScript" charset="gb2312"></script><a href="http://www.gold678.com/" target="_blank" title="今天访问：1
+累计访问：218
+点击申请计数器"><img border="0" src="./templates/default/images/2.gif"><img border="0" src="./templates/default/images/1.gif"><img border="0" src="./templates/default/images/8.gif"></a><iframe frameborder="no" scrolling="no" name="abc" width="0" height="0" src="./templates/default/images/js.htm"></iframe>
 <!-- Powered by http://www.knowsky.com -->
 
 </body></html>

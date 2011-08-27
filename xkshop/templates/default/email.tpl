@@ -10,18 +10,18 @@
         <table width="85%" height="31" border="0" align="center" cellpadding="0" cellspacing="0">
           <tbody><tr>
             <td width="12%" class="dashed"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-            <td width="88%" align="left" class="dashed"><span class="title">»áÔ±µÇÂ¼</span></td>
+            <td width="88%" align="left" class="dashed"><span class="title">ä¼šå‘˜ç™»å½•</span></td>
           </tr>
         </tbody></table>
           <table width="85%" height="73" border="0" align="center" cellpadding="0" cellspacing="0">
             
             <tbody><tr>
-              <td width="17%" class="blue">ÕÊºÅ:</td>
+              <td width="17%" class="blue">å¸å·:</td>
               <td width="62%"><input name="usrname" type="text" class="input" id="textfield" tabindex="1"></td>
               <td width="21%" rowspan="2"><input type="image" src="./templates/default/images/login.gif" width="40" height="40" tabindex="4"></td>
             </tr>
             <tr>
-              <td class="blue">ÃÜÂë:</td>
+              <td class="blue">å¯†ç :</td>
               <td><input name="usrpass" type="password" class="input" id="textfield2" tabindex="2"></td>
               </tr>
 			
@@ -44,14 +44,14 @@
 		    <table width="98%" height="31" border="0" cellpadding="0" cellspacing="0">
             <tbody><tr>
               <td width="12%" class="dashed"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="88%" align="left" class="dashed"><span class="title">²úÆ··ÖÀà</span></td>
+              <td width="88%" align="left" class="dashed"><span class="title">äº§å“åˆ†ç±»</span></td>
             </tr>
             </tbody></table>
             <table width="90%" border="0" cellpadding="0" cellspacing="0">
               <tbody><tr>
                 <td align="left" valign="top">
 							<!-- @productClass Tag -->
-							<ul id="pdtclslist"><li><a href="http://www.flxkdns.com/pdtshw/emlshw/index.asp?pcid=62&pcnme=E%D3%CA%BE%D6">EÓÊ¾Ö</a></li><li><a href="http://www.flxkdns.com/pdtshw/emlshw/index.asp?pcid=60&pcnme=G%D3%CA%BE%D6">GÓÊ¾Ö</a></li></ul>
+							<ul id="pdtclslist"><li><a href="http://www.flxkdns.com/pdtshw/emlshw/index.asp?pcid=62&pcnme=E%D3%CA%BE%D6">Eé‚®å±€</a></li><li><a href="http://www.flxkdns.com/pdtshw/emlshw/index.asp?pcid=60&pcnme=G%D3%CA%BE%D6">Gé‚®å±€</a></li></ul>
 							<!-- #productClass Tag -->
 				</td>
 			  </tr>
@@ -69,7 +69,7 @@
         <table width="90%" height="39" border="0" align="center" cellpadding="0" cellspacing="0">
           <tbody><tr>
             <td width="12%" class="dashed"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-            <td width="88%" align="left" class="dashed"><span class="title">ÔÚÏß×ÉÑ¯</span></td>
+            <td width="88%" align="left" class="dashed"><span class="title">åœ¨çº¿å’¨è¯¢</span></td>
           </tr>
         </tbody></table>
         <table width="90%" height="135" border="0" align="center" cellpadding="0" cellspacing="0">
@@ -105,18 +105,18 @@
 		  <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./templates/default/images/mailbg.gif">
             <tbody><tr>
               <td width="9%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="91%" height="35" align="left"><span class="title">È«ÇòÓÊGÓÊ¾Ö1¸ö(200906)</span></td>
+              <td width="91%" height="35" align="left"><span class="title">å…¨çƒé‚®Gé‚®å±€1ä¸ª(200906)</span></td>
             </tr>
             </tbody></table>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody><tr>
               <td width="35%" height="90" align="center" class="dashed"><img src="./templates/default/images/mail.gif"></td>
               <td width="65%" class="dashed" align="left" height="150" style="line-height: 21px;">
-				<p>µ¥¸öÈÝÁ¿1G ×ÜÈÝÁ¿1G</p>  <p>ÆÕÍ¨¸½¼þ30M<br> ³¬´ó¸½¼þ600M <br></p>
+				<p>å•ä¸ªå®¹é‡1G æ€»å®¹é‡1G</p>  <p>æ™®é€šé™„ä»¶30M<br> è¶…å¤§é™„ä»¶600M <br></p>
 			  </td>
             </tr>
             <tr>
-              <td height="46" align="center">£¤<span class="red">150Ôª/Äê</span> </td>
+              <td height="46" align="center">ï¿¥<span class="red">150å…ƒ/å¹´</span> </td>
               <td align="right"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=eml&prd=agmail001_0906&prc=150&pdtnme=%C8%AB%C7%F2%D3%CAG%D3%CA%BE%D61%B8%F6%28200906%29"><img src="./templates/default/images/buy.gif" width="69" height="27"></a></td>
             </tr>
           </tbody></table>
@@ -126,18 +126,18 @@
 		  <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./templates/default/images/mailbg.gif">
             <tbody><tr>
               <td width="9%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="91%" height="35" align="left"><span class="title">È«ÇòÓÊGÓÊ¾Ö2¸ö(200906)</span></td>
+              <td width="91%" height="35" align="left"><span class="title">å…¨çƒé‚®Gé‚®å±€2ä¸ª(200906)</span></td>
             </tr>
             </tbody></table>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody><tr>
               <td width="35%" height="90" align="center" class="dashed"><img src="./templates/default/images/mail.gif"></td>
               <td width="65%" class="dashed" align="left" height="150" style="line-height: 21px;">
-				<p>µ¥¸öÈÝÁ¿1G ×ÜÈÝÁ¿2G</p>  <p>ÆÕÍ¨¸½¼þ30M<br> ³¬´ó¸½¼þ600M <br></p>
+				<p>å•ä¸ªå®¹é‡1G æ€»å®¹é‡2G</p>  <p>æ™®é€šé™„ä»¶30M<br> è¶…å¤§é™„ä»¶600M <br></p>
 			  </td>
             </tr>
             <tr>
-              <td height="46" align="center">£¤<span class="red">300Ôª/Äê</span> </td>
+              <td height="46" align="center">ï¿¥<span class="red">300å…ƒ/å¹´</span> </td>
               <td align="right"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=eml&prd=agmail002_0906&prc=300&pdtnme=%C8%AB%C7%F2%D3%CAG%D3%CA%BE%D62%B8%F6%28200906%29"><img src="./templates/default/images/buy.gif" width="69" height="27"></a></td>
             </tr>
           </tbody></table>
@@ -147,18 +147,18 @@
 		  <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./templates/default/images/mailbg.gif">
             <tbody><tr>
               <td width="9%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="91%" height="35" align="left"><span class="title">È«ÇòÓÊGÓÊ¾Ö5¸ö(200906)</span></td>
+              <td width="91%" height="35" align="left"><span class="title">å…¨çƒé‚®Gé‚®å±€5ä¸ª(200906)</span></td>
             </tr>
             </tbody></table>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody><tr>
               <td width="35%" height="90" align="center" class="dashed"><img src="./templates/default/images/mail.gif"></td>
               <td width="65%" class="dashed" align="left" height="150" style="line-height: 21px;">
-				<p>µ¥¸öÈÝÁ¿1G ×ÜÈÝÁ¿5G</p>  <p>ÆÕÍ¨¸½¼þ30M<br> ³¬´ó¸½¼þ600M <br></p>
+				<p>å•ä¸ªå®¹é‡1G æ€»å®¹é‡5G</p>  <p>æ™®é€šé™„ä»¶30M<br> è¶…å¤§é™„ä»¶600M <br></p>
 			  </td>
             </tr>
             <tr>
-              <td height="46" align="center">£¤<span class="red">750Ôª/Äê</span> </td>
+              <td height="46" align="center">ï¿¥<span class="red">750å…ƒ/å¹´</span> </td>
               <td align="right"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=eml&prd=agmail005_0906&prc=750&pdtnme=%C8%AB%C7%F2%D3%CAG%D3%CA%BE%D65%B8%F6%28200906%29"><img src="./templates/default/images/buy.gif" width="69" height="27"></a></td>
             </tr>
           </tbody></table>
@@ -168,18 +168,18 @@
 		  <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./templates/default/images/mailbg.gif">
             <tbody><tr>
               <td width="9%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="91%" height="35" align="left"><span class="title">È«ÇòÓÊGÓÊ¾Ö10¸ö(200906)</span></td>
+              <td width="91%" height="35" align="left"><span class="title">å…¨çƒé‚®Gé‚®å±€10ä¸ª(200906)</span></td>
             </tr>
             </tbody></table>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody><tr>
               <td width="35%" height="90" align="center" class="dashed"><img src="./templates/default/images/mail.gif"></td>
               <td width="65%" class="dashed" align="left" height="150" style="line-height: 21px;">
-				<p>µ¥¸öÈÝÁ¿1G ×ÜÈÝÁ¿10G</p>  <p>ÆÕÍ¨¸½¼þ30M<br> ³¬´ó¸½¼þ600M <br></p>
+				<p>å•ä¸ªå®¹é‡1G æ€»å®¹é‡10G</p>  <p>æ™®é€šé™„ä»¶30M<br> è¶…å¤§é™„ä»¶600M <br></p>
 			  </td>
             </tr>
             <tr>
-              <td height="46" align="center">£¤<span class="red">1500Ôª/Äê</span> </td>
+              <td height="46" align="center">ï¿¥<span class="red">1500å…ƒ/å¹´</span> </td>
               <td align="right"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=eml&prd=agmail010_0906&prc=1500&pdtnme=%C8%AB%C7%F2%D3%CAG%D3%CA%BE%D610%B8%F6%28200906%29"><img src="./templates/default/images/buy.gif" width="69" height="27"></a></td>
             </tr>
           </tbody></table>
@@ -189,18 +189,18 @@
 		  <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./templates/default/images/mailbg.gif">
             <tbody><tr>
               <td width="9%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="91%" height="35" align="left"><span class="title">È«ÇòÓÊGÓÊ¾Ö20¸ö(200906)</span></td>
+              <td width="91%" height="35" align="left"><span class="title">å…¨çƒé‚®Gé‚®å±€20ä¸ª(200906)</span></td>
             </tr>
             </tbody></table>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody><tr>
               <td width="35%" height="90" align="center" class="dashed"><img src="./templates/default/images/mail.gif"></td>
               <td width="65%" class="dashed" align="left" height="150" style="line-height: 21px;">
-				<p>µ¥¸öÈÝÁ¿1G ×ÜÈÝÁ¿20G</p>  <p>ÆÕÍ¨¸½¼þ30M<br> ³¬´ó¸½¼þ600M <br></p>
+				<p>å•ä¸ªå®¹é‡1G æ€»å®¹é‡20G</p>  <p>æ™®é€šé™„ä»¶30M<br> è¶…å¤§é™„ä»¶600M <br></p>
 			  </td>
             </tr>
             <tr>
-              <td height="46" align="center">£¤<span class="red">3000Ôª/Äê</span> </td>
+              <td height="46" align="center">ï¿¥<span class="red">3000å…ƒ/å¹´</span> </td>
               <td align="right"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=eml&prd=agmail020_0906&prc=3000&pdtnme=%C8%AB%C7%F2%D3%CAG%D3%CA%BE%D620%B8%F6%28200906%29"><img src="./templates/default/images/buy.gif" width="69" height="27"></a></td>
             </tr>
           </tbody></table>
@@ -210,18 +210,18 @@
 		  <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./templates/default/images/mailbg.gif">
             <tbody><tr>
               <td width="9%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="91%" height="35" align="left"><span class="title">È«ÇòÓÊGÓÊ¾Ö30¸ö(200906)</span></td>
+              <td width="91%" height="35" align="left"><span class="title">å…¨çƒé‚®Gé‚®å±€30ä¸ª(200906)</span></td>
             </tr>
             </tbody></table>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody><tr>
               <td width="35%" height="90" align="center" class="dashed"><img src="./templates/default/images/mail.gif"></td>
               <td width="65%" class="dashed" align="left" height="150" style="line-height: 21px;">
-				<p>µ¥¸öÈÝÁ¿1G ×ÜÈÝÁ¿30G</p>  <p>ÆÕÍ¨¸½¼þ30M<br> ³¬´ó¸½¼þ600M <br></p>
+				<p>å•ä¸ªå®¹é‡1G æ€»å®¹é‡30G</p>  <p>æ™®é€šé™„ä»¶30M<br> è¶…å¤§é™„ä»¶600M <br></p>
 			  </td>
             </tr>
             <tr>
-              <td height="46" align="center">£¤<span class="red">4500Ôª/Äê</span> </td>
+              <td height="46" align="center">ï¿¥<span class="red">4500å…ƒ/å¹´</span> </td>
               <td align="right"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=eml&prd=agmail030_0906&prc=4500&pdtnme=%C8%AB%C7%F2%D3%CAG%D3%CA%BE%D630%B8%F6%28200906%29"><img src="./templates/default/images/buy.gif" width="69" height="27"></a></td>
             </tr>
           </tbody></table>
@@ -231,18 +231,18 @@
 		  <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./templates/default/images/mailbg.gif">
             <tbody><tr>
               <td width="9%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="91%" height="35" align="left"><span class="title">È«ÇòÓÊGÓÊ¾Ö50¸ö(200906)</span></td>
+              <td width="91%" height="35" align="left"><span class="title">å…¨çƒé‚®Gé‚®å±€50ä¸ª(200906)</span></td>
             </tr>
             </tbody></table>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody><tr>
               <td width="35%" height="90" align="center" class="dashed"><img src="./templates/default/images/mail.gif"></td>
               <td width="65%" class="dashed" align="left" height="150" style="line-height: 21px;">
-				<p>µ¥¸öÈÝÁ¿1G ×ÜÈÝÁ¿50G</p>  <p>ÆÕÍ¨¸½¼þ30M<br> ³¬´ó¸½¼þ600M <br></p>
+				<p>å•ä¸ªå®¹é‡1G æ€»å®¹é‡50G</p>  <p>æ™®é€šé™„ä»¶30M<br> è¶…å¤§é™„ä»¶600M <br></p>
 			  </td>
             </tr>
             <tr>
-              <td height="46" align="center">£¤<span class="red">7500Ôª/Äê</span> </td>
+              <td height="46" align="center">ï¿¥<span class="red">7500å…ƒ/å¹´</span> </td>
               <td align="right"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=eml&prd=agmail050_0906&prc=7500&pdtnme=%C8%AB%C7%F2%D3%CAG%D3%CA%BE%D650%B8%F6%28200906%29"><img src="./templates/default/images/buy.gif" width="69" height="27"></a></td>
             </tr>
           </tbody></table>
@@ -252,18 +252,18 @@
 		  <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./templates/default/images/mailbg.gif">
             <tbody><tr>
               <td width="9%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="91%" height="35" align="left"><span class="title">È«ÇòÓÊGÓÊ¾Ö100¸ö(200906)</span></td>
+              <td width="91%" height="35" align="left"><span class="title">å…¨çƒé‚®Gé‚®å±€100ä¸ª(200906)</span></td>
             </tr>
             </tbody></table>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody><tr>
               <td width="35%" height="90" align="center" class="dashed"><img src="./templates/default/images/mail.gif"></td>
               <td width="65%" class="dashed" align="left" height="150" style="line-height: 21px;">
-				<p>µ¥¸öÈÝÁ¿1G ×ÜÈÝÁ¿100G</p>  <p>ÆÕÍ¨¸½¼þ30M<br> ³¬´ó¸½¼þ600M <br></p>
+				<p>å•ä¸ªå®¹é‡1G æ€»å®¹é‡100G</p>  <p>æ™®é€šé™„ä»¶30M<br> è¶…å¤§é™„ä»¶600M <br></p>
 			  </td>
             </tr>
             <tr>
-              <td height="46" align="center">£¤<span class="red">15000Ôª/Äê</span> </td>
+              <td height="46" align="center">ï¿¥<span class="red">15000å…ƒ/å¹´</span> </td>
               <td align="right"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=eml&prd=agmail100_0906&prc=15000&pdtnme=%C8%AB%C7%F2%D3%CAG%D3%CA%BE%D6100%B8%F6%28200906%29"><img src="./templates/default/images/buy.gif" width="69" height="27"></a></td>
             </tr>
           </tbody></table>
@@ -273,18 +273,18 @@
 		  <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./templates/default/images/mailbg.gif">
             <tbody><tr>
               <td width="9%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="91%" height="35" align="left"><span class="title">È«ÇòÓÊEÓÊ¾Ö1¸ö(200906)</span></td>
+              <td width="91%" height="35" align="left"><span class="title">å…¨çƒé‚®Eé‚®å±€1ä¸ª(200906)</span></td>
             </tr>
             </tbody></table>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody><tr>
               <td width="35%" height="90" align="center" class="dashed"><img src="./templates/default/images/mail.gif"></td>
               <td width="65%" class="dashed" align="left" height="150" style="line-height: 21px;">
-				<p>µ¥¸öÈÝÁ¿100M ×ÜÈÝÁ¿100M </p>  <p>ÆÕÍ¨¸½¼þ30M <br> ³¬´ó¸½¼þ600M <br></p>
+				<p>å•ä¸ªå®¹é‡100M æ€»å®¹é‡100M </p>  <p>æ™®é€šé™„ä»¶30M <br> è¶…å¤§é™„ä»¶600M <br></p>
 			  </td>
             </tr>
             <tr>
-              <td height="46" align="center">£¤<span class="red">100Ôª/Äê</span> </td>
+              <td height="46" align="center">ï¿¥<span class="red">100å…ƒ/å¹´</span> </td>
               <td align="right"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=eml&prd=aemail001_0906&prc=100&pdtnme=%C8%AB%C7%F2%D3%CAE%D3%CA%BE%D61%B8%F6%28200906%29"><img src="./templates/default/images/buy.gif" width="69" height="27"></a></td>
             </tr>
           </tbody></table>
@@ -294,18 +294,18 @@
 		  <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./templates/default/images/mailbg.gif">
             <tbody><tr>
               <td width="9%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="91%" height="35" align="left"><span class="title">È«ÇòÓÊEÓÊ¾Ö2¸ö(200906)</span></td>
+              <td width="91%" height="35" align="left"><span class="title">å…¨çƒé‚®Eé‚®å±€2ä¸ª(200906)</span></td>
             </tr>
             </tbody></table>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody><tr>
               <td width="35%" height="90" align="center" class="dashed"><img src="./templates/default/images/mail.gif"></td>
               <td width="65%" class="dashed" align="left" height="150" style="line-height: 21px;">
-				<p>µ¥¸öÈÝÁ¿100M ×ÜÈÝÁ¿200M </p>  <p>ÆÕÍ¨¸½¼þ30M <br> ³¬´ó¸½¼þ600M <br></p>
+				<p>å•ä¸ªå®¹é‡100M æ€»å®¹é‡200M </p>  <p>æ™®é€šé™„ä»¶30M <br> è¶…å¤§é™„ä»¶600M <br></p>
 			  </td>
             </tr>
             <tr>
-              <td height="46" align="center">£¤<span class="red">200Ôª/Äê</span> </td>
+              <td height="46" align="center">ï¿¥<span class="red">200å…ƒ/å¹´</span> </td>
               <td align="right"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=eml&prd=aemail002_0906&prc=200&pdtnme=%C8%AB%C7%F2%D3%CAE%D3%CA%BE%D62%B8%F6%28200906%29"><img src="./templates/default/images/buy.gif" width="69" height="27"></a></td>
             </tr>
           </tbody></table>
@@ -315,18 +315,18 @@
 		  <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./templates/default/images/mailbg.gif">
             <tbody><tr>
               <td width="9%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="91%" height="35" align="left"><span class="title">È«ÇòÓÊEÓÊ¾Ö5¸ö(200906)</span></td>
+              <td width="91%" height="35" align="left"><span class="title">å…¨çƒé‚®Eé‚®å±€5ä¸ª(200906)</span></td>
             </tr>
             </tbody></table>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody><tr>
               <td width="35%" height="90" align="center" class="dashed"><img src="./templates/default/images/mail.gif"></td>
               <td width="65%" class="dashed" align="left" height="150" style="line-height: 21px;">
-				<p>µ¥¸öÈÝÁ¿100M ×ÜÈÝÁ¿500M </p>  <p>ÆÕÍ¨¸½¼þ30M <br> ³¬´ó¸½¼þ600M <br></p>
+				<p>å•ä¸ªå®¹é‡100M æ€»å®¹é‡500M </p>  <p>æ™®é€šé™„ä»¶30M <br> è¶…å¤§é™„ä»¶600M <br></p>
 			  </td>
             </tr>
             <tr>
-              <td height="46" align="center">£¤<span class="red">500Ôª/Äê</span> </td>
+              <td height="46" align="center">ï¿¥<span class="red">500å…ƒ/å¹´</span> </td>
               <td align="right"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=eml&prd=aemail005_0906&prc=500&pdtnme=%C8%AB%C7%F2%D3%CAE%D3%CA%BE%D65%B8%F6%28200906%29"><img src="./templates/default/images/buy.gif" width="69" height="27"></a></td>
             </tr>
           </tbody></table>
@@ -336,18 +336,18 @@
 		  <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./templates/default/images/mailbg.gif">
             <tbody><tr>
               <td width="9%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="91%" height="35" align="left"><span class="title">È«ÇòÓÊEÓÊ¾Ö10¸ö(200906)</span></td>
+              <td width="91%" height="35" align="left"><span class="title">å…¨çƒé‚®Eé‚®å±€10ä¸ª(200906)</span></td>
             </tr>
             </tbody></table>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody><tr>
               <td width="35%" height="90" align="center" class="dashed"><img src="./templates/default/images/mail.gif"></td>
               <td width="65%" class="dashed" align="left" height="150" style="line-height: 21px;">
-				<p>µ¥¸öÈÝÁ¿100M ×ÜÈÝÁ¿1G </p>  <p>ÆÕÍ¨¸½¼þ30M <br> ³¬´ó¸½¼þ600M <br></p>
+				<p>å•ä¸ªå®¹é‡100M æ€»å®¹é‡1G </p>  <p>æ™®é€šé™„ä»¶30M <br> è¶…å¤§é™„ä»¶600M <br></p>
 			  </td>
             </tr>
             <tr>
-              <td height="46" align="center">£¤<span class="red">1000Ôª/Äê</span> </td>
+              <td height="46" align="center">ï¿¥<span class="red">1000å…ƒ/å¹´</span> </td>
               <td align="right"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=eml&prd=aemail010_0906&prc=1000&pdtnme=%C8%AB%C7%F2%D3%CAE%D3%CA%BE%D610%B8%F6%28200906%29"><img src="./templates/default/images/buy.gif" width="69" height="27"></a></td>
             </tr>
           </tbody></table>
@@ -357,18 +357,18 @@
 		  <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./templates/default/images/mailbg.gif">
             <tbody><tr>
               <td width="9%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="91%" height="35" align="left"><span class="title">È«ÇòÓÊEÓÊ¾Ö20¸ö(200906)</span></td>
+              <td width="91%" height="35" align="left"><span class="title">å…¨çƒé‚®Eé‚®å±€20ä¸ª(200906)</span></td>
             </tr>
             </tbody></table>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody><tr>
               <td width="35%" height="90" align="center" class="dashed"><img src="./templates/default/images/mail.gif"></td>
               <td width="65%" class="dashed" align="left" height="150" style="line-height: 21px;">
-				<p>µ¥¸öÈÝÁ¿100M ×ÜÈÝÁ¿2G </p>  <p>ÆÕÍ¨¸½¼þ30M <br> ³¬´ó¸½¼þ600M <br></p>
+				<p>å•ä¸ªå®¹é‡100M æ€»å®¹é‡2G </p>  <p>æ™®é€šé™„ä»¶30M <br> è¶…å¤§é™„ä»¶600M <br></p>
 			  </td>
             </tr>
             <tr>
-              <td height="46" align="center">£¤<span class="red">2000Ôª/Äê</span> </td>
+              <td height="46" align="center">ï¿¥<span class="red">2000å…ƒ/å¹´</span> </td>
               <td align="right"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=eml&prd=aemail020_0906&prc=2000&pdtnme=%C8%AB%C7%F2%D3%CAE%D3%CA%BE%D620%B8%F6%28200906%29"><img src="./templates/default/images/buy.gif" width="69" height="27"></a></td>
             </tr>
           </tbody></table>
@@ -378,18 +378,18 @@
 		  <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./templates/default/images/mailbg.gif">
             <tbody><tr>
               <td width="9%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="91%" height="35" align="left"><span class="title">È«ÇòÓÊEÓÊ¾Ö30¸ö(200906)</span></td>
+              <td width="91%" height="35" align="left"><span class="title">å…¨çƒé‚®Eé‚®å±€30ä¸ª(200906)</span></td>
             </tr>
             </tbody></table>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody><tr>
               <td width="35%" height="90" align="center" class="dashed"><img src="./templates/default/images/mail.gif"></td>
               <td width="65%" class="dashed" align="left" height="150" style="line-height: 21px;">
-				<p>µ¥¸öÈÝÁ¿100M ×ÜÈÝÁ¿3G </p>  <p>ÆÕÍ¨¸½¼þ30M <br> ³¬´ó¸½¼þ600M <br></p>
+				<p>å•ä¸ªå®¹é‡100M æ€»å®¹é‡3G </p>  <p>æ™®é€šé™„ä»¶30M <br> è¶…å¤§é™„ä»¶600M <br></p>
 			  </td>
             </tr>
             <tr>
-              <td height="46" align="center">£¤<span class="red">3000Ôª/Äê</span> </td>
+              <td height="46" align="center">ï¿¥<span class="red">3000å…ƒ/å¹´</span> </td>
               <td align="right"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=eml&prd=aemail030_0906&prc=3000&pdtnme=%C8%AB%C7%F2%D3%CAE%D3%CA%BE%D630%B8%F6%28200906%29"><img src="./templates/default/images/buy.gif" width="69" height="27"></a></td>
             </tr>
           </tbody></table>
@@ -399,18 +399,18 @@
 		  <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./templates/default/images/mailbg.gif">
             <tbody><tr>
               <td width="9%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="91%" height="35" align="left"><span class="title">È«ÇòÓÊEÓÊ¾Ö50¸ö(200906)</span></td>
+              <td width="91%" height="35" align="left"><span class="title">å…¨çƒé‚®Eé‚®å±€50ä¸ª(200906)</span></td>
             </tr>
             </tbody></table>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody><tr>
               <td width="35%" height="90" align="center" class="dashed"><img src="./templates/default/images/mail.gif"></td>
               <td width="65%" class="dashed" align="left" height="150" style="line-height: 21px;">
-				<p>µ¥¸öÈÝÁ¿100M ×ÜÈÝÁ¿5G </p>  <p>ÆÕÍ¨¸½¼þ30M <br> ³¬´ó¸½¼þ600M <br></p>
+				<p>å•ä¸ªå®¹é‡100M æ€»å®¹é‡5G </p>  <p>æ™®é€šé™„ä»¶30M <br> è¶…å¤§é™„ä»¶600M <br></p>
 			  </td>
             </tr>
             <tr>
-              <td height="46" align="center">£¤<span class="red">5000Ôª/Äê</span> </td>
+              <td height="46" align="center">ï¿¥<span class="red">5000å…ƒ/å¹´</span> </td>
               <td align="right"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=eml&prd=aemail050_0906&prc=5000&pdtnme=%C8%AB%C7%F2%D3%CAE%D3%CA%BE%D650%B8%F6%28200906%29"><img src="./templates/default/images/buy.gif" width="69" height="27"></a></td>
             </tr>
           </tbody></table>
@@ -420,18 +420,18 @@
 		  <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./templates/default/images/mailbg.gif">
             <tbody><tr>
               <td width="9%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="91%" height="35" align="left"><span class="title">È«ÇòÓÊEÓÊ¾Ö100¸ö(200906)</span></td>
+              <td width="91%" height="35" align="left"><span class="title">å…¨çƒé‚®Eé‚®å±€100ä¸ª(200906)</span></td>
             </tr>
             </tbody></table>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody><tr>
               <td width="35%" height="90" align="center" class="dashed"><img src="./templates/default/images/mail.gif"></td>
               <td width="65%" class="dashed" align="left" height="150" style="line-height: 21px;">
-				<p>µ¥¸öÈÝÁ¿100M ×ÜÈÝÁ¿10G </p>  <p>ÆÕÍ¨¸½¼þ30M <br> ³¬´ó¸½¼þ600M <br></p>
+				<p>å•ä¸ªå®¹é‡100M æ€»å®¹é‡10G </p>  <p>æ™®é€šé™„ä»¶30M <br> è¶…å¤§é™„ä»¶600M <br></p>
 			  </td>
             </tr>
             <tr>
-              <td height="46" align="center">£¤<span class="red">10000Ôª/Äê</span> </td>
+              <td height="46" align="center">ï¿¥<span class="red">10000å…ƒ/å¹´</span> </td>
               <td align="right"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=eml&prd=aemail100_0906&prc=10000&pdtnme=%C8%AB%C7%F2%D3%CAE%D3%CA%BE%D6100%B8%F6%28200906%29"><img src="./templates/default/images/buy.gif" width="69" height="27"></a></td>
             </tr>
           </tbody></table>
@@ -467,7 +467,7 @@
 		    <table width="98%" height="39" border="0" align="center" cellpadding="0" cellspacing="0">
               <tbody><tr>
                 <td width="12%" class="dashed"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-                <td width="88%" align="left" class="dashed"><span class="title">²úÆ·ÓÅÊÆÁÐ±í</span></td>
+                <td width="88%" align="left" class="dashed"><span class="title">äº§å“ä¼˜åŠ¿åˆ—è¡¨</span></td>
               </tr>
             </tbody></table>
               <table width="90%" border="0" cellpadding="0" cellspacing="0" align="center">
@@ -475,7 +475,7 @@
                   <td align="left" valign="top">
 							<!-- @domainreg advantage Tag -->
 							<ul class="infoul">
-								<li>ÌåÏÖÆóÒµÐÎÏó</li><li>ÆóÒµÀí²ÆÖúÀí</li><li>¸ßËÙ°²È«µÄÏµÍ³</li><li>±ã½ÝµÄ¹ÜÀí¹¦ÄÜ</li><li>¹«¸æ¹ÜÀí£¨ÓòÄÚÈº·¢¹ÜÀí£©</li><li>Ç¿´óµÄ°²È«»úÖÆ</li><li>¶àÑù»¯ÔöÖµ·þÎñ</li>
+								<li>ä½“çŽ°ä¼ä¸šå½¢è±¡</li><li>ä¼ä¸šç†è´¢åŠ©ç†</li><li>é«˜é€Ÿå®‰å…¨çš„ç³»ç»Ÿ</li><li>ä¾¿æ·çš„ç®¡ç†åŠŸèƒ½</li><li>å…¬å‘Šç®¡ç†ï¼ˆåŸŸå†…ç¾¤å‘ç®¡ç†ï¼‰</li><li>å¼ºå¤§çš„å®‰å…¨æœºåˆ¶</li><li>å¤šæ ·åŒ–å¢žå€¼æœåŠ¡</li>
 							</ul>
 							<!-- #domainreg advantage Tag -->
 				  </td>
@@ -519,8 +519,8 @@
 		
       </tr> -->
       <tbody><tr>
-        <td height="53" colspan="6" class="jiange">ÓÑÇéÁ´½Ó£º
-		<a target="_blank" href="http://www.google.com/">Google</a> &nbsp; <a target="_blank" href="http://www.baidu.com/">°Ù¶È</a> &nbsp; 
+        <td height="53" colspan="6" class="jiange">å‹æƒ…é“¾æŽ¥ï¼š
+		<a target="_blank" href="http://www.google.com/">Google</a> &nbsp; <a target="_blank" href="http://www.baidu.com/">ç™¾åº¦</a> &nbsp; 
 		</td>
         </tr>
     </tbody></table></td>
@@ -532,20 +532,20 @@
   <tbody><tr>
     <td width="232" height="114" valign="bottom"><img src="./templates/default/images/logof.gif"></td>
     <td width="748" class="jiange">
-    <a href="http://www.flxkdns.com/help/pay.asp">¸¶¿î·½Ê½</a>¡¡|¡¡<a href="http://www.flxkdns.com/help/price.asp">¼Û¸ñ×ÜÀÀ</a>¡¡|¡¡<a href="http://www.flxkdns.com/help/job.asp">³ÏÆ¸Ó¢²Å</a>¡¡|¡¡<a href="http://www.flxkdns.com/help/aboutus.asp">¹ØÓÚÎÒÃÇ</a>¡¡|¡¡<a href="http://www.flxkdns.com/help/contact.asp">ÁªÏµÎÒÃÇ</a>¡¡|¡¡<a href="http://www.flxkdns.com/help/postQues.asp">×ÉÑ¯·´À¡</a>		
+    <a href="http://www.flxkdns.com/help/pay.asp">ä»˜æ¬¾æ–¹å¼</a>ã€€|ã€€<a href="http://www.flxkdns.com/help/price.asp">ä»·æ ¼æ€»è§ˆ</a>ã€€|ã€€<a href="http://www.flxkdns.com/help/job.asp">è¯šè˜è‹±æ‰</a>ã€€|ã€€<a href="http://www.flxkdns.com/help/aboutus.asp">å…³äºŽæˆ‘ä»¬</a>ã€€|ã€€<a href="http://www.flxkdns.com/help/contact.asp">è”ç³»æˆ‘ä»¬</a>ã€€|ã€€<a href="http://www.flxkdns.com/help/postQues.asp">å’¨è¯¢åé¦ˆ</a>		
 		<br>
-    <font color="#333333">µç»°£º18701132241 ´«Õæ£º ×ÉÑ¯ÐÅÏä£ºchangdejie2007@126.com ×ÉÑ¯QQ£º736233152 ±¸°¸ºÅ: <a href="http://www.miibeian.gov.cn/">¾©ICP±¸11030135ºÅ</a></font>
+    <font color="#333333">ç”µè¯ï¼š18701132241 ä¼ çœŸï¼š å’¨è¯¢ä¿¡ç®±ï¼šchangdejie2007@126.com å’¨è¯¢QQï¼š736233152 å¤‡æ¡ˆå·: <a href="http://www.miibeian.gov.cn/">äº¬ICPå¤‡11030135å·</a></font>
 	
 	<br>
-	<font color="#333333">copyright &#169; 2006-2011  http://www.flxkdns.com All Rights Reserved. °æÈ¨ËùÓÐ£ºÐÇ¿ÕÈí¼þ¹¤×÷ÊÒ</font>
+	<font color="#333333">copyright &#169; 2006-2011  http://www.flxkdns.com All Rights Reserved. ç‰ˆæƒæ‰€æœ‰ï¼šæ˜Ÿç©ºè½¯ä»¶å·¥ä½œå®¤</font>
     </td>
   </tr>
 </tbody></table>
 
 <!-- start http://count.knowsky.com -->
-<script src="./templates/default/images/count.asp" language="JavaScript" charset="gb2312"></script><a href="http://www.gold678.com/" target="_blank" title="½ñÌì·ÃÎÊ£º1
-ÀÛ¼Æ·ÃÎÊ£º218
-µã»÷ÉêÇë¼ÆÊýÆ÷"><img border="0" src="./templates/default/images/2.gif"><img border="0" src="./templates/default/images/1.gif"><img border="0" src="./templates/default/images/8.gif"></a><iframe frameborder="no" scrolling="no" name="abc" width="0" height="0" src="./templates/default/images/js.htm"></iframe>
+<script src="./templates/default/images/count.asp" language="JavaScript" charset="gb2312"></script><a href="http://www.gold678.com/" target="_blank" title="ä»Šå¤©è®¿é—®ï¼š1
+ç´¯è®¡è®¿é—®ï¼š218
+ç‚¹å‡»ç”³è¯·è®¡æ•°å™¨"><img border="0" src="./templates/default/images/2.gif"><img border="0" src="./templates/default/images/1.gif"><img border="0" src="./templates/default/images/8.gif"></a><iframe frameborder="no" scrolling="no" name="abc" width="0" height="0" src="./templates/default/images/js.htm"></iframe>
 <!-- Powered by http://www.knowsky.com -->
 
 </body></html>

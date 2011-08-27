@@ -10,18 +10,18 @@
         <table width="85%" height="31" border="0" align="center" cellpadding="0" cellspacing="0">
           <tbody><tr>
             <td width="12%" class="dashed"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-            <td width="88%" align="left" class="dashed"><span class="title">»áÔ±µÇÂ¼</span></td>
+            <td width="88%" align="left" class="dashed"><span class="title">ä¼šå‘˜ç™»å½•</span></td>
           </tr>
         </tbody></table>
           <table width="85%" height="73" border="0" align="center" cellpadding="0" cellspacing="0">
             
             <tbody><tr>
-              <td width="17%" class="blue">ÕÊºÅ:</td>
+              <td width="17%" class="blue">å¸å·:</td>
               <td width="62%"><input name="usrname" type="text" class="input" id="textfield" tabindex="1"></td>
               <td width="21%" rowspan="2"><input type="image" src="./templates/default/images/login.gif" width="40" height="40" tabindex="4"></td>
             </tr>
             <tr>
-              <td class="blue">ÃÜÂë:</td>
+              <td class="blue">å¯†ç :</td>
               <td><input name="usrpass" type="password" class="input" id="textfield2" tabindex="2"></td>
               </tr>
 			
@@ -43,7 +43,7 @@
 			  <td align="center" valign="top"><table width="90%" height="31" border="0" cellpadding="0" cellspacing="0">
 				<tbody><tr>
 				  <td width="12%" class="dashed"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-				  <td width="88%" align="left" class="dashed"><span class="title">²úÆ·ÓÅÊÆÁÐ±í</span></td>
+				  <td width="88%" align="left" class="dashed"><span class="title">äº§å“ä¼˜åŠ¿åˆ—è¡¨</span></td>
 				</tr>
 				
 			  </tbody></table>
@@ -52,7 +52,7 @@
 					<td align="left" valign="top">
 								<!-- @domainreg advantage Tag -->
 								<ul class="infoul">
-									<li>ÓµÓÐÈ«²¿ÓòÃû¹ÜÀíÈ¨</li><li>Ãâ·ÑÖ§³Ö·ºÓòÃû¹¦ÄÜ</li><li>ÈÎÒâÐÞ¸ÄÓòÃûÁªÏµÈËÐÅÏ¢</li><li>ÓòÃû×ÔÓÉ×ªÈë×ª³ö</li><li>ÈÎÒâ20¸ö×ÓÓòÃû½âÎö</li><li>ÈÎÒâ20¸öURL×ª·¢</li><li>ÈÎÒâ20¸öMailÖ¸Ïò</li><li>ÈÎÒâ20¸ö±ðÃûÖ¸Ïò</li><li>¿ÉÉèÖÃ¶à¼¶±ð×ÓÓòÃû</li>
+									<li>æ‹¥æœ‰å…¨éƒ¨åŸŸåç®¡ç†æƒ</li><li>å…è´¹æ”¯æŒæ³›åŸŸååŠŸèƒ½</li><li>ä»»æ„ä¿®æ”¹åŸŸåè”ç³»äººä¿¡æ¯</li><li>åŸŸåè‡ªç”±è½¬å…¥è½¬å‡º</li><li>ä»»æ„20ä¸ªå­åŸŸåè§£æž</li><li>ä»»æ„20ä¸ªURLè½¬å‘</li><li>ä»»æ„20ä¸ªMailæŒ‡å‘</li><li>ä»»æ„20ä¸ªåˆ«åæŒ‡å‘</li><li>å¯è®¾ç½®å¤šçº§åˆ«å­åŸŸå</li>
 								</ul>
 								<!-- #domainreg advantage Tag -->
 					</td>
@@ -75,7 +75,7 @@
         <table width="90%" height="39" border="0" align="center" cellpadding="0" cellspacing="0">
           <tbody><tr>
             <td width="12%" class="dashed"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-            <td width="88%" align="left" class="dashed"><span class="title">ÔÚÏß×ÉÑ¯</span></td>
+            <td width="88%" align="left" class="dashed"><span class="title">åœ¨çº¿å’¨è¯¢</span></td>
           </tr>
         </tbody></table>
         <table width="90%" height="135" border="0" align="center" cellpadding="0" cellspacing="0">
@@ -118,8 +118,8 @@
         <td width="520"><table width="98%" height="160" border="0" align="center" cellpadding="0" cellspacing="0">
           <tbody><tr>
             <td width="6%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-            <td width="72%" class="title1">Ó¢ÎÄÓòÃû¡¡×¢²á²éÑ¯</td>
-            <td width="22%" align="right" class="title2"><a href="http://www.flxkdns.com/help/price.asp?ptid=1" style="color: white">²é¿´È«²¿ÓòÃû¼Û¸ñ&gt;&gt;</a></td>
+            <td width="72%" class="title1">è‹±æ–‡åŸŸåã€€æ³¨å†ŒæŸ¥è¯¢</td>
+            <td width="22%" align="right" class="title2"><a href="http://www.flxkdns.com/help/price.asp?ptid=1" style="color: white">æŸ¥çœ‹å…¨éƒ¨åŸŸåä»·æ ¼&gt;&gt;</a></td>
           </tr>
           <tr>
             <td>&nbsp;</td>
@@ -153,7 +153,7 @@
         <td width="510"><table width="98%" height="125" border="0" align="center" cellpadding="0" cellspacing="0">
           <tbody><tr>
             <td width="6%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-            <td width="72%" class="title">ÖÐÎÄÓòÃû¡¡×¢²á²éÑ¯</td>
+            <td width="72%" class="title">ä¸­æ–‡åŸŸåã€€æ³¨å†ŒæŸ¥è¯¢</td>
             <td width="22%" align="right" class="title2">&gt;&gt;</td>
           </tr>
           <tr>
@@ -165,7 +165,7 @@
           <tr>
             <td colspan="3">
 				<ul class="searchdommainlist">
-					<li><input name="suffix2" type="checkbox" value="com" checked="">.com </li><li><input name="suffix2" type="checkbox" value="net">.net </li><li><input name="suffix2" type="checkbox" value="ÖÐ¹ú">.ÖÐ¹ú </li><li><input name="suffix2" type="checkbox" value="¹«Ë¾">.¹«Ë¾ </li><li><input name="suffix2" type="checkbox" value="ÍøÂç">.ÍøÂç </li>
+					<li><input name="suffix2" type="checkbox" value="com" checked="">.com </li><li><input name="suffix2" type="checkbox" value="net">.net </li><li><input name="suffix2" type="checkbox" value="ä¸­å›½">.ä¸­å›½ </li><li><input name="suffix2" type="checkbox" value="å…¬å¸">.å…¬å¸ </li><li><input name="suffix2" type="checkbox" value="ç½‘ç»œ">.ç½‘ç»œ </li>
 				</ul>
             </td>
           </tr>
@@ -188,7 +188,7 @@
         <td width="510"><table width="98%" height="125" border="0" align="center" cellpadding="0" cellspacing="0">
           <tbody><tr>
             <td width="6%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-            <td width="72%" class="title">ÐÐÕþÇøÓòÓòÃû¡¡×¢²á²éÑ¯</td>
+            <td width="72%" class="title">è¡Œæ”¿åŒºåŸŸåŸŸåã€€æ³¨å†ŒæŸ¥è¯¢</td>
             <td width="22%" align="right" class="title2">&gt;&gt;</td>
           </tr>
           <tr>
@@ -229,7 +229,7 @@
 	  
       <table width="217" border="0" cellspacing="0" cellpadding="0">
       <tbody><tr>
-        <td><a href="http://www.flxkdns.com/pdtshw/ot1shw/"><img src="./templates/default/images/ad_cdn.gif" width="217" alt="CDNÖÇÄÜ¼ÓËÙ"></a></td>
+        <td><a href="http://www.flxkdns.com/pdtshw/ot1shw/"><img src="./templates/default/images/ad_cdn.gif" width="217" alt="CDNæ™ºèƒ½åŠ é€Ÿ"></a></td>
       </tr>
       </tbody></table>
 	  <br>
@@ -241,25 +241,25 @@
           <td align="center" background="./templates/default/images/bodybg1.gif"><table width="90%" height="39" border="0" align="center" cellpadding="0" cellspacing="0">
               <tbody><tr>
                 <td width="12%" class="dashed"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-                <td width="88%" align="left" class="dashed"><span class="title">ÓòÃûÏà¹Ø°ïÖú</span></td>
+                <td width="88%" align="left" class="dashed"><span class="title">åŸŸåç›¸å…³å¸®åŠ©</span></td>
               </tr>
             </tbody></table>
               <table width="90%" border="0" cellpadding="0" cellspacing="0">
                 <tbody><tr height="25">
                   <td width="12%" class="dashed"><img src="./templates/default/images/icon1.gif" width="9" height="9"></td>
-                  <td width="88%" align="left" class="dashed"><a href="http://www.flxkdns.com/help/dme_a.asp#1" target="_blank">Ê²Ã´ÊÇÓòÃû£¿</a></td>
+                  <td width="88%" align="left" class="dashed"><a href="http://www.flxkdns.com/help/dme_a.asp#1" target="_blank">ä»€ä¹ˆæ˜¯åŸŸåï¼Ÿ</a></td>
                 </tr>
                 <tr height="25">
                   <td class="dashed"><img src="./templates/default/images/icon1.gif" width="9" height="9"></td>
-                  <td align="left" class="dashed"><a href="http://www.flxkdns.com/help/dme_a.asp#6" target="_blank">×¢²áÒ»¸öÊ²Ã´ÑùµÄÓòÃûºÃ£¿</a> </td>
+                  <td align="left" class="dashed"><a href="http://www.flxkdns.com/help/dme_a.asp#6" target="_blank">æ³¨å†Œä¸€ä¸ªä»€ä¹ˆæ ·çš„åŸŸåå¥½ï¼Ÿ</a> </td>
                 </tr>
                 <tr height="25">
                   <td class="dashed"><img src="./templates/default/images/icon1.gif" width="9" height="9"></td>
-                  <td align="left" class="dashed"><a href="http://www.flxkdns.com/help/dme_a.asp#8" target="_blank">ÓòÃû×¢²áºó£¬Òª×¢ÒâÐ©Ê²Ã´£¿</a> </td>
+                  <td align="left" class="dashed"><a href="http://www.flxkdns.com/help/dme_a.asp#8" target="_blank">åŸŸåæ³¨å†ŒåŽï¼Œè¦æ³¨æ„äº›ä»€ä¹ˆï¼Ÿ</a> </td>
                 </tr>
                 <tr height="25">
                   <td><span class="dashed"><img src="./templates/default/images/icon1.gif" width="9" height="9"></span></td>
-                  <td align="left"><a href="http://www.flxkdns.com/help/dme_c.asp" target="_blank">ÈçºÎ°ÑÓòÃû½âÎöµ½ÐéÄâÖ÷»úÉÏ£¿</a> <a href="http://www.flxkdns.com/pdtshw/dmeshw/index.asp#"></a></td>
+                  <td align="left"><a href="http://www.flxkdns.com/help/dme_c.asp" target="_blank">å¦‚ä½•æŠŠåŸŸåè§£æžåˆ°è™šæ‹Ÿä¸»æœºä¸Šï¼Ÿ</a> <a href="http://www.flxkdns.com/pdtshw/dmeshw/index.asp#"></a></td>
                 </tr>
             </tbody></table></td>
         </tr>
@@ -301,8 +301,8 @@
 		
       </tr> -->
       <tbody><tr>
-        <td height="53" colspan="6" class="jiange">ÓÑÇéÁ´½Ó£º
-		<a target="_blank" href="http://www.google.com/">Google</a> &nbsp; <a target="_blank" href="http://www.baidu.com/">°Ù¶È</a> &nbsp; 
+        <td height="53" colspan="6" class="jiange">å‹æƒ…é“¾æŽ¥ï¼š
+		<a target="_blank" href="http://www.google.com/">Google</a> &nbsp; <a target="_blank" href="http://www.baidu.com/">ç™¾åº¦</a> &nbsp; 
 		</td>
         </tr>
     </tbody></table></td>
@@ -312,8 +312,8 @@
 <br>
 {include file="./templates/default/lib/footer.tpl"}
 <!-- start http://count.knowsky.com -->
-<script src="./templates/default/images/count.asp" language="JavaScript" charset="gb2312"></script><a href="http://www.gold678.com/" target="_blank" title="½ñÌì·ÃÎÊ£º1
-ÀÛ¼Æ·ÃÎÊ£º217
-µã»÷ÉêÇë¼ÆÊýÆ÷"><img border="0" src="./templates/default/images/2.gif"><img border="0" src="./templates/default/images/1.gif"><img border="0" src="./templates/default/images/7.gif"></a><iframe frameborder="no" scrolling="no" name="abc" width="0" height="0" src="./templates/default/images/js.htm"></iframe>
+<script src="./templates/default/images/count.asp" language="JavaScript" charset="gb2312"></script><a href="http://www.gold678.com/" target="_blank" title="ä»Šå¤©è®¿é—®ï¼š1
+ç´¯è®¡è®¿é—®ï¼š217
+ç‚¹å‡»ç”³è¯·è®¡æ•°å™¨"><img border="0" src="./templates/default/images/2.gif"><img border="0" src="./templates/default/images/1.gif"><img border="0" src="./templates/default/images/7.gif"></a><iframe frameborder="no" scrolling="no" name="abc" width="0" height="0" src="./templates/default/images/js.htm"></iframe>
 <!-- Powered by http://www.knowsky.com -->
 </body></html>

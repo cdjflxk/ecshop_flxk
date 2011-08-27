@@ -10,18 +10,18 @@
         <table width="85%" height="31" border="0" align="center" cellpadding="0" cellspacing="0">
           <tbody><tr>
             <td width="12%" class="dashed"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-            <td width="88%" align="left" class="dashed"><span class="title">»áÔ±µÇÂ¼</span></td>
+            <td width="88%" align="left" class="dashed"><span class="title">ä¼šå‘˜ç™»å½•</span></td>
           </tr>
         </tbody></table>
           <table width="85%" height="73" border="0" align="center" cellpadding="0" cellspacing="0">
             
             <tbody><tr>
-              <td width="17%" class="blue">ÕÊºÅ:</td>
+              <td width="17%" class="blue">å¸å·:</td>
               <td width="62%"><input name="usrname" type="text" class="input" id="textfield" tabindex="1"></td>
               <td width="21%" rowspan="2"><input type="image" src="./templates/default/images/login.gif" width="40" height="40" tabindex="4"></td>
             </tr>
             <tr>
-              <td class="blue">ÃÜÂë:</td>
+              <td class="blue">å¯†ç :</td>
               <td><input name="usrpass" type="password" class="input" id="textfield2" tabindex="2"></td>
               </tr>
 			
@@ -44,14 +44,14 @@
 		    <table width="98%" height="31" border="0" cellpadding="0" cellspacing="0">
             <tbody><tr>
               <td width="12%" class="dashed"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-              <td width="88%" align="left" class="dashed"><span class="title">²úÆ··ÖÀà</span></td>
+              <td width="88%" align="left" class="dashed"><span class="title">äº§å“åˆ†ç±»</span></td>
             </tr>
             </tbody></table>
             <table width="90%" border="0" cellpadding="0" cellspacing="0">
               <tbody><tr>
                 <td align="left" valign="top">
 							<!-- @productClass Tag -->
-							<ul id="pdtclslist"><li><a href="http://www.flxkdns.com/pdtshw/ot2shw/index.asp?pcid=74&pcnme=%C9%CF%BA%A3%B5%E7%D0%C5VM%2FHV%28%CC%D8%BB%DD%29">ÉÏº£µçĞÅVM/HV(ÌØ»İ)</a></li><li><a href="http://www.flxkdns.com/pdtshw/ot2shw/index.asp?pcid=75&pcnme=%C9%CF%BA%A3%B5%E7%D0%C5VM%2FHV%28IP%29">ÉÏº£µçĞÅVM/HV(IP)</a></li><li><a href="http://www.flxkdns.com/pdtshw/ot2shw/index.asp?pcid=97&pcnme=%B5%E7%D0%C5%D7%A8%CF%ED%B7%FE%CE%F1%C6%F7">µçĞÅ×¨Ïí·şÎñÆ÷</a></li><li><a href="http://www.flxkdns.com/pdtshw/ot2shw/index.asp?pcid=77&pcnme=%C9%CF%BA%A3%CB%AB%CF%DFHV%28IP%29">ÉÏº£Ë«ÏßHV(IP)</a></li><li><a href="http://www.flxkdns.com/pdtshw/ot2shw/index.asp?pcid=79&pcnme=%CB%AB%CF%DF%D7%A8%CF%ED%B7%FE%CE%F1%C6%F7">Ë«Ïß×¨Ïí·şÎñÆ÷</a></li><li><a href="http://www.flxkdns.com/pdtshw/ot2shw/index.asp?pcid=99&pcnme=%CF%E3%B8%DBHV%28IP%29">Ïã¸ÛHV(IP)</a></li><li><a href="http://www.flxkdns.com/pdtshw/ot2shw/index.asp?pcid=100&pcnme=%CF%E3%B8%DB%D7%A8%CF%ED%B7%FE%CE%F1%C6%F7">Ïã¸Û×¨Ïí·şÎñÆ÷</a></li><li><a href="http://www.flxkdns.com/pdtshw/ot2shw/index.asp?pcid=68&pcnme=%D4%F6%D6%B5%B7%FE%CE%F1">ÔöÖµ·şÎñ</a></li></ul>
+							<ul id="pdtclslist"><li><a href="http://www.flxkdns.com/pdtshw/ot2shw/index.asp?pcid=74&pcnme=%C9%CF%BA%A3%B5%E7%D0%C5VM%2FHV%28%CC%D8%BB%DD%29">ä¸Šæµ·ç”µä¿¡VM/HV(ç‰¹æƒ )</a></li><li><a href="http://www.flxkdns.com/pdtshw/ot2shw/index.asp?pcid=75&pcnme=%C9%CF%BA%A3%B5%E7%D0%C5VM%2FHV%28IP%29">ä¸Šæµ·ç”µä¿¡VM/HV(IP)</a></li><li><a href="http://www.flxkdns.com/pdtshw/ot2shw/index.asp?pcid=97&pcnme=%B5%E7%D0%C5%D7%A8%CF%ED%B7%FE%CE%F1%C6%F7">ç”µä¿¡ä¸“äº«æœåŠ¡å™¨</a></li><li><a href="http://www.flxkdns.com/pdtshw/ot2shw/index.asp?pcid=77&pcnme=%C9%CF%BA%A3%CB%AB%CF%DFHV%28IP%29">ä¸Šæµ·åŒçº¿HV(IP)</a></li><li><a href="http://www.flxkdns.com/pdtshw/ot2shw/index.asp?pcid=79&pcnme=%CB%AB%CF%DF%D7%A8%CF%ED%B7%FE%CE%F1%C6%F7">åŒçº¿ä¸“äº«æœåŠ¡å™¨</a></li><li><a href="http://www.flxkdns.com/pdtshw/ot2shw/index.asp?pcid=99&pcnme=%CF%E3%B8%DBHV%28IP%29">é¦™æ¸¯HV(IP)</a></li><li><a href="http://www.flxkdns.com/pdtshw/ot2shw/index.asp?pcid=100&pcnme=%CF%E3%B8%DB%D7%A8%CF%ED%B7%FE%CE%F1%C6%F7">é¦™æ¸¯ä¸“äº«æœåŠ¡å™¨</a></li><li><a href="http://www.flxkdns.com/pdtshw/ot2shw/index.asp?pcid=68&pcnme=%D4%F6%D6%B5%B7%FE%CE%F1">å¢å€¼æœåŠ¡</a></li></ul>
 							<!-- #productClass Tag -->
 				</td>
 			  </tr>
@@ -69,7 +69,7 @@
         <table width="90%" height="39" border="0" align="center" cellpadding="0" cellspacing="0">
           <tbody><tr>
             <td width="12%" class="dashed"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-            <td width="88%" align="left" class="dashed"><span class="title">ÔÚÏß×ÉÑ¯</span></td>
+            <td width="88%" align="left" class="dashed"><span class="title">åœ¨çº¿å’¨è¯¢</span></td>
           </tr>
         </tbody></table>
         <table width="90%" height="135" border="0" align="center" cellpadding="0" cellspacing="0">
@@ -112,14 +112,14 @@
 					<td width="16%" height="120" align="center" class="dashed"><img src="./templates/default/images/vps.gif" alt=""></td>
 					<td width="84%" class="dashed"><table width="100%" border="0" cellspacing="0" cellpadding="0">
 					  <tbody><tr>
-						<td height="27" colspan="2"><span class="green">ÉÏº£´÷¶ûVM/HV(»İ)256MÄÚ´æ10GÓ²ÅÌ</span></td>
+						<td height="27" colspan="2"><span class="green">ä¸Šæµ·æˆ´å°”VM/HV(æƒ )256Må†…å­˜10Gç¡¬ç›˜</span></td>
 					  </tr>
 					  <tr>
 						<td height="27" colspan="2" style="line-height: 25px;"><font color="#2e6c9d"><font color="#2e6c9d">
-<p><font color="#2e6c9d">´¦ÀíÆ÷:&nbsp;</font>&nbsp; <font color="#000000">³¬Ç¿64Î»</font><font color="#000000">ËÄºËXeon 5310/5405/5504*2&nbsp;<br></font><font color="#2e6c9d">Ïµ&nbsp;&nbsp;&nbsp; Í³:&nbsp;</font>&nbsp; <font color="#000000">¿ÉÑ¡Windows 2003 sp2/CentOS 5.2</font><br><font color="#2e6c9d">Íø&nbsp;&nbsp;&nbsp; ¿¨:&nbsp;</font><font color="#000000">&nbsp; </font><font color="#000000">Ó¢ÌØ¶ûIntel 10/100/1000M×ÔÊÊÓ¦ÒÔÌ«Íø¿¨</font><font color="#2e6c9d"><br></font><font color="#2e6c9d">ÄÚ¡¡´æ:&nbsp;</font>&nbsp; <font color="#000000">256MB ECC DDR2</font><br><font color="#2e6c9d">Ó²¡¡ÅÌ:&nbsp;</font>&nbsp; <font color="#000000">10GB SASÓ²ÅÌ+10GÒìµØ±¸·İÓ²ÅÌ</font><br>´ø&nbsp;&nbsp;&nbsp; ¿í:&nbsp;&nbsp;&nbsp;<font color="#000000">100M¹²Ïí,·åÖµ10M</font>&nbsp;<br><font color="#2e6c9d">»ú&nbsp;&nbsp;&nbsp; ·¿:&nbsp;</font>&nbsp; <font color="#000000">ÖĞ¹úÉÏº£µçĞÅÊı¾İÖĞĞÄ¸ßËÙ´ø¿í½ÓÈë</font><br><font color="#2e6c9d">·ş&nbsp;&nbsp;&nbsp; Îñ:&nbsp;&nbsp;<font color="#000000">&nbsp;7¡Á24Ğ¡Ê±¼¼ÊõÖ§³Ö</font></font></p></font></font></td>
+<p><font color="#2e6c9d">å¤„ç†å™¨:&nbsp;</font>&nbsp; <font color="#000000">è¶…å¼º64ä½</font><font color="#000000">å››æ ¸Xeon 5310/5405/5504*2&nbsp;<br></font><font color="#2e6c9d">ç³»&nbsp;&nbsp;&nbsp; ç»Ÿ:&nbsp;</font>&nbsp; <font color="#000000">å¯é€‰Windows 2003 sp2/CentOS 5.2</font><br><font color="#2e6c9d">ç½‘&nbsp;&nbsp;&nbsp; å¡:&nbsp;</font><font color="#000000">&nbsp; </font><font color="#000000">è‹±ç‰¹å°”Intel 10/100/1000Mè‡ªé€‚åº”ä»¥å¤ªç½‘å¡</font><font color="#2e6c9d"><br></font><font color="#2e6c9d">å†…ã€€å­˜:&nbsp;</font>&nbsp; <font color="#000000">256MB ECC DDR2</font><br><font color="#2e6c9d">ç¡¬ã€€ç›˜:&nbsp;</font>&nbsp; <font color="#000000">10GB SASç¡¬ç›˜+10Gå¼‚åœ°å¤‡ä»½ç¡¬ç›˜</font><br>å¸¦&nbsp;&nbsp;&nbsp; å®½:&nbsp;&nbsp;&nbsp;<font color="#000000">100Må…±äº«,å³°å€¼10M</font>&nbsp;<br><font color="#2e6c9d">æœº&nbsp;&nbsp;&nbsp; æˆ¿:&nbsp;</font>&nbsp; <font color="#000000">ä¸­å›½ä¸Šæµ·ç”µä¿¡æ•°æ®ä¸­å¿ƒé«˜é€Ÿå¸¦å®½æ¥å…¥</font><br><font color="#2e6c9d">æœ&nbsp;&nbsp;&nbsp; åŠ¡:&nbsp;&nbsp;<font color="#000000">&nbsp;7Ã—24å°æ—¶æŠ€æœ¯æ”¯æŒ</font></font></p></font></font></td>
 					  </tr>
 					  <tr>
-						<td width="59%" valign="middle">¼Û¸ñ: <span class="red">199Ôª/ÔÂ</span> </td>
+						<td width="59%" valign="middle">ä»·æ ¼: <span class="red">199å…ƒ/æœˆ</span> </td>
 						<td width="41%" valign="middle"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=ot2&prd=shvm_256&prc=199&pdtnme=%C9%CF%BA%A3%B4%F7%B6%FBVM%2FHV%28%BB%DD%29256M%C4%DA%B4%E610G%D3%B2%C5%CC"><img src="./templates/default/images/buy.gif" width="69" height="27"></a></td>
 					  </tr>
 					</tbody></table></td>
@@ -127,14 +127,14 @@
 					<td width="16%" height="120" align="center" class="dashed"><img src="./templates/default/images/vps.gif" alt=""></td>
 					<td width="84%" class="dashed"><table width="100%" border="0" cellspacing="0" cellpadding="0">
 					  <tbody><tr>
-						<td height="27" colspan="2"><span class="green">ÉÏº£´÷¶ûVM/HV(»İ)384MÄÚ´æ15GÓ²ÅÌ</span></td>
+						<td height="27" colspan="2"><span class="green">ä¸Šæµ·æˆ´å°”VM/HV(æƒ )384Må†…å­˜15Gç¡¬ç›˜</span></td>
 					  </tr>
 					  <tr>
 						<td height="27" colspan="2" style="line-height: 25px;"><font color="#2e6c9d"><font color="#2e6c9d">
-<p><font color="#2e6c9d">´¦ÀíÆ÷:&nbsp;</font>&nbsp; <font color="#000000">³¬Ç¿64Î»<font color="#000000">ËÄºËXeon 5310/5405/5504*2</font></font><font color="#000000">&nbsp;<br></font><font color="#2e6c9d">Ïµ&nbsp;&nbsp;&nbsp; Í³:&nbsp;</font>&nbsp; <font color="#000000">¿ÉÑ¡Windows 2003 sp2/CentOS 5.2</font><br><font color="#2e6c9d">Íø&nbsp;&nbsp;&nbsp; ¿¨:&nbsp;</font><font color="#000000">&nbsp; </font><font color="#000000">Ó¢ÌØ¶ûIntel 10/100/1000M×ÔÊÊÓ¦ÒÔÌ«Íø¿¨</font><font color="#2e6c9d"><br></font><font color="#2e6c9d">ÄÚ¡¡´æ:&nbsp;</font>&nbsp; <font color="#000000">384MB ECC DDR2</font><br><font color="#2e6c9d">Ó²¡¡ÅÌ:&nbsp;</font>&nbsp; <font color="#000000">15GB SASÓ²ÅÌ+15GÒìµØ±¸·İÓ²ÅÌ</font><br>´ø&nbsp;&nbsp;&nbsp; ¿í:&nbsp;&nbsp;&nbsp;<font color="#000000">100M¹²Ïí,·åÖµ10M</font>&nbsp;<br><font color="#2e6c9d">»ú&nbsp;&nbsp;&nbsp; ·¿:&nbsp;</font>&nbsp; <font color="#000000">ÖĞ¹úÉÏº£µçĞÅÊı¾İÖĞĞÄ¸ßËÙ´ø¿í½ÓÈë</font><br><font color="#2e6c9d">·ş&nbsp;&nbsp;&nbsp; Îñ:&nbsp;&nbsp;<font color="#000000">&nbsp;7¡Á24Ğ¡Ê±¼¼ÊõÖ§³Ö</font></font></p></font></font></td>
+<p><font color="#2e6c9d">å¤„ç†å™¨:&nbsp;</font>&nbsp; <font color="#000000">è¶…å¼º64ä½<font color="#000000">å››æ ¸Xeon 5310/5405/5504*2</font></font><font color="#000000">&nbsp;<br></font><font color="#2e6c9d">ç³»&nbsp;&nbsp;&nbsp; ç»Ÿ:&nbsp;</font>&nbsp; <font color="#000000">å¯é€‰Windows 2003 sp2/CentOS 5.2</font><br><font color="#2e6c9d">ç½‘&nbsp;&nbsp;&nbsp; å¡:&nbsp;</font><font color="#000000">&nbsp; </font><font color="#000000">è‹±ç‰¹å°”Intel 10/100/1000Mè‡ªé€‚åº”ä»¥å¤ªç½‘å¡</font><font color="#2e6c9d"><br></font><font color="#2e6c9d">å†…ã€€å­˜:&nbsp;</font>&nbsp; <font color="#000000">384MB ECC DDR2</font><br><font color="#2e6c9d">ç¡¬ã€€ç›˜:&nbsp;</font>&nbsp; <font color="#000000">15GB SASç¡¬ç›˜+15Gå¼‚åœ°å¤‡ä»½ç¡¬ç›˜</font><br>å¸¦&nbsp;&nbsp;&nbsp; å®½:&nbsp;&nbsp;&nbsp;<font color="#000000">100Må…±äº«,å³°å€¼10M</font>&nbsp;<br><font color="#2e6c9d">æœº&nbsp;&nbsp;&nbsp; æˆ¿:&nbsp;</font>&nbsp; <font color="#000000">ä¸­å›½ä¸Šæµ·ç”µä¿¡æ•°æ®ä¸­å¿ƒé«˜é€Ÿå¸¦å®½æ¥å…¥</font><br><font color="#2e6c9d">æœ&nbsp;&nbsp;&nbsp; åŠ¡:&nbsp;&nbsp;<font color="#000000">&nbsp;7Ã—24å°æ—¶æŠ€æœ¯æ”¯æŒ</font></font></p></font></font></td>
 					  </tr>
 					  <tr>
-						<td width="59%" valign="middle">¼Û¸ñ: <span class="red">239Ôª/ÔÂ</span> </td>
+						<td width="59%" valign="middle">ä»·æ ¼: <span class="red">239å…ƒ/æœˆ</span> </td>
 						<td width="41%" valign="middle"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=ot2&prd=shvm_384&prc=239&pdtnme=%C9%CF%BA%A3%B4%F7%B6%FBVM%2FHV%28%BB%DD%29384M%C4%DA%B4%E615G%D3%B2%C5%CC"><img src="./templates/default/images/buy.gif" width="69" height="27"></a></td>
 					  </tr>
 					</tbody></table></td>
@@ -142,14 +142,14 @@
 					<td width="16%" height="120" align="center" class="dashed"><img src="./templates/default/images/vps.gif" alt=""></td>
 					<td width="84%" class="dashed"><table width="100%" border="0" cellspacing="0" cellpadding="0">
 					  <tbody><tr>
-						<td height="27" colspan="2"><span class="green">ÉÏº£´÷¶ûVM/HV(»İ)512MÄÚ´æ20GÓ²ÅÌ</span></td>
+						<td height="27" colspan="2"><span class="green">ä¸Šæµ·æˆ´å°”VM/HV(æƒ )512Må†…å­˜20Gç¡¬ç›˜</span></td>
 					  </tr>
 					  <tr>
 						<td height="27" colspan="2" style="line-height: 25px;"><font color="#2e6c9d"><font color="#2e6c9d">
-<p><font color="#2e6c9d">´¦ÀíÆ÷:&nbsp;</font>&nbsp; <font color="#000000">³¬Ç¿64Î»<font color="#000000">ËÄºËXeon 5310/5405/5504*2</font></font><font color="#000000">&nbsp;<br></font><font color="#2e6c9d">Ïµ&nbsp;&nbsp;&nbsp; Í³:&nbsp;</font>&nbsp; <font color="#000000">¿ÉÑ¡Windows 2003 sp2/CentOS 5.2</font><br><font color="#2e6c9d">Íø&nbsp;&nbsp;&nbsp; ¿¨:&nbsp;</font><font color="#000000">&nbsp; </font><font color="#000000">Ó¢ÌØ¶ûIntel 10/100/1000M×ÔÊÊÓ¦ÒÔÌ«Íø¿¨</font><font color="#2e6c9d"><br></font><font color="#2e6c9d">ÄÚ¡¡´æ:&nbsp;</font>&nbsp; <font color="#000000">512MB ECC DDR2</font><br><font color="#2e6c9d">Ó²¡¡ÅÌ:&nbsp;</font>&nbsp; <font color="#000000">20GB SASÓ²ÅÌ+20GÒìµØ±¸·İÓ²ÅÌ</font><br>´ø&nbsp;&nbsp;&nbsp; ¿í:&nbsp;&nbsp;&nbsp;<font color="#000000">100M¹²Ïí,·åÖµ10M</font>&nbsp;<br><font color="#2e6c9d">»ú&nbsp;&nbsp;&nbsp; ·¿:&nbsp;</font>&nbsp; <font color="#000000">ÖĞ¹úÉÏº£µçĞÅÊı¾İÖĞĞÄ¸ßËÙ´ø¿í½ÓÈë</font><br><font color="#2e6c9d">·ş&nbsp;&nbsp;&nbsp; Îñ:&nbsp;&nbsp;<font color="#000000">&nbsp;7¡Á24Ğ¡Ê±¼¼ÊõÖ§³Ö</font></font></p></font></font></td>
+<p><font color="#2e6c9d">å¤„ç†å™¨:&nbsp;</font>&nbsp; <font color="#000000">è¶…å¼º64ä½<font color="#000000">å››æ ¸Xeon 5310/5405/5504*2</font></font><font color="#000000">&nbsp;<br></font><font color="#2e6c9d">ç³»&nbsp;&nbsp;&nbsp; ç»Ÿ:&nbsp;</font>&nbsp; <font color="#000000">å¯é€‰Windows 2003 sp2/CentOS 5.2</font><br><font color="#2e6c9d">ç½‘&nbsp;&nbsp;&nbsp; å¡:&nbsp;</font><font color="#000000">&nbsp; </font><font color="#000000">è‹±ç‰¹å°”Intel 10/100/1000Mè‡ªé€‚åº”ä»¥å¤ªç½‘å¡</font><font color="#2e6c9d"><br></font><font color="#2e6c9d">å†…ã€€å­˜:&nbsp;</font>&nbsp; <font color="#000000">512MB ECC DDR2</font><br><font color="#2e6c9d">ç¡¬ã€€ç›˜:&nbsp;</font>&nbsp; <font color="#000000">20GB SASç¡¬ç›˜+20Gå¼‚åœ°å¤‡ä»½ç¡¬ç›˜</font><br>å¸¦&nbsp;&nbsp;&nbsp; å®½:&nbsp;&nbsp;&nbsp;<font color="#000000">100Må…±äº«,å³°å€¼10M</font>&nbsp;<br><font color="#2e6c9d">æœº&nbsp;&nbsp;&nbsp; æˆ¿:&nbsp;</font>&nbsp; <font color="#000000">ä¸­å›½ä¸Šæµ·ç”µä¿¡æ•°æ®ä¸­å¿ƒé«˜é€Ÿå¸¦å®½æ¥å…¥</font><br><font color="#2e6c9d">æœ&nbsp;&nbsp;&nbsp; åŠ¡:&nbsp;&nbsp;<font color="#000000">&nbsp;7Ã—24å°æ—¶æŠ€æœ¯æ”¯æŒ</font></font></p></font></font></td>
 					  </tr>
 					  <tr>
-						<td width="59%" valign="middle">¼Û¸ñ: <span class="red">289Ôª/ÔÂ</span> </td>
+						<td width="59%" valign="middle">ä»·æ ¼: <span class="red">289å…ƒ/æœˆ</span> </td>
 						<td width="41%" valign="middle"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=ot2&prd=shvm_512&prc=289&pdtnme=%C9%CF%BA%A3%B4%F7%B6%FBVM%2FHV%28%BB%DD%29512M%C4%DA%B4%E620G%D3%B2%C5%CC"><img src="./templates/default/images/buy.gif" width="69" height="27"></a></td>
 					  </tr>
 					</tbody></table></td>
@@ -157,14 +157,14 @@
 					<td width="16%" height="120" align="center" class="dashed"><img src="./templates/default/images/vps.gif" alt=""></td>
 					<td width="84%" class="dashed"><table width="100%" border="0" cellspacing="0" cellpadding="0">
 					  <tbody><tr>
-						<td height="27" colspan="2"><span class="green">ÉÏº£´÷¶ûVM/HV(»İ)768MÄÚ´æ25GÓ²ÅÌ</span></td>
+						<td height="27" colspan="2"><span class="green">ä¸Šæµ·æˆ´å°”VM/HV(æƒ )768Må†…å­˜25Gç¡¬ç›˜</span></td>
 					  </tr>
 					  <tr>
 						<td height="27" colspan="2" style="line-height: 25px;"><font color="#2e6c9d"><font color="#2e6c9d">
-<p><font color="#2e6c9d">´¦ÀíÆ÷:&nbsp;</font>&nbsp; <font color="#000000">³¬Ç¿64Î»<font color="#000000">ËÄºËXeon 5310/5405/5504*2</font></font><font color="#000000">&nbsp;<br></font><font color="#2e6c9d">Ïµ&nbsp;&nbsp;&nbsp; Í³:&nbsp;</font>&nbsp; <font color="#000000">¿ÉÑ¡Windows 2003 sp2/CentOS 5.2</font><br><font color="#2e6c9d">Íø&nbsp;&nbsp;&nbsp; ¿¨:&nbsp;</font><font color="#000000">&nbsp; </font><font color="#000000">Ó¢ÌØ¶ûIntel 10/100/1000M×ÔÊÊÓ¦ÒÔÌ«Íø¿¨</font><font color="#2e6c9d"><br></font><font color="#2e6c9d">ÄÚ¡¡´æ:&nbsp;</font>&nbsp; <font color="#000000">768MB ECC DDR2</font><br><font color="#2e6c9d">Ó²¡¡ÅÌ:&nbsp;</font>&nbsp; <font color="#000000">25GB SASÓ²ÅÌ+25GÒìµØ±¸·İÓ²ÅÌ</font><br>´ø&nbsp;&nbsp;&nbsp; ¿í:&nbsp;&nbsp;&nbsp;<font color="#000000">100M¹²Ïí,·åÖµ10M</font>&nbsp;<br><font color="#2e6c9d">»ú&nbsp;&nbsp;&nbsp; ·¿:&nbsp;</font>&nbsp; <font color="#000000">ÖĞ¹úÉÏº£µçĞÅÊı¾İÖĞĞÄ¸ßËÙ´ø¿í½ÓÈë</font><br><font color="#2e6c9d">·ş&nbsp;&nbsp;&nbsp; Îñ:&nbsp;&nbsp;<font color="#000000">&nbsp;7¡Á24Ğ¡Ê±¼¼ÊõÖ§³Ö</font></font></p></font></font></td>
+<p><font color="#2e6c9d">å¤„ç†å™¨:&nbsp;</font>&nbsp; <font color="#000000">è¶…å¼º64ä½<font color="#000000">å››æ ¸Xeon 5310/5405/5504*2</font></font><font color="#000000">&nbsp;<br></font><font color="#2e6c9d">ç³»&nbsp;&nbsp;&nbsp; ç»Ÿ:&nbsp;</font>&nbsp; <font color="#000000">å¯é€‰Windows 2003 sp2/CentOS 5.2</font><br><font color="#2e6c9d">ç½‘&nbsp;&nbsp;&nbsp; å¡:&nbsp;</font><font color="#000000">&nbsp; </font><font color="#000000">è‹±ç‰¹å°”Intel 10/100/1000Mè‡ªé€‚åº”ä»¥å¤ªç½‘å¡</font><font color="#2e6c9d"><br></font><font color="#2e6c9d">å†…ã€€å­˜:&nbsp;</font>&nbsp; <font color="#000000">768MB ECC DDR2</font><br><font color="#2e6c9d">ç¡¬ã€€ç›˜:&nbsp;</font>&nbsp; <font color="#000000">25GB SASç¡¬ç›˜+25Gå¼‚åœ°å¤‡ä»½ç¡¬ç›˜</font><br>å¸¦&nbsp;&nbsp;&nbsp; å®½:&nbsp;&nbsp;&nbsp;<font color="#000000">100Må…±äº«,å³°å€¼10M</font>&nbsp;<br><font color="#2e6c9d">æœº&nbsp;&nbsp;&nbsp; æˆ¿:&nbsp;</font>&nbsp; <font color="#000000">ä¸­å›½ä¸Šæµ·ç”µä¿¡æ•°æ®ä¸­å¿ƒé«˜é€Ÿå¸¦å®½æ¥å…¥</font><br><font color="#2e6c9d">æœ&nbsp;&nbsp;&nbsp; åŠ¡:&nbsp;&nbsp;<font color="#000000">&nbsp;7Ã—24å°æ—¶æŠ€æœ¯æ”¯æŒ</font></font></p></font></font></td>
 					  </tr>
 					  <tr>
-						<td width="59%" valign="middle">¼Û¸ñ: <span class="red">349Ôª/ÔÂ</span> </td>
+						<td width="59%" valign="middle">ä»·æ ¼: <span class="red">349å…ƒ/æœˆ</span> </td>
 						<td width="41%" valign="middle"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=ot2&prd=shvm_768&prc=349&pdtnme=%C9%CF%BA%A3%B4%F7%B6%FBVM%2FHV%28%BB%DD%29768M%C4%DA%B4%E625G%D3%B2%C5%CC"><img src="./templates/default/images/buy.gif" width="69" height="27"></a></td>
 					  </tr>
 					</tbody></table></td>
@@ -172,14 +172,14 @@
 					<td width="16%" height="120" align="center" class="dashed"><img src="./templates/default/images/vps.gif" alt=""></td>
 					<td width="84%" class="dashed"><table width="100%" border="0" cellspacing="0" cellpadding="0">
 					  <tbody><tr>
-						<td height="27" colspan="2"><span class="green">ÉÏº£´÷¶ûVM/HV(»İ)1024MÄÚ´æ30GÓ²ÅÌ</span></td>
+						<td height="27" colspan="2"><span class="green">ä¸Šæµ·æˆ´å°”VM/HV(æƒ )1024Må†…å­˜30Gç¡¬ç›˜</span></td>
 					  </tr>
 					  <tr>
 						<td height="27" colspan="2" style="line-height: 25px;"><font color="#2e6c9d"><font color="#2e6c9d">
-<p><font color="#2e6c9d">´¦ÀíÆ÷:&nbsp;</font>&nbsp; <font color="#000000">³¬Ç¿64Î»<font color="#000000">ËÄºËXeon 5310/5405/5504*2</font></font><font color="#000000">&nbsp;<br></font><font color="#2e6c9d">Ïµ&nbsp;&nbsp;&nbsp; Í³:&nbsp;</font>&nbsp; <font color="#000000">¿ÉÑ¡Windows 2003 sp2/CentOS 5.2<br></font><font color="#2e6c9d">Íø&nbsp;&nbsp;&nbsp; ¿¨:&nbsp;</font><font color="#000000">&nbsp; </font><font color="#000000">Ó¢ÌØ¶ûIntel 10/100/1000M×ÔÊÊÓ¦ÒÔÌ«Íø¿¨</font><font color="#2e6c9d"><br></font><font color="#2e6c9d">ÄÚ¡¡´æ:&nbsp;</font>&nbsp; <font color="#000000">1GB ECC DDR2</font><br><font color="#2e6c9d">Ó²¡¡ÅÌ:&nbsp;</font>&nbsp; <font color="#000000">30GB SASÓ²ÅÌ+30GÒìµØ±¸·İÓ²ÅÌ</font><br>´ø&nbsp;&nbsp;&nbsp; ¿í:&nbsp;&nbsp;&nbsp;<font color="#000000">100M¹²Ïí,·åÖµ10M</font>&nbsp;<br><font color="#2e6c9d">»ú&nbsp;&nbsp;&nbsp; ·¿:&nbsp;</font>&nbsp; <font color="#000000">ÖĞ¹úÉÏº£µçĞÅÊı¾İÖĞĞÄ¸ßËÙ´ø¿í½ÓÈë</font><br><font color="#2e6c9d">·ş&nbsp;&nbsp;&nbsp; Îñ:&nbsp;&nbsp;<font color="#000000">&nbsp;7¡Á24Ğ¡Ê±¼¼ÊõÖ§³Ö</font></font></p></font></font></td>
+<p><font color="#2e6c9d">å¤„ç†å™¨:&nbsp;</font>&nbsp; <font color="#000000">è¶…å¼º64ä½<font color="#000000">å››æ ¸Xeon 5310/5405/5504*2</font></font><font color="#000000">&nbsp;<br></font><font color="#2e6c9d">ç³»&nbsp;&nbsp;&nbsp; ç»Ÿ:&nbsp;</font>&nbsp; <font color="#000000">å¯é€‰Windows 2003 sp2/CentOS 5.2<br></font><font color="#2e6c9d">ç½‘&nbsp;&nbsp;&nbsp; å¡:&nbsp;</font><font color="#000000">&nbsp; </font><font color="#000000">è‹±ç‰¹å°”Intel 10/100/1000Mè‡ªé€‚åº”ä»¥å¤ªç½‘å¡</font><font color="#2e6c9d"><br></font><font color="#2e6c9d">å†…ã€€å­˜:&nbsp;</font>&nbsp; <font color="#000000">1GB ECC DDR2</font><br><font color="#2e6c9d">ç¡¬ã€€ç›˜:&nbsp;</font>&nbsp; <font color="#000000">30GB SASç¡¬ç›˜+30Gå¼‚åœ°å¤‡ä»½ç¡¬ç›˜</font><br>å¸¦&nbsp;&nbsp;&nbsp; å®½:&nbsp;&nbsp;&nbsp;<font color="#000000">100Må…±äº«,å³°å€¼10M</font>&nbsp;<br><font color="#2e6c9d">æœº&nbsp;&nbsp;&nbsp; æˆ¿:&nbsp;</font>&nbsp; <font color="#000000">ä¸­å›½ä¸Šæµ·ç”µä¿¡æ•°æ®ä¸­å¿ƒé«˜é€Ÿå¸¦å®½æ¥å…¥</font><br><font color="#2e6c9d">æœ&nbsp;&nbsp;&nbsp; åŠ¡:&nbsp;&nbsp;<font color="#000000">&nbsp;7Ã—24å°æ—¶æŠ€æœ¯æ”¯æŒ</font></font></p></font></font></td>
 					  </tr>
 					  <tr>
-						<td width="59%" valign="middle">¼Û¸ñ: <span class="red">399Ôª/ÔÂ</span> </td>
+						<td width="59%" valign="middle">ä»·æ ¼: <span class="red">399å…ƒ/æœˆ</span> </td>
 						<td width="41%" valign="middle"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=ot2&prd=shvm_1G&prc=399&pdtnme=%C9%CF%BA%A3%B4%F7%B6%FBVM%2FHV%28%BB%DD%291024M%C4%DA%B4%E630G%D3%B2%C5%CC"><img src="./templates/default/images/buy.gif" width="69" height="27"></a></td>
 					  </tr>
 					</tbody></table></td>
@@ -187,14 +187,14 @@
 					<td width="16%" height="120" align="center" class="dashed"><img src="./templates/default/images/vps.gif" alt=""></td>
 					<td width="84%" class="dashed"><table width="100%" border="0" cellspacing="0" cellpadding="0">
 					  <tbody><tr>
-						<td height="27" colspan="2"><span class="green">ÉÏº£´÷¶ûVM/HV(»İ)256MÄÚ´æ10GÓ²ÅÌ</span></td>
+						<td height="27" colspan="2"><span class="green">ä¸Šæµ·æˆ´å°”VM/HV(æƒ )256Må†…å­˜10Gç¡¬ç›˜</span></td>
 					  </tr>
 					  <tr>
 						<td height="27" colspan="2" style="line-height: 25px;"><font color="#2e6c9d"><font color="#2e6c9d">
-<p><font color="#2e6c9d">´¦ÀíÆ÷:&nbsp;</font>&nbsp; <font color="#000000">³¬Ç¿64Î»</font><font color="#000000">ËÄºËXeon 5310/5405/5504*2&nbsp;<br></font><font color="#2e6c9d">Ïµ&nbsp;&nbsp;&nbsp; Í³:&nbsp;</font>&nbsp; <font color="#000000">¿ÉÑ¡Windows 2003 sp2/CentOS 5.2</font><br><font color="#2e6c9d">Íø&nbsp;&nbsp;&nbsp; ¿¨:&nbsp;</font><font color="#000000">&nbsp; </font><font color="#000000">Ó¢ÌØ¶ûIntel 10/100/1000M×ÔÊÊÓ¦ÒÔÌ«Íø¿¨</font><font color="#2e6c9d"><br></font><font color="#2e6c9d">ÄÚ¡¡´æ:&nbsp;</font>&nbsp; <font color="#000000">256MB ECC DDR2</font><br><font color="#2e6c9d">Ó²¡¡ÅÌ:&nbsp;</font>&nbsp; <font color="#000000">10GB SASÓ²ÅÌ+10GÒìµØ±¸·İÓ²ÅÌ</font><br>´ø&nbsp;&nbsp;&nbsp; ¿í:&nbsp;&nbsp;&nbsp;<font color="#000000">100M¹²Ïí,·åÖµ10M</font>&nbsp;<br><font color="#2e6c9d">»ú&nbsp;&nbsp;&nbsp; ·¿:&nbsp;</font>&nbsp; <font color="#000000">ÖĞ¹úÉÏº£µçĞÅÊı¾İÖĞĞÄ¸ßËÙ´ø¿í½ÓÈë</font><br><font color="#2e6c9d">·ş&nbsp;&nbsp;&nbsp; Îñ:&nbsp;&nbsp;<font color="#000000">&nbsp;7¡Á24Ğ¡Ê±¼¼ÊõÖ§³Ö</font></font></p></font></font></td>
+<p><font color="#2e6c9d">å¤„ç†å™¨:&nbsp;</font>&nbsp; <font color="#000000">è¶…å¼º64ä½</font><font color="#000000">å››æ ¸Xeon 5310/5405/5504*2&nbsp;<br></font><font color="#2e6c9d">ç³»&nbsp;&nbsp;&nbsp; ç»Ÿ:&nbsp;</font>&nbsp; <font color="#000000">å¯é€‰Windows 2003 sp2/CentOS 5.2</font><br><font color="#2e6c9d">ç½‘&nbsp;&nbsp;&nbsp; å¡:&nbsp;</font><font color="#000000">&nbsp; </font><font color="#000000">è‹±ç‰¹å°”Intel 10/100/1000Mè‡ªé€‚åº”ä»¥å¤ªç½‘å¡</font><font color="#2e6c9d"><br></font><font color="#2e6c9d">å†…ã€€å­˜:&nbsp;</font>&nbsp; <font color="#000000">256MB ECC DDR2</font><br><font color="#2e6c9d">ç¡¬ã€€ç›˜:&nbsp;</font>&nbsp; <font color="#000000">10GB SASç¡¬ç›˜+10Gå¼‚åœ°å¤‡ä»½ç¡¬ç›˜</font><br>å¸¦&nbsp;&nbsp;&nbsp; å®½:&nbsp;&nbsp;&nbsp;<font color="#000000">100Må…±äº«,å³°å€¼10M</font>&nbsp;<br><font color="#2e6c9d">æœº&nbsp;&nbsp;&nbsp; æˆ¿:&nbsp;</font>&nbsp; <font color="#000000">ä¸­å›½ä¸Šæµ·ç”µä¿¡æ•°æ®ä¸­å¿ƒé«˜é€Ÿå¸¦å®½æ¥å…¥</font><br><font color="#2e6c9d">æœ&nbsp;&nbsp;&nbsp; åŠ¡:&nbsp;&nbsp;<font color="#000000">&nbsp;7Ã—24å°æ—¶æŠ€æœ¯æ”¯æŒ</font></font></p></font></font></td>
 					  </tr>
 					  <tr>
-						<td width="59%" valign="middle">¼Û¸ñ: <span class="red">995Ôª/°ëÄê</span> </td>
+						<td width="59%" valign="middle">ä»·æ ¼: <span class="red">995å…ƒ/åŠå¹´</span> </td>
 						<td width="41%" valign="middle"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=ot2&prd=shvm_256&prc=995&pdtnme=%C9%CF%BA%A3%B4%F7%B6%FBVM%2FHV%28%BB%DD%29256M%C4%DA%B4%E610G%D3%B2%C5%CC"><img src="./templates/default/images/buy.gif" width="69" height="27"></a></td>
 					  </tr>
 					</tbody></table></td>
@@ -202,14 +202,14 @@
 					<td width="16%" height="120" align="center" class="dashed"><img src="./templates/default/images/vps.gif" alt=""></td>
 					<td width="84%" class="dashed"><table width="100%" border="0" cellspacing="0" cellpadding="0">
 					  <tbody><tr>
-						<td height="27" colspan="2"><span class="green">ÉÏº£´÷¶ûVM/HV(»İ)384MÄÚ´æ15GÓ²ÅÌ</span></td>
+						<td height="27" colspan="2"><span class="green">ä¸Šæµ·æˆ´å°”VM/HV(æƒ )384Må†…å­˜15Gç¡¬ç›˜</span></td>
 					  </tr>
 					  <tr>
 						<td height="27" colspan="2" style="line-height: 25px;"><font color="#2e6c9d"><font color="#2e6c9d">
-<p><font color="#2e6c9d">´¦ÀíÆ÷:&nbsp;</font>&nbsp; <font color="#000000">³¬Ç¿64Î»<font color="#000000">ËÄºËXeon 5310/5405/5504*2</font></font><font color="#000000">&nbsp;<br></font><font color="#2e6c9d">Ïµ&nbsp;&nbsp;&nbsp; Í³:&nbsp;</font>&nbsp; <font color="#000000">¿ÉÑ¡Windows 2003 sp2/CentOS 5.2</font><br><font color="#2e6c9d">Íø&nbsp;&nbsp;&nbsp; ¿¨:&nbsp;</font><font color="#000000">&nbsp; </font><font color="#000000">Ó¢ÌØ¶ûIntel 10/100/1000M×ÔÊÊÓ¦ÒÔÌ«Íø¿¨</font><font color="#2e6c9d"><br></font><font color="#2e6c9d">ÄÚ¡¡´æ:&nbsp;</font>&nbsp; <font color="#000000">384MB ECC DDR2</font><br><font color="#2e6c9d">Ó²¡¡ÅÌ:&nbsp;</font>&nbsp; <font color="#000000">15GB SASÓ²ÅÌ+15GÒìµØ±¸·İÓ²ÅÌ</font><br>´ø&nbsp;&nbsp;&nbsp; ¿í:&nbsp;&nbsp;&nbsp;<font color="#000000">100M¹²Ïí,·åÖµ10M</font>&nbsp;<br><font color="#2e6c9d">»ú&nbsp;&nbsp;&nbsp; ·¿:&nbsp;</font>&nbsp; <font color="#000000">ÖĞ¹úÉÏº£µçĞÅÊı¾İÖĞĞÄ¸ßËÙ´ø¿í½ÓÈë</font><br><font color="#2e6c9d">·ş&nbsp;&nbsp;&nbsp; Îñ:&nbsp;&nbsp;<font color="#000000">&nbsp;7¡Á24Ğ¡Ê±¼¼ÊõÖ§³Ö</font></font></p></font></font></td>
+<p><font color="#2e6c9d">å¤„ç†å™¨:&nbsp;</font>&nbsp; <font color="#000000">è¶…å¼º64ä½<font color="#000000">å››æ ¸Xeon 5310/5405/5504*2</font></font><font color="#000000">&nbsp;<br></font><font color="#2e6c9d">ç³»&nbsp;&nbsp;&nbsp; ç»Ÿ:&nbsp;</font>&nbsp; <font color="#000000">å¯é€‰Windows 2003 sp2/CentOS 5.2</font><br><font color="#2e6c9d">ç½‘&nbsp;&nbsp;&nbsp; å¡:&nbsp;</font><font color="#000000">&nbsp; </font><font color="#000000">è‹±ç‰¹å°”Intel 10/100/1000Mè‡ªé€‚åº”ä»¥å¤ªç½‘å¡</font><font color="#2e6c9d"><br></font><font color="#2e6c9d">å†…ã€€å­˜:&nbsp;</font>&nbsp; <font color="#000000">384MB ECC DDR2</font><br><font color="#2e6c9d">ç¡¬ã€€ç›˜:&nbsp;</font>&nbsp; <font color="#000000">15GB SASç¡¬ç›˜+15Gå¼‚åœ°å¤‡ä»½ç¡¬ç›˜</font><br>å¸¦&nbsp;&nbsp;&nbsp; å®½:&nbsp;&nbsp;&nbsp;<font color="#000000">100Må…±äº«,å³°å€¼10M</font>&nbsp;<br><font color="#2e6c9d">æœº&nbsp;&nbsp;&nbsp; æˆ¿:&nbsp;</font>&nbsp; <font color="#000000">ä¸­å›½ä¸Šæµ·ç”µä¿¡æ•°æ®ä¸­å¿ƒé«˜é€Ÿå¸¦å®½æ¥å…¥</font><br><font color="#2e6c9d">æœ&nbsp;&nbsp;&nbsp; åŠ¡:&nbsp;&nbsp;<font color="#000000">&nbsp;7Ã—24å°æ—¶æŠ€æœ¯æ”¯æŒ</font></font></p></font></font></td>
 					  </tr>
 					  <tr>
-						<td width="59%" valign="middle">¼Û¸ñ: <span class="red">1195Ôª/°ëÄê</span> </td>
+						<td width="59%" valign="middle">ä»·æ ¼: <span class="red">1195å…ƒ/åŠå¹´</span> </td>
 						<td width="41%" valign="middle"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=ot2&prd=shvm_384&prc=1195&pdtnme=%C9%CF%BA%A3%B4%F7%B6%FBVM%2FHV%28%BB%DD%29384M%C4%DA%B4%E615G%D3%B2%C5%CC"><img src="./templates/default/images/buy.gif" width="69" height="27"></a></td>
 					  </tr>
 					</tbody></table></td>
@@ -217,14 +217,14 @@
 					<td width="16%" height="120" align="center" class="dashed"><img src="./templates/default/images/vps.gif" alt=""></td>
 					<td width="84%" class="dashed"><table width="100%" border="0" cellspacing="0" cellpadding="0">
 					  <tbody><tr>
-						<td height="27" colspan="2"><span class="green">ÉÏº£´÷¶ûVM/HV(»İ)512MÄÚ´æ20GÓ²ÅÌ</span></td>
+						<td height="27" colspan="2"><span class="green">ä¸Šæµ·æˆ´å°”VM/HV(æƒ )512Må†…å­˜20Gç¡¬ç›˜</span></td>
 					  </tr>
 					  <tr>
 						<td height="27" colspan="2" style="line-height: 25px;"><font color="#2e6c9d"><font color="#2e6c9d">
-<p><font color="#2e6c9d">´¦ÀíÆ÷:&nbsp;</font>&nbsp; <font color="#000000">³¬Ç¿64Î»<font color="#000000">ËÄºËXeon 5310/5405/5504*2</font></font><font color="#000000">&nbsp;<br></font><font color="#2e6c9d">Ïµ&nbsp;&nbsp;&nbsp; Í³:&nbsp;</font>&nbsp; <font color="#000000">¿ÉÑ¡Windows 2003 sp2/CentOS 5.2</font><br><font color="#2e6c9d">Íø&nbsp;&nbsp;&nbsp; ¿¨:&nbsp;</font><font color="#000000">&nbsp; </font><font color="#000000">Ó¢ÌØ¶ûIntel 10/100/1000M×ÔÊÊÓ¦ÒÔÌ«Íø¿¨</font><font color="#2e6c9d"><br></font><font color="#2e6c9d">ÄÚ¡¡´æ:&nbsp;</font>&nbsp; <font color="#000000">512MB ECC DDR2</font><br><font color="#2e6c9d">Ó²¡¡ÅÌ:&nbsp;</font>&nbsp; <font color="#000000">20GB SASÓ²ÅÌ+20GÒìµØ±¸·İÓ²ÅÌ</font><br>´ø&nbsp;&nbsp;&nbsp; ¿í:&nbsp;&nbsp;&nbsp;<font color="#000000">100M¹²Ïí,·åÖµ10M</font>&nbsp;<br><font color="#2e6c9d">»ú&nbsp;&nbsp;&nbsp; ·¿:&nbsp;</font>&nbsp; <font color="#000000">ÖĞ¹úÉÏº£µçĞÅÊı¾İÖĞĞÄ¸ßËÙ´ø¿í½ÓÈë</font><br><font color="#2e6c9d">·ş&nbsp;&nbsp;&nbsp; Îñ:&nbsp;&nbsp;<font color="#000000">&nbsp;7¡Á24Ğ¡Ê±¼¼ÊõÖ§³Ö</font></font></p></font></font></td>
+<p><font color="#2e6c9d">å¤„ç†å™¨:&nbsp;</font>&nbsp; <font color="#000000">è¶…å¼º64ä½<font color="#000000">å››æ ¸Xeon 5310/5405/5504*2</font></font><font color="#000000">&nbsp;<br></font><font color="#2e6c9d">ç³»&nbsp;&nbsp;&nbsp; ç»Ÿ:&nbsp;</font>&nbsp; <font color="#000000">å¯é€‰Windows 2003 sp2/CentOS 5.2</font><br><font color="#2e6c9d">ç½‘&nbsp;&nbsp;&nbsp; å¡:&nbsp;</font><font color="#000000">&nbsp; </font><font color="#000000">è‹±ç‰¹å°”Intel 10/100/1000Mè‡ªé€‚åº”ä»¥å¤ªç½‘å¡</font><font color="#2e6c9d"><br></font><font color="#2e6c9d">å†…ã€€å­˜:&nbsp;</font>&nbsp; <font color="#000000">512MB ECC DDR2</font><br><font color="#2e6c9d">ç¡¬ã€€ç›˜:&nbsp;</font>&nbsp; <font color="#000000">20GB SASç¡¬ç›˜+20Gå¼‚åœ°å¤‡ä»½ç¡¬ç›˜</font><br>å¸¦&nbsp;&nbsp;&nbsp; å®½:&nbsp;&nbsp;&nbsp;<font color="#000000">100Må…±äº«,å³°å€¼10M</font>&nbsp;<br><font color="#2e6c9d">æœº&nbsp;&nbsp;&nbsp; æˆ¿:&nbsp;</font>&nbsp; <font color="#000000">ä¸­å›½ä¸Šæµ·ç”µä¿¡æ•°æ®ä¸­å¿ƒé«˜é€Ÿå¸¦å®½æ¥å…¥</font><br><font color="#2e6c9d">æœ&nbsp;&nbsp;&nbsp; åŠ¡:&nbsp;&nbsp;<font color="#000000">&nbsp;7Ã—24å°æ—¶æŠ€æœ¯æ”¯æŒ</font></font></p></font></font></td>
 					  </tr>
 					  <tr>
-						<td width="59%" valign="middle">¼Û¸ñ: <span class="red">1445Ôª/°ëÄê</span> </td>
+						<td width="59%" valign="middle">ä»·æ ¼: <span class="red">1445å…ƒ/åŠå¹´</span> </td>
 						<td width="41%" valign="middle"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=ot2&prd=shvm_512&prc=1445&pdtnme=%C9%CF%BA%A3%B4%F7%B6%FBVM%2FHV%28%BB%DD%29512M%C4%DA%B4%E620G%D3%B2%C5%CC"><img src="./templates/default/images/buy.gif" width="69" height="27"></a></td>
 					  </tr>
 					</tbody></table></td>
@@ -232,14 +232,14 @@
 					<td width="16%" height="120" align="center" class="dashed"><img src="./templates/default/images/vps.gif" alt=""></td>
 					<td width="84%" class="dashed"><table width="100%" border="0" cellspacing="0" cellpadding="0">
 					  <tbody><tr>
-						<td height="27" colspan="2"><span class="green">ÉÏº£´÷¶ûVM/HV(»İ)768MÄÚ´æ25GÓ²ÅÌ</span></td>
+						<td height="27" colspan="2"><span class="green">ä¸Šæµ·æˆ´å°”VM/HV(æƒ )768Må†…å­˜25Gç¡¬ç›˜</span></td>
 					  </tr>
 					  <tr>
 						<td height="27" colspan="2" style="line-height: 25px;"><font color="#2e6c9d"><font color="#2e6c9d">
-<p><font color="#2e6c9d">´¦ÀíÆ÷:&nbsp;</font>&nbsp; <font color="#000000">³¬Ç¿64Î»<font color="#000000">ËÄºËXeon 5310/5405/5504*2</font></font><font color="#000000">&nbsp;<br></font><font color="#2e6c9d">Ïµ&nbsp;&nbsp;&nbsp; Í³:&nbsp;</font>&nbsp; <font color="#000000">¿ÉÑ¡Windows 2003 sp2/CentOS 5.2</font><br><font color="#2e6c9d">Íø&nbsp;&nbsp;&nbsp; ¿¨:&nbsp;</font><font color="#000000">&nbsp; </font><font color="#000000">Ó¢ÌØ¶ûIntel 10/100/1000M×ÔÊÊÓ¦ÒÔÌ«Íø¿¨</font><font color="#2e6c9d"><br></font><font color="#2e6c9d">ÄÚ¡¡´æ:&nbsp;</font>&nbsp; <font color="#000000">768MB ECC DDR2</font><br><font color="#2e6c9d">Ó²¡¡ÅÌ:&nbsp;</font>&nbsp; <font color="#000000">25GB SASÓ²ÅÌ+25GÒìµØ±¸·İÓ²ÅÌ</font><br>´ø&nbsp;&nbsp;&nbsp; ¿í:&nbsp;&nbsp;&nbsp;<font color="#000000">100M¹²Ïí,·åÖµ10M</font>&nbsp;<br><font color="#2e6c9d">»ú&nbsp;&nbsp;&nbsp; ·¿:&nbsp;</font>&nbsp; <font color="#000000">ÖĞ¹úÉÏº£µçĞÅÊı¾İÖĞĞÄ¸ßËÙ´ø¿í½ÓÈë</font><br><font color="#2e6c9d">·ş&nbsp;&nbsp;&nbsp; Îñ:&nbsp;&nbsp;<font color="#000000">&nbsp;7¡Á24Ğ¡Ê±¼¼ÊõÖ§³Ö</font></font></p></font></font></td>
+<p><font color="#2e6c9d">å¤„ç†å™¨:&nbsp;</font>&nbsp; <font color="#000000">è¶…å¼º64ä½<font color="#000000">å››æ ¸Xeon 5310/5405/5504*2</font></font><font color="#000000">&nbsp;<br></font><font color="#2e6c9d">ç³»&nbsp;&nbsp;&nbsp; ç»Ÿ:&nbsp;</font>&nbsp; <font color="#000000">å¯é€‰Windows 2003 sp2/CentOS 5.2</font><br><font color="#2e6c9d">ç½‘&nbsp;&nbsp;&nbsp; å¡:&nbsp;</font><font color="#000000">&nbsp; </font><font color="#000000">è‹±ç‰¹å°”Intel 10/100/1000Mè‡ªé€‚åº”ä»¥å¤ªç½‘å¡</font><font color="#2e6c9d"><br></font><font color="#2e6c9d">å†…ã€€å­˜:&nbsp;</font>&nbsp; <font color="#000000">768MB ECC DDR2</font><br><font color="#2e6c9d">ç¡¬ã€€ç›˜:&nbsp;</font>&nbsp; <font color="#000000">25GB SASç¡¬ç›˜+25Gå¼‚åœ°å¤‡ä»½ç¡¬ç›˜</font><br>å¸¦&nbsp;&nbsp;&nbsp; å®½:&nbsp;&nbsp;&nbsp;<font color="#000000">100Må…±äº«,å³°å€¼10M</font>&nbsp;<br><font color="#2e6c9d">æœº&nbsp;&nbsp;&nbsp; æˆ¿:&nbsp;</font>&nbsp; <font color="#000000">ä¸­å›½ä¸Šæµ·ç”µä¿¡æ•°æ®ä¸­å¿ƒé«˜é€Ÿå¸¦å®½æ¥å…¥</font><br><font color="#2e6c9d">æœ&nbsp;&nbsp;&nbsp; åŠ¡:&nbsp;&nbsp;<font color="#000000">&nbsp;7Ã—24å°æ—¶æŠ€æœ¯æ”¯æŒ</font></font></p></font></font></td>
 					  </tr>
 					  <tr>
-						<td width="59%" valign="middle">¼Û¸ñ: <span class="red">1745Ôª/°ëÄê</span> </td>
+						<td width="59%" valign="middle">ä»·æ ¼: <span class="red">1745å…ƒ/åŠå¹´</span> </td>
 						<td width="41%" valign="middle"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=ot2&prd=shvm_768&prc=1745&pdtnme=%C9%CF%BA%A3%B4%F7%B6%FBVM%2FHV%28%BB%DD%29768M%C4%DA%B4%E625G%D3%B2%C5%CC"><img src="./templates/default/images/buy.gif" width="69" height="27"></a></td>
 					  </tr>
 					</tbody></table></td>
@@ -247,14 +247,14 @@
 					<td width="16%" height="120" align="center" class="dashed"><img src="./templates/default/images/vps.gif" alt=""></td>
 					<td width="84%" class="dashed"><table width="100%" border="0" cellspacing="0" cellpadding="0">
 					  <tbody><tr>
-						<td height="27" colspan="2"><span class="green">ÉÏº£´÷¶ûVM/HV(»İ)256MÄÚ´æ10GÓ²ÅÌ</span></td>
+						<td height="27" colspan="2"><span class="green">ä¸Šæµ·æˆ´å°”VM/HV(æƒ )256Må†…å­˜10Gç¡¬ç›˜</span></td>
 					  </tr>
 					  <tr>
 						<td height="27" colspan="2" style="line-height: 25px;"><font color="#2e6c9d"><font color="#2e6c9d">
-<p><font color="#2e6c9d">´¦ÀíÆ÷:&nbsp;</font>&nbsp; <font color="#000000">³¬Ç¿64Î»</font><font color="#000000">ËÄºËXeon 5310/5405/5504*2&nbsp;<br></font><font color="#2e6c9d">Ïµ&nbsp;&nbsp;&nbsp; Í³:&nbsp;</font>&nbsp; <font color="#000000">¿ÉÑ¡Windows 2003 sp2/CentOS 5.2</font><br><font color="#2e6c9d">Íø&nbsp;&nbsp;&nbsp; ¿¨:&nbsp;</font><font color="#000000">&nbsp; </font><font color="#000000">Ó¢ÌØ¶ûIntel 10/100/1000M×ÔÊÊÓ¦ÒÔÌ«Íø¿¨</font><font color="#2e6c9d"><br></font><font color="#2e6c9d">ÄÚ¡¡´æ:&nbsp;</font>&nbsp; <font color="#000000">256MB ECC DDR2</font><br><font color="#2e6c9d">Ó²¡¡ÅÌ:&nbsp;</font>&nbsp; <font color="#000000">10GB SASÓ²ÅÌ+10GÒìµØ±¸·İÓ²ÅÌ</font><br>´ø&nbsp;&nbsp;&nbsp; ¿í:&nbsp;&nbsp;&nbsp;<font color="#000000">100M¹²Ïí,·åÖµ10M</font>&nbsp;<br><font color="#2e6c9d">»ú&nbsp;&nbsp;&nbsp; ·¿:&nbsp;</font>&nbsp; <font color="#000000">ÖĞ¹úÉÏº£µçĞÅÊı¾İÖĞĞÄ¸ßËÙ´ø¿í½ÓÈë</font><br><font color="#2e6c9d">·ş&nbsp;&nbsp;&nbsp; Îñ:&nbsp;&nbsp;<font color="#000000">&nbsp;7¡Á24Ğ¡Ê±¼¼ÊõÖ§³Ö</font></font></p></font></font></td>
+<p><font color="#2e6c9d">å¤„ç†å™¨:&nbsp;</font>&nbsp; <font color="#000000">è¶…å¼º64ä½</font><font color="#000000">å››æ ¸Xeon 5310/5405/5504*2&nbsp;<br></font><font color="#2e6c9d">ç³»&nbsp;&nbsp;&nbsp; ç»Ÿ:&nbsp;</font>&nbsp; <font color="#000000">å¯é€‰Windows 2003 sp2/CentOS 5.2</font><br><font color="#2e6c9d">ç½‘&nbsp;&nbsp;&nbsp; å¡:&nbsp;</font><font color="#000000">&nbsp; </font><font color="#000000">è‹±ç‰¹å°”Intel 10/100/1000Mè‡ªé€‚åº”ä»¥å¤ªç½‘å¡</font><font color="#2e6c9d"><br></font><font color="#2e6c9d">å†…ã€€å­˜:&nbsp;</font>&nbsp; <font color="#000000">256MB ECC DDR2</font><br><font color="#2e6c9d">ç¡¬ã€€ç›˜:&nbsp;</font>&nbsp; <font color="#000000">10GB SASç¡¬ç›˜+10Gå¼‚åœ°å¤‡ä»½ç¡¬ç›˜</font><br>å¸¦&nbsp;&nbsp;&nbsp; å®½:&nbsp;&nbsp;&nbsp;<font color="#000000">100Må…±äº«,å³°å€¼10M</font>&nbsp;<br><font color="#2e6c9d">æœº&nbsp;&nbsp;&nbsp; æˆ¿:&nbsp;</font>&nbsp; <font color="#000000">ä¸­å›½ä¸Šæµ·ç”µä¿¡æ•°æ®ä¸­å¿ƒé«˜é€Ÿå¸¦å®½æ¥å…¥</font><br><font color="#2e6c9d">æœ&nbsp;&nbsp;&nbsp; åŠ¡:&nbsp;&nbsp;<font color="#000000">&nbsp;7Ã—24å°æ—¶æŠ€æœ¯æ”¯æŒ</font></font></p></font></font></td>
 					  </tr>
 					  <tr>
-						<td width="59%" valign="middle">¼Û¸ñ: <span class="red">1899Ôª/Äê</span> </td>
+						<td width="59%" valign="middle">ä»·æ ¼: <span class="red">1899å…ƒ/å¹´</span> </td>
 						<td width="41%" valign="middle"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=ot2&prd=shvm_256&prc=1899&pdtnme=%C9%CF%BA%A3%B4%F7%B6%FBVM%2FHV%28%BB%DD%29256M%C4%DA%B4%E610G%D3%B2%C5%CC"><img src="./templates/default/images/buy.gif" width="69" height="27"></a></td>
 					  </tr>
 					</tbody></table></td>
@@ -262,14 +262,14 @@
 					<td width="16%" height="120" align="center" class="dashed"><img src="./templates/default/images/vps.gif" alt=""></td>
 					<td width="84%" class="dashed"><table width="100%" border="0" cellspacing="0" cellpadding="0">
 					  <tbody><tr>
-						<td height="27" colspan="2"><span class="green">ÉÏº£´÷¶ûVM/HV(»İ)1024MÄÚ´æ30GÓ²ÅÌ</span></td>
+						<td height="27" colspan="2"><span class="green">ä¸Šæµ·æˆ´å°”VM/HV(æƒ )1024Må†…å­˜30Gç¡¬ç›˜</span></td>
 					  </tr>
 					  <tr>
 						<td height="27" colspan="2" style="line-height: 25px;"><font color="#2e6c9d"><font color="#2e6c9d">
-<p><font color="#2e6c9d">´¦ÀíÆ÷:&nbsp;</font>&nbsp; <font color="#000000">³¬Ç¿64Î»<font color="#000000">ËÄºËXeon 5310/5405/5504*2</font></font><font color="#000000">&nbsp;<br></font><font color="#2e6c9d">Ïµ&nbsp;&nbsp;&nbsp; Í³:&nbsp;</font>&nbsp; <font color="#000000">¿ÉÑ¡Windows 2003 sp2/CentOS 5.2<br></font><font color="#2e6c9d">Íø&nbsp;&nbsp;&nbsp; ¿¨:&nbsp;</font><font color="#000000">&nbsp; </font><font color="#000000">Ó¢ÌØ¶ûIntel 10/100/1000M×ÔÊÊÓ¦ÒÔÌ«Íø¿¨</font><font color="#2e6c9d"><br></font><font color="#2e6c9d">ÄÚ¡¡´æ:&nbsp;</font>&nbsp; <font color="#000000">1GB ECC DDR2</font><br><font color="#2e6c9d">Ó²¡¡ÅÌ:&nbsp;</font>&nbsp; <font color="#000000">30GB SASÓ²ÅÌ+30GÒìµØ±¸·İÓ²ÅÌ</font><br>´ø&nbsp;&nbsp;&nbsp; ¿í:&nbsp;&nbsp;&nbsp;<font color="#000000">100M¹²Ïí,·åÖµ10M</font>&nbsp;<br><font color="#2e6c9d">»ú&nbsp;&nbsp;&nbsp; ·¿:&nbsp;</font>&nbsp; <font color="#000000">ÖĞ¹úÉÏº£µçĞÅÊı¾İÖĞĞÄ¸ßËÙ´ø¿í½ÓÈë</font><br><font color="#2e6c9d">·ş&nbsp;&nbsp;&nbsp; Îñ:&nbsp;&nbsp;<font color="#000000">&nbsp;7¡Á24Ğ¡Ê±¼¼ÊõÖ§³Ö</font></font></p></font></font></td>
+<p><font color="#2e6c9d">å¤„ç†å™¨:&nbsp;</font>&nbsp; <font color="#000000">è¶…å¼º64ä½<font color="#000000">å››æ ¸Xeon 5310/5405/5504*2</font></font><font color="#000000">&nbsp;<br></font><font color="#2e6c9d">ç³»&nbsp;&nbsp;&nbsp; ç»Ÿ:&nbsp;</font>&nbsp; <font color="#000000">å¯é€‰Windows 2003 sp2/CentOS 5.2<br></font><font color="#2e6c9d">ç½‘&nbsp;&nbsp;&nbsp; å¡:&nbsp;</font><font color="#000000">&nbsp; </font><font color="#000000">è‹±ç‰¹å°”Intel 10/100/1000Mè‡ªé€‚åº”ä»¥å¤ªç½‘å¡</font><font color="#2e6c9d"><br></font><font color="#2e6c9d">å†…ã€€å­˜:&nbsp;</font>&nbsp; <font color="#000000">1GB ECC DDR2</font><br><font color="#2e6c9d">ç¡¬ã€€ç›˜:&nbsp;</font>&nbsp; <font color="#000000">30GB SASç¡¬ç›˜+30Gå¼‚åœ°å¤‡ä»½ç¡¬ç›˜</font><br>å¸¦&nbsp;&nbsp;&nbsp; å®½:&nbsp;&nbsp;&nbsp;<font color="#000000">100Må…±äº«,å³°å€¼10M</font>&nbsp;<br><font color="#2e6c9d">æœº&nbsp;&nbsp;&nbsp; æˆ¿:&nbsp;</font>&nbsp; <font color="#000000">ä¸­å›½ä¸Šæµ·ç”µä¿¡æ•°æ®ä¸­å¿ƒé«˜é€Ÿå¸¦å®½æ¥å…¥</font><br><font color="#2e6c9d">æœ&nbsp;&nbsp;&nbsp; åŠ¡:&nbsp;&nbsp;<font color="#000000">&nbsp;7Ã—24å°æ—¶æŠ€æœ¯æ”¯æŒ</font></font></p></font></font></td>
 					  </tr>
 					  <tr>
-						<td width="59%" valign="middle">¼Û¸ñ: <span class="red">1995Ôª/°ëÄê</span> </td>
+						<td width="59%" valign="middle">ä»·æ ¼: <span class="red">1995å…ƒ/åŠå¹´</span> </td>
 						<td width="41%" valign="middle"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=ot2&prd=shvm_1G&prc=1995&pdtnme=%C9%CF%BA%A3%B4%F7%B6%FBVM%2FHV%28%BB%DD%291024M%C4%DA%B4%E630G%D3%B2%C5%CC"><img src="./templates/default/images/buy.gif" width="69" height="27"></a></td>
 					  </tr>
 					</tbody></table></td>
@@ -277,14 +277,14 @@
 					<td width="16%" height="120" align="center" class="dashed"><img src="./templates/default/images/vps.gif" alt=""></td>
 					<td width="84%" class="dashed"><table width="100%" border="0" cellspacing="0" cellpadding="0">
 					  <tbody><tr>
-						<td height="27" colspan="2"><span class="green">ÉÏº£´÷¶ûVM/HV(»İ)384MÄÚ´æ15GÓ²ÅÌ</span></td>
+						<td height="27" colspan="2"><span class="green">ä¸Šæµ·æˆ´å°”VM/HV(æƒ )384Må†…å­˜15Gç¡¬ç›˜</span></td>
 					  </tr>
 					  <tr>
 						<td height="27" colspan="2" style="line-height: 25px;"><font color="#2e6c9d"><font color="#2e6c9d">
-<p><font color="#2e6c9d">´¦ÀíÆ÷:&nbsp;</font>&nbsp; <font color="#000000">³¬Ç¿64Î»<font color="#000000">ËÄºËXeon 5310/5405/5504*2</font></font><font color="#000000">&nbsp;<br></font><font color="#2e6c9d">Ïµ&nbsp;&nbsp;&nbsp; Í³:&nbsp;</font>&nbsp; <font color="#000000">¿ÉÑ¡Windows 2003 sp2/CentOS 5.2</font><br><font color="#2e6c9d">Íø&nbsp;&nbsp;&nbsp; ¿¨:&nbsp;</font><font color="#000000">&nbsp; </font><font color="#000000">Ó¢ÌØ¶ûIntel 10/100/1000M×ÔÊÊÓ¦ÒÔÌ«Íø¿¨</font><font color="#2e6c9d"><br></font><font color="#2e6c9d">ÄÚ¡¡´æ:&nbsp;</font>&nbsp; <font color="#000000">384MB ECC DDR2</font><br><font color="#2e6c9d">Ó²¡¡ÅÌ:&nbsp;</font>&nbsp; <font color="#000000">15GB SASÓ²ÅÌ+15GÒìµØ±¸·İÓ²ÅÌ</font><br>´ø&nbsp;&nbsp;&nbsp; ¿í:&nbsp;&nbsp;&nbsp;<font color="#000000">100M¹²Ïí,·åÖµ10M</font>&nbsp;<br><font color="#2e6c9d">»ú&nbsp;&nbsp;&nbsp; ·¿:&nbsp;</font>&nbsp; <font color="#000000">ÖĞ¹úÉÏº£µçĞÅÊı¾İÖĞĞÄ¸ßËÙ´ø¿í½ÓÈë</font><br><font color="#2e6c9d">·ş&nbsp;&nbsp;&nbsp; Îñ:&nbsp;&nbsp;<font color="#000000">&nbsp;7¡Á24Ğ¡Ê±¼¼ÊõÖ§³Ö</font></font></p></font></font></td>
+<p><font color="#2e6c9d">å¤„ç†å™¨:&nbsp;</font>&nbsp; <font color="#000000">è¶…å¼º64ä½<font color="#000000">å››æ ¸Xeon 5310/5405/5504*2</font></font><font color="#000000">&nbsp;<br></font><font color="#2e6c9d">ç³»&nbsp;&nbsp;&nbsp; ç»Ÿ:&nbsp;</font>&nbsp; <font color="#000000">å¯é€‰Windows 2003 sp2/CentOS 5.2</font><br><font color="#2e6c9d">ç½‘&nbsp;&nbsp;&nbsp; å¡:&nbsp;</font><font color="#000000">&nbsp; </font><font color="#000000">è‹±ç‰¹å°”Intel 10/100/1000Mè‡ªé€‚åº”ä»¥å¤ªç½‘å¡</font><font color="#2e6c9d"><br></font><font color="#2e6c9d">å†…ã€€å­˜:&nbsp;</font>&nbsp; <font color="#000000">384MB ECC DDR2</font><br><font color="#2e6c9d">ç¡¬ã€€ç›˜:&nbsp;</font>&nbsp; <font color="#000000">15GB SASç¡¬ç›˜+15Gå¼‚åœ°å¤‡ä»½ç¡¬ç›˜</font><br>å¸¦&nbsp;&nbsp;&nbsp; å®½:&nbsp;&nbsp;&nbsp;<font color="#000000">100Må…±äº«,å³°å€¼10M</font>&nbsp;<br><font color="#2e6c9d">æœº&nbsp;&nbsp;&nbsp; æˆ¿:&nbsp;</font>&nbsp; <font color="#000000">ä¸­å›½ä¸Šæµ·ç”µä¿¡æ•°æ®ä¸­å¿ƒé«˜é€Ÿå¸¦å®½æ¥å…¥</font><br><font color="#2e6c9d">æœ&nbsp;&nbsp;&nbsp; åŠ¡:&nbsp;&nbsp;<font color="#000000">&nbsp;7Ã—24å°æ—¶æŠ€æœ¯æ”¯æŒ</font></font></p></font></font></td>
 					  </tr>
 					  <tr>
-						<td width="59%" valign="middle">¼Û¸ñ: <span class="red">2199Ôª/Äê</span> </td>
+						<td width="59%" valign="middle">ä»·æ ¼: <span class="red">2199å…ƒ/å¹´</span> </td>
 						<td width="41%" valign="middle"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=ot2&prd=shvm_384&prc=2199&pdtnme=%C9%CF%BA%A3%B4%F7%B6%FBVM%2FHV%28%BB%DD%29384M%C4%DA%B4%E615G%D3%B2%C5%CC"><img src="./templates/default/images/buy.gif" width="69" height="27"></a></td>
 					  </tr>
 					</tbody></table></td>
@@ -292,14 +292,14 @@
 					<td width="16%" height="120" align="center" class="dashed"><img src="./templates/default/images/vps.gif" alt=""></td>
 					<td width="84%" class="dashed"><table width="100%" border="0" cellspacing="0" cellpadding="0">
 					  <tbody><tr>
-						<td height="27" colspan="2"><span class="green">ÉÏº£´÷¶ûVM/HV(»İ)512MÄÚ´æ20GÓ²ÅÌ</span></td>
+						<td height="27" colspan="2"><span class="green">ä¸Šæµ·æˆ´å°”VM/HV(æƒ )512Må†…å­˜20Gç¡¬ç›˜</span></td>
 					  </tr>
 					  <tr>
 						<td height="27" colspan="2" style="line-height: 25px;"><font color="#2e6c9d"><font color="#2e6c9d">
-<p><font color="#2e6c9d">´¦ÀíÆ÷:&nbsp;</font>&nbsp; <font color="#000000">³¬Ç¿64Î»<font color="#000000">ËÄºËXeon 5310/5405/5504*2</font></font><font color="#000000">&nbsp;<br></font><font color="#2e6c9d">Ïµ&nbsp;&nbsp;&nbsp; Í³:&nbsp;</font>&nbsp; <font color="#000000">¿ÉÑ¡Windows 2003 sp2/CentOS 5.2</font><br><font color="#2e6c9d">Íø&nbsp;&nbsp;&nbsp; ¿¨:&nbsp;</font><font color="#000000">&nbsp; </font><font color="#000000">Ó¢ÌØ¶ûIntel 10/100/1000M×ÔÊÊÓ¦ÒÔÌ«Íø¿¨</font><font color="#2e6c9d"><br></font><font color="#2e6c9d">ÄÚ¡¡´æ:&nbsp;</font>&nbsp; <font color="#000000">512MB ECC DDR2</font><br><font color="#2e6c9d">Ó²¡¡ÅÌ:&nbsp;</font>&nbsp; <font color="#000000">20GB SASÓ²ÅÌ+20GÒìµØ±¸·İÓ²ÅÌ</font><br>´ø&nbsp;&nbsp;&nbsp; ¿í:&nbsp;&nbsp;&nbsp;<font color="#000000">100M¹²Ïí,·åÖµ10M</font>&nbsp;<br><font color="#2e6c9d">»ú&nbsp;&nbsp;&nbsp; ·¿:&nbsp;</font>&nbsp; <font color="#000000">ÖĞ¹úÉÏº£µçĞÅÊı¾İÖĞĞÄ¸ßËÙ´ø¿í½ÓÈë</font><br><font color="#2e6c9d">·ş&nbsp;&nbsp;&nbsp; Îñ:&nbsp;&nbsp;<font color="#000000">&nbsp;7¡Á24Ğ¡Ê±¼¼ÊõÖ§³Ö</font></font></p></font></font></td>
+<p><font color="#2e6c9d">å¤„ç†å™¨:&nbsp;</font>&nbsp; <font color="#000000">è¶…å¼º64ä½<font color="#000000">å››æ ¸Xeon 5310/5405/5504*2</font></font><font color="#000000">&nbsp;<br></font><font color="#2e6c9d">ç³»&nbsp;&nbsp;&nbsp; ç»Ÿ:&nbsp;</font>&nbsp; <font color="#000000">å¯é€‰Windows 2003 sp2/CentOS 5.2</font><br><font color="#2e6c9d">ç½‘&nbsp;&nbsp;&nbsp; å¡:&nbsp;</font><font color="#000000">&nbsp; </font><font color="#000000">è‹±ç‰¹å°”Intel 10/100/1000Mè‡ªé€‚åº”ä»¥å¤ªç½‘å¡</font><font color="#2e6c9d"><br></font><font color="#2e6c9d">å†…ã€€å­˜:&nbsp;</font>&nbsp; <font color="#000000">512MB ECC DDR2</font><br><font color="#2e6c9d">ç¡¬ã€€ç›˜:&nbsp;</font>&nbsp; <font color="#000000">20GB SASç¡¬ç›˜+20Gå¼‚åœ°å¤‡ä»½ç¡¬ç›˜</font><br>å¸¦&nbsp;&nbsp;&nbsp; å®½:&nbsp;&nbsp;&nbsp;<font color="#000000">100Må…±äº«,å³°å€¼10M</font>&nbsp;<br><font color="#2e6c9d">æœº&nbsp;&nbsp;&nbsp; æˆ¿:&nbsp;</font>&nbsp; <font color="#000000">ä¸­å›½ä¸Šæµ·ç”µä¿¡æ•°æ®ä¸­å¿ƒé«˜é€Ÿå¸¦å®½æ¥å…¥</font><br><font color="#2e6c9d">æœ&nbsp;&nbsp;&nbsp; åŠ¡:&nbsp;&nbsp;<font color="#000000">&nbsp;7Ã—24å°æ—¶æŠ€æœ¯æ”¯æŒ</font></font></p></font></font></td>
 					  </tr>
 					  <tr>
-						<td width="59%" valign="middle">¼Û¸ñ: <span class="red">2699Ôª/Äê</span> </td>
+						<td width="59%" valign="middle">ä»·æ ¼: <span class="red">2699å…ƒ/å¹´</span> </td>
 						<td width="41%" valign="middle"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=ot2&prd=shvm_512&prc=2699&pdtnme=%C9%CF%BA%A3%B4%F7%B6%FBVM%2FHV%28%BB%DD%29512M%C4%DA%B4%E620G%D3%B2%C5%CC"><img src="./templates/default/images/buy.gif" width="69" height="27"></a></td>
 					  </tr>
 					</tbody></table></td>
@@ -307,14 +307,14 @@
 					<td width="16%" height="120" align="center" class="dashed"><img src="./templates/default/images/vps.gif" alt=""></td>
 					<td width="84%" class="dashed"><table width="100%" border="0" cellspacing="0" cellpadding="0">
 					  <tbody><tr>
-						<td height="27" colspan="2"><span class="green">ÉÏº£´÷¶ûVM/HV(»İ)768MÄÚ´æ25GÓ²ÅÌ</span></td>
+						<td height="27" colspan="2"><span class="green">ä¸Šæµ·æˆ´å°”VM/HV(æƒ )768Må†…å­˜25Gç¡¬ç›˜</span></td>
 					  </tr>
 					  <tr>
 						<td height="27" colspan="2" style="line-height: 25px;"><font color="#2e6c9d"><font color="#2e6c9d">
-<p><font color="#2e6c9d">´¦ÀíÆ÷:&nbsp;</font>&nbsp; <font color="#000000">³¬Ç¿64Î»<font color="#000000">ËÄºËXeon 5310/5405/5504*2</font></font><font color="#000000">&nbsp;<br></font><font color="#2e6c9d">Ïµ&nbsp;&nbsp;&nbsp; Í³:&nbsp;</font>&nbsp; <font color="#000000">¿ÉÑ¡Windows 2003 sp2/CentOS 5.2</font><br><font color="#2e6c9d">Íø&nbsp;&nbsp;&nbsp; ¿¨:&nbsp;</font><font color="#000000">&nbsp; </font><font color="#000000">Ó¢ÌØ¶ûIntel 10/100/1000M×ÔÊÊÓ¦ÒÔÌ«Íø¿¨</font><font color="#2e6c9d"><br></font><font color="#2e6c9d">ÄÚ¡¡´æ:&nbsp;</font>&nbsp; <font color="#000000">768MB ECC DDR2</font><br><font color="#2e6c9d">Ó²¡¡ÅÌ:&nbsp;</font>&nbsp; <font color="#000000">25GB SASÓ²ÅÌ+25GÒìµØ±¸·İÓ²ÅÌ</font><br>´ø&nbsp;&nbsp;&nbsp; ¿í:&nbsp;&nbsp;&nbsp;<font color="#000000">100M¹²Ïí,·åÖµ10M</font>&nbsp;<br><font color="#2e6c9d">»ú&nbsp;&nbsp;&nbsp; ·¿:&nbsp;</font>&nbsp; <font color="#000000">ÖĞ¹úÉÏº£µçĞÅÊı¾İÖĞĞÄ¸ßËÙ´ø¿í½ÓÈë</font><br><font color="#2e6c9d">·ş&nbsp;&nbsp;&nbsp; Îñ:&nbsp;&nbsp;<font color="#000000">&nbsp;7¡Á24Ğ¡Ê±¼¼ÊõÖ§³Ö</font></font></p></font></font></td>
+<p><font color="#2e6c9d">å¤„ç†å™¨:&nbsp;</font>&nbsp; <font color="#000000">è¶…å¼º64ä½<font color="#000000">å››æ ¸Xeon 5310/5405/5504*2</font></font><font color="#000000">&nbsp;<br></font><font color="#2e6c9d">ç³»&nbsp;&nbsp;&nbsp; ç»Ÿ:&nbsp;</font>&nbsp; <font color="#000000">å¯é€‰Windows 2003 sp2/CentOS 5.2</font><br><font color="#2e6c9d">ç½‘&nbsp;&nbsp;&nbsp; å¡:&nbsp;</font><font color="#000000">&nbsp; </font><font color="#000000">è‹±ç‰¹å°”Intel 10/100/1000Mè‡ªé€‚åº”ä»¥å¤ªç½‘å¡</font><font color="#2e6c9d"><br></font><font color="#2e6c9d">å†…ã€€å­˜:&nbsp;</font>&nbsp; <font color="#000000">768MB ECC DDR2</font><br><font color="#2e6c9d">ç¡¬ã€€ç›˜:&nbsp;</font>&nbsp; <font color="#000000">25GB SASç¡¬ç›˜+25Gå¼‚åœ°å¤‡ä»½ç¡¬ç›˜</font><br>å¸¦&nbsp;&nbsp;&nbsp; å®½:&nbsp;&nbsp;&nbsp;<font color="#000000">100Må…±äº«,å³°å€¼10M</font>&nbsp;<br><font color="#2e6c9d">æœº&nbsp;&nbsp;&nbsp; æˆ¿:&nbsp;</font>&nbsp; <font color="#000000">ä¸­å›½ä¸Šæµ·ç”µä¿¡æ•°æ®ä¸­å¿ƒé«˜é€Ÿå¸¦å®½æ¥å…¥</font><br><font color="#2e6c9d">æœ&nbsp;&nbsp;&nbsp; åŠ¡:&nbsp;&nbsp;<font color="#000000">&nbsp;7Ã—24å°æ—¶æŠ€æœ¯æ”¯æŒ</font></font></p></font></font></td>
 					  </tr>
 					  <tr>
-						<td width="59%" valign="middle">¼Û¸ñ: <span class="red">3199Ôª/Äê</span> </td>
+						<td width="59%" valign="middle">ä»·æ ¼: <span class="red">3199å…ƒ/å¹´</span> </td>
 						<td width="41%" valign="middle"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=ot2&prd=shvm_768&prc=3199&pdtnme=%C9%CF%BA%A3%B4%F7%B6%FBVM%2FHV%28%BB%DD%29768M%C4%DA%B4%E625G%D3%B2%C5%CC"><img src="./templates/default/images/buy.gif" width="69" height="27"></a></td>
 					  </tr>
 					</tbody></table></td>
@@ -322,14 +322,14 @@
 					<td width="16%" height="120" align="center" class="dashed"><img src="./templates/default/images/vps.gif" alt=""></td>
 					<td width="84%" class="dashed"><table width="100%" border="0" cellspacing="0" cellpadding="0">
 					  <tbody><tr>
-						<td height="27" colspan="2"><span class="green">ÉÏº£´÷¶ûVM/HV(»İ)1024MÄÚ´æ30GÓ²ÅÌ</span></td>
+						<td height="27" colspan="2"><span class="green">ä¸Šæµ·æˆ´å°”VM/HV(æƒ )1024Må†…å­˜30Gç¡¬ç›˜</span></td>
 					  </tr>
 					  <tr>
 						<td height="27" colspan="2" style="line-height: 25px;"><font color="#2e6c9d"><font color="#2e6c9d">
-<p><font color="#2e6c9d">´¦ÀíÆ÷:&nbsp;</font>&nbsp; <font color="#000000">³¬Ç¿64Î»<font color="#000000">ËÄºËXeon 5310/5405/5504*2</font></font><font color="#000000">&nbsp;<br></font><font color="#2e6c9d">Ïµ&nbsp;&nbsp;&nbsp; Í³:&nbsp;</font>&nbsp; <font color="#000000">¿ÉÑ¡Windows 2003 sp2/CentOS 5.2<br></font><font color="#2e6c9d">Íø&nbsp;&nbsp;&nbsp; ¿¨:&nbsp;</font><font color="#000000">&nbsp; </font><font color="#000000">Ó¢ÌØ¶ûIntel 10/100/1000M×ÔÊÊÓ¦ÒÔÌ«Íø¿¨</font><font color="#2e6c9d"><br></font><font color="#2e6c9d">ÄÚ¡¡´æ:&nbsp;</font>&nbsp; <font color="#000000">1GB ECC DDR2</font><br><font color="#2e6c9d">Ó²¡¡ÅÌ:&nbsp;</font>&nbsp; <font color="#000000">30GB SASÓ²ÅÌ+30GÒìµØ±¸·İÓ²ÅÌ</font><br>´ø&nbsp;&nbsp;&nbsp; ¿í:&nbsp;&nbsp;&nbsp;<font color="#000000">100M¹²Ïí,·åÖµ10M</font>&nbsp;<br><font color="#2e6c9d">»ú&nbsp;&nbsp;&nbsp; ·¿:&nbsp;</font>&nbsp; <font color="#000000">ÖĞ¹úÉÏº£µçĞÅÊı¾İÖĞĞÄ¸ßËÙ´ø¿í½ÓÈë</font><br><font color="#2e6c9d">·ş&nbsp;&nbsp;&nbsp; Îñ:&nbsp;&nbsp;<font color="#000000">&nbsp;7¡Á24Ğ¡Ê±¼¼ÊõÖ§³Ö</font></font></p></font></font></td>
+<p><font color="#2e6c9d">å¤„ç†å™¨:&nbsp;</font>&nbsp; <font color="#000000">è¶…å¼º64ä½<font color="#000000">å››æ ¸Xeon 5310/5405/5504*2</font></font><font color="#000000">&nbsp;<br></font><font color="#2e6c9d">ç³»&nbsp;&nbsp;&nbsp; ç»Ÿ:&nbsp;</font>&nbsp; <font color="#000000">å¯é€‰Windows 2003 sp2/CentOS 5.2<br></font><font color="#2e6c9d">ç½‘&nbsp;&nbsp;&nbsp; å¡:&nbsp;</font><font color="#000000">&nbsp; </font><font color="#000000">è‹±ç‰¹å°”Intel 10/100/1000Mè‡ªé€‚åº”ä»¥å¤ªç½‘å¡</font><font color="#2e6c9d"><br></font><font color="#2e6c9d">å†…ã€€å­˜:&nbsp;</font>&nbsp; <font color="#000000">1GB ECC DDR2</font><br><font color="#2e6c9d">ç¡¬ã€€ç›˜:&nbsp;</font>&nbsp; <font color="#000000">30GB SASç¡¬ç›˜+30Gå¼‚åœ°å¤‡ä»½ç¡¬ç›˜</font><br>å¸¦&nbsp;&nbsp;&nbsp; å®½:&nbsp;&nbsp;&nbsp;<font color="#000000">100Må…±äº«,å³°å€¼10M</font>&nbsp;<br><font color="#2e6c9d">æœº&nbsp;&nbsp;&nbsp; æˆ¿:&nbsp;</font>&nbsp; <font color="#000000">ä¸­å›½ä¸Šæµ·ç”µä¿¡æ•°æ®ä¸­å¿ƒé«˜é€Ÿå¸¦å®½æ¥å…¥</font><br><font color="#2e6c9d">æœ&nbsp;&nbsp;&nbsp; åŠ¡:&nbsp;&nbsp;<font color="#000000">&nbsp;7Ã—24å°æ—¶æŠ€æœ¯æ”¯æŒ</font></font></p></font></font></td>
 					  </tr>
 					  <tr>
-						<td width="59%" valign="middle">¼Û¸ñ: <span class="red">3699Ôª/Äê</span> </td>
+						<td width="59%" valign="middle">ä»·æ ¼: <span class="red">3699å…ƒ/å¹´</span> </td>
 						<td width="41%" valign="middle"><a href="http://www.flxkdns.com/ucenter/order.asp?pdttag=ot2&prd=shvm_1G&prc=3699&pdtnme=%C9%CF%BA%A3%B4%F7%B6%FBVM%2FHV%28%BB%DD%291024M%C4%DA%B4%E630G%D3%B2%C5%CC"><img src="./templates/default/images/buy.gif" width="69" height="27"></a></td>
 					  </tr>
 					</tbody></table></td>
@@ -366,7 +366,7 @@
 		    <table width="98%" height="39" border="0" align="center" cellpadding="0" cellspacing="0">
               <tbody><tr>
                 <td width="12%" class="dashed"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
-                <td width="88%" align="left" class="dashed"><span class="title">²úÆ·ÓÅÊÆÁĞ±í</span></td>
+                <td width="88%" align="left" class="dashed"><span class="title">äº§å“ä¼˜åŠ¿åˆ—è¡¨</span></td>
               </tr>
             </tbody></table>
               <table width="90%" border="0" cellpadding="0" cellspacing="0" align="center">
@@ -374,7 +374,7 @@
                   <td align="left" valign="top">
 							<!-- @domainreg advantage Tag -->
 							<ul class="infoul">
-								<li>Í¬Ê±Ö§³ÖLinuxºÍWindows</li><li>ÊµÏÖÁË·şÎñÆ÷Áãå´»ú</li><li>Ã¿¸öVPS¶ÀÕ¼×ÊÔ´</li><li>Èí¼şºÍÓ²¼şµÄ¸ôÀë</li><li>¿Í»§Ö®¼äµÄ¸ôÀë</li><li>°²È«ÎÈ¶¨</li>
+								<li>åŒæ—¶æ”¯æŒLinuxå’ŒWindows</li><li>å®ç°äº†æœåŠ¡å™¨é›¶å®•æœº</li><li>æ¯ä¸ªVPSç‹¬å èµ„æº</li><li>è½¯ä»¶å’Œç¡¬ä»¶çš„éš”ç¦»</li><li>å®¢æˆ·ä¹‹é—´çš„éš”ç¦»</li><li>å®‰å…¨ç¨³å®š</li>
 							</ul>
 							<!-- #domainreg advantage Tag -->
 				  </td>
@@ -418,8 +418,8 @@
 		
       </tr> -->
       <tbody><tr>
-        <td height="53" colspan="6" class="jiange">ÓÑÇéÁ´½Ó£º
-		<a target="_blank" href="http://www.google.com/">Google</a> &nbsp; <a target="_blank" href="http://www.baidu.com/">°Ù¶È</a> &nbsp; 
+        <td height="53" colspan="6" class="jiange">å‹æƒ…é“¾æ¥ï¼š
+		<a target="_blank" href="http://www.google.com/">Google</a> &nbsp; <a target="_blank" href="http://www.baidu.com/">ç™¾åº¦</a> &nbsp; 
 		</td>
         </tr>
     </tbody></table></td>
@@ -431,20 +431,20 @@
   <tbody><tr>
     <td width="232" height="114" valign="bottom"><img src="./templates/default/images/logof.gif"></td>
     <td width="748" class="jiange">
-    <a href="http://www.flxkdns.com/help/pay.asp">¸¶¿î·½Ê½</a>¡¡|¡¡<a href="http://www.flxkdns.com/help/price.asp">¼Û¸ñ×ÜÀÀ</a>¡¡|¡¡<a href="http://www.flxkdns.com/help/job.asp">³ÏÆ¸Ó¢²Å</a>¡¡|¡¡<a href="http://www.flxkdns.com/help/aboutus.asp">¹ØÓÚÎÒÃÇ</a>¡¡|¡¡<a href="http://www.flxkdns.com/help/contact.asp">ÁªÏµÎÒÃÇ</a>¡¡|¡¡<a href="http://www.flxkdns.com/help/postQues.asp">×ÉÑ¯·´À¡</a>		
+    <a href="http://www.flxkdns.com/help/pay.asp">ä»˜æ¬¾æ–¹å¼</a>ã€€|ã€€<a href="http://www.flxkdns.com/help/price.asp">ä»·æ ¼æ€»è§ˆ</a>ã€€|ã€€<a href="http://www.flxkdns.com/help/job.asp">è¯šè˜è‹±æ‰</a>ã€€|ã€€<a href="http://www.flxkdns.com/help/aboutus.asp">å…³äºæˆ‘ä»¬</a>ã€€|ã€€<a href="http://www.flxkdns.com/help/contact.asp">è”ç³»æˆ‘ä»¬</a>ã€€|ã€€<a href="http://www.flxkdns.com/help/postQues.asp">å’¨è¯¢åé¦ˆ</a>		
 		<br>
-    <font color="#333333">µç»°£º18701132241 ´«Õæ£º ×ÉÑ¯ĞÅÏä£ºchangdejie2007@126.com ×ÉÑ¯QQ£º736233152 ±¸°¸ºÅ: <a href="http://www.miibeian.gov.cn/">¾©ICP±¸11030135ºÅ</a></font>
+    <font color="#333333">ç”µè¯ï¼š18701132241 ä¼ çœŸï¼š å’¨è¯¢ä¿¡ç®±ï¼šchangdejie2007@126.com å’¨è¯¢QQï¼š736233152 å¤‡æ¡ˆå·: <a href="http://www.miibeian.gov.cn/">äº¬ICPå¤‡11030135å·</a></font>
 	
 	<br>
-	<font color="#333333">copyright &#169; 2006-2011  http://www.flxkdns.com All Rights Reserved. °æÈ¨ËùÓĞ£ºĞÇ¿ÕÈí¼ş¹¤×÷ÊÒ</font>
+	<font color="#333333">copyright &#169; 2006-2011  http://www.flxkdns.com All Rights Reserved. ç‰ˆæƒæ‰€æœ‰ï¼šæ˜Ÿç©ºè½¯ä»¶å·¥ä½œå®¤</font>
     </td>
   </tr>
 </tbody></table>
 
 <!-- start http://count.knowsky.com -->
-<script src="./templates/default/images/count.asp" language="JavaScript" charset="gb2312"></script><a href="http://www.gold678.com/" target="_blank" title="½ñÌì·ÃÎÊ£º1
-ÀÛ¼Æ·ÃÎÊ£º218
-µã»÷ÉêÇë¼ÆÊıÆ÷"><img border="0" src="./templates/default/images/2.gif"><img border="0" src="./templates/default/images/1.gif"><img border="0" src="./templates/default/images/8.gif"></a><iframe frameborder="no" scrolling="no" name="abc" width="0" height="0" src="./templates/default/images/js.htm"></iframe>
+<script src="./templates/default/images/count.asp" language="JavaScript" charset="gb2312"></script><a href="http://www.gold678.com/" target="_blank" title="ä»Šå¤©è®¿é—®ï¼š1
+ç´¯è®¡è®¿é—®ï¼š218
+ç‚¹å‡»ç”³è¯·è®¡æ•°å™¨"><img border="0" src="./templates/default/images/2.gif"><img border="0" src="./templates/default/images/1.gif"><img border="0" src="./templates/default/images/8.gif"></a><iframe frameborder="no" scrolling="no" name="abc" width="0" height="0" src="./templates/default/images/js.htm"></iframe>
 <!-- Powered by http://www.knowsky.com -->
 
 </body></html>

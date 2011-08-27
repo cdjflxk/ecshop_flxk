@@ -1,10 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0023)http://www.flxkdns.com/ -->
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<title>ÔÂÒ¹ÐÇ¿ÕÈí¼þ¹¤×÷ÊÒ</title>
-<meta name="keywords" content="ÓòÃû×¢²á|ÍøÂçÊµÃû|Ö÷»ú×âÁÞ|ÆóÒµÓÊ¾Ö|ÍøÕ¾²ß»®|ÆóÒµÓÊ¾Ö|Ö÷»úÍÐ¹Ü|Ö÷»ú×âÓÃ|·þÎñÆ÷×âÓÃ">
-<meta name="description" content="ÐéÄâÖ÷»ú·þÎñÉÌ£¬Ìá¹©ÄÏ±±»¥Í¨µÄË«Ïßµ¥IPÐéÄâÖ÷»ú¡¢ÓòÃû×¢²á·þÎñ¡¢ÆóÒµÓÊ¾Ö¡¢CDNÍøÒ³¼ÓËÙµÈ·þÎñ">
+<title>æœˆå¤œæ˜Ÿç©ºè½¯ä»¶å·¥ä½œå®¤</title>
+<meta name="keywords" content="åŸŸåæ³¨å†Œ|ç½‘ç»œå®žå|ä¸»æœºç§Ÿèµ|ä¼ä¸šé‚®å±€|ç½‘ç«™ç­–åˆ’|ä¼ä¸šé‚®å±€|ä¸»æœºæ‰˜ç®¡|ä¸»æœºç§Ÿç”¨|æœåŠ¡å™¨ç§Ÿç”¨">
+<meta name="description" content="è™šæ‹Ÿä¸»æœºæœåŠ¡å•†ï¼Œæä¾›å—åŒ—äº’é€šçš„åŒçº¿å•IPè™šæ‹Ÿä¸»æœºã€åŸŸåæ³¨å†ŒæœåŠ¡ã€ä¼ä¸šé‚®å±€ã€CDNç½‘é¡µåŠ é€Ÿç­‰æœåŠ¡">
 <link href="./templates/default/css/public.css" rel="stylesheet" type="text/css">
 <link href="./templates/default/css/site.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" async="" src="./templates/default/js/ga.js"></script><script src="./templates/default/js/flashobj.js" type="text/javascript"></script>
@@ -17,13 +17,13 @@
     <td width="584" rowspan="2"><img src="./templates/default/images/logo.gif"></td>
     <td width="396" height="40" align="right">
 			
-	<a href="http://www.flxkdns.com/members/usr_reg.asp">Ãâ·Ñ×¢²á</a> / <a href="http://www.flxkdns.com/members/login.asp">µÇÂ¼</a> 
+	<a href="http://www.flxkdns.com/members/usr_reg.asp">å…è´¹æ³¨å†Œ</a> / <a href="http://www.flxkdns.com/members/login.asp">ç™»å½•</a> 
 	
-	 | <a href="http://www.flxkdns.com/help/">°ïÖúÖÐÐÄ</a> | <a href="http://www.flxkdns.com/help/price.asp">¼Û¸ñ×ÜÀÀ</a> | <a href="http://www.flxkdns.com/help/pay.asp">¸¶¿î·½Ê½</a>
+	 | <a href="http://www.flxkdns.com/help/">å¸®åŠ©ä¸­å¿ƒ</a> | <a href="http://www.flxkdns.com/help/price.asp">ä»·æ ¼æ€»è§ˆ</a> | <a href="http://www.flxkdns.com/help/pay.asp">ä»˜æ¬¾æ–¹å¼</a>
     </td>
   </tr>
   <tr>
-    <td height="17" align="right" valign="middle"><p>7*24Ð¡Ê±¿Í»§·þÎñÈÈÏßµç»°£º
+    <td height="17" align="right" valign="middle"><p>7*24å°æ—¶å®¢æˆ·æœåŠ¡çƒ­çº¿ç”µè¯ï¼š
       <br>
       </p>
     </td>
