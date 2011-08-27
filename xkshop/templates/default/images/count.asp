@@ -1,0 +1,1 @@
+document.write('<a href=http://www.gold678.com target=_blank title=今天访问：1&#10;累计访问：218&#10;点击申请计数器><img border=0 src=http://count.knowsky.com/img/19/2.gif><img border=0 src=http://count.knowsky.com/img/19/1.gif><img border=0 src=http://count.knowsky.com/img/19/8.gif></a><iframe frameBorder=no scrolling=no name=abc width=0 height=0 src=http://count.knowsky.com/js.asp></iframe>')

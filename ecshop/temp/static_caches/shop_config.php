@@ -145,7 +145,7 @@ scrollAmount=3><U><FONT color=red>
   'integrate_code' => 'ecshop',
   'integrate_config' => '',
   'hash_code' => '31693422540744c0a6b6da635b7a5a93',
-  'template' => 'xk',
+  'template' => 'default',
   'install_date' => '1313375202',
   'ecs_version' => 'v2.7.2',
   'sms_user_name' => '',
