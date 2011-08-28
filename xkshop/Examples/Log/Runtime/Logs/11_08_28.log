@@ -1,0 +1,8 @@
+[ 2011-08-28T08:17:31+08:00 ] SQL: 调试的SQL语句：SELECT id,title,content FROM `think_form` ORDER BY id desc
+[ 2011-08-28T08:17:31+08:00 ] ERR: 模拟写入的错误信息
+[ 2011-08-28T08:17:31+08:00 ] SQL: SHOW COLUMNS FROM `think_form` [ RunTime:0.009813s ]
+[ 2011-08-28T08:17:31+08:00 ] SQL: SELECT id,title,content FROM `think_form` ORDER BY id desc [ RunTime:0.000675s ]
+[ 2011-08-28T08:18:12+08:00 ] SQL: 调试的SQL语句：SELECT id,title,content FROM `think_form` ORDER BY id desc
+[ 2011-08-28T08:18:12+08:00 ] ERR: 模拟写入的错误信息
+[ 2011-08-28T08:18:12+08:00 ] SQL: SHOW COLUMNS FROM `think_form` [ RunTime:0.009462s ]
+[ 2011-08-28T08:18:12+08:00 ] SQL: SELECT id,title,content FROM `think_form` ORDER BY id desc [ RunTime:0.000834s ]

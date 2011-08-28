@@ -1,0 +1,4 @@
+[ 2011-08-28T08:16:19+08:00 ] SQL: SHOW COLUMNS FROM `think_form` [ RunTime:0.010253s ]
+[ 2011-08-28T08:16:19+08:00 ] SQL: SELECT * FROM `think_form` ORDER BY id desc LIMIT 5  [ RunTime:0.000973s ]
+[ 2011-08-28T08:16:20+08:00 ] NOTIC: [8] Undefined variable: odd 0573c70d8602d961e53f714ea77bd87c.php 第 70 行.
+[ 2011-08-28T08:16:20+08:00 ] NOTIC: [8] Undefined variable: odd 0573c70d8602d961e53f714ea77bd87c.php 第 70 行.
