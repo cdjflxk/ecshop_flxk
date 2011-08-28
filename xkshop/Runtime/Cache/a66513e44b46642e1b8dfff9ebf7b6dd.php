@@ -1,15 +1,80 @@
-{include file="./templates/default/lib/header.tpl"}
-{include file="./templates/default/lib/nav.tpl"}
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0023)http://www.flxkdns.com/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title><?php echo ($title); ?></title>
+<meta name="keywords" content="<?php echo ($keywords); ?>">
+<meta name="description" content="<?php echo ($description); ?>">
+<link href="../Public/css/public.css" rel="stylesheet" type="text/css">
+<link href="../Public/css/site.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" async="" src="../Public/js/ga.js"></script><script src="../Public/js/flashobj.js" type="text/javascript"></script>
+<script src="../Public/js/menu.js" type="text/javascript"></script>
+<script type="text/javascript" src="../Public/js/dme_input.js"></script>
+</head>
+<body onload="MM_preloadImages(&#39;../Public/images/menu1_01.jpg&#39;,&#39;../Public/images/menu1_02.jpg&#39;,&#39;../Public/images/menu1_03.jpg&#39;,&#39;../Public/images/menu1_04.jpg&#39;,&#39;../Public/images/menu1_05.jpg&#39;,&#39;../Public/images/menu1_06.jpg&#39;,&#39;../Public/images/menu1_07.jpg&#39;,&#39;../Public/images/menu1_08.jpg&#39;,&#39;../Public/images/menu1_09.jpg&#39;)">
+<table width="980" height="57" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+    <td width="584" rowspan="2"><img src="../Public/images/logo.gif"></td>
+    <td width="396" height="40" align="right">
+			
+	<a href="http://www.flxkdns.com/members/usr_reg.asp">免费注册</a> / <a href="http://www.flxkdns.com/members/login.asp">登录</a> 
+	
+	 | <a href="http://www.flxkdns.com/help/">帮助中心</a> | <a href="http://www.flxkdns.com/help/price.asp">价格总览</a> | <a href="http://www.flxkdns.com/help/pay.asp">付款方式</a>
+    </td>
+  </tr>
+  <tr>
+    <td height="17" align="right" valign="middle"><p><?php echo ($phone); ?>
+      <br>
+      </p>
+    </td>
+  </tr>
+</tbody></table>
+<table id="__01" border="0" cellspacing="0" cellpadding="0" width="978" align="center" height="66">
+  <tbody>
+  <tr>
+    <td width="2"><img src="../Public/images/menu_01.gif" border="0" width="2" height="66"></td>
+    <td background="../Public/images/menu_02_bg.gif">&nbsp;</td>
+	<td width="102" align="center" background="../Public/images/menu_02.gif" onmouseover="javascript: this.style.backgroundImage=&#39;url(../Public/images/menu_02_over.gif)&#39;;" onmouseout="javascript: this.style.backgroundImage=&#39;url(../Public/images/menu_02.gif)&#39;;" style="background-image: url(../Public/images/menu_02.gif); "><a href="__URL__" style="display: block; width: 102; height: 66px; line-height: 52px; font-size: 14px; font-weight: bold; color: white;">首页</a></td>
+
+
+<td width="102" align="center" background="../Public/images/menu_02.gif" onmouseover="javascript: this.style.backgroundImage=&#39;url(../Public/images/menu_02_over.gif)&#39;;" onmouseout="javascript: this.style.backgroundImage=&#39;url(../Public/images/menu_02.gif)&#39;;"><a href="__URL__/dns" style="display: block; width: 102; height: 66px; line-height: 52px; font-size: 14px; font-weight: bold; color: white;">域名注册</a></td>
+
+
+<td width="102" align="center" background="../Public/images/menu_02.gif" onmouseover="javascript: this.style.backgroundImage=&#39;url(../Public/images/menu_02_over.gif)&#39;;" onmouseout="javascript: this.style.backgroundImage=&#39;url(../Public/images/menu_02.gif)&#39;;"><a href="__URL__/virtual" style="display: block; width: 102; height: 66px; line-height: 52px; font-size: 14px; font-weight: bold; color: white;">虚拟主机</a></td>
+
+
+<td width="102" align="center" background="../Public/images/menu_02.gif" onmouseover="javascript: this.style.backgroundImage=&#39;url(../Public/images/menu_02_over.gif)&#39;;" onmouseout="javascript: this.style.backgroundImage=&#39;url(../Public/images/menu_02.gif)&#39;;"><a href="__URL__/email" style="display: block; width: 102; height: 66px; line-height: 52px; font-size: 14px; font-weight: bold; color: white;">企业邮局</a></td>
+
+
+<td width="102" align="center" background="../Public/images/menu_02.gif" onmouseover="javascript: this.style.backgroundImage=&#39;url(../Public/images/menu_02_over.gif)&#39;;" onmouseout="javascript: this.style.backgroundImage=&#39;url(../Public/images/menu_02.gif)&#39;;"><a href="__URL__/vps" style="display: block; width: 102; height: 66px; line-height: 52px; font-size: 14px; font-weight: bold; color: white;">VPS</a></td>
+
+
+<td width="102" align="center" background="../Public/images/menu_02.gif" onmouseover="javascript: this.style.backgroundImage=&#39;url(../Public/images/menu_02_over.gif)&#39;;" onmouseout="javascript: this.style.backgroundImage=&#39;url(../Public/images/menu_02.gif)&#39;;"><a href="__URL__/shop" style="display: block; width: 102; height: 66px; line-height: 52px; font-size: 14px; font-weight: bold; color: white;">网店系统</a></td>
+
+
+<td width="102" align="center" background="../Public/images/menu_02.gif" onmouseover="javascript: this.style.backgroundImage=&#39;url(../Public/images/menu_02_over.gif)&#39;;" onmouseout="javascript: this.style.backgroundImage=&#39;url(../Public/images/menu_02.gif)&#39;;"><a href="__URL__/site" style="display: block; width: 102; height: 66px; line-height: 52px; font-size: 14px; font-weight: bold; color: white;">自助建站</a></td>
+
+
+<td width="102" align="center" background="../Public/images/menu_02.gif" onmouseover="javascript: this.style.backgroundImage=&#39;url(../Public/images/menu_02_over.gif)&#39;;" onmouseout="javascript: this.style.backgroundImage=&#39;url(../Public/images/menu_02.gif)&#39;;"><a href="__URL__/helpcenter" style="display: block; width: 102; height: 66px; line-height: 52px; font-size: 14px; font-weight: bold; color: white;">帮助中心</a></td>
+
+
+<td width="102" align="center" background="../Public/images/menu_02.gif" onmouseover="javascript: this.style.backgroundImage=&#39;url(../Public/images/menu_02_over.gif)&#39;;" onmouseout="javascript: this.style.backgroundImage=&#39;url(../Public/images/menu_02.gif)&#39;;"><a href="__URL__/business" style="display: block; width: 102; height: 66px; line-height: 52px; font-size: 14px; font-weight: bold; color: white;">企业推广</a></td>
+
+
+
+    <td background="../Public/images/menu_02_bg.gif">&nbsp;</td>
+    <td width="2"><img src="../Public/images/menu_03.gif" border="0" width="2" height="66"></td>
+    </tr></tbody></table>
 <table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
   <tbody><tr>
     <td width="225" align="center" valign="top">
 			<table width="225" border="0" cellspacing="0" cellpadding="0">
 	<form name="login_form" action="http://www.flxkdns.com/ucenter/members/login.asp" method="post"></form>
       <tbody><tr>
-        <td height="168" valign="top" background="./templates/default/images/loginbg.gif">
+        <td height="168" valign="top" background="../Public/images/loginbg.gif">
         <table width="85%" height="31" border="0" align="center" cellpadding="0" cellspacing="0">
           <tbody><tr>
-            <td width="12%" class="dashed"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
+            <td width="12%" class="dashed"><img src="../Public/images/icon.gif" width="9" height="15"></td>
             <td width="88%" align="left" class="dashed"><span class="title">会员登录</span></td>
           </tr>
         </tbody></table>
@@ -18,7 +83,7 @@
             <tbody><tr>
               <td width="17%" class="blue">帐号:</td>
               <td width="62%"><input name="usrname" type="text" class="input" id="textfield" tabindex="1"></td>
-              <td width="21%" rowspan="2"><input type="image" src="./templates/default/images/login.gif" width="40" height="40" tabindex="4"></td>
+              <td width="21%" rowspan="2"><input type="image" src="../Public/images/login.gif" width="40" height="40" tabindex="4"></td>
             </tr>
             <tr>
               <td class="blue">密码:</td>
@@ -29,8 +94,8 @@
           <table width="191" height="37" border="0" align="center" cellpadding="0" cellspacing="0">
             <tbody><tr>
               <td width="11">&nbsp;</td>
-              <td width="93" align="right"><a href="http://www.flxkdns.com/members/usr_reg.asp"><img src="./templates/default/images/register.gif" width="73" height="27"></a></td>
-              <td width="87" align="right"><a href="http://www.flxkdns.com/members/getpass.asp"><img src="./templates/default/images/forget.gif" width="73" height="27"></a></td>
+              <td width="93" align="right"><a href="http://www.flxkdns.com/members/usr_reg.asp"><img src="../Public/images/register.gif" width="73" height="27"></a></td>
+              <td width="87" align="right"><a href="http://www.flxkdns.com/members/getpass.asp"><img src="../Public/images/forget.gif" width="73" height="27"></a></td>
             </tr>
           </tbody></table></td>
       </tr>
@@ -41,11 +106,11 @@
 		  
   
   
-      <table width="217" border="0" cellpadding="0" cellspacing="0" background="./templates/default/images/postbg.gif">
+      <table width="217" border="0" cellpadding="0" cellspacing="0" background="../Public/images/postbg.gif">
         <tbody><tr>
           <td align="center" valign="top"><table width="90%" height="31" border="0" cellpadding="0" cellspacing="0">
             <tbody><tr>
-              <td width="12%" class="dashed"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
+              <td width="12%" class="dashed"><img src="../Public/images/icon.gif" width="9" height="15"></td>
               <td width="88%" align="left" class="dashed"><span class="title">帮助主题</span></td>
             </tr>
           </tbody></table>
@@ -67,7 +132,7 @@
         <tr>
           <td align="center" valign="top"><table width="90%" height="31" border="0" cellpadding="0" cellspacing="0">
             <tbody><tr>
-              <td width="12%" class="dashed"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
+              <td width="12%" class="dashed"><img src="../Public/images/icon.gif" width="9" height="15"></td>
               <td width="88%" align="left" class="dashed"><span class="title">其他帮助主题</span></td>
             </tr>
           </tbody></table>
@@ -92,7 +157,7 @@
         
         
         <tr>
-          <td><img src="./templates/default/images/postf.gif" width="217" height="5"></td>
+          <td><img src="../Public/images/postf.gif" width="217" height="5"></td>
         </tr>
       </tbody></table>
 	</td>
@@ -100,9 +165,9 @@
 	  <table width="98%" height="583" border="0" align="right" cellpadding="0" cellspacing="10" bgcolor="#F5F5F5">
         <tbody><tr>
           <td height="192" colspan="2" valign="top" bgcolor="#FFFFFF">
-			<table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="./templates/default/images/hostingbg1.gif">
+			<table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" background="../Public/images/hostingbg1.gif">
 				<tbody><tr>
-				  <td width="5%" align="center"><img src="./templates/default/images/icon.gif" width="9" height="15"></td>
+				  <td width="5%" align="center"><img src="../Public/images/icon.gif" width="9" height="15"></td>
 				  <td width="95%" height="35" align="left"><a href="http://www.flxkdns.com/"><span class="title">首页</span></a> &gt;&gt; <span class="title">帮助中心</span> &gt;&gt; <span class="title">文章列表</span></td>
 				</tr>
 			</tbody></table>
@@ -198,10 +263,9 @@
   })();
 
 </script>
-
-<table width="980" border="0" align="center" cellpadding="0" cellspacing="0" background="./templates/default/images/linkbg.gif">
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0" background="../Public/images/linkbg.gif">
   <tbody><tr>
-    <td width="6"><img src="./templates/default/images/linkl.gif" width="6" height="54"></td>
+    <td width="6"><img src="../Public/images/linkl.gif" width="6" height="54"></td>
     <td width="968" valign="top">
 	 <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top: 1px;">
      <!-- <tr>
@@ -213,13 +277,13 @@
 		</td>
         </tr>
     </tbody></table></td>
-    <td width="6"><img src="./templates/default/images/linkr.gif" width="6" height="54"></td>
+    <td width="6"><img src="../Public/images/linkr.gif" width="6" height="54"></td>
   </tr>
 </tbody></table>
 <br>
-<table width="980" border="0" align="center" cellpadding="0" cellspacing="0" background="./templates/default/images/footerbg.gif">
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0" background="../Public/images/footerbg.gif">
   <tbody><tr>
-    <td width="232" height="114" valign="bottom"><img src="./templates/default/images/logof.gif"></td>
+    <td width="232" height="114" valign="bottom"><img src="../Public/images/logof.gif"></td>
     <td width="748" class="jiange">
     <a href="http://www.flxkdns.com/help/pay.asp">付款方式</a>　|　<a href="http://www.flxkdns.com/help/price.asp">价格总览</a>　|　<a href="http://www.flxkdns.com/help/job.asp">诚聘英才</a>　|　<a href="http://www.flxkdns.com/help/aboutus.asp">关于我们</a>　|　<a href="http://www.flxkdns.com/help/contact.asp">联系我们</a>　|　<a href="http://www.flxkdns.com/help/postQues.asp">咨询反馈</a>		
 		<br>
@@ -230,11 +294,4 @@
     </td>
   </tr>
 </tbody></table>
-
-<!-- start http://count.knowsky.com -->
-<script src="./templates/default/images/count.asp" language="JavaScript" charset="gb2312"></script><a href="http://www.gold678.com/" target="_blank" title="今天访问：1
-累计访问：218
-点击申请计数器"><img border="0" src="./templates/default/images/2.gif"><img border="0" src="./templates/default/images/1.gif"><img border="0" src="./templates/default/images/8.gif"></a><iframe frameborder="no" scrolling="no" name="abc" width="0" height="0" src="./templates/default/images/js.htm"></iframe>
-<!-- Powered by http://www.knowsky.com -->
-
 </body></html>
