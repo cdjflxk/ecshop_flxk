@@ -1,3 +1,128 @@
 [ 2011-08-28T10:09:56+08:00 ] ERR: (ThinkException) 模板不存在[default/index.tpl]
 [ 2011-08-28T10:10:21+08:00 ] ERR: (ThinkException) 模板不存在[default/index.tpl]
 [ 2011-08-28T10:13:09+08:00 ] ERR: (ThinkException) 模板不存在[default/index.tpl]
+[ 2011-08-28T16:04:32+08:00 ] ERR: (ThinkException) 非法操作XkShopModel
+[ 2011-08-28T16:04:57+08:00 ] ERR: (ThinkException) 非法操作XkShopModel
+[ 2011-08-28T16:07:40+08:00 ] ERR: (ThinkException) 非法操作XkShopModel
+[ 2011-08-28T16:09:12+08:00 ] ERR: (ThinkException) 无法加载模块XkShopModel
+[ 2011-08-28T16:10:17+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:17+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:18+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:18+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:18+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:18+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:18+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:18+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:18+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:18+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:18+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:18+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:18+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:18+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:18+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:18+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:18+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:18+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:18+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:18+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:18+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:18+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:18+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:19+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:19+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:19+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:19+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:19+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:19+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:19+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:19+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:19+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:19+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:19+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:19+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:19+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:19+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:19+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:19+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:19+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:19+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:19+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:19+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:19+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:19+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:19+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:19+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:20+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:20+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:20+08:00 ] ERR: (ThinkException) 非法操作templates
+[ 2011-08-28T16:10:50+08:00 ] ERR: (ThinkException) 无法加载模块Index
+[ 2011-08-28T16:10:54+08:00 ] ERR: (ThinkException) 模板不存在[./Tpl/default/IndexModel/index.html]
+[ 2011-08-28T16:11:51+08:00 ] ERR: (ThinkException) 无法加载模块XkShopMode
+[ 2011-08-28T16:12:14+08:00 ] ERR: (ThinkException) 无法加载模块XkShop
+[ 2011-08-28T16:12:42+08:00 ] SQL: SHOW COLUMNS FROM `think_xk_shop_model` [ RunTime:0.006450s ]
+[ 2011-08-28T16:12:42+08:00 ] SQL: SELECT * FROM `think_xk_shop_model` [ RunTime:0.001049s ]
+[ 2011-08-28T16:13:17+08:00 ] SQL: SHOW COLUMNS FROM `think_xk_shop_model` [ RunTime:0.006340s ]
+[ 2011-08-28T16:13:17+08:00 ] SQL: SELECT * FROM `think_xk_shop_model` [ RunTime:0.001036s ]
+[ 2011-08-28T16:14:18+08:00 ] SQL: SHOW COLUMNS FROM `think_xk_shop_model` [ RunTime:0.006639s ]
+[ 2011-08-28T16:14:18+08:00 ] NOTIC: [8] Undefined variable: fields Db.class.php 第 719 行.
+[ 2011-08-28T16:14:18+08:00 ] NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed Db.class.php 第 719 行.
+[ 2011-08-28T16:14:18+08:00 ] NOTIC: [8] Undefined variable: values Db.class.php 第 719 行.
+[ 2011-08-28T16:14:18+08:00 ] NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed Db.class.php 第 719 行.
+[ 2011-08-28T16:14:18+08:00 ] SQL: INSERT INTO `think_xk_shop_model` () VALUES () [ RunTime:0.016281s ]
+[ 2011-08-28T16:14:18+08:00 ] SQL: SHOW COLUMNS FROM `think_xk_shop_model` [ RunTime:0.006265s ]
+[ 2011-08-28T16:14:18+08:00 ] SQL: SELECT * FROM `think_xk_shop_model` [ RunTime:0.000994s ]
+[ 2011-08-28T16:17:48+08:00 ] ERR: (ThinkException) 模板不存在[./Tpl/default/Public/success.html]
+[ 2011-08-28T16:20:26+08:00 ] ERR: (ThinkException) 模板不存在[./Tpl/default/Public/success.html]
+[ 2011-08-28T16:20:31+08:00 ] ERR: (ThinkException) 模板不存在[./Tpl/default/Public/success.html]
+[ 2011-08-28T16:24:47+08:00 ] ERR: (ThinkException) 模板不存在[./Tpl/default/Public/success.html]
+[ 2011-08-28T16:24:49+08:00 ] ERR: (ThinkException) 模板不存在[./Tpl/default/Public/success.html]
+[ 2011-08-28T16:24:51+08:00 ] ERR: (ThinkException) 模板不存在[./Tpl/default/Public/success.html]
+[ 2011-08-28T16:25:49+08:00 ] ERR: (ThinkException) 模板不存在[./Tpl/default/Public/success.html]
+[ 2011-08-28T16:25:51+08:00 ] ERR: (ThinkException) 模板不存在[./Tpl/default/Public/success.html]
+[ 2011-08-28T16:26:48+08:00 ] ERR: (ThinkException) 模板不存在[./Tpl/default/Public/success.html]
+[ 2011-08-28T16:27:01+08:00 ] ERR: (ThinkException) 模板不存在[./Tpl/default/Public/success.html]
+[ 2011-08-28T16:27:54+08:00 ] ERR: (ThinkException) 模板不存在[./Tpl/default/Public/success.html]
+[ 2011-08-28T16:27:56+08:00 ] ERR: (ThinkException) 模板不存在[./Tpl/default/Public/success.html]
+[ 2011-08-28T16:29:50+08:00 ] ERR: (ThinkException) 模板不存在[./Tpl/default/Public/success.html]
+[ 2011-08-28T16:31:39+08:00 ] ERR: (ThinkException) 模板不存在[./Tpl/default/Public/success.html]
+[ 2011-08-28T16:31:41+08:00 ] ERR: (ThinkException) 模板不存在[./Tpl/default/Public/success.html]
+[ 2011-08-28T16:35:37+08:00 ] ERR: (ThinkException) 模板不存在[./Tpl/default/Public/success.html]
+[ 2011-08-28T16:35:39+08:00 ] ERR: (ThinkException) 模板不存在[./Tpl/default/Public/success.html]
+[ 2011-08-28T16:36:45+08:00 ] ERR: (ThinkException) 模板不存在[./Tpl/default/Public/success.html]
+[ 2011-08-28T16:37:31+08:00 ] ERR: (ThinkException) 模板不存在[./Tpl/default/Public/success.html]
+[ 2011-08-28T16:38:30+08:00 ] ERR: (ThinkException) 模板不存在[./Tpl/default/Public/success.html]
+[ 2011-08-28T16:44:56+08:00 ] ERR: (ThinkException) 模板不存在[./Tpl/default/Public/success.html]
+[ 2011-08-28T16:46:31+08:00 ] ERR: (ThinkException) 模板不存在[./Tpl/default/Public/success.html]
+[ 2011-08-28T16:47:20+08:00 ] SQL: SHOW COLUMNS FROM `think_xk_model` [ RunTime:0.006739s ]
+[ 2011-08-28T16:55:17+08:00 ] SQL: SHOW COLUMNS FROM `think_xk_model` [ RunTime:0.008430s ]
+[ 2011-08-28T16:56:24+08:00 ] NOTIC: [8] Use of undefined constant XkModel - assumed 'XkModel' xdebug eval 第 1 行.
+[ 2011-08-28T17:05:47+08:00 ] SQL: SHOW COLUMNS FROM `think_xk_model` [ RunTime:0.010706s ]
+[ 2011-08-28T17:05:47+08:00 ] SQL: INSERT INTO `think_xk_model` (`name`) VALUES ('测试') [ RunTime:0.054290s ]
+[ 2011-08-28T17:05:50+08:00 ] SQL: SHOW COLUMNS FROM `think_xk_shop_model` [ RunTime:0.008732s ]
+[ 2011-08-28T17:05:50+08:00 ] SQL: SELECT * FROM `think_xk_shop_model` [ RunTime:0.001489s ]
+[ 2011-08-28T17:06:27+08:00 ] SQL: SHOW COLUMNS FROM `think_xk_shop_model` [ RunTime:0.010665s ]
+[ 2011-08-28T17:06:27+08:00 ] SQL: SELECT * FROM `think_xk_shop_model` [ RunTime:0.001679s ]
+[ 2011-08-28T17:06:53+08:00 ] SQL: SHOW COLUMNS FROM `think_xk_shop_model` [ RunTime:0.007159s ]
+[ 2011-08-28T17:06:53+08:00 ] SQL: SELECT * FROM `think_xk_shop_model` [ RunTime:0.001235s ]
+[ 2011-08-28T17:07:21+08:00 ] SQL: SHOW COLUMNS FROM `think_xk_model` [ RunTime:0.007679s ]
+[ 2011-08-28T17:07:24+08:00 ] SQL: INSERT INTO `think_xk_model` (`name`) VALUES ('测试') [ RunTime:0.000638s ]
+[ 2011-08-28T17:14:12+08:00 ] SQL: SHOW COLUMNS FROM `think_xk_shop_model` [ RunTime:0.007017s ]
+[ 2011-08-28T17:14:12+08:00 ] SQL: SELECT * FROM `think_xk_shop_model` [ RunTime:0.001059s ]
+[ 2011-08-28T17:14:20+08:00 ] SQL: SHOW COLUMNS FROM `think_xk_shop_model` [ RunTime:0.006549s ]
+[ 2011-08-28T17:14:20+08:00 ] SQL: SELECT * FROM `think_xk_shop_model` [ RunTime:0.001424s ]
+[ 2011-08-28T17:14:31+08:00 ] SQL: SHOW COLUMNS FROM `think_xk_model` [ RunTime:0.008178s ]
+[ 2011-08-28T17:14:31+08:00 ] SQL: INSERT INTO `think_xk_model` (`name`) VALUES ('测试') [ RunTime:0.033170s ]
+[ 2011-08-28T17:14:32+08:00 ] SQL: SHOW COLUMNS FROM `think_xk_shop_model` [ RunTime:0.008254s ]
+[ 2011-08-28T17:14:32+08:00 ] SQL: SELECT * FROM `think_xk_shop_model` [ RunTime:0.001216s ]
+[ 2011-08-28T17:23:20+08:00 ] SQL: SHOW COLUMNS FROM `xk_xk_model` [ RunTime:0.007112s ]
+[ 2011-08-28T17:23:20+08:00 ] NOTIC: [8] Undefined variable: fields Db.class.php 第 719 行.
+[ 2011-08-28T17:23:20+08:00 ] NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed Db.class.php 第 719 行.
+[ 2011-08-28T17:23:20+08:00 ] NOTIC: [8] Undefined variable: values Db.class.php 第 719 行.
+[ 2011-08-28T17:23:20+08:00 ] NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed Db.class.php 第 719 行.
+[ 2011-08-28T17:23:20+08:00 ] SQL: INSERT INTO `xk_xk_model` () VALUES () [ RunTime:0.002213s ]
+[ 2011-08-28T17:23:20+08:00 ] SQL: SHOW COLUMNS FROM `xk_xk_shop_model` [ RunTime:0.007270s ]
+[ 2011-08-28T17:23:20+08:00 ] SQL: SELECT * FROM `xk_xk_shop_model` [ RunTime:0.001741s ]
+[ 2011-08-28T17:24:17+08:00 ] SQL: SHOW COLUMNS FROM `xk_xk_model` [ RunTime:0.007876s ]
+[ 2011-08-28T17:24:17+08:00 ] SQL: INSERT INTO `xk_xk_model` (`name`) VALUES ('测试') [ RunTime:0.132243s ]
+[ 2011-08-28T17:24:17+08:00 ] SQL: SHOW COLUMNS FROM `xk_xk_shop_model` [ RunTime:0.009374s ]
+[ 2011-08-28T17:24:17+08:00 ] SQL: SELECT * FROM `xk_xk_shop_model` [ RunTime:0.001436s ]

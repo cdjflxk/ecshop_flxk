@@ -16,6 +16,8 @@ define('APP_NAME', 'CURD');
 define('APP_PATH', '.');
 // 加载框架入口文件
 require(THINK_PATH."/ThinkPHP.php");
+//不编译核心文件
+define('NO_CACHE_RUNTIME',True);
 //实例化一个网站应用实例
 App::run();
 ?>

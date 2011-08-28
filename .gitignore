@@ -2,5 +2,6 @@ ecshop/nbproject
 ecshop/temp
 xkshop/templates_c
 xkshop/cache
+xkshop/Runtime/
 
 
