@@ -6,7 +6,7 @@ $config = require("../config.php");
 
 $array = array(
     'URL_ROUTER_ON' => true,
-	'DEFAULT_MODULE' =>	'Blog',
+    'DEFAULT_MODULE' =>	'Blog',
     'TOKEN_ON'  => false,
     'URL_ROUTE_RULES' => array(
         array('cate','Blog/category','id'),

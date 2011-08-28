@@ -131,8 +131,8 @@ return  array(
     'TMPL_R_DELIM'          => '}',			// 模板引擎普通标签结束标记
     'TMPL_VAR_IDENTIFY'     => 'array',     // 模板变量识别。留空自动判断,参数为'obj'则表示对象
     'TMPL_STRIP_SPACE'      => false,       // 是否去除模板文件里面的html空格与换行
-    'TMPL_CACHE_ON'			=> true,        // 是否开启模板编译缓存,设为false则每次都会重新编译
-    'TMPL_CACHE_TIME'		=>	-1,         // 模板缓存有效期 -1 为永久，(以数字为值，单位:秒)
+    'TMPL_CACHE_ON'			=> false,        // 是否开启模板编译缓存,设为false则每次都会重新编译
+    'TMPL_CACHE_TIME'		=>	0,         // 模板缓存有效期 -1 为永久，(以数字为值，单位:秒)
     'TMPL_ACTION_ERROR'     => 'Public:success', // 默认错误跳转对应的模板文件
     'TMPL_ACTION_SUCCESS'   => 'Public:success', // 默认成功跳转对应的模板文件
     'TMPL_TRACE_FILE'       => THINK_PATH.'/Tpl/PageTrace.tpl.php',     // 页面Trace的模板文件
