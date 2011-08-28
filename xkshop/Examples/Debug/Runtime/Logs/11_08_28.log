@@ -1,0 +1,5 @@
+[ 2011-08-28T08:18:15+08:00 ] SQL: SHOW COLUMNS FROM `think_form` [ RunTime:0.009077s ]
+[ 2011-08-28T08:18:15+08:00 ] SQL: SELECT id,title,content FROM `think_form` ORDER BY id desc LIMIT 3  [ RunTime:0.000604s ]
+[ 2011-08-28T08:18:15+08:00 ] NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\wamp\www\ThinkPHP_2.1_full_with_extend\ThinkPHP\Common\functions.php:240) View.class.php 第 184 行.
+[ 2011-08-28T08:18:15+08:00 ] NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\wamp\www\ThinkPHP_2.1_full_with_extend\ThinkPHP\Common\functions.php:240) View.class.php 第 185 行.
+[ 2011-08-28T08:18:15+08:00 ] NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\wamp\www\ThinkPHP_2.1_full_with_extend\ThinkPHP\Common\functions.php:240) View.class.php 第 186 行.

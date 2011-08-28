@@ -1,0 +1,2 @@
+[ 2011-08-28T08:16:53+08:00 ] SQL: SHOW COLUMNS FROM `think_form` [ RunTime:0.009205s ]
+[ 2011-08-28T08:16:53+08:00 ] SQL: SELECT * FROM `think_form` ORDER BY id desc LIMIT 5  [ RunTime:0.000596s ]

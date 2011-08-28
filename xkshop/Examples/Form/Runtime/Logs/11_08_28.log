@@ -1,0 +1,5 @@
+[ 2011-08-28T08:10:39+08:00 ] ERR: (ThinkException) Unknown database 'demo'
+[ 2011-08-28T08:14:44+08:00 ] SQL: SHOW COLUMNS FROM `think_form` [ RunTime:0.009794s ]
+[ 2011-08-28T08:14:44+08:00 ] SQL: SELECT * FROM `think_form` ORDER BY id desc LIMIT 6  [ RunTime:0.000675s ]
+[ 2011-08-28T08:15:13+08:00 ] SQL: SHOW COLUMNS FROM `think_form` [ RunTime:0.015094s ]
+[ 2011-08-28T08:15:13+08:00 ] SQL: SELECT * FROM `think_form` ORDER BY id desc LIMIT 6  [ RunTime:0.001131s ]
