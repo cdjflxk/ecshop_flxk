@@ -1,4 +1,0 @@
-[ 2011-08-28T08:17:27+08:00 ] SQL: SHOW COLUMNS FROM `think_form` [ RunTime:0.017806s ]
-[ 2011-08-28T08:17:27+08:00 ] SQL: SELECT * FROM `think_form` [ RunTime:0.000579s ]
-[ 2011-08-28T08:18:11+08:00 ] SQL: SHOW COLUMNS FROM `think_form` [ RunTime:0.008505s ]
-[ 2011-08-28T08:18:11+08:00 ] SQL: SELECT * FROM `think_form` [ RunTime:0.000601s ]

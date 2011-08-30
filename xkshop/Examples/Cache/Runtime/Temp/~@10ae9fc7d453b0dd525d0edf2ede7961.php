@@ -1,3 +1,0 @@
-<?php
-//000000000010a:2:{i:0;a:8:{s:2:"id";s:1:"1";s:5:"title";s:17:"ThinkPHP2.0发布";s:7:"content";s:64:"祖国60周年华诞献礼，ThinkPHP2.0新版正式发布了！";s:7:"user_id";s:1:"1";s:11:"create_time";s:10:"1254325349";s:11:"update_time";s:1:"0";s:6:"status";s:1:"1";s:5:"email";s:0:"";}i:1;a:8:{s:2:"id";s:1:"2";s:5:"title";s:18:"新版套装销售";s:7:"content";s:79:"ThinkPHP新版发布超值纪念套装火热征订中！还送2G主机空间！";s:7:"user_id";s:2:"33";s:11:"create_time";s:10:"1254325948";s:11:"update_time";s:1:"0";s:6:"status";s:1:"1";s:5:"email";s:0:"";}}
-?>
