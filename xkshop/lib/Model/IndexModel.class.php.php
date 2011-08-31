@@ -10,7 +10,12 @@
  *
  * @author dejie
  */
-class IndexModel extends Model{
+class IndexModel extends AdvModel{
+    
+    protected $serializeField = array(
+        'info' => array('tname', 'tkeywords', 'tdescription'),
+);
+
     
 }
 
