@@ -9,6 +9,8 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
+//在调试 模式下不生成项目的核心缓存
+define('NO_CACHE_RUNTIME',True);
 // 定义ThinkPHP框架路径
 define('THINK_PATH', 'ThinkPHP');
 //定义项目名称和路径
