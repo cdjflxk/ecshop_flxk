@@ -4,10 +4,10 @@ class IndexAction extends Action
     public function index() 
     {
         $indexModelAction = new IndexModelAction();
-        $record = $indexModelAction->queryByName('title');
-        $this->assign('title',$record['value']);
-        $this->assign('keywords',$arr['keywords']);
-        $this->assign('description',$arr[1]['description']);
+        $map = $indexModelAction->queryAllToMap();
+        $this->assign('title',$map['title']);
+        $this->assign('keywords',$map['keywords']);
+        $this->assign('description',$map['description']);
         $this->assign('phone','7*24小时客户服务热线电话：18701132241');
         $this->display();
     }
