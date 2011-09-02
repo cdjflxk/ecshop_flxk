@@ -1,12 +1,10 @@
 <?php
-
+import("@.Action.ModelAction.IndexModelAction");
 class IndexAction extends Action {
 
     public function index() {
-        import("@.Home.IndexModelAction");
         $indexModelAction = new IndexModelAction();
         $map = $indexModelAction->queryAllToMap();
-        $this->assign('rootPath', "./Tpl/default/Home/");
         $this->assign('title', $map['title']);
         $this->assign('keywords', $map['keywords']);
         $this->assign('description', $map['description']);
