@@ -12,36 +12,34 @@ ol, ul, li { list-style-type:none; margin:0px; padding:0px; }
 table {text-align:left;}
 
 #main_div { width:1050px;}
-
-/*--- 头部 ---*/
-#top {background:url(/ucenter/images/top_bj.jpg) top repeat-x; width:100%; height:105px; margin-bottom:10px;}
-#header {background:url(/ucenter/images/top.jpg) left no-repeat; height:73px; width:1200px;}
-#logo {background:url(/ucenter/images/logo.png) left no-repeat; height:73px; width:320px; float:left;}
+#top {background:url(../images/top_bj.jpg) top repeat-x; width:100%; height:105px; margin-bottom:10px;}
+#header {background:url(../images/top.jpg) left no-repeat; height:73px; width:1200px;}
+#logo {background:url(../images/logo.png) left no-repeat; height:73px; width:320px; float:left;}
 #topnav { float:left; margin-top:39px; height:34px; font-family:"Microsoft Yahei", Arial; color:#fff; line-height:34px;}
 #topnav ul li { float:left; margin:0 5px;  width:83px; text-align:center;}
 #topnav ul li a { float:left; margin:0 5px; width:83px; text-align:center; color:#fff;}
-#topnav ul li a:hover,#topnav ul li.hover a { float:left; margin:0 5px;  width:83px; text-align:center; background:url(/ucenter/images/nav_1.jpg) no-repeat; color:#036;}
-#system { background:url(/ucenter/images/header_bj.jpg) repeat-x; height:32px; width:1200px;}
+#topnav ul li a:hover,#topnav ul li.hover a { float:left; margin:0 5px;  width:83px; text-align:center; background:url(../images/nav_1.jpg) no-repeat; color:#036;}
+#system { background:url(../images/header_bj.jpg) repeat-x; height:32px; width:1200px;}
 #ico { width:780px; float:left;}
 #ico ul {float:left; margin:0; padding-left:5px;}
 #ico ul li { text-indent:25px; float:left; height:30px; line-height:30px; margin-left:15px;}
-.ico1{ background:url(/ucenter/images/header_ico1.png) left no-repeat; height:30px;}
-.ico2{ background:url(/ucenter/images/header_ico2.png) left no-repeat; height:30px;}
-.ico3{ background:url(/ucenter/images/header_ico3.png) left no-repeat; height:30px;}
+.ico1{ background:url(../images/header_ico1.png) left no-repeat; height:30px;}
+.ico2{ background:url(../images/header_ico2.png) left no-repeat; height:30px;}
+.ico3{ background:url(../images/header_ico3.png) left no-repeat; height:30px;}
 #articel_search { float:left; height:30px; line-height:30px; width:400px;}
 #top_keyword { width:100px; height:16px; border:1px solid #b0b0b0; _margin-top:4px;}
-#top_button { background:url(/ucenter/images/header_so.jpg) no-repeat; cursor:pointer; width:59px; height:19px; line-height:19px; text-align:center; border:0px; color:#FFF; font-size:12px;}
+#top_button { background:url(../images/header_so.jpg) no-repeat; cursor:pointer; width:59px; height:19px; line-height:19px; text-align:center; border:0px; color:#FFF; font-size:12px;}
 
 /*--- 左侧导航 ---*/
 #mainmenu { background:#f6fbff; width:214px; float:left;}
-#menu_blk { background:url(/ucenter/images/menu_blk.jpg) no-repeat; height:29px; line-height:29px; color:#fff; text-indent:17px; font-weight:bold; }
+#menu_blk { background:url(../images/menu_blk.jpg) no-repeat; height:29px; line-height:29px; color:#fff; text-indent:17px; font-weight:bold; }
 #Management { margin-top:5px;}
 #Management ul{ margin:0; padding:0;}
 #Management ul li { line-height:21px; text-align:left; padding-left:15px;}
-#price_button { background:url(/ucenter/images/price.jpg) no-repeat; cursor:pointer; width:84px; height:22px; line-height:22px; color:#fff; text-align:center; border:0px; margin-right:8px; font-size:12px;}
-#recharge_button { background:url(/ucenter/images/recharge.jpg) no-repeat; cursor:pointer; width:81px; height:22px; line-height:22px; color:#fff; text-align:center; border:0px; font-size:12px;}
+#price_button { background:url(../images/price.jpg) no-repeat; cursor:pointer; width:84px; height:22px; line-height:22px; color:#fff; text-align:center; border:0px; margin-right:8px; font-size:12px;}
+#recharge_button { background:url(../images/recharge.jpg) no-repeat; cursor:pointer; width:81px; height:22px; line-height:22px; color:#fff; text-align:center; border:0px; font-size:12px;}
 #nav ul { margin:0px; padding:0;}
-#nav ul li { background:url(/ucenter/images/main_nav.jpg) no-repeat; height:29px; line-height:28px; text-indent:17px;}
+#nav ul li { background:url(../images/main_nav.jpg) no-repeat; height:29px; line-height:28px; text-indent:17px;}
 
 /*--- 主要内容 ---*/
 #main_con { margin-left:15px; width:769px; float:left; /*overflow:auto;*/ zoom:1;}
@@ -65,7 +63,7 @@ table {text-align:left;}
 #mainnew { margin-top:30px; border-top:1px dotted #444; padding-top:30px;}
 #mainnew ul li { float:left; width:360px;}
 #new ul { margin-left:10px;}
-#new ul li { height:24px; line-height:24px; text-indent:15px; background:url(/ucenter/images/new_bj.jpg) left no-repeat;}
+#new ul li { height:24px; line-height:24px; text-indent:15px; background:url(../images/new_bj.jpg) left no-repeat;}
 
 /*--- 底部 ---*/
-#footer { background:url(/ucenter/images/bottom.jpg) repeat-x; text-align:center; height:94px; padding-top:40px; clear:both; overflow:hidden; zoom:1;}
+#footer { background:url(../images/bottom.jpg) repeat-x; text-align:center; height:94px; padding-top:40px; clear:both; overflow:hidden; zoom:1;}

@@ -12,7 +12,7 @@ return array(
 
 'DB_HOST'=> 'localhost', // 数据库服务器地址
 
-'DB_NAME'=>'demo',  // 数据库名称
+'DB_NAME'=>'xkshop',  // 数据库名称
 
 'DB_USER'=>'admin', // 数据库用户名
 
