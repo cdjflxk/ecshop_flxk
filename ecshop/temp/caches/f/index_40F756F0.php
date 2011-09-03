@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:21:{i:0;s:55:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/index.dwt";i:1;s:69:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/page_header.lbi";i:2;s:62:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/cart.lbi";i:3;s:71:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/category_tree.lbi";i:4;s:63:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/top10.lbi";i:5;s:72:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/promotion_info.lbi";i:6;s:69:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/order_query.lbi";i:7;s:71:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/invoice_query.lbi";i:8;s:67:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/vote_list.lbi";i:9;s:68:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/email_list.lbi";i:10;s:66:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/index_ad.lbi";i:11;s:70:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/new_articles.lbi";i:12;s:77:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/recommend_promotion.lbi";i:13;s:64:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/brands.lbi";i:14;s:72:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/recommend_best.lbi";i:15;s:71:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/recommend_new.lbi";i:16;s:71:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/recommend_hot.lbi";i:17;s:65:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/auction.lbi";i:18;s:67:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/group_buy.lbi";i:19;s:62:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/help.lbi";i:20;s:69:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/page_footer.lbi";}s:7:"expires";i:1314417092;s:8:"maketime";i:1314413492;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:21:{i:0;s:55:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/index.dwt";i:1;s:69:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/page_header.lbi";i:2;s:62:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/cart.lbi";i:3;s:71:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/category_tree.lbi";i:4;s:63:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/top10.lbi";i:5;s:72:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/promotion_info.lbi";i:6;s:69:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/order_query.lbi";i:7;s:71:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/invoice_query.lbi";i:8;s:67:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/vote_list.lbi";i:9;s:68:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/email_list.lbi";i:10;s:66:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/index_ad.lbi";i:11;s:70:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/new_articles.lbi";i:12;s:77:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/recommend_promotion.lbi";i:13;s:64:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/brands.lbi";i:14;s:72:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/recommend_best.lbi";i:15;s:71:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/recommend_new.lbi";i:16;s:71:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/recommend_hot.lbi";i:17;s:65:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/auction.lbi";i:18;s:67:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/group_buy.lbi";i:19;s:62:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/help.lbi";i:20;s:69:"C:/wamp/www/ecshop_flxk/ecshop/themes/default/library/page_footer.lbi";}s:7:"expires";i:1315019412;s:8:"maketime";i:1315015812;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="Generator" content="ECSHOP v2.7.2" />
@@ -39,13 +39,16 @@ var process_request = "正在处理您的请求...";
 <div id="mainNav" class="clearfix">
   <a href="index.php" class="cur">首页<span></span></a>
     <a href="activity.php"  >特价推荐<span></span></a>
+   <a href="category.php?id=3"  >低价打折<span></span></a>
    <a href="category.php?id=5"  >标准套餐<span></span></a>
    <a href="category.php?id=6"  >虚拟主机<span></span></a>
    <a href="snatch.php"  >免费资源<span></span></a>
+   <a href="exchange.php"  >积分商城<span></span></a>
+   <a href="message.php"  >留言板<span></span></a>
+   <a href="http://bbs.ecshop.com/"  >我们论坛<span></span></a>
    <a href="http://www.ecshop.com/contact/index.php"  >联系我们<span></span></a>
    <a href="category.php?id=1"  >建站套餐<span></span></a>
-   <a href="category.php?id=12"  >域名注册<span></span></a>
-   <a href="article_cat.php?id=20"  >帮助中心<span></span></a>
+   <a href="category.php?id=4"  >精品套餐<span></span></a>
  </div>
 <div id="search"  class="clearfix">
   <div class="keys f_l">
@@ -112,11 +115,14 @@ scrollAmount=3><U><FONT color=red>
           <dd><a href="category.php?id=7">标准主机</a></dd>
                  <dd><a href="category.php?id=8">推荐主机</a></dd>
                  <dd><a href="category.php?id=9">商务主机</a></dd>
+                 <dd><a href="category.php?id=11">不可能再低了</a></dd>
                    
        </dl>
          <dl>
      <dt><a href="category.php?id=12">域名注册</a></dt>
-          <dd><a href="category.php?id=14">域名注册</a></dd>
+          <dd><a href="category.php?id=13">小灵通/固话充值卡</a></dd>
+                 <dd><a href="category.php?id=14">域名注册</a></dd>
+                 <dd><a href="category.php?id=15">联通手机充值卡</a></dd>
                    
        </dl>
      
@@ -127,6 +133,71 @@ scrollAmount=3><U><FONT color=red>
  <div class="box_2">
   <div class="top10Tit"></div>
   <div class="top10List clearfix">
+    <ul class="clearfix">
+	<img src="themes/default/images/top_1.gif" class="iteration" />
+	      <li class="topimg">
+      <a href="goods.php?id=3"><img src="images/200905/thumb_img/3_thumb_G_1241422082679.jpg" alt="" class="samllimg" /></a>
+      </li>
+			
+      <li class="iteration1">
+      <a href="goods.php?id=3" title="">诺基亚原装58...</a><br />
+      本店售价：<font class="f1">￥68元</font><br />
+      </li>
+    </ul>
+    <ul class="clearfix">
+	<img src="themes/default/images/top_2.gif" class="iteration" />
+	      <li class="topimg">
+      <a href="goods.php?id=24"><img src="images/200905/thumb_img/24_thumb_G_1241971981429.jpg" alt="" class="samllimg" /></a>
+      </li>
+			
+      <li class="iteration1">
+      <a href="goods.php?id=24" title="">P806</a><br />
+      本店售价：<font class="f1">￥2000元</font><br />
+      </li>
+    </ul>
+    <ul class="clearfix">
+	<img src="themes/default/images/top_3.gif" class="iteration" />
+	      <li class="topimg">
+      <a href="goods.php?id=12"><img src="images/200905/thumb_img/12_thumb_G_1241965978410.jpg" alt="" class="samllimg" /></a>
+      </li>
+			
+      <li class="iteration1">
+      <a href="goods.php?id=12" title="">摩托罗拉A81...</a><br />
+      本店售价：<font class="f1">￥983元</font><br />
+      </li>
+    </ul>
+    <ul class="clearfix">
+	<img src="themes/default/images/top_4.gif" class="iteration" />
+			
+      <li >
+      <a href="goods.php?id=9" title="">诺基亚E66</a><br />
+      本店售价：<font class="f1">￥2298元</font><br />
+      </li>
+    </ul>
+    <ul class="clearfix">
+	<img src="themes/default/images/top_5.gif" class="iteration" />
+			
+      <li >
+      <a href="goods.php?id=22" title="">多普达Touc...</a><br />
+      本店售价：<font class="f1">￥5999元</font><br />
+      </li>
+    </ul>
+    <ul class="clearfix">
+	<img src="themes/default/images/top_6.gif" class="iteration" />
+			
+      <li >
+      <a href="goods.php?id=20" title="">三星BC01</a><br />
+      本店售价：<font class="f1">￥280元</font><br />
+      </li>
+    </ul>
+    <ul class="clearfix">
+	<img src="themes/default/images/top_7.gif" class="iteration" />
+			
+      <li >
+      <a href="goods.php?id=8" title="">飞利浦9@9v</a><br />
+      本店售价：<font class="f1">￥399元</font><br />
+      </li>
+    </ul>
     </div>
  </div>
 </div>
@@ -231,7 +302,28 @@ function check_email()
          
         <ul>
   <li>
-	[<a href="article_cat.php?id=22">域名</a>] <a href="article.php?id=36" title="域名相关基础知识">域名相关基础知识</a>
+	[<a href="article_cat.php?id=12">站内快讯</a>] <a href="article.php?id=33" title="三星SGHU308说明书下载">三星SGHU308说...</a>
+	</li>
+  <li>
+	[<a href="article_cat.php?id=12">站内快讯</a>] <a href="article.php?id=32" title="手机游戏下载">手机游戏下载</a>
+	</li>
+  <li>
+	[<a href="article_cat.php?id=11">手机促销</a>] <a href="article.php?id=30" title="促销诺基亚N96">促销诺基亚N96</a>
+	</li>
+  <li>
+	[<a href="article_cat.php?id=11">手机促销</a>] <a href="article.php?id=29" title="诺基亚5320 促销">诺基亚5320 促销</a>
+	</li>
+  <li>
+	[<a href="article_cat.php?id=12">站内快讯</a>] <a href="article.php?id=34" title="3G知识普及">3G知识普及</a>
+	</li>
+  <li>
+	[<a href="article_cat.php?id=12">站内快讯</a>] <a href="article.php?id=31" title="诺基亚6681手机广告欣赏">诺基亚6681手机广...</a>
+	</li>
+  <li>
+	[<a href="article_cat.php?id=11">手机促销</a>] <a href="article.php?id=28" title="飞利浦9@9促销">飞利浦9@9促销</a>
+	</li>
+  <li>
+	[<a href="article_cat.php?id=4">3G资讯</a>] <a href="article.php?id=27" title="800万像素超强拍照机 LG Viewty Smart再曝光">800万像素超强拍照...</a>
 	</li>
 </ul>        </div>
        </div>
@@ -265,22 +357,22 @@ function check_email()
   <div id="show_best_area" class="clearfix goodsBox">
       <div class="goodsItem">
          <span class="best"></span>
-           <a href="goods.php?id=33"><img src="images/no_picture.gif" alt="标准套餐" class="goodsimg" /></a><br />
-           <p><a href="goods.php?id=33" title="标准套餐">标准套餐</a></p>
-           <font class="f1">
-                     ￥900元                     </font>
-        </div>
-    <div class="goodsItem">
-         <span class="best"></span>
            <a href="goods.php?id=34"><img src="images/no_picture.gif" alt="商务套餐" class="goodsimg" /></a><br />
            <p><a href="goods.php?id=34" title="商务套餐">商务套餐</a></p>
            <font class="f1">
-                     ￥1500元                     </font>
+                     ￥800元                     </font>
         </div>
     <div class="goodsItem">
          <span class="best"></span>
            <a href="goods.php?id=32"><img src="images/200905/thumb_img/32_thumb_G_1242110760196.jpg" alt="疯狂套餐" class="goodsimg" /></a><br />
            <p><a href="goods.php?id=32" title="疯狂套餐">疯狂套餐</a></p>
+           <font class="f1">
+                     ￥500元                     </font>
+        </div>
+    <div class="goodsItem">
+         <span class="best"></span>
+           <a href="goods.php?id=33"><img src="images/no_picture.gif" alt="标准套餐" class="goodsimg" /></a><br />
+           <p><a href="goods.php?id=33" title="标准套餐">标准套餐</a></p>
            <font class="f1">
                      ￥500元                     </font>
         </div>
@@ -302,22 +394,22 @@ function check_email()
   <div id="show_new_area" class="clearfix goodsBox">
       <div class="goodsItem">
          <span class="news"></span>
-           <a href="goods.php?id=33"><img src="images/no_picture.gif" alt="标准套餐" class="goodsimg" /></a><br />
-           <p><a href="goods.php?id=33" title="标准套餐">标准套餐</a></p>
-           <font class="f1">
-                     ￥900元                     </font>
-        </div>
-    <div class="goodsItem">
-         <span class="news"></span>
            <a href="goods.php?id=34"><img src="images/no_picture.gif" alt="商务套餐" class="goodsimg" /></a><br />
            <p><a href="goods.php?id=34" title="商务套餐">商务套餐</a></p>
            <font class="f1">
-                     ￥1500元                     </font>
+                     ￥800元                     </font>
         </div>
     <div class="goodsItem">
          <span class="news"></span>
            <a href="goods.php?id=32"><img src="images/200905/thumb_img/32_thumb_G_1242110760196.jpg" alt="疯狂套餐" class="goodsimg" /></a><br />
            <p><a href="goods.php?id=32" title="疯狂套餐">疯狂套餐</a></p>
+           <font class="f1">
+                     ￥500元                     </font>
+        </div>
+    <div class="goodsItem">
+         <span class="news"></span>
+           <a href="goods.php?id=33"><img src="images/no_picture.gif" alt="标准套餐" class="goodsimg" /></a><br />
+           <p><a href="goods.php?id=33" title="标准套餐">标准套餐</a></p>
            <font class="f1">
                      ￥500元                     </font>
         </div>
@@ -340,22 +432,22 @@ function check_email()
   <div id="show_hot_area" class="clearfix goodsBox">
       <div class="goodsItem">
          <span class="hot"></span>
-           <a href="goods.php?id=33"><img src="images/no_picture.gif" alt="标准套餐" class="goodsimg" /></a><br />
-           <p><a href="goods.php?id=33" title="标准套餐">标准套餐</a></p>
-           <font class="f1">
-                     ￥900元                     </font>
-        </div>
-    <div class="goodsItem">
-         <span class="hot"></span>
            <a href="goods.php?id=34"><img src="images/no_picture.gif" alt="商务套餐" class="goodsimg" /></a><br />
            <p><a href="goods.php?id=34" title="商务套餐">商务套餐</a></p>
            <font class="f1">
-                     ￥1500元                     </font>
+                     ￥800元                     </font>
         </div>
     <div class="goodsItem">
          <span class="hot"></span>
            <a href="goods.php?id=32"><img src="images/200905/thumb_img/32_thumb_G_1242110760196.jpg" alt="疯狂套餐" class="goodsimg" /></a><br />
            <p><a href="goods.php?id=32" title="疯狂套餐">疯狂套餐</a></p>
+           <font class="f1">
+                     ￥500元                     </font>
+        </div>
+    <div class="goodsItem">
+         <span class="hot"></span>
+           <a href="goods.php?id=33"><img src="images/no_picture.gif" alt="标准套餐" class="goodsimg" /></a><br />
+           <p><a href="goods.php?id=33" title="标准套餐">标准套餐</a></p>
            <font class="f1">
                      ￥500元                     </font>
         </div>
@@ -372,7 +464,43 @@ function check_email()
 <div class="block">
   <div class="box">
    <div class="helpTitBg clearfix">
-       </div>
+    <dl>
+  <dt><a href='article_cat.php?id=5' title="新手上路 ">新手上路 </a></dt>
+    <dd><a href="article.php?id=9" title="售后流程">售后流程</a></dd>
+    <dd><a href="article.php?id=10" title="购物流程">购物流程</a></dd>
+    <dd><a href="article.php?id=11" title="订购方式">订购方式</a></dd>
+  </dl>
+<dl>
+  <dt><a href='article_cat.php?id=6' title="手机常识 ">手机常识 </a></dt>
+    <dd><a href="article.php?id=12" title="如何分辨原装电池">如何分辨原装电池</a></dd>
+    <dd><a href="article.php?id=13" title="如何分辨水货手机 ">如何分辨水货手机</a></dd>
+    <dd><a href="article.php?id=14" title="如何享受全国联保">如何享受全国联保</a></dd>
+  </dl>
+<dl>
+  <dt><a href='article_cat.php?id=7' title="配送与支付 ">配送与支付 </a></dt>
+    <dd><a href="article.php?id=15" title="货到付款区域">货到付款区域</a></dd>
+    <dd><a href="article.php?id=16" title="配送支付智能查询 ">配送支付智能查询</a></dd>
+    <dd><a href="article.php?id=17" title="支付方式说明">支付方式说明</a></dd>
+  </dl>
+<dl>
+  <dt><a href='article_cat.php?id=10' title="会员中心">会员中心</a></dt>
+    <dd><a href="article.php?id=18" title="资金管理">资金管理</a></dd>
+    <dd><a href="article.php?id=19" title="我的收藏">我的收藏</a></dd>
+    <dd><a href="article.php?id=20" title="我的订单">我的订单</a></dd>
+  </dl>
+<dl>
+  <dt><a href='article_cat.php?id=8' title="服务保证 ">服务保证 </a></dt>
+    <dd><a href="article.php?id=21" title="退换货原则">退换货原则</a></dd>
+    <dd><a href="article.php?id=22" title="售后服务保证 ">售后服务保证</a></dd>
+    <dd><a href="article.php?id=23" title="产品质量保证 ">产品质量保证</a></dd>
+  </dl>
+<dl>
+  <dt><a href='article_cat.php?id=9' title="联系我们 ">联系我们 </a></dt>
+    <dd><a href="article.php?id=24" title="网站故障报告">网站故障报告</a></dd>
+    <dd><a href="article.php?id=25" title="选机咨询 ">选机咨询</a></dd>
+    <dd><a href="article.php?id=26" title="投诉与建议 ">投诉与建议</a></dd>
+  </dl>
+   </div>
   </div>
 </div>
 <div class="blank"></div>
