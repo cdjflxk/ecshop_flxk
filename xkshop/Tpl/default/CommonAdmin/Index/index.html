@@ -1,332 +1,203 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- saved from url=(0031)http://www.flxkdns.com/ucenter/ -->
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<include file="./Tpl/default/CommonAdmin/Index/lib/top.html"/>
+                                                                                <script language="javascript">
+                                                                                    function showurl(url)
+                                                                                    {
+                                                                                        if (top.showurlinfrm_dtl)
+                                                                                        {
+                                                                                            if ( ! top.canResize )
+                                                                                            {
+                                                                                                parent.parent.frm_btm.chgfrm() ;
+                                                                                                parent.frm_dtl.location.href=url;
+                                                                                            }
+                                                                                            else
+                                                                                                parent.frm_dtl.location.href=url;			
+                                                                                        }
+                                                                                        else
+                                                                                            location.href=url;
+                                                                                    }
+                                                                                    function confirmit()
+                                                                                    {
+                                                                                        if(confirm("是否确认此操作？"))
+                                                                                            return true;
+                                                                                        else
+                                                                                            return false;
+                                                                                    }
+                                                                                    function tourl(myurl)
+                                                                                    {
+                                                                                        if(confirm("是否确认此操作？"))
+                                                                                            location.href=myurl;
+                                                                                        else
+                                                                                            return false;
+                                                                                    }
+                                                                                    function tofrmsite(frmsite)
+                                                                                    {
+                                                                                        if((frmsite!='')&&frmsite!="")
+                                                                                            showurl('/umanage/pdtmng/hst_mng/hst_idx.asp?hnme='+frmsite);
+                                                                                        else
+                                                                                            alert("您打开的是本站点!");
+                                                                                    }
+                                                                                    function   getnamestring(tempitem)
+                                                                                    {
+                                                                                        tempitem.value="";
+                                                                                        for (var i=0;i<pdtfrm.namestring.length;i++)
+                                                                                        {
+                                                                                            if(pdtfrm.namestring[i].checked)
+                                                                                                tempitem.value=tempitem.value+","+pdtfrm.namestring[i].value;
+                                                                                        }
+                                                                                    }
+                                                                                    function gettarget(frmid)
+                                                                                    {
+                                                                                        if (top.showurlinfrm_dtl)
+                                                                                        {
+                                                                                            if ( ! top.canResize )
+                                                                                            {
+                                                                                                parent.parent.frm_btm.chgfrm() ;
+                                                                                                frmid.target="frm_dtl";
+                                                                                            }
+                                                                                            else
+                                                                                                frmid.target="frm_dtl";
+                                                                                        }
+                                                                                        else
+                                                                                            frmid.target="";
+                                                                                    }
+                                                                                    function submitfrm(frmid)
+                                                                                    {
+                                                                                        frmid=eval(frmid);
+                                                                                        gettarget(frmid);
+                                                                                        frmid.submit();
+                                                                                    }
+                                                                                </script>
+                                                                                <div id="main_div">
+                                                                                    <div id="mainmenu">
+                                                                                        <div id="menu">
+                                                                                            <div id="menu_blk">用户信息</div>
+                                                                                            <div id="Management">
+                                                                                                <ul>
+                                                                                                    <li>用户：changdejie</li>
+                                                                                                    <li>级别：基础代理</li>
+                                                                                                </ul>
+                                                                                                <div style=" margin:10px 0 20px 15px;"><input type="button" onclick="top.location.href=&#39;/help/price.asp&#39;;" name="button" id="price_button" value="查看价格列表"><input type="button" name="button" id="recharge_button" onclick="top.location.href=&#39;/ucenter/onlinepay/&#39;;" value="在线支付冲值"></div>
+                                                                                                            </div>
+                                                                                                            </div>
+                                                                                                            <div id="menu">
+                                                                                                                <div id="menu_blk">服务管理</div>
+                                                                                                                <div id="nav">
+                                                                                                                    <ul>
+                                                                                                                        <li><a href="http://www.flxkdns.com/ucenter/dme_mng/dme_lst.asp">英文域名管理</a></li>
+                                                                                                                        <li><a href="http://www.flxkdns.com/ucenter/dmc_mng/dmc_lst.asp">中文域名管理</a></li>
+                                                                                                                        <li><a href="http://www.flxkdns.com/ucenter/hst_mng/hst_lst.asp">虚拟主机管理</a></li>
+                                                                                                                        <li><a href="http://www.flxkdns.com/ucenter/sql_mng/sql_lst.asp">数据库管理</a></li>
+                                                                                                                        <li><a href="http://www.flxkdns.com/ucenter/eml_mng/eml_lst.asp">企业邮局管理</a></li>
+                                                                                                                        <li><a href="http://www.flxkdns.com/ucenter/ot1_mng/ot1_lst.asp">智能加速管理</a></li>
+                                                                                                                        <li><a href="http://www.flxkdns.com/ucenter/ot2_mng/ot2_lst.asp">VPS管理</a></li>
+                                                                                                                        <li><a href="http://www.flxkdns.com/ucenter/ot5_mng/ot5_lst.asp">企业建站管理</a></li>
+                                                                                                                        <li><a href="http://www.flxkdns.com/ucenter/lce_mng/lce_lst.asp">商务授权管理</a></li>
+                                                                                                                        <li><a href="http://www.flxkdns.com/ucenter/ot8_mng/ot8_lst.asp">推广软件管理</a></li>
+                                                                                                                    </ul>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div id="menu">
+                                                                                                                <div id="menu_blk">客户服务</div>
+                                                                                                                <div id="nav">
+                                                                                                                    <ul>
+                                                                                                                        <li><a href="http://www.flxkdns.com/ucenter/wrd_mng/wrd_add.asp">咨询反馈提交</a></li>
+                                                                                                                        <li><a href="http://www.flxkdns.com/ucenter/wrd_mng/wrd_lst.asp">咨询反馈查看</a></li>
+                                                                                                                        <li><a href="http://www.flxkdns.com/help/price.asp">购买价格统览</a></li>
+                                                                                                                        <li><a href="http://www.flxkdns.com/ucenter/usr_chg/usr_fnc.asp">财务结算查看</a></li>
+                                                                                                                        <li><a href="http://www.flxkdns.com/ucenter/onlinepay/">在线支付</a></li>
+                                                                                                                        <li><a href="http://www.flxkdns.com/ucenter/usr_chg/usr_inf.asp">用户信息修改</a> </li>
+                                                                                                                    </ul>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            </div>
+                                                                                                            <div id="main_con">
+                                                                                                                <div id="location"><a href="http://www.flxkdns.com/">首页</a>&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;<a href="../Public/CommonAdmin/images/index.html">管理首页</a></div>
+                                                                                                                <div id="main">
+                                                                                                                    <div id="account">
+                                                                                                                        <div id="main_blk">您的帐户</div>
+                                                                                                                        <div id="accountmain">
+                                                                                                                            <div id="account_1">
+                                                                                                                                <ul>
+                                                                                                                                    <li class="tab1">可用金额</li>
+                                                                                                                                    <li class="tab2">440</li>
+                                                                                                                                    <li class="tab1">实际金额</li>
+                                                                                                                                    <li class="tab2">440</li>    
+                                                                                                                                    <li class="tab1">入款总额</li>
+                                                                                                                                    <li class="tab3">1000</li>
+                                                                                                                                </ul>
+                                                                                                                                <ul>
+                                                                                                                                    <li class="tab1">浮动金额</li>
+                                                                                                                                    <li class="tab2">0</li>
+                                                                                                                                    <li class="tab1">冻结金额</li>
+                                                                                                                                    <li class="tab2">0</li>    
+                                                                                                                                    <li class="tab1">返款金额</li>
+                                                                                                                                    <li class="tab3">100</li>
+                                                                                                                                </ul>
+                                                                                                                                <ul>
+                                                                                                                                    <li class="tab4">借款金额</li>
+                                                                                                                                    <li class="tab5">0</li>
+                                                                                                                                    <li class="tab4">消费金额</li>
+                                                                                                                                    <li class="tab5">660</li>    
+                                                                                                                                    <li class="tab4"></li>
+                                                                                                                                    <li class="tab6"></li>
+                                                                                                                                </ul>
+                                                                                                                            </div>
 
-<title>月夜星空软件工作室--域名注册|网络实名|主机租赁|企业邮局|网站策划|企业邮局|主机托管</title>
-<meta content="月夜星空软件工作室--域名注册|网络实名|主机租赁|企业邮局|网站策划|企业邮局|主机托管" name="Keywords">
-<meta content="月夜星空软件工作室--域名注册|网络实名|主机租赁|企业邮局|网站策划|企业邮局|主机托管" name="Description">
-<meta name="Author" content="月夜星空软件工作室--域名注册|网络实名|主机租赁|企业邮局|网站策划|企业邮局|主机托管">
-<meta name="Contact" content="">
-<meta name="Copyright" content="月夜星空软件工作室--域名注册|网络实名|主机租赁|企业邮局|网站策划|企业邮局|主机托管">
-<link href="../Public/CommonAdmin/css/css.css" rel="stylesheet" type="text/css">
-<link href="../Public/CommonAdmin/css/style.css" rel="stylesheet" type="text/css">
-<link href="../Public/CommonAdmin/css/ustyle.css" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-<script language="JavaScript">
-<!-- Hide
-function showurl(url)
-{
-if (top.showurlinfrm_dtl)
-{
-if ( ! top.canResize )
-			{
-				parent.parent.frm_btm.chgfrm() ;
-				parent.frm_dtl.location.href=url;
-			}
-else
-parent.frm_dtl.location.href=url;			
-}
-else
-location.href=url;
-}
-function killErrors() {
-return true;
-}
-
-function createRequest()
-{
-var xmlHttp=false;
-try
-  {
-  xmlHttp=new XMLHttpRequest();
-  }
-catch (e)
-  {
- try
-	{
-	xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
-	}
- catch (e)
-	{
-	try
-	   {
-	   xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
-	   }
-	catch (e)
-	   {
-		xmlHttp=false;
-	   alert("浏览器不支持AJAX！");
-	   return false;
-	   }
-	}
-  }
-return xmlHttp;
-}
-
-window.onerror = killErrors;
-
-// -->
-</script>
-
-<div id="top">
-<div id="header">
-<div id="logo"></div>
-<div id="topnav">
-<ul>
-<li><a href="http://www.flxkdns.com/">首页</a></li>
-<li><a href="http://www.flxkdns.com/pdtshw/dmeshw/">域名注册</a></li>
-<li><a href="http://www.flxkdns.com/pdtshw/hstshw/">虚拟主机</a></li>
-<li><a href="http://www.flxkdns.com/pdtshw/emlshw/">企业邮局</a></li>
-<li><a href="http://www.flxkdns.com/pdtshw/ot2shw/">VPS</a></li>
-<li><a href="http://www.flxkdns.com/pdtshw/shpshw/">网店系统</a></li>
-<li><a href="http://www.flxkdns.com/pdtshw/ot5shw/">企业建站</a></li>
-<li><a href="http://www.flxkdns.com/pdtshw/proshw/">企业推广</a></li>
-</ul>
-</div>
-
-</div>
-<div id="system">
-<div id="ico">
-  <ul>
-   
-    <li class="ico1">
-      <a href="http://www.flxkdns.com/umanage/"><span style="color:#f00">进入系统后台管理</span></a>
-    </li>
-	
-        <li class="ico2">
-      <a href="../Public/CommonAdmin/images/index.html">管理首页</a>
-    </li>
-        <li class="ico3">
-      <a href="http://www.flxkdns.com/members/quit.asp">退出系统</a>
-    </li>
-  </ul>
-  </div>
-<div id="articel_search">
-
-	
-	<form name="okkk" id="okkk" action="http://www.flxkdns.com/ucenter/transid.asp" method="post">
-站内会员身份切换：
-  <input name="lognme" type="text" class="input" id="top_keyword">
-  <label>
-  <input type="submit" name="button" id="top_button" value="提交">
-   <input type="hidden" name="enterhelp" value="act_help">
-  </label>
-  </form>
-  
-</div>
-</div>
-</div>
-
-
-<script language="javascript">
-function showurl(url)
-{
-if (top.showurlinfrm_dtl)
-{
-if ( ! top.canResize )
-			{
-				parent.parent.frm_btm.chgfrm() ;
-				parent.frm_dtl.location.href=url;
-			}
-else
-parent.frm_dtl.location.href=url;			
-}
-else
-location.href=url;
-}
-function confirmit()
-{
-if(confirm("是否确认此操作？"))
-return true;
-else
-return false;
-}
-function tourl(myurl)
-{
-if(confirm("是否确认此操作？"))
-location.href=myurl;
-else
-return false;
-}
-function tofrmsite(frmsite)
-{
-if((frmsite!='')&&frmsite!="")
-showurl('/umanage/pdtmng/hst_mng/hst_idx.asp?hnme='+frmsite);
-else
-alert("您打开的是本站点!");
-}
-function   getnamestring(tempitem)
-{
-tempitem.value="";
-for (var i=0;i<pdtfrm.namestring.length;i++)
-{
-if(pdtfrm.namestring[i].checked)
-tempitem.value=tempitem.value+","+pdtfrm.namestring[i].value;
-}
-}
-function gettarget(frmid)
-{
-if (top.showurlinfrm_dtl)
-{
-if ( ! top.canResize )
-			{
-				parent.parent.frm_btm.chgfrm() ;
-				frmid.target="frm_dtl";
-			}
-else
-frmid.target="frm_dtl";
-}
-else
-frmid.target="";
-}
-function submitfrm(frmid)
-{
-frmid=eval(frmid);
-gettarget(frmid);
-frmid.submit();
-}
-</script>
-
-<div id="main_div">
-<div id="mainmenu">
-    <div id="menu">
-        <div id="menu_blk">用户信息</div>
-        <div id="Management">
-            <ul>
-                <li>用户：changdejie</li>
-                <li>级别：基础代理</li>
-            </ul>
-            <div style=" margin:10px 0 20px 15px;"><input type="button" onclick="top.location.href=&#39;/help/price.asp&#39;;" name="button" id="price_button" value="查看价格列表"><input type="button" name="button" id="recharge_button" onclick="top.location.href=&#39;/ucenter/onlinepay/&#39;;" value="在线支付冲值"></div>
-        </div>
-    </div>
-    <div id="menu">
-        <div id="menu_blk">服务管理</div>
-        <div id="nav">
-            <ul>
-                <li><a href="http://www.flxkdns.com/ucenter/dme_mng/dme_lst.asp">英文域名管理</a></li>
-                <li><a href="http://www.flxkdns.com/ucenter/dmc_mng/dmc_lst.asp">中文域名管理</a></li>
-                <li><a href="http://www.flxkdns.com/ucenter/hst_mng/hst_lst.asp">虚拟主机管理</a></li>
-                <li><a href="http://www.flxkdns.com/ucenter/sql_mng/sql_lst.asp">数据库管理</a></li>
-                <li><a href="http://www.flxkdns.com/ucenter/eml_mng/eml_lst.asp">企业邮局管理</a></li>
-                <li><a href="http://www.flxkdns.com/ucenter/ot1_mng/ot1_lst.asp">智能加速管理</a></li>
-                <li><a href="http://www.flxkdns.com/ucenter/ot2_mng/ot2_lst.asp">VPS管理</a></li>
-                <li><a href="http://www.flxkdns.com/ucenter/ot5_mng/ot5_lst.asp">企业建站管理</a></li>
-                <li><a href="http://www.flxkdns.com/ucenter/lce_mng/lce_lst.asp">商务授权管理</a></li>
-                <li><a href="http://www.flxkdns.com/ucenter/ot8_mng/ot8_lst.asp">推广软件管理</a></li>
-            </ul>
-        </div>
-    </div>
-    <div id="menu">
-        <div id="menu_blk">客户服务</div>
-        <div id="nav">
-            <ul>
-                <li><a href="http://www.flxkdns.com/ucenter/wrd_mng/wrd_add.asp">咨询反馈提交</a></li>
-                <li><a href="http://www.flxkdns.com/ucenter/wrd_mng/wrd_lst.asp">咨询反馈查看</a></li>
-                <li><a href="http://www.flxkdns.com/help/price.asp">购买价格统览</a></li>
-                <li><a href="http://www.flxkdns.com/ucenter/usr_chg/usr_fnc.asp">财务结算查看</a></li>
-                <li><a href="http://www.flxkdns.com/ucenter/onlinepay/">在线支付</a></li>
-                <li><a href="http://www.flxkdns.com/ucenter/usr_chg/usr_inf.asp">用户信息修改</a> </li>
-            </ul>
-        </div>
-    </div>
-</div>
-<div id="main_con">
-<div id="location"><a href="http://www.flxkdns.com/">首页</a>&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;<a href="../Public/CommonAdmin/images/index.html">管理首页</a></div>
-<div id="main">
-<div id="account">
-<div id="main_blk">您的帐户</div>
-<div id="accountmain">
-<div id="account_1">
-  <ul>
-    <li class="tab1">可用金额</li>
-    <li class="tab2">440</li>
-    <li class="tab1">实际金额</li>
-    <li class="tab2">440</li>    
-    <li class="tab1">入款总额</li>
-    <li class="tab3">1000</li>
-  </ul>
-  <ul>
-    <li class="tab1">浮动金额</li>
-    <li class="tab2">0</li>
-    <li class="tab1">冻结金额</li>
-    <li class="tab2">0</li>    
-    <li class="tab1">返款金额</li>
-    <li class="tab3">100</li>
-  </ul>
-  <ul>
-    <li class="tab4">借款金额</li>
-    <li class="tab5">0</li>
-    <li class="tab4">消费金额</li>
-    <li class="tab5">660</li>    
-    <li class="tab4"></li>
-    <li class="tab6"></li>
-  </ul>
-  </div>
-  
-</div>
-</div>
-<div id="account">
-<div id="main_blk">服务管理</div>
-<div id="icol">
-  <ul>
-	<li><a href="http://www.flxkdns.com/ucenter/dme_mng/dme_lst.asp"><img src="../Public/CommonAdmin/images/btn_domain-templates_bg.gif"><br>英文域名管理</a></li>
-	<li><a href="http://www.flxkdns.com/ucenter/dmc_mng/dmc_lst.asp"><img src="../Public/CommonAdmin/images/btn_cndomain_bg.gif"><br>中文域名管理</a></li>
-	<li><a href="http://www.flxkdns.com/ucenter/hst_mng/hst_lst.asp"><img src="../Public/CommonAdmin/images/btn_tts-global-list_bg.gif"><br>虚拟主机管理</a></li>
-	<li><a href="http://www.flxkdns.com/ucenter/sql_mng/sql_lst.asp"><img src="../Public/CommonAdmin/images/btn_databases_bg.gif"><br>数据库管理</a></li>
-	<li><a href="http://www.flxkdns.com/ucenter/eml_mng/eml_lst.asp"><img src="../Public/CommonAdmin/images/btn_email_bg.gif"><br>企业邮局管理</a></li>
-	<li><a href="http://www.flxkdns.com/ucenter/ot1_mng/ot1_lst.asp"><img src="../Public/CommonAdmin/images/btn_dns_bg.gif"><br>智能加速管理</a></li>
-  </ul>
-  <ul>
-	<li><a href="http://www.flxkdns.com/ucenter/ot2_mng/ot2_lst.asp"><img src="../Public/CommonAdmin/images/bth_vpshosts_32x32.gif"><br>VPS管理</a></li>
-	<li><a href="http://www.flxkdns.com/ucenter/ot5_mng/ot5_lst.asp"><img src="../Public/CommonAdmin/images/new_sitestar.gif"><br>企业建站管理</a></li>
-  </ul>
-  </div>
-</div>
-<div id="account">
-<div id="main_blk">客户服务</div>
-<div id="icol">
-  <ul>
-	<li><a href="http://www.flxkdns.com/ucenter/wrd_mng/wrd_add.asp"><img src="../Public/CommonAdmin/images/btn_support_bg.gif"><br>咨询反馈提交</a></li>
-	<li><a href="http://www.flxkdns.com/ucenter/wrd_mng/wrd_lst.asp"><img src="../Public/CommonAdmin/images/qa_view.gif"><br>咨询反馈查看</a></li>
-	<li><a href="http://www.flxkdns.com/help/price.asp"><img src="../Public/CommonAdmin/images/btn_mpc_bg.gif"><br>购买价格统览</a></li>
-	<li><a href="http://www.flxkdns.com/ucenter/usr_chg/usr_fnc.asp"><img src="../Public/CommonAdmin/images/btn_invoice_bg.gif"><br>财务结算查看</a></li>
-	<li><a href="http://www.flxkdns.com/ucenter/onlinepay/"><img src="../Public/CommonAdmin/images/onlinepay.gif"><br>在线支付</a></li>
-	<li><a href="http://www.flxkdns.com/ucenter/usr_chg/usr_inf.asp"><img src="../Public/CommonAdmin/images/btn_client-templates_bg.gif"><br>用户信息修改</a> </li>
-  </ul>
-  </div>
-</div>
-<div id="mainnew">
-<ul>
-<li><div id="main_blk">购买指南</div>
-<div id="new">
-<ul>
-  <li><a class="txtcolor" href="http://www.flxkdns.com/help/hst_b.asp" target="_blank">如何申请虚拟主机？</a></li>
-  <li><a class="txtcolor" href="http://www.flxkdns.com/help/dme_h.asp" target="_blank">如何注册顶级域名？</a></li>
-  <li><a class="txtcolor" href="http://www.flxkdns.com/help/hst_f.asp" target="_blank">如何获取虚拟主机赠送的管理邮局</a></li>
-  <li><a class="txtcolor" href="http://www.flxkdns.com/help/pay.asp" target="_blank">如何缴费？</a></li>
-  </ul> 
-  </div>
-  </li>
-<li><div id="main_blk">新闻通知</div>
-<div id="new">
-<ul>
- 
-
-  </ul> 
-  </div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<!--ID=Main_div End-->
-
-<div id="footer">版权所有：月夜星空软件工作室(http://www.flxkdns.com) @ 2006-2011 All Rights Reserved.
-</div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <div id="account">
+                                                                                                                        <div id="main_blk">服务管理</div>
+                                                                                                                        <div id="icol">
+                                                                                                                            <ul>
+                                                                                                                                <li><a href="http://www.flxkdns.com/ucenter/dme_mng/dme_lst.asp"><img src="../Public/CommonAdmin/images/btn_domain-templates_bg.gif"><br>英文域名管理</a></li>
+                                                                                                                                                <li><a href="http://www.flxkdns.com/ucenter/dmc_mng/dmc_lst.asp"><img src="../Public/CommonAdmin/images/btn_cndomain_bg.gif"><br>中文域名管理</a></li>
+                                                                                                                                                                <li><a href="http://www.flxkdns.com/ucenter/hst_mng/hst_lst.asp"><img src="../Public/CommonAdmin/images/btn_tts-global-list_bg.gif"><br>虚拟主机管理</a></li>
+                                                                                                                                                                                <li><a href="http://www.flxkdns.com/ucenter/sql_mng/sql_lst.asp"><img src="../Public/CommonAdmin/images/btn_databases_bg.gif"><br>数据库管理</a></li>
+                                                                                                                                                                                                <li><a href="http://www.flxkdns.com/ucenter/eml_mng/eml_lst.asp"><img src="../Public/CommonAdmin/images/btn_email_bg.gif"><br>企业邮局管理</a></li>
+                                                                                                                                                                                                        <li><a href="http://www.flxkdns.com/ucenter/ot1_mng/ot1_lst.asp"><img src="../Public/CommonAdmin/images/btn_dns_bg.gif"><br>智能加速管理</a></li>
+                                                                                                                                                                                                        </ul>
+                                                                                                                                                                                                        <ul>
+                                                                                                                                                                                                        <li><a href="http://www.flxkdns.com/ucenter/ot2_mng/ot2_lst.asp"><img src="../Public/CommonAdmin/images/bth_vpshosts_32x32.gif"><br>VPS管理</a></li>
+                                                                                                                                                                                                        <li><a href="http://www.flxkdns.com/ucenter/ot5_mng/ot5_lst.asp"><img src="../Public/CommonAdmin/images/new_sitestar.gif"><br>企业建站管理</a></li>
+                                                                                                                                                                                                        </ul>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        <div id="account">
+                                                                                                                                                                                                        <div id="main_blk">客户服务</div>
+                                                                                                                                                                                                        <div id="icol">
+                                                                                                                                                                                                        <ul>
+                                                                                                                                                                                                        <li><a href="http://www.flxkdns.com/ucenter/wrd_mng/wrd_add.asp"><img src="../Public/CommonAdmin/images/btn_support_bg.gif"><br>咨询反馈提交</a></li>
+                                                                                                                                                                                                        <li><a href="http://www.flxkdns.com/ucenter/wrd_mng/wrd_lst.asp"><img src="../Public/CommonAdmin/images/qa_view.gif"><br>咨询反馈查看</a></li>
+                                                                                                                                                                                                        <li><a href="http://www.flxkdns.com/help/price.asp"><img src="../Public/CommonAdmin/images/btn_mpc_bg.gif"><br>购买价格统览</a></li>
+                                                                                                                                                                                                        <li><a href="http://www.flxkdns.com/ucenter/usr_chg/usr_fnc.asp"><img src="../Public/CommonAdmin/images/btn_invoice_bg.gif"><br>财务结算查看</a></li>
+                                                                                                                                                                                                        <li><a href="http://www.flxkdns.com/ucenter/onlinepay/"><img src="../Public/CommonAdmin/images/onlinepay.gif"><br>在线支付</a></li>
+                                                                                                                                                                                                        <li><a href="http://www.flxkdns.com/ucenter/usr_chg/usr_inf.asp"><img src="../Public/CommonAdmin/images/btn_client-templates_bg.gif"><br>用户信息修改</a> </li>
+                                                                                                                                                                                                        </ul>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        <div id="mainnew">
+                                                                                                                                                                                                        <ul>
+                                                                                                                                                                                                        <li><div id="main_blk">购买指南</div>
+                                                                                                                                                                                                        <div id="new">
+                                                                                                                                                                                                        <ul>
+                                                                                                                                                                                                        <li><a class="txtcolor" href="http://www.flxkdns.com/help/hst_b.asp" target="_blank">如何申请虚拟主机？</a></li>
+                                                                                                                                                                                                        <li><a class="txtcolor" href="http://www.flxkdns.com/help/dme_h.asp" target="_blank">如何注册顶级域名？</a></li>
+                                                                                                                                                                                                        <li><a class="txtcolor" href="http://www.flxkdns.com/help/hst_f.asp" target="_blank">如何获取虚拟主机赠送的管理邮局</a></li>
+                                                                                                                                                                                                        <li><a class="txtcolor" href="http://www.flxkdns.com/help/pay.asp" target="_blank">如何缴费？</a></li>
+                                                                                                                                                                                                        </ul> 
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </li>
+                                                                                                                                                                                                        <li><div id="main_blk">新闻通知</div>
+                                                                                                                                                                                                        <div id="new">
+                                                                                                                                                                                                        <ul>
 
 
-
-</body></html>
+                                                                                                                                                                                                        </ul> 
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </li>
+                                                                                                                                                                                                        </ul>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </div>
+<include file="./Tpl/default/CommonAdmin/Index/lib/foot.html"/>
+                                                                                                                                                                                                        </body></html>

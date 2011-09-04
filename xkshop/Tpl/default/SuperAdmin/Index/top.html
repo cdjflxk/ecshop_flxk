@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0038)http://www.flxkdns.com/umanage/top.asp -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF8">
+
+<title>代理平台管理系统</title>
+<link href="../Public/SuperAdmin/css/style.css" rel="stylesheet" type="text/css">
+<script src="../Public/SuperAdmin/js/png.js"></script>
+<script language="javascript">
+function leftmenushow(id,url)
+{
+//showleftmenu();
+parent.parent.frm_lft.showmenu(id);
+//parent.frm_bdy.location.href=url;
+}
+function chk_quit( )
+		{
+			if ( confirm ( "请确认是否退出系统？" ) )
+			{
+				form_quit.submit ( ) ;
+			}
+		}
+function chgshowurlmod()
+	{
+	if(top.showurlinfrm_dtl)
+	{top.showurlinfrm_dtl=false;
+	top.allowChangeView=false;
+	parent.frm_btm.chgfrm();}
+	else
+	{
+	top.showurlinfrm_dtl=true;
+	top.allowChangeView=true;
+	//parent.frm_btm.chgfrm();
+	}
+	return false;
+	}
+
+function showleftmenu(){
+	if (parent.parent.frm1.cols!="195,*"){
+		parent.parent.frm1.cols="195,*"
+	}
+}
+function setCss(currentNodes){
+    var domNodes = document.getElementById("nav_bar").childNodes;
+    
+    var i = 0;
+    for(var loop = 0; loop < domNodes.length; loop++){
+        var nli = domNodes[loop];
+        if(nli.nodeName == "LI"){
+            nli.firstChild.className = "";
+            if(i == currentNodes){
+                nli.firstChild.className = "tpx";
+            }
+            i++;
+        }
+    }
+}
+</script>
+<style type="text/css">
+    .tpx {float:left; margin:0; width:83px; text-align:center; background:url(images/nav_1.jpg) no-repeat; color:#036 !important}
+</style>
+</head>
+
+<body>
+<!--头部文件-->
+<div id="top">
+<div id="header">
+<div id="logo"></div>
+<div id="top_1">
+<ul>
+<li>用户名:<span class="font_1">changdejie</span></li>
+<li>管理级：<span class="font_1">网站超级管理</span></li>
+<li>美橙账户余额：<span class="font_1">440</span></li>
+</ul>
+</div>
+<div id="topnav">
+    <ul id="nav_bar">
+	    <li><a href="javascript:top.location.href='/';">首页</a></li>
+        <li><a href="javascript:leftmenushow(4,'/umanage/pdtmng/hst_mng/hst_lst.asp');" onclick="javascript:setCss(1);">业务管理</a></li>
+        <li><a href="javascript:leftmenushow(2,'/umanage/fncmng/fnc_lst.asp');" onclick="javascript:setCss(2);">财务管理</a></li>
+        <li><a href="javascript:leftmenushow(3,'/umanage/memmng/index.asp');" onclick="javascript:setCss(3);">会员管理</a></li>
+        <li><a href="javascript:leftmenushow(5,'/umanage/logmng/odr_lst.asp');" onclick="javascript:setCss(4);">日常管理</a></li>
+        <li><a href="javascript:leftmenushow(6,'/umanage/pdtmng/pdt_lst.asp');" onclick="javascript:setCss(5);">产品管理</a></li>
+        <li><a href="javascript:leftmenushow(1,'/umanage/sysmng/plt_mng/ini_idx.asp');" onclick="javascript:setCss(6);">系统设置</a></li>
+        <li><a href="javascript:leftmenushow(7,'/umanage/pdtmng/hst_mng/hst_lst.asp');" onclick="javascript:setCss(7);">系统帮助</a></li>
+        
+        <form action="http://www.flxkdns.com/umanage/memmng/quit.asp" method="post" name="form_quit">
+        <li><a href="javascript:chk_quit();">退出系统</a></li>
+        </form>
+    </ul>
+</div>
+</div>
+<div id="system">
+<div id="ico">
+  <ul>
+    <li class="ico1">
+      <a href="javascript:top.location.href='{$__CommonAdmin__}index'"><span style="color:#f00">进入前台管理</span></a>
+    </li>
+        <li class="ico2">
+      <a href="javascript:top.location.href='/umanage/';">管理首页</a>
+    </li>
+        <li class="ico3">
+      <a href="javascript:top.location.href='/members/quit.asp';">退出系统</a>
+    </li>
+  </ul>
+  </div>
+
+  <form name="okkk" id="okkk" action="http://www.flxkdns.com/ucenter/transid.asp" method="post" target="frm_bdy">
+  <div id="articel_search">
+  站内会员身份切换：
+			  <input name="lognme" type="text" class="input" id="top_keyword" value="">
+			  <input type="hidden" name="enterhelp" value="act_help">
+  <label>
+  <input type="submit" name="button" id="top_button" value="切换">
+  </label>
+  </div>
+  </form>
+  </div>
+</div>
+
+
+</body></html>

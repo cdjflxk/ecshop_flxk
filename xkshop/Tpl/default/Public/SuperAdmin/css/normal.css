@@ -1,0 +1,322 @@
+BODY {
+    FONT-SIZE: 12px;
+	LINE-HEIGHT: 160%;
+	color: #333333;
+	font-family: "Arial", "Helvetica", "sans-serif",;
+    letter-spacing: 1px;
+	font-weight: normal;
+	font-variant: normal;
+	background-color: #EAEAEA;
+	scrollbar-face-color:#E1E1E1;
+scrollbar-highlight-color:#E1E1E1;
+scrollbar-shadow-color:#8C8C8D;
+scrollbar-arrow-color:#333333;
+scrollbar-base-color:#EFEFEF;
+scrollbar-track-color:#EFEFEF;
+scrollbar-darkshadow-color:#EFEFEF;
+	margin-left: 0px;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 00px;
+	margin-bottom: 0px;}
+body.bodystyle           { margin:1px; padding:0px; background-color: #173C73; color: #000000; font-weight: normal; font-size: 9pt; font-style: normal; text-decoration: none; font-family: ËÎÌו; border:0px; }
+a.Menu                      { font-weight: bold; font-size: 9pt; color: #ffffff; text-decoration: none; vlink: #ffffff; alink: #ffffff; }
+a.Menu:hover                { font-weight: bold; font-size: 9pt; color: #ffffff; text-decoration: none; }
+a.SubMenu                   { font-size: 9pt; color: blue; text-decoration: underline; vlink: blue; alink: blue; }
+a.SubMenu:hover             { font-size: 9pt; color: #FF6600; text-decoration: underline; }
+a.CommonFace                { font-weight: normal; font-size: 9pt; color: #000080; text-decoration: none; vlink: #0000FF; alink: #0000FF; }
+a.CommonFace:hover          { font-weight: normal; font-size: 9pt; color: #0000FF; text-decoration: underline; }
+a.CommonFace:visited                { font-weight: normal; font-size: 9pt; color: #000080; text-decoration: none; vlink: #0000FF; alink: #0000FF; }
+a.tbtop                { font-weight: bold; font-size: 9pt; color: #ffffff; text-decoration: none; vlink: #ffffff; alink: #ffffff; }
+a.tbtop:hover          { font-weight: bold; font-size: 9pt; color: #ffffff; text-decoration: underline; }
+a.tbtop:visited                { font-weight: bold; font-size: 9pt; color: #ffffff; text-decoration: none; vlink: #ffffff; alink: #ffffff; }
+
+hzradio                { background-color: #D9EEEC; }
+/*td.DataGroup                { background-color: #E1E4FF; border: 2px groove #F0FFFF; } */
+td.DataGroup                { background-color: #D9E8FD; border: 1px double #666666; }  
+td.dudtda                { background-color: #E9EBEF; border: 1px double #666666; }  
+input.NormalForm            {
+	padding: 0px;
+	font-size: 12px;
+	margin: 0px;
+	background-color: #F4F2EC;
+	color: #005B00;
+	font-weight: normal;
+	font-family: "Arial", "Helvetica", "sans-serif";
+}
+input             {
+	padding: 0px;
+	font-size: 12px;
+	margin: 0px;
+	background-color: #F4F2EC;
+	color: #005B00;
+	font-weight: normal;
+	font-family: "Arial", "Helvetica", "sans-serif";
+}
+input.spcinput             {
+	padding: 0px;
+	font-size: 12px;
+	margin: 0px;
+	background-color: #D8D8D8;
+	color: #666666;
+	font-weight: bold;
+	font-family: "Arial", "Helvetica", "sans-serif";
+}
+
+
+textarea          {
+	padding: 0px;
+	font-size: 12px;
+	margin: 0px;
+	background-color: #F4F2EC;
+	color: #005B00;
+	font-weight: normal;
+	font-family: "Arial", "Helvetica", "sans-serif";
+}
+select.NormalForm           { padding: 0px; font-size: 9pt; margin: 0px; background-color: #F4F2EC;font-family: "Arial", "Helvetica", "sans-serif";color: #005B00; }
+select           { padding: 0px; font-size: 9pt; margin: 0px; background-color: #F4F2EC;font-family: "Arial", "Helvetica", "sans-serif";color: #005B00; }
+table.dudtb              { font-size: 9pt; }
+td {  font-size: 12px}
+.btxx {
+	width:55px;
+	font-size:9pt;
+	height:19px;
+	cursor: hand;
+	background-image: url(/imgs/seebutton3.gif);
+	background-position: center center;
+	border-top: 0px outset #eeeeee;
+	border-right: 0px outset #888888;
+	border-bottom: 0px outset #888888;
+	border-left: 0px outset #eeeeee;
+	padding-top: 4px;
+	background-repeat: repeat-x;
+	}
+.menuline {  background-color: #2F5F59}
+.tx {
+	font-size: 9pt;
+	border: 1px groove ;
+	padding-top: 2px;
+    }.
+wordline {  text-decoration: underline; color: #0000FF}
+td.dudleya{
+	height:22px;
+	color:#FFFFFF;
+	background-image: url(/newimgs/bgg01.jpg);
+	font-weight: bold;
+
+}
+td.dudleyb1{
+	font-size: 12px;
+	height: 22px;
+	color: #000000;
+	background-color: #E9EBEF;
+}
+td.dudleyb2{
+	font-size: 12px;
+	height: 22px;
+	color: #535353;
+	background-color: #F9F9F9;
+
+}
+td.dudleyc{
+	height:23px;
+	color:#ffffff;
+    text-align:center;
+	font-weight:bold;
+	}
+td.dudleyc01{
+	height:28px;
+	color:#ffffff;
+    text-align:center;
+	font-weight:bold;
+}
+td.dudleycc{
+	height:23px;
+	color:#ffffff;
+    text-align:center;
+
+}
+td.dudleyc1{
+	font-size: 12px;
+	height: 23px;
+	color: #535353;
+	background-color: #E9EBEF;
+}
+td.dudleyc201{
+	font-size: 12px;
+	height: 23px;
+	color: #535353;
+	background-color: #E6E6E6;
+	}
+td.dudleyc2{
+	font-size: 12px;
+	height: 23px;
+	color: #535353;
+	background-color: #F9F9F9;
+}
+td.dudleyc3{
+	font-size: 12px;
+	height: 23px;
+	color: #535353;
+	background-color: #E9FBFC;
+}
+td.dudleyc4{
+	font-size: 12px;
+	height: 23px;
+	color: #535353;
+	background-color: #E9FBFC;
+}
+table.duda{
+	background-color: #617cab;
+	margin: 0px;
+	text-indent: 5pt;
+ }
+table.dudb{
+	background-color: #4388A9;
+/*	background-color: #4E96B8#32667E; #32667E*/
+	margin: 0px;
+	border-collapse:separate;
+	border-spacing:1px;
+	text-indent: 5pt;
+ }
+input.chkall{
+background-color: #4388A9
+}
+input.chkall2{
+background-color: #D9E8FD
+}
+td.bannerstyle{
+color: #ffffff; font-family: Arial; font-weight: bold; font-size: 22px; 
+}
+
+
+
+
+
+
+
+.Gen
+{
+POSITION: relative
+}
+.heading
+{
+BACKGROUND: #eeeeee;
+COLOR: #000000
+}
+.HtmlEdit
+{
+BACKGROUND-COLOR: #f5feed;
+POSITION: relative
+}
+.yToolbar
+{
+	BACKGROUND-COLOR: #CED7F7;
+	BORDER-BOTTOM: buttonshadow 1px solid;
+	BORDER-LEFT: buttonhighlight 1px solid;
+	BORDER-RIGHT: buttonshadow 1px solid;
+	BORDER-TOP: buttonhighlight 1px solid;
+	HEIGHT: 28px;
+	LEFT: 0px;
+	POSITION: relative;
+	TOP: 0px;
+	width: 760px;
+
+}
+.Btn
+{
+BACKGROUND-COLOR: #CED7F7;
+BORDER-BOTTOM: buttonface 1px solid;
+BORDER-LEFT: buttonface 1px solid;
+BORDER-RIGHT: buttonface 1px solid;
+BORDER-TOP: buttonface 1px solid;
+HEIGHT: 24px;
+POSITION: absolute;
+TOP: 1px;
+WIDTH: 24px
+}
+.Ico
+{
+LEFT: 3px;
+POSITION: absolute;
+TOP: 3px
+}
+.TBSep
+{
+BORDER-LEFT: buttonshadow 1px solid;
+BORDER-RIGHT: buttonhighlight 1px solid;
+FONT-SIZE: 0px;
+HEIGHT: 22px;
+POSITION: absolute;
+TOP: 1px;
+WIDTH: 1px
+}
+.TBGen
+{
+FONT: 9pt ËÎÌו,verdana,arial,sans-serif;
+HEIGHT: 22px;
+POSITION: absolute;
+TOP: 3px
+}
+.TBHandle
+{
+BACKGROUND-COLOR: #f5feed;
+BORDER-LEFT: buttonhighlight 1px solid;
+BORDER-RIGHT: buttonshadow 1px solid;
+BORDER-TOP: buttonhighlight 1px solid;
+FONT-SIZE: 1px;
+HEIGHT: 22px;
+POSITION: absolute;
+TOP: 1px;
+WIDTH: 3px
+}
+.BtnMouseOverUp
+{
+BACKGROUND-COLOR: #DAE8CA;
+BORDER-BOTTOM: buttonshadow 1px solid;
+BORDER-LEFT: buttonhighlight 1px solid;
+BORDER-RIGHT: buttonshadow 1px solid;
+BORDER-TOP: buttonhighlight 1px solid;
+HEIGHT: 24px;
+POSITION: absolute;
+TOP: 1px;
+WIDTH: 24px
+}
+.BtnMouseOverDown
+{
+BACKGROUND-COLOR: #DAE8CA;
+BORDER-BOTTOM: buttonhighlight 1px solid;
+BORDER-LEFT: buttonshadow 1px solid;
+BORDER-RIGHT: buttonhighlight 1px solid;
+BORDER-TOP: buttonshadow 1px solid;
+HEIGHT: 24px;
+POSITION: absolute;
+TOP: 1px;
+WIDTH: 24px
+}
+.BtnDown
+{
+BACKGROUND-COLOR: #DAE8CA;
+BORDER-BOTTOM: buttonhighlight 1px solid;
+BORDER-LEFT: buttonshadow 1px solid;
+BORDER-RIGHT: buttonhighlight 1px solid;
+BORDER-TOP: buttonshadow 1px solid;
+HEIGHT: 24px;
+POSITION: absolute;
+TOP: 1px;
+WIDTH: 24px
+}
+.IcoDown
+{
+HEIGHT: 16px;
+LEFT: 4px;
+POSITION: absolute;
+TOP: 4px;
+WIDTH: 16px
+}
+.IcoDownPressed
+{
+LEFT: 3px;
+POSITION: absolute;
+TOP: 3px
+}

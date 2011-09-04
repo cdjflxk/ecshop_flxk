@@ -1,0 +1,278 @@
+
+<!-- saved from url=(0039)http://www.flxkdns.com/umanage/body.asp -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF8">
+	
+	<link id="style_sheet" href="../Public/SuperAdmin/css/normal.css" type="text/css" rel="stylesheet">
+<script language="javascript">
+<!--
+function showurl(url)
+{
+if (top.showurlinfrm_dtl)
+{
+if ( ! top.canResize )
+			{
+				parent.parent.frm_btm.chgfrm() ;
+				parent.frm_dtl.location.href=url;
+			}
+else
+parent.frm_dtl.location.href=url;			
+}
+else
+location.href=url;
+}
+function confirmit()
+{
+if(confirm("是否确认此操作？"))
+return true;
+else
+return false;
+}
+//-->
+</script>
+</head>
+<body topmargin="0" marginheight="0" leftmargin="0" marginwidth="0"><table width="95%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td height="5" style="line-height:1px;font-size:1px;">&nbsp;</td>
+  </tr>
+</tbody></table>
+
+
+
+<!-- include virtual="/ucenter/incs/mcnews.asp"-->
+
+
+
+<style type="text/css">
+
+body { margin: 5px; background-color: #fff; }
+body,td,th { font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #333;}
+.title_text{ color:#fff; text-indent:30px; background:url(../Public/SuperAdmin/images/umanage_1.jpg) no-repeat #79b2d6;}
+.title_text3{ color:#fff; text-indent:30px; background:url(../Public/SuperAdmin/images/umanage_2.jpg) no-repeat #79b2d6;}
+.title_text4{ color:#fff; text-indent:30px; background:url(../Public/SuperAdmin/images/umanage_3.jpg) no-repeat #79b2d6;}
+.title_text5{ color:#fff; text-indent:30px; background:url(../Public/SuperAdmin/images/umanage_4.jpg) no-repeat #79b2d6;}
+.title_text1{ text-indent:7px;}
+.title_text2{ text-indent:7px; color:#808080;}
+.title_text7{ color:#fff; text-indent:30px; background:url(../Public/SuperAdmin/images/umanage_6.jpg) no-repeat left; line-height:27px;}
+a { color:#333; text-decoration:none; }
+a:hover { text-decoration:underline; }
+a.news_title { color:#fff; text-decoration:none; }
+
+
+#winpop { width:150px; height:0px; position:absolute; background:#FFFFFF; right:0px; bottom:0px; border:1px solid #666; margin:0; padding:1px; overflow:hidden; display:none;}
+#winpop .title { width:100%; height:22px; line-height:20px; color:#ffffff; background:#ff6b00; font-weight:bold; text-align:center; font-size:12px;}
+#winpop .con { width:100%; height:10px; line-height:10px; font-size:12px; color:#000000; text-align:center;}
+#winpop .con ul { margin:0px; padding:15px;list-style:none;line-height:24px;}
+#silu { font-size:12px; color:#666; position:absolute; right:0px; text-align:right; text-decoration:underline; line-height:22px;}
+.close { position:absolute; right:4px; top:-1px; color:#FFFFFF; cursor:pointer}
+</style>
+<script type="text/javascript" src="./代理平台管理系统_files/jquery-1.4.4.min.js"></script>
+
+<script type="text/javascript">
+
+jQuery(function(){ 
+
+jQuery(window).scroll(function(){ 
+
+  jQuery('#winpop').animate({top:jQuery(document).scrollTop() + jQuery(window).height() - jQuery('#winpop').height()},10) 
+
+}); 
+
+jQuery(".close").click(function(){ 
+
+  jQuery("#winpop").fadeOut(500); 
+
+}) 
+
+})
+
+function tips_pop(){
+  var MsgPop=document.getElementById("winpop");
+  var popH=parseInt(MsgPop.style.height);
+   if (popH==0){
+   MsgPop.style.display="block";
+  show=setInterval("changeH('up')",2);
+   }
+  else { 
+   hide=setInterval("changeH('down')",2);
+  }
+}
+function changeH(str) {
+ var MsgPop=document.getElementById("winpop");
+ var popH=parseInt(MsgPop.style.height);
+ if(str=="up"){
+  if (popH<=150){
+  MsgPop.style.height=(popH+4).toString()+"px";
+  }
+  else{  
+  clearInterval(show);
+  }
+ }
+ if(str=="down"){ 
+  if (popH>=4){  
+  MsgPop.style.height=(popH-4).toString()+"px";
+  }
+  else{ 
+  clearInterval(hide);   
+  MsgPop.style.display="none";
+  }
+ }
+}
+window.onload=function(){
+document.getElementById('winpop').style.height='0px';
+setTimeout("tips_pop()",800);
+}
+
+
+</script>
+
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#d6d7d8">
+  <tbody><tr>
+    <td bgcolor="#FFFFFF" valign="top" width="50%" style="padding-right:8px;"><table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#d6d7d8">
+      <tbody><tr>
+        <td height="27" bgcolor="#79b2d6" class="title_text" style="border:1px solid #fff"><div align="left" style="float:left;">美橙动态</div><div align="right" style="float:right;">[<a href="http://www.flxkdns.com/umanage/body_lst.asp?tpe=dt" class="news_title">更多...</a>]&nbsp;&nbsp;</div></td>
+      </tr>
+    </tbody></table>
+      <table width="100%" border="0" cellspacing="1" cellpadding="0" bgcolor="#d6d7d8" style="margin-top:10px;">
+        
+        <tbody><tr>
+          <td width="77%" height="30" bgcolor="#FFFFFF" class="title_text2"><a href="http://www.flxkdns.com/umanage/body_pop.asp?tpe=dt&nid=1001912" target="_blank">2011年春节放假公告</a></td>
+          <td width="23%" bgcolor="#FFFFFF" class="title_text2">2011-1-24</td>
+        </tr>
+        
+        <tr>
+          <td width="77%" height="30" bgcolor="#FFFFFF" class="title_text2"><a href="http://www.flxkdns.com/umanage/body_pop.asp?tpe=dt&nid=1001888" target="_blank">国庆放假通知以及工作安排</a></td>
+          <td width="23%" bgcolor="#FFFFFF" class="title_text2">2010-9-29</td>
+        </tr>
+        
+      </tbody></table>
+	  </td>
+
+          <td width="50%" bgcolor="#FFFFFF" valign="top" style="padding-left:4px;"><table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#d6d7d8">
+            <tbody><tr>
+              <td height="27" bgcolor="#79b2d6" class="title_text" style="border:1px solid #fff"><div align="left" style="float:left;">即将到期产品</div><div align="right" style="float:right;">[<a href="http://www.flxkdns.com/umanage/body_daoqi.asp" class="news_title">更多...</a>]&nbsp;&nbsp;</div></td>
+            </tr>
+          </tbody></table>
+            <table width="100%" border="0" cellspacing="1" cellpadding="0" bgcolor="#d6d7d8" style="margin-top:10px;">
+              <!--<tr>
+                <td height="30" bgcolor="#FFFFFF" class="title_text2">类型</td>
+                <td bgcolor="#FFFFFF" class="title_text2">名称</td>
+                <td bgcolor="#FFFFFF" class="title_text2">到期时间</td>
+                <td bgcolor="#FFFFFF" class="title_text2">续费</td>
+              </tr>-->
+			  
+          </table></td>
+      </tr></tbody></table><table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:10px;">
+        <tbody><tr>
+          <td width="50%" valign="top" style="padding-right:4px;"><table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#d6d7d8">
+            <tbody><tr>
+              <td height="27" bgcolor="#79b2d6" class="title_text3" style="border:1px solid #fff"><div align="left" style="float:left;">美橙公告</div><div align="right" style="float:right;">[<a href="http://www.flxkdns.com/umanage/body_lst.asp?tpe=gg" class="news_title">更多...</a>]&nbsp;&nbsp;</div></td>
+            </tr>
+          </tbody></table>
+            <table width="100%" border="0" cellspacing="1" cellpadding="0" bgcolor="#d6d7d8" style="margin-top:10px;">
+			  
+              <tbody><tr>
+                <td width="77%" height="30" bgcolor="#FFFFFF" class="title_text2"><a href="http://www.flxkdns.com/umanage/body_pop.asp?tpe=gg&nid=1001950" target="_blank" style="font-weight:bold; color:#F00; ">关于代理平台的重要通知</a></td>
+                <td width="23%" bgcolor="#FFFFFF" class="title_text2">2011-9-2</td>
+              </tr>
+			  
+              <tr>
+                <td width="77%" height="30" bgcolor="#FFFFFF" class="title_text2"><a href="http://www.flxkdns.com/umanage/body_pop.asp?tpe=gg&nid=1001949" target="_blank" style="font-weight:bold; color:#F00; ">代理平台安全升级 通知</a></td>
+                <td width="23%" bgcolor="#FFFFFF" class="title_text2">2011-8-26</td>
+              </tr>
+			  
+              <tr>
+                <td width="77%" height="30" bgcolor="#FFFFFF" class="title_text2"><a href="http://www.flxkdns.com/umanage/body_pop.asp?tpe=gg&nid=1001947" target="_blank" style="font-weight:bold; color:#F00; ">全球邮调整公告</a></td>
+                <td width="23%" bgcolor="#FFFFFF" class="title_text2">2011-8-17</td>
+              </tr>
+			  
+              <tr>
+                <td width="77%" height="30" bgcolor="#FFFFFF" class="title_text2"><a href="http://www.flxkdns.com/umanage/body_pop.asp?tpe=gg&nid=1001940" target="_blank" style="font-weight:bold; color:#F00; ">代理平台管理后台bug修复公告2011-7-21</a></td>
+                <td width="23%" bgcolor="#FFFFFF" class="title_text2">2011-7-21</td>
+              </tr>
+			  
+              <tr>
+                <td width="77%" height="30" bgcolor="#FFFFFF" class="title_text2"><a href="http://www.flxkdns.com/umanage/body_pop.asp?tpe=gg&nid=1001938" target="_blank" style="font-weight:bold; color:#F00; ">建站之星套餐版程序更新至sitestar v2.1</a></td>
+                <td width="23%" bgcolor="#FFFFFF" class="title_text2">2011-7-4</td>
+              </tr>
+			  
+            </tbody></table></td>
+
+	 <td bgcolor="#FFFFFF" valign="top" style="padding-left:4px;"><table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#d6d7d8">
+      <tbody><tr>
+        <td height="27" class="title_text7" style="border:1px solid #fff"><div align="left" style="float:left;">联系美橙</div></td>
+      </tr>
+     </tbody></table>
+      <table width="100%" border="0" cellspacing="1" cellpadding="0" bgcolor="#d6d7d8" style="margin-top:10px;">
+        <tbody><tr>
+          <td height="30" bgcolor="#fff8da" class="title_text2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td height="30" style="border-bottom:1px solid #d4d4d4;">&nbsp;美橙总部电话:021-51697771</td>
+              </tr>
+              <tr>
+                <td height="30" style="border-bottom:1px solid #d4d4d4;">&nbsp;渠道售后分机:8026 / 8053</td>
+              </tr>
+              <tr>
+                <td height="30" style="border-bottom:1px solid #d4d4d4;">&nbsp;客户服务中心(7×24):400-672-9900</td>
+              </tr>
+              <tr>
+                <td height="30" style="border-bottom:1px solid #d4d4d4;">&nbsp;渠道交流园地：<a href="http://vip.cndns.com/" target="_blank" style="color:#e44a24;">vip.cndns.com</a> （注册账号、资料与美橙相同方可通过审核） </td>
+              </tr>
+            </tbody></table>
+            <br>
+		  </td>
+        </tr>
+      </tbody></table></td>
+  </tr>
+</tbody></table>
+<table width="100%" border="0" cellpadding="4" cellspacing="1" bgcolor="#d6d7d8" style="margin-top:10px;">
+  <tbody><tr>
+    <td bgcolor="#F4F5F7"><table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#d6d7d8">
+      <tbody><tr>
+        <td height="27" bgcolor="#79b2d6" class="title_text5" style="border:1px solid #fff">系统帮助</td>
+      </tr>
+    </tbody></table>
+    <table width="100%" border="0" cellspacing="1" cellpadding="0" bgcolor="#d6d7d8" style="margin-top:10px;">
+          <tbody><tr>
+            <td height="30" bgcolor="#FFFFFF" class="title_text1"><a href="http://www.flxkdns.com/umanage/sysmng/hlp_mng/hlp_idx.asp#1">Q：如何管理用户的订单？</a></td>
+            <td bgcolor="#FFFFFF" class="title_text1"><a href="http://www.flxkdns.com/umanage/sysmng/hlp_mng/hlp_idx.asp#5">Q：有新产品了应该如何同步更新？</a></td>
+            <td bgcolor="#FFFFFF" class="title_text1"><a href="http://www.flxkdns.com/umanage/sysmng/hlp_mng/hlp_idx.asp#8">Q：如何获取源代码、启用自定义模板修改文件？</a></td>
+          </tr>
+          <tr>
+            <td height="30" bgcolor="#f6f7f9" class="title_text2"><a href="http://www.flxkdns.com/umanage/sysmng/hlp_mng/hlp_idx.asp#4">Q：“生成系统静态配置”的作用？</a></td>
+            <td height="30" bgcolor="#f6f7f9" class="title_text2"><a href="http://www.flxkdns.com/umanage/sysmng/hlp_mng/hlp_idx.asp#2">Q：如何销售或者取消销售平台上的产品？</a></td>
+            <td bgcolor="#f6f7f9" class="title_text2"><a href="http://www.flxkdns.com/umanage/sysmng/hlp_mng/hlp_idx.asp#9">Q：老平台用户升级后产品显示与销售为何不正常？</a></td>
+          </tr>
+          <tr>
+            <td height="30" bgcolor="#FFFFFF" class="title_text1"><a href="http://www.flxkdns.com/umanage/sysmng/hlp_mng/hlp_idx.asp#3">Q：如何调整产品的销售价格？</a></td>
+            <td bgcolor="#FFFFFF" class="title_text1"><a href="http://www.flxkdns.com/umanage/sysmng/hlp_mng/hlp_idx.asp#6">Q：如何更改网站LOGO？</a></td>
+            <td bgcolor="#FFFFFF" class="title_text1"><a href="http://www.flxkdns.com/umanage/sysmng/hlp_mng/hlp_skin.html" target="_blank"><font color="red">Q：用户自定义模板文档结构说明.</font></a></td>
+          </tr>
+      </tbody></table></td>
+  </tr>
+</tbody></table>
+
+
+
+<div id="winpop" style="width: 180px; height: 0px; display: none; ">
+<div class="title">重要信息:<span class="close" onclick="tips_pop()">X</span></div>
+    <div class="con">
+		<ul>
+		<li><a href="http://www.flxkdns.com/umanage/body_lst.asp?tpe=dt">美橙近期动态:&nbsp;&nbsp;<span style=" color:#ff0000">2</span>&nbsp;条</a></li>
+		<li><a href="http://www.flxkdns.com/umanage/body_lst.asp?tpe=gg">美橙近期公告:&nbsp;&nbsp;<span style=" color:#ff0000">41</span>&nbsp;条</a></li>
+		<li><a href="http://www.flxkdns.com/umanage/body_daoqi.asp">即将到期产品:&nbsp;&nbsp;0&nbsp;条</a></li>
+		<li><a href="http://www.flxkdns.com/umanage/artmng/wrd_lst.asp?qu1=0">有问必答待复:&nbsp;&nbsp;0&nbsp;条</a></li>
+		<ul>
+	</ul></ul></div>
+</div>
+
+
+
+
+
+
+
+
+
+</body></html>

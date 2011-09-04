@@ -9,6 +9,7 @@ class IndexAction extends Action {
         $this->assign('keywords', $map['keywords']);
         $this->assign('description', $map['description']);
         $this->assign('phone', $map['phone']);
+        $this->assign('__CommonAdmin__', __CommonAdmin__);
         $this->display();
     }
 
