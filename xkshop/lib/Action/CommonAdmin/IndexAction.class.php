@@ -32,7 +32,7 @@ class IndexAction extends Action {
             session_start();
             unset($_SESSION['name']);
         }
-        $this->redirect('http://localhost/ecshop_flxk/xkshop/index.php/Home/index/index');
+        header("Location:{$__Home__}/Index/index");
     }
 
 }
