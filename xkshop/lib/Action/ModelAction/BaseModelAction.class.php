@@ -19,9 +19,21 @@ class BaseModelAction extends Action {
         return $list;
     }
     
-   // 数据查询操作，该方法将查询结果转换为一个map
-    public function queryAllToMap($modelClassName) {
-        $model = new Model('IndexModel');   // 实例化模型类
+   // 数据查询操作，该方法将查询结果转换为一个map 
+    public function queryAllToSigleMap($modelClassName) {
+        $model = new Model($modelClassName);   // 实例化模型类
+        $list = $model->select(); // 查询数据
+        $array_push = array();
+        foreach ($list as &$value) {
+            $temp = array($value['name']=> $value['value']);
+            $array_push = array_merge($array_push, $temp); ;
+        }
+        return $array_push;
+    }
+    
+   // 数据查询操作，该方法将查询结果转换为一个ArrayMap
+    public function queryAllToArrayMap($modelClassName) {
+        $model = new Model($modelClassName);   // 实例化模型类
         $list = $model->select(); // 查询数据
         $array_push = array();
         foreach ($list as &$value) {

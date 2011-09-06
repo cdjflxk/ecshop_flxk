@@ -10,8 +10,8 @@
  *
  * @author Administrator
  */
-class XkModel extends Model{
-	protected $trueTableName = 'xk_xk'; 
+class VirtualModel extends Model{
+	protected $trueTableName = 'xk_virtual'; 
 }
 
 ?>

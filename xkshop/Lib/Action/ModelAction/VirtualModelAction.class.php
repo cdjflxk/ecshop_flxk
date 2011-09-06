@@ -6,12 +6,11 @@
  */
 
 /**
- * Description of XkEcshop
- *
+ * Description of XkShopModelAction
  * @author dejie
  */
-class IndexModel extends Model{
-    protected $trueTableName = 'xk_index'; 
-}
+import("BaseModelAction",dirname(__FILE__));
+class VirtualModelAction extends BaseModelAction {
 
+}
 ?>

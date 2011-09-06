@@ -1,10 +1,11 @@
 <?php
 import("@.Action.ModelAction.IndexModelAction");
+import("@.Model.VirtualModel");
 class IndexAction extends Action {
 
     public function index() {
         $indexModelAction = new IndexModelAction();
-        $map = $indexModelAction->queryAllToMap();
+        $map = $indexModelAction->queryAllToSigleMap();
         $this->assign('title', $map['title']);
         $this->assign('keywords', $map['keywords']);
         $this->assign('description', $map['description']);
@@ -18,6 +19,13 @@ class IndexAction extends Action {
     }
 
     public function virtual() {
+        $virtualModel = new VirtualModel();
+        $map = $virtualModel->select();   
+        
+        foreach ($map as &$value) {
+        	$resutlt =  $value['name'];
+        }
+     	
         $this->display();
     }
 

@@ -10,7 +10,8 @@
  *
  * @author Administrator
  */
-class XkModel extends Model{
+class UserModel extends Model{
+	protected $trueTableName = 'xk_user'; 
 }
 
 ?>

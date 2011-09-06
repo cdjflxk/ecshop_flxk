@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2011 年 09 月 06 日 02:42
+-- 生成日期: 2011 年 09 月 06 日 09:58
 -- 服务器版本: 5.5.9
 -- PHP 版本: 5.3.5
 
@@ -22,11 +22,11 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 -- --------------------------------------------------------
 
 --
--- 表的结构 `xk_index_model`
+-- 表的结构 `xk_index`
 --
 
-DROP TABLE IF EXISTS `xk_index_model`;
-CREATE TABLE IF NOT EXISTS `xk_index_model` (
+DROP TABLE IF EXISTS `xk_index`;
+CREATE TABLE IF NOT EXISTS `xk_index` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(45) DEFAULT NULL,
   `value` varchar(500) DEFAULT NULL,
@@ -35,10 +35,10 @@ CREATE TABLE IF NOT EXISTS `xk_index_model` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 --
--- 转存表中的数据 `xk_index_model`
+-- 转存表中的数据 `xk_index`
 --
 
-INSERT INTO `xk_index_model` (`id`, `name`, `value`) VALUES
+INSERT INTO `xk_index` (`id`, `name`, `value`) VALUES
 (1, 'title', '月夜星空软件工作室'),
 (2, 'description', '虚拟主机服务商，提供南北互通的双线单IP虚拟主机、域名注册服务、企业邮局、CDN网页加速等服务'),
 (3, 'phone', '7*24小时客户服务热线电话：18701132241'),
@@ -47,29 +47,11 @@ INSERT INTO `xk_index_model` (`id`, `name`, `value`) VALUES
 -- --------------------------------------------------------
 
 --
--- 表的结构 `xk_product_categroy_model`
+-- 表的结构 `xk_product`
 --
 
-DROP TABLE IF EXISTS `xk_product_categroy_model`;
-CREATE TABLE IF NOT EXISTS `xk_product_categroy_model` (
-  `id` int(11) NOT NULL,
-  `name` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- 转存表中的数据 `xk_product_categroy_model`
---
-
-
--- --------------------------------------------------------
-
---
--- 表的结构 `xk_product_model`
---
-
-DROP TABLE IF EXISTS `xk_product_model`;
-CREATE TABLE IF NOT EXISTS `xk_product_model` (
+DROP TABLE IF EXISTS `xk_product`;
+CREATE TABLE IF NOT EXISTS `xk_product` (
   `id` int(11) NOT NULL,
   `name` varchar(50) NOT NULL,
   `category_id` int(11) NOT NULL,
@@ -84,18 +66,38 @@ CREATE TABLE IF NOT EXISTS `xk_product_model` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `xk_product_model`
+-- 转存表中的数据 `xk_product`
 --
 
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `xk_role_model`
+-- 表的结构 `xk_product_categroy`
 --
 
-DROP TABLE IF EXISTS `xk_role_model`;
-CREATE TABLE IF NOT EXISTS `xk_role_model` (
+DROP TABLE IF EXISTS `xk_product_categroy`;
+CREATE TABLE IF NOT EXISTS `xk_product_categroy` (
+  `id` int(11) NOT NULL,
+  `name` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- 转存表中的数据 `xk_product_categroy`
+--
+
+INSERT INTO `xk_product_categroy` (`id`, `name`) VALUES
+(1, 'vitrual');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `xk_role`
+--
+
+DROP TABLE IF EXISTS `xk_role`;
+CREATE TABLE IF NOT EXISTS `xk_role` (
   `id` int(11) NOT NULL,
   `name` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`),
@@ -103,10 +105,10 @@ CREATE TABLE IF NOT EXISTS `xk_role_model` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `xk_role_model`
+-- 转存表中的数据 `xk_role`
 --
 
-INSERT INTO `xk_role_model` (`id`, `name`) VALUES
+INSERT INTO `xk_role` (`id`, `name`) VALUES
 (1, 'admin'),
 (2, 'vip'),
 (3, 'visitor');
@@ -114,11 +116,11 @@ INSERT INTO `xk_role_model` (`id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- 表的结构 `xk_user_model`
+-- 表的结构 `xk_user`
 --
 
-DROP TABLE IF EXISTS `xk_user_model`;
-CREATE TABLE IF NOT EXISTS `xk_user_model` (
+DROP TABLE IF EXISTS `xk_user`;
+CREATE TABLE IF NOT EXISTS `xk_user` (
   `id` int(11) NOT NULL,
   `name` varchar(50) NOT NULL,
   `pwd` varchar(50) NOT NULL,
@@ -127,20 +129,48 @@ CREATE TABLE IF NOT EXISTS `xk_user_model` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `xk_user_model`
+-- 转存表中的数据 `xk_user`
 --
 
-INSERT INTO `xk_user_model` (`id`, `name`, `pwd`, `role_id`) VALUES
+INSERT INTO `xk_user` (`id`, `name`, `pwd`, `role_id`) VALUES
 (1, 'admin', 'admin', 1);
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `xk_xk_model`
+-- 表的结构 `xk_virtual`
 --
 
-DROP TABLE IF EXISTS `xk_xk_model`;
-CREATE TABLE IF NOT EXISTS `xk_xk_model` (
+DROP TABLE IF EXISTS `xk_virtual`;
+CREATE TABLE IF NOT EXISTS `xk_virtual` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `location` varchar(50) NOT NULL,
+  `size` int(11) NOT NULL,
+  `connection_count` int(11) NOT NULL,
+  `flow` int(11) NOT NULL,
+  `market_price` int(11) NOT NULL,
+  `discount` int(11) NOT NULL,
+  `type` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- 转存表中的数据 `xk_virtual`
+--
+
+INSERT INTO `xk_virtual` (`id`, `name`, `location`, `size`, `connection_count`, `flow`, `market_price`, `discount`, `type`) VALUES
+(1, '标准100型双线', '上海', 100, 0, 8, 200, 1, 'bz100sx');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `xk_xk`
+--
+
+DROP TABLE IF EXISTS `xk_xk`;
+CREATE TABLE IF NOT EXISTS `xk_xk` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(45) CHARACTER SET latin1 DEFAULT NULL,
   `value` varchar(45) DEFAULT NULL,
@@ -149,7 +179,7 @@ CREATE TABLE IF NOT EXISTS `xk_xk_model` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 --
--- 转存表中的数据 `xk_xk_model`
+-- 转存表中的数据 `xk_xk`
 --
 
 
@@ -158,13 +188,13 @@ CREATE TABLE IF NOT EXISTS `xk_xk_model` (
 --
 
 --
--- 限制表 `xk_product_model`
+-- 限制表 `xk_product`
 --
-ALTER TABLE `xk_product_model`
-  ADD CONSTRAINT `FK_Reference_2` FOREIGN KEY (`id`) REFERENCES `xk_product_categroy_model` (`id`);
+ALTER TABLE `xk_product`
+  ADD CONSTRAINT `FK_Reference_2` FOREIGN KEY (`id`) REFERENCES `xk_product_categroy` (`id`);
 
 --
--- 限制表 `xk_user_model`
+-- 限制表 `xk_user`
 --
-ALTER TABLE `xk_user_model`
-  ADD CONSTRAINT `FK_Reference_1` FOREIGN KEY (`id`) REFERENCES `xk_role_model` (`id`);
+ALTER TABLE `xk_user`
+  ADD CONSTRAINT `FK_Reference_1` FOREIGN KEY (`id`) REFERENCES `xk_role` (`id`);
