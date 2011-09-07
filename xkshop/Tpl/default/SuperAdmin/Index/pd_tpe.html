@@ -1,0 +1,355 @@
+
+<!-- saved from url=(0057)http://www.flxkdns.com/umanage/sysmng/pdt_mng/pdt_tpe.asp -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<link id="style_sheet" href="../Public/SuperAdmin/css/normal.css" type="text/css" rel="stylesheet">
+<script language="javascript">
+<!--
+function showurl(url)
+{
+if (top.showurlinfrm_dtl)
+{
+if ( ! top.canResize )
+			{
+				parent.parent.frm_btm.chgfrm() ;
+				parent.frm_dtl.location.href=url;
+			}
+else
+parent.frm_dtl.location.href=url;			
+}
+else
+location.href=url;
+}
+function confirmit()
+{
+if(confirm("是否确认此操作？"))
+return true;
+else
+return false;
+}
+//-->
+</script>
+</head>
+<body topmargin="0" marginheight="0" leftmargin="0" marginwidth="0"><table width="95%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td height="5" style="line-height:1px;font-size:1px;">&nbsp;</td>
+  </tr>
+</tbody></table>
+
+
+
+<script language="javascript">
+	 function checkAll()
+  {
+    for (var i=0;i<document.log_frm.elements.length;i++)
+    {
+      var e = document.log_frm.elements[i];
+      var boolValue = document.log_frm.selectAll.checked;
+      if (e.name != 'selectAll')
+	  {
+        e.checked = boolValue;
+	  }
+    }
+  }
+</script>
+
+<script language="javascript">
+ 
+function winopen(formname,objectname,colorselected)
+{
+window.open("/ucenter/incs/colorform.asp?formname="+formname+"&objectname="+objectname+"&colorselected="+colorselected,"颜色选择器","scrollspan=no,width=300,height=200");
+}
+</script>
+<table cellspacing="2" cellpadding="0" width="100%" border="0">
+  <tbody>
+    <tr> 
+      <td valign="middle"> <table class="line" cellspacing="1" cellpadding="0" width="98%" border="0" align="center">
+          <tbody>
+            <tr> 
+              <td valign="bottom" width="25%" height="20"><font color="#000000" class="ddropshadow"><b><span class="enbold"><strong>产品分类</strong></span></b></font></td>
+              <td valign="bottom" nowrap="" align="right" width="75%">&nbsp;</td>
+            </tr>
+            <tr> 
+              <td align="middle" width="100%" colspan="2" height="5"></td>
+            </tr>
+            <tr> 
+              <td align="middle" width="100%" colspan="2" height="2" class="menuline"></td>
+            </tr>
+          </tbody>
+        </table>
+       <div style="margin: 10px; padding: 10px; border: 1px #FF9000 solid; background: #FFF9F9">[提示]：产品分类修改后，必须重新生成系统静态配置文件才能生效！<a href="http://www.flxkdns.com/umanage/sysmng/plt_mng/make_static.asp">点此立即生成系统静态配置</a></div>
+		</td>
+    </tr>
+    <tr> 
+      <td valign="top" height="28" align="center"> <form action="http://www.flxkdns.com/umanage/sysmng/pdt_mng/pdt_mng.asp" method="post" name="log_frm">
+          <table border="0" width="60%" align="center" cellpadding="0" cellspacing="1" class="dudb">
+            <tbody>
+              <tr> 
+                <td height="20" width="5%" align="center" class="dudleyc"> 序号 </td>
+                <td width="14%" align="center" class="dudleyc">产品原名称</td>
+              <!--   <td  width="12%" align=center class=dudleyc>自定义名称</td> -->
+
+               <!--  <td  width="20%" align=center class=dudleyc>是否销售 
+                  <input type="checkbox" name="selectAll" onClick="return checkAll();" value="ON" class=chkall>
+                  全选</td> -->
+                <td width="10%" align="center" class="dudleyc">顺序</td>
+               <!--  <td  width="15%" align=center class=dudleyc>显示颜色</td>
+                <td  width="10%" align=center class=dudleyc>是否显示</td> -->
+                 <td align="center" class="dudleyc">管理</td> 
+
+              </tr>
+              
+              <tr> 
+                <td height="22" align="center" class="dudleyc2">2</td>
+                <td align="left" class="dudleyc2">&nbsp;虚拟主机</td>
+               <!--  <td  align=center class=dudleyc2> <input name="ppt_nme_2" type="text" class=normalform id="ppt_nme_2" value="虚拟主机" size=12> </td> -->
+
+                <!-- <td  align=center class=dudleyc2><input type="checkbox" name="ppt_dis_2"  value="1"  checked  > <input type="hidden" name="ptids"  value="2" > 
+                </td>  -->
+				
+                <td align="center" class="dudleyc2">
+                  2 </td>
+               <!--  <td  align=center class=dudleyc2> <table border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td  > <input name="ppt_clr_2" type="text" class=normalform id="ppt_clr_2" value="#ff0000"  size=8> </td>
+                      <td  >&nbsp; </td>
+                      <td> <table width="20" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" height="17">
+                          <tr> 
+                            <td onClick="javascript:winopen('ptmng','pt_clr_2',document.ptmng.pt_clr_2.value.substr(1));" style="cursor:hand;border:#000000 1px double" bgcolor='#ff0000' id="cpt_clr_2">&nbsp;</td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table></td>
+                <td  align=center class=dudleyc2> <select name="ppt_shw_2" class=normalform id="ppt_shw_2">
+                    
+                    <option value="1"  selected>显示</option>
+                    <option value="0"   style='color:#ff0000'>不显示</option>
+                  </select> </td> -->
+              
+					 
+                <td align="center" class="dudleyc2"> <a class="commonface" href="javascript:showurl('pdt_cls.asp?ptid=2');">二级分类</a>
+
+                </td>
+              </tr>
+				
+              <tr> 
+                <td height="22" align="center" class="dudleyc2">17</td>
+                <td align="left" class="dudleyc2">&nbsp;建站之星</td>
+               <!--  <td  align=center class=dudleyc2> <input name="ppt_nme_17" type="text" class=normalform id="ppt_nme_17" value="建站之星" size=12> </td> -->
+
+                <!-- <td  align=center class=dudleyc2><input type="checkbox" name="ppt_dis_17"  value="1"  checked  > <input type="hidden" name="ptids"  value="17" > 
+                </td>  -->
+				
+                <td align="center" class="dudleyc2">
+                  3 </td>
+               <!--  <td  align=center class=dudleyc2> <table border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td  > <input name="ppt_clr_17" type="text" class=normalform id="ppt_clr_17" value=""  size=8> </td>
+                      <td  >&nbsp; </td>
+                      <td> <table width="20" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" height="17">
+                          <tr> 
+                            <td onClick="javascript:winopen('ptmng','pt_clr_17',document.ptmng.pt_clr_17.value.substr(1));" style="cursor:hand;border:#000000 1px double" bgcolor='' id="cpt_clr_17">&nbsp;</td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table></td>
+                <td  align=center class=dudleyc2> <select name="ppt_shw_17" class=normalform id="ppt_shw_17">
+                    
+                    <option value="1"  selected>显示</option>
+                    <option value="0"   style='color:#ff0000'>不显示</option>
+                  </select> </td> -->
+              
+					 
+                <td align="center" class="dudleyc2"> <a class="commonface" href="javascript:showurl('pdt_cls.asp?ptid=21');">二级分类</a>
+
+                </td>
+              </tr>
+				
+              <tr> 
+                <td height="22" align="center" class="dudleyc2">1</td>
+                <td align="left" class="dudleyc2">&nbsp;域名注册</td>
+               <!--  <td  align=center class=dudleyc2> <input name="ppt_nme_1" type="text" class=normalform id="ppt_nme_1" value="域名注册" size=12> </td> -->
+
+                <!-- <td  align=center class=dudleyc2><input type="checkbox" name="ppt_dis_1"  value="1"  checked  > <input type="hidden" name="ptids"  value="1" > 
+                </td>  -->
+				
+                <td align="center" class="dudleyc2">
+                  4 </td>
+               <!--  <td  align=center class=dudleyc2> <table border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td  > <input name="ppt_clr_1" type="text" class=normalform id="ppt_clr_1" value="#ff00ff"  size=8> </td>
+                      <td  >&nbsp; </td>
+                      <td> <table width="20" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" height="17">
+                          <tr> 
+                            <td onClick="javascript:winopen('ptmng','pt_clr_1',document.ptmng.pt_clr_1.value.substr(1));" style="cursor:hand;border:#000000 1px double" bgcolor='#ff00ff' id="cpt_clr_1">&nbsp;</td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table></td>
+                <td  align=center class=dudleyc2> <select name="ppt_shw_1" class=normalform id="ppt_shw_1">
+                    
+                    <option value="1"  selected>显示</option>
+                    <option value="0"   style='color:#ff0000'>不显示</option>
+                  </select> </td> -->
+              
+					 
+                <td align="center" class="dudleyc2"> <a class="commonface" href="javascript:showurl('pdt_cls.asp?ptid=1');">二级分类</a>
+
+                </td>
+              </tr>
+				
+              <tr> 
+                <td height="22" align="center" class="dudleyc2">4</td>
+                <td align="left" class="dudleyc2">&nbsp;数据库</td>
+               <!--  <td  align=center class=dudleyc2> <input name="ppt_nme_4" type="text" class=normalform id="ppt_nme_4" value="数据库" size=12> </td> -->
+
+                <!-- <td  align=center class=dudleyc2><input type="checkbox" name="ppt_dis_4"  value="1"  checked  > <input type="hidden" name="ptids"  value="4" > 
+                </td>  -->
+				
+                <td align="center" class="dudleyc2">
+                  5 </td>
+               <!--  <td  align=center class=dudleyc2> <table border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td  > <input name="ppt_clr_4" type="text" class=normalform id="ppt_clr_4" value="#000000"  size=8> </td>
+                      <td  >&nbsp; </td>
+                      <td> <table width="20" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" height="17">
+                          <tr> 
+                            <td onClick="javascript:winopen('ptmng','pt_clr_4',document.ptmng.pt_clr_4.value.substr(1));" style="cursor:hand;border:#000000 1px double" bgcolor='#000000' id="cpt_clr_4">&nbsp;</td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table></td>
+                <td  align=center class=dudleyc2> <select name="ppt_shw_4" class=normalform id="ppt_shw_4">
+                    
+                    <option value="1"  selected>显示</option>
+                    <option value="0"   style='color:#ff0000'>不显示</option>
+                  </select> </td> -->
+              
+					 
+                <td align="center" class="dudleyc2"> <a class="commonface" href="javascript:showurl('pdt_cls.asp?ptid=4');">二级分类</a>
+
+                </td>
+              </tr>
+				
+              <tr> 
+                <td height="22" align="center" class="dudleyc2">3</td>
+                <td align="left" class="dudleyc2">&nbsp;企业邮局</td>
+               <!--  <td  align=center class=dudleyc2> <input name="ppt_nme_3" type="text" class=normalform id="ppt_nme_3" value="企业邮局" size=12> </td> -->
+
+                <!-- <td  align=center class=dudleyc2><input type="checkbox" name="ppt_dis_3"  value="1"  checked  > <input type="hidden" name="ptids"  value="3" > 
+                </td>  -->
+				
+                <td align="center" class="dudleyc2">
+                  6 </td>
+               <!--  <td  align=center class=dudleyc2> <table border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td  > <input name="ppt_clr_3" type="text" class=normalform id="ppt_clr_3" value="#0000ff"  size=8> </td>
+                      <td  >&nbsp; </td>
+                      <td> <table width="20" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" height="17">
+                          <tr> 
+                            <td onClick="javascript:winopen('ptmng','pt_clr_3',document.ptmng.pt_clr_3.value.substr(1));" style="cursor:hand;border:#000000 1px double" bgcolor='#0000ff' id="cpt_clr_3">&nbsp;</td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table></td>
+                <td  align=center class=dudleyc2> <select name="ppt_shw_3" class=normalform id="ppt_shw_3">
+                    
+                    <option value="1"  selected>显示</option>
+                    <option value="0"   style='color:#ff0000'>不显示</option>
+                  </select> </td> -->
+              
+					 
+                <td align="center" class="dudleyc2"> <a class="commonface" href="javascript:showurl('pdt_cls.asp?ptid=3');">二级分类</a>
+
+                </td>
+              </tr>
+				
+              <tr> 
+                <td height="22" align="center" class="dudleyc2">11</td>
+                <td align="left" class="dudleyc2">&nbsp;智能加速</td>
+               <!--  <td  align=center class=dudleyc2> <input name="ppt_nme_11" type="text" class=normalform id="ppt_nme_11" value="智能加速" size=12> </td> -->
+
+                <!-- <td  align=center class=dudleyc2><input type="checkbox" name="ppt_dis_11"  value="1"  checked  > <input type="hidden" name="ptids"  value="11" > 
+                </td>  -->
+				
+                <td align="center" class="dudleyc2">
+                  11 </td>
+               <!--  <td  align=center class=dudleyc2> <table border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td  > <input name="ppt_clr_11" type="text" class=normalform id="ppt_clr_11" value="#DDB822"  size=8> </td>
+                      <td  >&nbsp; </td>
+                      <td> <table width="20" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" height="17">
+                          <tr> 
+                            <td onClick="javascript:winopen('ptmng','pt_clr_11',document.ptmng.pt_clr_11.value.substr(1));" style="cursor:hand;border:#000000 1px double" bgcolor='#DDB822' id="cpt_clr_11">&nbsp;</td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table></td>
+                <td  align=center class=dudleyc2> <select name="ppt_shw_11" class=normalform id="ppt_shw_11">
+                    
+                    <option value="1"  selected>显示</option>
+                    <option value="0"   style='color:#ff0000'>不显示</option>
+                  </select> </td> -->
+              
+					 
+                <td align="center" class="dudleyc2"> <a class="commonface" href="javascript:showurl('pdt_cls.asp?ptid=10');">二级分类</a>
+
+                </td>
+              </tr>
+				
+              <tr> 
+                <td height="22" align="center" class="dudleyc2">13</td>
+                <td align="left" class="dudleyc2">&nbsp;VPS</td>
+               <!--  <td  align=center class=dudleyc2> <input name="ppt_nme_13" type="text" class=normalform id="ppt_nme_13" value="VPS" size=12> </td> -->
+
+                <!-- <td  align=center class=dudleyc2><input type="checkbox" name="ppt_dis_13"  value="1"  checked  > <input type="hidden" name="ptids"  value="13" > 
+                </td>  -->
+				
+                <td align="center" class="dudleyc2">
+                  12 </td>
+               <!--  <td  align=center class=dudleyc2> <table border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td  > <input name="ppt_clr_13" type="text" class=normalform id="ppt_clr_13" value="#1BB183"  size=8> </td>
+                      <td  >&nbsp; </td>
+                      <td> <table width="20" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" height="17">
+                          <tr> 
+                            <td onClick="javascript:winopen('ptmng','pt_clr_13',document.ptmng.pt_clr_13.value.substr(1));" style="cursor:hand;border:#000000 1px double" bgcolor='#1BB183' id="cpt_clr_13">&nbsp;</td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table></td>
+                <td  align=center class=dudleyc2> <select name="ppt_shw_13" class=normalform id="ppt_shw_13">
+                    
+                    <option value="1"  selected>显示</option>
+                    <option value="0"   style='color:#ff0000'>不显示</option>
+                  </select> </td> -->
+              
+					 
+                <td align="center" class="dudleyc2"> <a class="commonface" href="javascript:showurl('pdt_cls.asp?ptid=12');">二级分类</a>
+
+                </td>
+              </tr>
+				
+            </tbody>
+          </table>
+          <br>
+          <input type="hidden" name="module" value="pt_edt">
+         <!--  <input type="submit" name="Submit" value="提交" class=btxx onclick="javascript:return confirmit();">
+          <input type="reset" name="Submit" value="重填"  class=btxx> -->
+        </form></td>
+    </tr>
+    <tr> 
+      <td valign="top" height="28">&nbsp; </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+</body></html>
