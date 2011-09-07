@@ -1,6 +1,6 @@
 <?php
 
-import("@.Action.ModelAction.UserModelAction");
+import("@.Model.UserModel");
 
 class IndexAction extends Action {
 
@@ -17,8 +17,8 @@ class IndexAction extends Action {
     public function login() {
         $username = $_POST['username'];
         $pwd = $_POST['pwd'];
-        $userModelAction = new UserModelAction();
-        $isRight = $userModelAction->checkPwd($username, $pwd);
+        $userModel = new UserModel();
+        $isRight = $userModel->checkPwd($username, $pwd);
         if ($isRight) {
             $_SESSION['name'] = $name;
             redirect(index);

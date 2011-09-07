@@ -23,9 +23,9 @@ ol, ul, li { list-style-type:none; margin:0px; padding:0px; }
 #topnav { float:left; margin-top:31px; height:34px; font-family:"Microsoft Yahei", Arial; color:#fff; line-height:34px;width:900px;}
 #topnav ul li { float:left; margin:0;  width:83px; text-align:center;}
 #topnav ul li a { float:left; margin:0; width:83px; text-align:center; color:#fff;}
-/*#topnav ul li a:hover,#topnav ul li.hover a { float:left; margin:0;  width:83px; text-align:center; background:url(../images/nav_1.jpg) no-repeat; color:#036;}*/
 #topnav ul li a:hover,#topnav ul li.hover a{ float:left; margin:0;  width:83px; text-align:center; background:url(../images/nav_1.jpg) no-repeat; color:#036;}
 
+.tpx {float:left; margin:0; width:83px; text-align:center; background:url(../images/nav_1.jpg) no-repeat; color:#036 !important}
 
 #system { background:url(../images/header_bj.jpg) repeat-x; height:32px; clear:both;}
 #system_1 { width:1100px; float:left;}

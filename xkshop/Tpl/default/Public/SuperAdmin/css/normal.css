@@ -19,7 +19,7 @@ scrollbar-darkshadow-color:#EFEFEF;
 	margin-top: 0px;
 	margin-right: 00px;
 	margin-bottom: 0px;}
-body.bodystyle           { margin:1px; padding:0px; background-color: #173C73; color: #000000; font-weight: normal; font-size: 9pt; font-style: normal; text-decoration: none; font-family: ËÎÌå; border:0px; }
+body.bodystyle           { margin:1px; padding:0px; background-color: #173C73; color: #000000; font-weight: normal; font-size: 9pt; font-style: normal; text-decoration: none; font-family: å®‹ä½“; border:0px; }
 a.Menu                      { font-weight: bold; font-size: 9pt; color: #ffffff; text-decoration: none; vlink: #ffffff; alink: #ffffff; }
 a.Menu:hover                { font-weight: bold; font-size: 9pt; color: #ffffff; text-decoration: none; }
 a.SubMenu                   { font-size: 9pt; color: blue; text-decoration: underline; vlink: blue; alink: blue; }
@@ -253,7 +253,7 @@ WIDTH: 1px
 }
 .TBGen
 {
-FONT: 9pt ËÎÌå,verdana,arial,sans-serif;
+FONT: 9pt å®‹ä½“,verdana,arial,sans-serif;
 HEIGHT: 22px;
 POSITION: absolute;
 TOP: 3px

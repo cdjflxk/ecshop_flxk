@@ -20,12 +20,8 @@ class IndexAction extends Action {
 
     public function virtual() {
         $virtualModel = new VirtualModel();
-        $map = $virtualModel->select();   
-        
-        foreach ($map as &$value) {
-        	$resutlt =  $value['name'];
-        }
-     	
+        $map = $virtualModel->select(); 
+        $this->assign('virtuals',$map);
         $this->display();
     }
 
