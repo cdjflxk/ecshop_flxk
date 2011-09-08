@@ -26,8 +26,6 @@ return array(
 
   'DEFAULT_GROUP'=>'Home',
     
-  '__AdminCommon__'=>'http://localhost/ecshop_flxk/xkshop/index.php/CommonAdmin/',
-
 );
 
 ?>

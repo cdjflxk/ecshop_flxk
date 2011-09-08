@@ -15,7 +15,7 @@ class UserModel extends Model{
 	
      // check the pwd
     public function checkPwd($name,$pwd) {
-  		$condition['name'] = "$name";
+  		$condition['name'] = $name;
         $records = parent::select($condition);
         if(count($records) > 0){
         	$record = $records[0];
