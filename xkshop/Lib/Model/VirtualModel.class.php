@@ -12,6 +12,10 @@
  */
 class VirtualModel extends Model{
 	protected $trueTableName = 'xk_virtual'; 
+        public function __construct(){
+            parent::__construct();
+            $this->fields = $this->getDbFields();
+        }
 }
 
 ?>

@@ -14,9 +14,9 @@ return array(
 
 'DB_NAME'=>'xkshop',  // 数据库名称
 
-'DB_USER'=>'root', // 数据库用户名
+'DB_USER'=>'admin', // 数据库用户名
 
-'DB_PWD'=>'root', // 数据库密码
+'DB_PWD'=>'admin', // 数据库密码
 
 'DB_PORT'=>'3306', // 数据库端口
 
