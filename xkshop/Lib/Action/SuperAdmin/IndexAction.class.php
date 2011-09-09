@@ -51,17 +51,16 @@ class IndexAction extends Action {
     	$virtualModel = new VirtualModel();
     	$id ="";
     	$id = $_POST["id"];
-    	//判断是修改还是新增加
     	if($id == ""){
-                 // 根据表单提交的POST数据创建数据对象
+                 // add
                 $virtualModel->create();
                 $virtualModel->add();   	  
     	}else{
-                // 根据表单提交的POST数据创建数据对象
+                // update
                 $virtualModel->create();
                 $virtualModel->save(); 
     	}	
-    	redirect("pd_edt?id=1",2,"保存成功,将在2秒钟后自动跳转");
+		redirect("pd_lst?type=virtual",2,"保存成功,将在2秒钟后自动跳转");
     }
     
     public function pd_edt() {
@@ -69,10 +68,14 @@ class IndexAction extends Action {
     	if($id != ""){
     		$condition['id'] = $id;
     		$virtualModel = new VirtualModel();
-    		$record = $virtualModel->select($condition);
+    		$record = $virtualModel->where($condition)->select();
     	}
         $this->assign('id',$id);
-        $this->assign('virtual',$record);
+        $this->assign('virtual',$record[0]);
+        $this->display();   
+    }
+    
+    public function pd_add() {
         $this->display();   
     }
 }

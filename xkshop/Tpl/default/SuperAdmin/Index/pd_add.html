@@ -145,15 +145,6 @@
 				</tbody>
 			</table>
 			<br>
-
-			<input name="Submit32" value="上一个" class="btxx"
-				onclick="javascript:location.href='pdt_edt.asp?g_prd=dxnet1500_0807';"
-				title="产品编号：dxnet1500_0807" type="button"> <input
-				name="Submit32" value="下一个" class="btxx"
-				onclick="javascript:location.href='pdt_edt.asp?g_prd=dxnet2000_0807';"
-				title="产品编号：dxnet2000_0807" type="button"> <br>
-			</td>
-		</tr>
 		<form action="pd_save" method="post" name="myform">
 		<tr>
 			<td colspan="2" height="28" valign="top">
@@ -162,19 +153,12 @@
 				<tbody>
 					<tr>
 						<td><b>基本信息</b></td>
-					</tr>					
+					</tr>
 					<tr>
 						<td class="datagroup">
 						<table class="dudtb" border="0" cellpadding="0" cellspacing="0"
 							width="98%">
 							<tbody>
-								<tr>
-									<td height="22" width="20%">编号</td>
-									<td width="10">：</td>
-									<td width="40%"><input name="pid" size="28"
-										value="{$virtual.id}" type="text" disabled="disabled"><input type="hidden" value="{$virtual.id}" name="id"></td>
-									<td>产品编号(不能修改)</td>
-								</tr>							
 								<tr>
 									<td height="22">产品二级分类</td>
 									<td>：</td>
@@ -208,7 +192,7 @@
 								<tr>
 									<td height="22">市场价/单位</td>
 									<td>：</td>
-									<td><input name="market_price" size="10" value="{$virtual.market_price}" type="text">
+									<td><input name="market_price" size="10" value="{$market_price}" type="text">
 									元每 <select name="price_unit">
 										<option value="0">天</option>
 										<option value="1">周</option>
@@ -224,14 +208,14 @@
 								<tr>
 									<td height="22">注册会员的折扣</td>
 									<td>：</td>
-									<td><input name="discount" size="28" value="{$virtual.discount}" type="text">
+									<td><input name="discount" size="28" value="{$discount}" type="text">
 									</td>
 									<td>注册会员的折扣</td>
 								</tr>
 								<tr>
 									<td height="22">排列顺序</td>
 									<td>：</td>
-									<td><input name="order" size="28" value="{$virtual.order}" type="text">
+									<td><input name="order" size="28" value="{$order}" type="text">
 									</td>
 									<td>页面的排列顺序:从 1 - 100</td>
 								</tr>
@@ -247,7 +231,7 @@
 									<td height="22">商品是否销售原因</td>
 									<td>：</td>
 									<td><input name="sale_reason" size="28"
-										style="color: rgb(255, 0, 0);" type="text" value="{$virtual.sale_reason}"></td>
+										style="color: rgb(255, 0, 0);" type="text" value="{$sale_reason}"></td>
 									<td>保持为空则表正常销售</td>
 								</tr>
 								<tr>
@@ -255,7 +239,7 @@
 									<td height="20" width="20%">名称</td>
 									<td width="10">：</td>
 									<td width="40%"><input name="name" size="28"
-										value="{$virtual.name}" type="text"></td>
+										value="{$name}" type="text"></td>
 									<td>产品显示的名称</td>
 								</tr>
 							
@@ -263,14 +247,14 @@
 									<td height="22">图片链接</td>
 									<td>：</td>
 									<td colspan="2"><input name="image" size="58"
-										value="{$virtual.image}" type="text"></td>
+										value="{$image}" type="text"></td>
 								</tr>
 
 								<tr>
 									<td height="22">简短说明</td>
 									<td>：</td>
 									<td colspan="2"><input name="short_description" size="58"
-										value="{$virtual.short_description}"
+										value="{$short_description}"
 										type="text"></td>
 								</tr>
 								<tr>
@@ -574,14 +558,14 @@
 								<tr>
 									<td height="22">空间大小<font color="#FF0000">*</font></td>
 									<td>：</td>
-									<td width="40%"><input name="size" size="23" value="{$virtual.size}"
+									<td width="40%"><input name="size" size="23" value="{$size}"
 										type="text"> M</td>
 									<td>主机空间容量</td>
 								</tr>
 								<tr>
 									<td height="22">并发连接数<font color="#FF0000">*</font></td>
 									<td>：</td>
-									<td width="40%"><input name="virtual.connection_count" size="23" value="{$virtual.connection_count}"
+									<td width="40%"><input name="connection_count" size="23" value="{$connection_count}"
 										type="text"> 个</td>
 									<td>指IIS并发连接数</td>
 								</tr>
@@ -589,14 +573,14 @@
 									<td height="22">可绑定域名数<font color="#FF0000">*</font></td>
 									<td>：</td>
 									<td width="40%"><input name="domain_count" size="23"
-										value="{$virtual.domain_count}" type="text"> 个</td>
+										value="{$domain_count}" type="text"> 个</td>
 									<td>指可以同时绑定多少个域名</td>
 								</tr>
 
 								<tr>
 									<td height="22">试用时间<font color="#FF0000">*</font></td>
 									<td>：</td>
-									<td><input name="trial_time" size="23" value="{$virtual.trial_time}" type="text">
+									<td><input name="trial_time" size="23" value="{$trial_time}" type="text">
 									天</td>
 									<td>主机试用天数,0表示不可试用</td>
 								</tr>
@@ -604,7 +588,7 @@
 									<td height="22">可放网站数目<font color="#FF0000">*</font></td>
 									<td>：</td>
 									<td width="40%"><input name="site_count" size="23"
-										value="{$virtual.site_count}" type="text"> 个</td>
+										value="{$site_count}" type="text"> 个</td>
 									<td>指可以同时放几个网站</td>
 								</tr>
 								<tr>
@@ -620,7 +604,7 @@
 									<td height="22">流量限制<font color="#FF0000">*</font></td>
 									<td>&nbsp;</td>
 									<td width="40%"><input name="flow" size="23"
-										value="{$virtual.flow}" type="text"> G（1G=1024M）</td>
+										value="{$flow}" type="text"> G（1G=1024M）</td>
 									<td>主机的月流量限制(0表不限制),当月超过限制将被自动停止WEB服务，第二个月第一天自动开启</td>
 								</tr>
 							</tbody>
@@ -640,7 +624,7 @@
 									<td height="22" width="20%">赠送产品<font color="#FF0000">*</font></td>
 									<td width="10">：</td>
 									<td><input name="free_gift"
-										value="{$virtual.free_gift}"></td>
+										value="{$free_gift}"></td>
 									<td>&nbsp;</td>
 								</tr>
 
