@@ -1,5 +1,5 @@
 <?php
-import("@.Model.VirtualModel");
+import("@.Action.SuperAdmin.VirtualAction");
 class IndexAction extends Action {
 
     public function index() {
@@ -30,53 +30,34 @@ class IndexAction extends Action {
     		$this->assign('type', $type);
           	$this->display();  		
     	}else if($type == "virtual"){
-    		$this->assign('type', $type);
-    		$virtualModel = M('Virtual');
-    		$map = $virtualModel->select(); 
-        	$this->assign('virtuals',$map);
-          	$this->display();      		
+             $virtualAction = new VirtualAction();
+             $virtualAction->pd_lst();     		
     	}
-
     }
-    
-    public function pd_tpe() {
-        $this->display();
-    }
-    
-    public function pd_r() {
-        $this->display();
-    }
-    
+ 
     public function pd_save() {
-    	$virtualModel = new VirtualModel();
-    	$id ="";
-    	$id = $_POST["id"];
-    	if($id == ""){
-                 // add
-                $virtualModel->create();
-                $virtualModel->add();   	  
-    	}else{
-                // update
-                $virtualModel->create();
-                $virtualModel->save(); 
-    	}	
-		redirect("pd_lst?type=virtual",2,"保存成功,将在2秒钟后自动跳转");
+        $type = $_GET["type"];
+        if($type == "virtual"){
+             $virtualAction = new VirtualAction();
+             $virtualAction->pd_save();     		
+    	}
     }
     
     public function pd_edt() {
-    	$id = $_GET["id"];
-    	if($id != ""){
-    		$condition['id'] = $id;
-    		$virtualModel = new VirtualModel();
-    		$record = $virtualModel->where($condition)->select();
-    	}
-        $this->assign('id',$id);
-        $this->assign('virtual',$record[0]);
-        $this->display();   
+         $id = $_GET["id"];
+         $type = $_GET["type"];
+        if($type == "virtual"){
+             $virtualAction = new VirtualAction();
+             $virtualAction->pd_edt($id);     		
+    	}   
     }
     
     public function pd_add() {
-        $this->display();   
+        $type = $_GET["type"];
+        if($type == "virtual"){
+             $virtualAction = new VirtualAction();
+             $virtualAction->pd_add();     		
+    	}
     }
 }
 

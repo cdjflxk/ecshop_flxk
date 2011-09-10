@@ -184,6 +184,37 @@ showurl("pdt_mng.asp?module=pdt%5Fdel&ptid="+ptid+"&gid="+gid);
 							style="color: red">请选择产品分类!</td>
 					</tr>
 					</eq>
+					<!-- 如果$type的值是virtual则输出虚拟主机 -->
+					<eq name="type" value="virtual">
+					<foreach name="virtuals" item="virtual">
+					<tr>
+						<td height="22" align="center" class="dudleyc2">{$virtual.id}</td>
+						<td align="left" class="dudleyc2"><a class="commonface"
+							href="javascript:showurl('pdt_edt.asp?g_prd=dxnet200_0807');">{$virtual.name}</a></td>
+						<td align="center" class="dudleyc2"><input type="checkbox"
+							checked="" value="dxnet200_0807" name="is_sale"></td>
+						<td align="center" class="dudleyc2">{$virtual.id}</td>
+						<td align="center" class="dudleyc2">{$virtual.size}</td>
+						<td align="center" class="dudleyc2">{$virtual.connection_count}</td>
+						<td align="left" class="dudleyc2">{$virtual.second_category}</td>
+						<td align="left" class="dudleyc2">{$virtual.top_categroy}</td>
+						<!--  <td  align=left class=dudleyc2> 
+		                <font color=#ff0000>实时</font> </td> -->
+						<td align="left" class="dudleyc2">{$virtual.status}</td>
+						<td align="center" class="dudleyc2"><a class="commonface"
+							href="javascript:showurl('pd_edt?id={$virtual.id}&type=virtual');">修改</a></td>
+					</tr>
+					</foreach>
+					</eq>
+				</tbody>
+			</table>
+			<br>
+			<!-- 如果$type的值是virtual则输出虚拟主机的编辑按钮 -->
+			<eq name="type" value="virtual">
+			<input type="button" name="Submit" value=" 确认销售选中的产品列表 "
+				onclick="javascript:return confirmit();"> <input
+				type="button" value="添加" onclick="javascript:showurl('pd_add?type=virtual');">
+			</eq>
 				
 		</form>
 		<tr>
