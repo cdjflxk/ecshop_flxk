@@ -12,7 +12,7 @@
  */
 class UserModel extends Model{
 	protected $trueTableName = 'xk_user'; 
-	
+        
      // check the pwd
     public function checkPwd($name,$pwd) {
   		$condition['name'] = $name;
