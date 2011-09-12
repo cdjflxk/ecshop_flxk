@@ -3,6 +3,22 @@
 <table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
   <tbody><tr>
     <td width="225" align="center" valign="top">
+  <present name="sessionName">
+  <table width="90%" cellspacing="0" cellpadding="0" border="0" align="center">
+      <tbody><tr>
+              <td>
+                  <!-- @User Login Form Tag -->
+                  <ul style="margin-top: 15px; line-height: 21px;">
+                      <li>用户：<font color="#000000">{$sessionName}</font></li>
+                      <li>级别：<font color="#000000">基础代理</font></li>
+                      <li><a href="{$__CommonAdmin__}index"><font color="#1F6030"><u>管理首页</u></font></a>&nbsp; &nbsp; &nbsp;<a href="{$__CommonAdmin__}loginOut"><font color="#1F6030"><u>退出系统</u></font></a></li>
+                  </ul>
+                  <!-- #User Login Form Tag -->
+              </td>
+          </tr>
+      </tbody>
+  </table>
+      <else />
     	<table width="225" border="0" cellspacing="0" cellpadding="0">
 	<form name="login_form" action="{$__CommonAdmin__}Index/login" method="post">
       <tbody><tr>
@@ -31,16 +47,13 @@
           <table width="191" height="37" border="0" align="center" cellpadding="0" cellspacing="0">
             <tbody><tr>
               <td width="11">&nbsp;</td>
-              <td width="93" align="right"><a href="http://www.flxkdns.com/members/usr_reg.asp"><img src="../Public/Home/images/register.gif" width="73" height="27"></a></td>
+              <td width="93" align="right"><a href="__URL__/register"><img src="../Public/Home/images/register.gif" width="73" height="27"></a></td>
               <td width="87" align="right"><a href="http://www.flxkdns.com/members/getpass.asp"><img src="../Public/Home/images/forget.gif" width="73" height="27"></a></td>
             </tr>
           </tbody></table></td>
-      </tr>
-      <input type="hidden" name="screenwidth"> 
-	  <input type="hidden" name="screenheight">
-    
+      </tr>   
     </tbody></table>
-    
+  </present>
       <table width="217" border="0" cellpadding="0" cellspacing="0" background="../Public/Home/images/postbg.gif">
         <tbody><tr>
           <td align="center" valign="top"><table width="90%" height="31" border="0" cellpadding="0" cellspacing="0">

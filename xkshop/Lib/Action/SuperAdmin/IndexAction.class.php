@@ -59,6 +59,14 @@ class IndexAction extends Action {
              $virtualAction->pd_add();     		
     	}
     }
+    
+    public function user_body() {
+        $user = M('User');
+        $condition['role_id'] = '2';
+        $userList = $user->where($condition)->select(); 
+        $this->assign('userList',$userList);
+        $this->display();   
+    }
 }
 
 ?>

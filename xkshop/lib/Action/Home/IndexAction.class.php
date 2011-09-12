@@ -1,11 +1,13 @@
 <?php
 import("@.Action.ModelAction.IndexModelAction");
 import("@.Model.VirtualModel");
+import("@.Model.UserModel");
 class IndexAction extends Action {
 
     public function index() {
         $indexModelAction = new IndexModelAction();
         $map = $indexModelAction->queryAllToSigleMap();
+        $this->assign('sessionName', $_SESSION['name']);
         $this->assign('title', $map['title']);
         $this->assign('keywords', $map['keywords']);
         $this->assign('description', $map['description']);
@@ -50,10 +52,17 @@ class IndexAction extends Action {
     }
     
     public function login() {
-        
         $this->display();
     }
-
+    public function register() {
+        $this->display();
+    }
+     public function registerAdd() {
+        $userModel = new UserModel();
+        $userModel->create();
+        $userModel->add();   	  	
+        redirect("index",2,"保存成功,将在2秒钟后自动跳转");
+    }
 }
 
 ?>
