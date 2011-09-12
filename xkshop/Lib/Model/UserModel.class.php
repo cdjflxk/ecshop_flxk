@@ -13,6 +13,11 @@
 class UserModel extends Model{
 	protected $trueTableName = 'xk_user'; 
         
+        public function __construct(){
+            parent::__construct();
+            $this->fields = $this->getDbFields();
+        }
+        
      // check the pwd
     public function checkPwd($name,$pwd) {
   		$condition['name'] = $name;
@@ -24,7 +29,7 @@ class UserModel extends Model{
         	return false;
         }
         
-        if($record['pwd'] == $pwd){
+        if($record['pass'] == $pwd){
             return true;
         }else{
         	//密码错误

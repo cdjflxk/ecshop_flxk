@@ -20,7 +20,7 @@ class IndexAction extends Action {
         $userModel = new UserModel();
         $isRight = $userModel->checkPwd($username, $pwd);
         if ($isRight) {
-            $_SESSION['name'] = $name;
+            $_SESSION['name'] = $username;
             redirect(index);
         } else {
             redirect(loginFail);
@@ -29,7 +29,6 @@ class IndexAction extends Action {
 
     public function loginOut() {
         if (array_key_exists('name', $_SESSION)) {
-            session_start();
             unset($_SESSION['name']);
         }
         header("Location:{$__Home__}/Index/index");

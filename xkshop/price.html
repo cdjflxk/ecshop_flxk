@@ -1,0 +1,156 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>价格总览--月夜星空软件工作室</title>
+<meta name="keywords" content="域名注册|网络实名|主机租赁|企业邮局|网站策划|企业邮局|主机托管|主机租用|服务器租用">
+<script>
+function NewAutomateExcel(atblData){
+window.status = "系统正在后台处理EXCEL数据,请稍候...";
+
+// 取得EXCEL对像.
+var oXL = new ActiveXObject("Excel.Application");
+
+// 取得工作表对像.
+var oWB = oXL.Workbooks.Add();
+var oSheet = oWB.ActiveSheet;
+var table = atblData;
+
+//取得工作表总行数
+var RowCount = table.rows.length;
+
+var ColCount = null;
+var RowSpan = null;
+var ColSpan = null;
+var BeginColChar = null;
+var EndColChar = null;
+var CurExcelCol = null;
+var CurExcelColValue = null;
+
+//循环各行各列导出表格内容至EXCEL中
+for (var i = 0; i < RowCount; i ++){
+window.status = "正在处理第 " + i + " 行/共 " + RowCount + " 行,请稍候...";
+
+//取得当前行的列数
+ColCount = table.rows(i).cells.length;
+CurExcelCol = 1;
+for (var j = 0; j < ColCount; j ++){
+RowSpan = table.rows(i).cells(j).rowSpan;
+ColSpan = table.rows(i).cells(j).colSpan;
+
+//得到EXCEL当前有效单元格
+oSheet.Cells(i + 1, CurExcelCol).value = "A";
+CurExcelColValue = oSheet.Cells(i + 1, CurExcelCol).value + "B";
+
+while (CurExcelColValue == "undefinedB"){
+CurExcelCol ++;
+
+oSheet.Cells(i + 1, CurExcelCol).value = "A";
+CurExcelColValue = oSheet.Cells(i + 1, CurExcelCol).value + "B";
+}
+
+//判断当前表格是否跨行跨列
+if ((RowSpan > 1) | (ColSpan > 1)){
+//取得起始单元格
+if (CurExcelCol > 26){
+CurExcelCol -= 26;
+BeginColChar = "A" + String.fromCharCode(64 + CurExcelCol);
+CurExcelCol += 26;
+}
+else {
+BeginColChar = String.fromCharCode(64 + CurExcelCol);
+}
+
+//取得结束单元格
+if ((CurExcelCol + ColSpan - 1) > 26){
+CurExcelCol -= 26;
+EndColChar = "A" + String.fromCharCode(64 + CurExcelCol + ColSpan - 1);
+CurExcelCol += 26;
+}
+else{
+EndColChar = String.fromCharCode(64 + CurExcelCol + ColSpan - 1);
+}
+
+oSheet.Range(BeginColChar + (i + 1) + ":" + EndColChar + (i + RowSpan)).Merge(false);
+
+//设置当前有效单元格的值
+oSheet.Cells(i + 1, CurExcelCol).value = table.rows(i).cells(j).innerText;
+CurExcelCol += ColSpan;
+}
+else {
+//取得起始单元格
+if (CurExcelCol > 26){
+CurExcelCol -= 26;
+BeginColChar = "A" + String.fromCharCode(64 + CurExcelCol);
+CurExcelCol += 26;
+}
+else {
+BeginColChar = String.fromCharCode(64 + CurExcelCol);
+}
+
+//取得结束单元格
+if ((CurExcelCol + ColSpan - 1) > 26){
+CurExcelCol -= 26;
+EndColChar = "A" + String.fromCharCode(64 + CurExcelCol + ColSpan - 1);
+CurExcelCol += 26;
+}
+else{
+EndColChar = String.fromCharCode(64 + CurExcelCol + ColSpan - 1);
+}
+
+//设置当前有效单元格的值
+oSheet.Cells(i + 1, CurExcelCol).value = table.rows(i).cells(j).innerText;
+CurExcelCol += 1;
+}
+
+//设置边框
+oSheet.Range(BeginColChar + (i + 1) + ":" + EndColChar + (i + RowSpan)).Borders(7).LineStyle = 1;
+oSheet.Range(BeginColChar + (i + 1) + ":" + EndColChar + (i + RowSpan)).Borders(8).LineStyle = 1;
+oSheet.Range(BeginColChar + (i + 1) + ":" + EndColChar + (i + RowSpan)).Borders(9).LineStyle = 1;
+oSheet.Range(BeginColChar + (i + 1) + ":" + EndColChar + (i + RowSpan)).Borders(10).LineStyle = 1;
+
+//设置对齐
+switch (table.rows(i).cells(j).currentStyle.textAlign.toUpperCase()){
+case "CENTER" :
+oSheet.Range(BeginColChar + (i + 1) + ":" + EndColChar + (i + RowSpan)).HorizontalAlignment = -4108;
+break;
+case "RIGHT" :
+oSheet.Range(BeginColChar + (i + 1) + ":" + EndColChar + (i + RowSpan)).HorizontalAlignment = -4152;
+break;
+default :
+oSheet.Range(BeginColChar + (i + 1) + ":" + EndColChar + (i + RowSpan)).HorizontalAlignment = -4131;
+}
+oSheet.Range(BeginColChar + (i + 1) + ":" + EndColChar + (i + RowSpan)).VerticalAlignment = -4108;
+}
+}
+
+oXL.Visible = true;
+oXL.UserControl = true;
+
+window.status = "导出EXCEL成功!";
+}
+</script>
+
+</head>
+<body >
+          <table border=1 id ='tablese' width="85%" align="center" border="0" cellpadding="0" cellspacing="0" height="73">         
+            <tbody>
+			<tr>
+              <td rowspan='2'>帐号:</td>
+              <td width="62%">ddddd</td>
+              <td  width="21%">ddddd</td>
+            </tr>
+            <tr>
+              <td class="blue">密码:</td>
+              <td colspan='2' >地对地导弹</td>
+              </tr>
+			
+        </tbody>
+		</table>
+          
+
+<table><tr><td><input name='sub' id='sub' type='button' value='调教' onclick="NewAutomateExcel('tablese')"; ></td></tr></table>
+
+
+</body></html>
