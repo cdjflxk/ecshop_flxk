@@ -11,7 +11,7 @@
  * @author Administrator
  */
 class VirtualModel extends Model{
-	protected $trueTableName = 'xk_virtual'; 
+	protected $trueTableName = 'xk_product_virtual'; 
         
      protected $_validate = array(
         array('name', 'require', '名称必填！'), //默认情况下用正则进行验证

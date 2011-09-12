@@ -2,432 +2,406 @@
 <!-- saved from url=(0039)http://www.flxkdns.com/umanage/menu.asp -->
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF8"><script language="javascript">
 
-function showmenuurl(url){
-		parent.parent.frm_bdy.location.href=url;
-}
-function showmenu(id)
-{
-for(i=1;i<=7;i++){
-	if(i!=id){
-		eval("menu"+i).style.display="none";
-	}
-}
-if(eval("menu"+id).style.display!="block"){
-	eval("menu"+id).style.display="block";
-}
-}
+    function showmenuurl(url){
+        parent.parent.frm_bdy.location.href=url;
+    }
+    function showmenu(id)
+    {
+        for(i=1;i<=7;i++){
+            if(i!=id){
+                eval("menu"+i).style.display="none";
+            }
+        }
+        if(eval("menu"+id).style.display!="block"){
+            eval("menu"+id).style.display="block";
+        }
+    }
 
-function showleftmenu(){
-	if (parent.parent.frm1.cols!="195,*"){
-		parent.parent.frm1.cols="195,*"
-	}
-	else{
-		parent.parent.frm1.cols="0,*"
-	}
-}
-</script>
-
-
+    function showleftmenu(){
+        if (parent.parent.frm1.cols!="195,*"){
+            parent.parent.frm1.cols="195,*"
+        }
+        else{
+            parent.parent.frm1.cols="0,*"
+        }
+    }
+        </script>
 
 
 
-<title>代理平台管理系统</title>
-<link href="../Public/SuperAdmin/css/style.css" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-
-	<div id="menu1" style="display: none; ">
-      <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tbody><tr>
-          <td valign="top">
-            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0">
-				<tbody><tr>
-				  <td height="25" align="center" class="menu_table">系统设置</td>
-				</tr>
-            </tbody></table>
-            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="f4f5f7" style="border:1px solid #99b9da; background:#edf3f9; margin-bottom:5px;">
-			  <tbody><tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/plt_mng/tep_idx.asp');" class="subMenu">模板切换预览</a><span class="newSpan">NEW</span></td>
-              </tr>
-              <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/plt_mng/index.asp');" class="subMenu">基本参数设置</a></td>
-              </tr>
-			  <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/plt_mng/dns_idx.asp');" class="subMenu">域名接口设置</a></td>
-              </tr>
-              <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/plt_mng/servicer.asp');" class="subMenu">客服列表设置</a></td>
-              </tr>
-			  <tr>
-			    <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/plt_mng/friendlink.asp');" class="subMenu">友情链接管理</a></td>
-		      </tr>
-
-              
-			  <!-- <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/plt_mng/uploadLogo.asp');" class="subMenu" >上传Logo图片</a></td>
-              </tr> 
-              <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/plt_mng/addFootCode.asp');" class="subMenu" >自定义网页底部代码</a></td>
-              </tr>-->
-             <!--新增诚聘英才链接-->
-               <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/plt_mng/cpyc.asp');" class="subMenu">诚聘英才信息发布</a>
-				</td>
-              </tr>
-			  
-			   <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('hlpmng/help_lst.asp');" class="subMenu">自定义帮助</a>
-				</td>
-              </tr>
-			  
-			  
-			  
-			  <!--end-->
-			</tbody></table>
-	  <table width="214" border="0" align="center" cellpadding="0" cellspacing="0">
-				<tbody><tr>
-				  <td height="25" align="center" class="menu_table">邮件发送设置</td>
-				</tr>
-            </tbody></table>
-			<table width="214" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="f4f5f7" style="border:1px solid #99b9da; background:#edf3f9; margin-bottom:5px;">
-              <tbody><tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/plt_mng/acc_edt.asp');" class="subMenu">邮件发送帐号</a></td>
-              </tr>
-              
-			   <!--新增邮件正文模板设置-->
-               <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/snd_mng/snd_cont_edt.asp');" class="subMenu">邮件正文设置</a>
-				</td>
-              </tr>
-			  <!--end-->
-
-			  <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/snd_mng/snd_edt.asp');" class="subMenu">邮件签名设置</a></td>
-              </tr>
-            </tbody></table>
-
-			<table width="214" border="0" align="center" cellpadding="0" cellspacing="0">
-				<tbody><tr>
-				  <td height="25" align="center" class="menu_table">财务相关设置</td>
-				</tr>
-            </tbody></table>
-            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="f4f5f7" style="border:1px solid #99b9da; background:#edf3f9; margin-bottom:5px;">
-              <tbody><tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/plt_mng/pay_idx.asp');" class="subMenu">付款帐号设置</a></td>
-              </tr>
-              <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/plt_mng/onl_idx.asp');" class="subMenu">在线支付接口</a><span class="newSpan">NEW</span></td>
-              </tr>
-            </tbody></table>
-
-			<table width="214" border="0" align="center" cellpadding="0" cellspacing="0">
-				<tbody><tr>
-				  <td height="25" align="center" class="menu_table">问题反馈系统</td>
-				</tr>
-            </tbody></table>
-            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="f4f5f7" style="border:1px solid #99b9da; background:#edf3f9; margin-bottom:5px;">
-			  <tbody><tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('artmng/wrd_set.asp');" class="subMenu">问题反馈设置</a><span class="newSpan">NEW</span></td>
-              </tr>
-            </tbody></table>
-
-            </td>
-        </tr>
-      </tbody></table>
-	</div>
-
-	<div id="menu2" style="display:block;">
-      <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tbody><tr>
-          <td valign="top">
-            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0">
-				<tbody><tr>
-				  <td height="25" align="center" class="menu_table">财务基本操作</td>
-				</tr>
-            </tbody></table>
-            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="f4f5f7" style="border:1px solid #99b9da; background:#edf3f9; margin-bottom:5px;">
-              <tbody><tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('fncmng/fnc_ruk.asp')" class="SubMenu">汇款入帐</a></td>
-              </tr>
-              <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('fncmng/fnc_tui.asp')" class="SubMenu">退款出帐</a></td>
-              </tr>
-              <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('fncmng/fnc_tui_ruk.asp')" class="SubMenu">退款入户</a></td>
-              </tr>
-              <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('fncmng/fnc_kou.asp')" class="SubMenu">业务扣款</a></td>
-              </tr>
-              <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('fncmng/fnc_fan.asp')" class="SubMenu">优惠返款</a></td>
-              </tr>
-              <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('fncmng/fnc_brw.asp')" class="SubMenu">资金借用</a></td>
-              </tr>
-              <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('fncmng/fnc_hua.asp')" class="SubMenu">借款归还</a></td>
-              </tr>
-			  <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('fncmng/fnc_don.asp')" class="SubMenu">资金冻结</a></td>
-              </tr>
-			  <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('fncmng/fnc_jie.asp')" class="SubMenu">解除冻结</a></td>
-              </tr>
-            </tbody></table>
-			<table width="214" border="0" align="center" cellpadding="0" cellspacing="0">
-				<tbody><tr>
-				  <td height="25" align="center" class="menu_table">财务流水查看</td>
-				</tr>
-            </tbody></table>
-            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="f4f5f7" style="border:1px solid #99b9da; background:#edf3f9; margin-bottom:5px;">
-              <tbody><tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('fncmng/fnc_lst.asp')" class="SubMenu">财务流水查看</a></td>
-              </tr>
-              <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('fncmng/onl_lst.asp')" class="SubMenu">在线支付查看</a></td>
-              </tr>
-			  <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('fncmng/onl_odr.asp')" class="SubMenu">支付单号查看</a></td>
-              </tr>
-            </tbody></table>
-			
-          </td>
-        </tr>
-      </tbody></table>
-	</div>
-
-	<div id="menu3" style="display: none; ">
-      <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tbody><tr>
-          <td valign="top">
-            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0">
-				<tbody><tr>
-				  <td height="25" align="center" class="menu_table">会员管理</td>
-				</tr>
-            </tbody></table>
-            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="f4f5f7" style="border:1px solid #99b9da; background:#edf3f9; margin-bottom:5px;">
-              <tbody><tr>
-                <td width="125" class="menu_td"><a href="javascript:showmenuurl('memmng/mem_lst.asp');" class="subMenu">全部用户</a></td>
-              </tr>
-			  
-			  <!--
-              <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('memmng/mem_lst.asp?querytype=1&qprc=-2');" class="subMenu" >代理用户</a></td>
-              </tr>
-			  -->
-			  
-              <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('memmng/index.asp');" class="subMenu">会员查询</a></td>
-              </tr>
-            </tbody></table>
-			
-          </td>
-        </tr>
-      </tbody></table>
-	</div>
-
-	<div id="menu4" style="display: none; ">
-      <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tbody><tr>
-          <td valign="top">
-            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0">
-				<tbody><tr>
-				  <td height="25" align="center" class="menu_table">已购买产品</td>
-				</tr>
-            </tbody></table>
-            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="f4f5f7" style="border:1px solid #99b9da; background:#edf3f9; margin-bottom:5px;">
-			  <tbody><tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('pdtmng/dme_mng/dme_lst.asp')" class="SubMenu">英文域名</a> </td>
-              </tr>
-			  <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('pdtmng/dmc_mng/dmc_lst.asp')" class="SubMenu">中文域名</a> </td>
-              </tr>
-              <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('pdtmng/hst_mng/hst_lst.asp');" class="subMenu">虚拟主机</a></td>
-              </tr>
-			  
-			  
-			  
-			  <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('pdtmng/ot5_mng/ot5_lst.asp');" class="subMenu">企业建站</a> </td>
-              </tr>
-			  
-			  <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('pdtmng/lce_mng/lce_lst.asp');" class="subMenu">商务授权</a> </td>
-              </tr>
-			  			  
-			  <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('pdtmng/ot8_mng/ot8_lst.asp');" class="subMenu">软件推广</a> </td>
-              </tr>
-			  
-              <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('pdtmng/sql_mng/sql_lst.asp');" class="subMenu">数据库</a></td>
-              </tr>
-			  <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('pdtmng/eml_mng/eml_lst.asp');" class="subMenu">企业邮局</a> </td>
-              </tr>
-			  <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('pdtmng/ot1_mng/ot1_lst.asp');" class="subMenu">智能加速</a> </td>
-              </tr>
-			  <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('pdtmng/ot2_mng/ot2_lst.asp');" class="subMenu">VPS</a> </td>
-              </tr>
-            </tbody></table>
-          </td>
-        </tr>
-      </tbody></table>
-	</div>
-
-	<div id="menu5" style="display: none; ">
-      <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tbody><tr>
-          <td valign="top">
-            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0">
-				<tbody><tr>
-				  <td height="25" align="center" class="menu_table">订单日志管理</td>
-				</tr>
-            </tbody></table>
-            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="f4f5f7" style="border:1px solid #99b9da; background:#edf3f9; margin-bottom:5px;">
-			  <tbody><tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('logmng/odr_lst.asp');" class="subMenu">订单列表</a> </td>
-              </tr>
-			  <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('logmng/aff_lst.asp');" class="subMenu">操作日志</a> </td>
-              </tr>
-              <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('logmng/log_lst.asp');" class="subMenu">登录日志</a></td>
-              </tr>
-            </tbody></table>
-			<table width="214" border="0" align="center" cellpadding="0" cellspacing="0">
-				<tbody><tr>
-				  <td height="25" align="center" class="menu_table">问题反馈系统</td>
-				</tr>
-            </tbody></table>
-            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="f4f5f7" style="border:1px solid #99b9da; background:#edf3f9; margin-bottom:5px;">
-			  <tbody><tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('artmng/wrd_lst.asp?qu1=0');" class="subMenu">未回复问题</a> </td>
-              </tr>
-			  <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('artmng/wrd_lst.asp?qu1=1');" class="subMenu">已回复问题</a> </td>
-              </tr>
-              <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('artmng/wrd_lst.asp');" class="subMenu">所有问题</a></td>
-              </tr>			 
-            </tbody></table>
-			<table width="214" border="0" align="center" cellpadding="0" cellspacing="0">
-				<tbody><tr>
-				  <td height="25" align="center" class="menu_table">新闻公告管理</td>
-				</tr>
-            </tbody></table>
-            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="f4f5f7" style="border:1px solid #99b9da; background:#edf3f9; margin-bottom:5px;">
-			  <tbody><tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('artmng/nws_lst.asp');" class="subMenu">站内公告管理</a> </td>
-              </tr>
-			  <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('artmng/art_lst.asp');" class="subMenu">行业新闻管理</a> </td>
-              </tr>
-            </tbody></table>
-			<table width="214" border="0" align="center" cellpadding="0" cellspacing="0">
-				<tbody><tr>
-				  <td height="25" align="center" class="menu_table">网站安全管理</td>
-				</tr>
-            </tbody></table>
-            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="f4f5f7" style="border:1px solid #99b9da; background:#edf3f9; margin-bottom:5px;">
-			  <tbody><tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/sys_mng/ip_lst.asp');" class="subMenu">IP封锁管理</a> </td>
-              </tr>
-            </tbody></table>
-          </td>
-        </tr>
-      </tbody></table>
-	</div>
-
-	<div id="menu6" style="display: none; ">
-      <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tbody><tr>
-          <td valign="top">
-            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0">
-				<tbody><tr>
-				  <td height="25" align="center" class="menu_table">产品管理</td>
-				</tr>
-            </tbody></table>
-            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="f4f5f7" style="border:1px solid #99b9da; background:#edf3f9; margin-bottom:5px;">
-			  <tbody><tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('{$__SuperAdmin__}Index/pd_lst?type=index');" class="subMenu">产品列表</a> </td>
-              </tr>
-
-              <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('{$__SuperAdmin__}Index/pd_tpe');" class="subMenu">产品分类</a></td>
-              </tr>
-              <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('{$__SuperAdmin__}Index/pd_rcm');" class="subMenu">产品首页推荐</a></td>
-              </tr>
-            </tbody></table>
-			<table width="214" border="0" align="center" cellpadding="0" cellspacing="0">
-				<tbody><tr>
-				  <td height="25" align="center" class="menu_table">价格等级管理</td>
-				</tr>
-            </tbody></table>
-            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="f4f5f7" style="border:1px solid #99b9da; background:#edf3f9; margin-bottom:5px;">
-              <tbody><tr>
-                <td width="125" class="menu_td"><a href="javascript:showmenuurl('sysmng/prc_mng/prc_lst.asp');" class="subMenu">产品价格修改</a></td>
-              </tr>
-              <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/prc_mng/prc_add.asp');" class="subMenu">价格等级添加</a></td>
-              </tr>
-            </tbody></table>
-			<table width="214" border="0" align="center" cellpadding="0" cellspacing="0">
-				<tbody><tr>
-				  <td height="25" align="center" class="menu_table">产品更新</td>
-				</tr>
-            </tbody></table>
-            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="f4f5f7" style="border:1px solid #99b9da; background:#edf3f9; margin-bottom:5px;">
-			  <tbody><tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('/umanage/sysmng/plt_mng/make_static.asp');" class="subMenu">产品信息静态化</a> </td>
-              </tr>
-			  <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/plt_mng/plt_scz.asp');" class="subMenu">产品同步更新</a> </td>
-              </tr>
-            </tbody></table>
-          </td>
-        </tr>
-      </tbody></table>
-	</div>
-
-	<div id="menu7" style="display: none; ">
-      <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tbody><tr>
-          <td valign="top">
-            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0">
-				<tbody><tr>
-				  <td height="25" align="center" class="menu_table">系统帮助</td>
-				</tr>
-            </tbody></table>
-            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="f4f5f7" style="border:1px solid #99b9da; background:#edf3f9; margin-bottom:5px;">
-			  <tbody><tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/hlp_mng/hlp_idx.asp');" class="subMenu">帮助信息</a> </td>
-              </tr>
-			  <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/hlp_mng/mapsite.asp');" class="subMenu">平台地图</a> </td>
-                
-                
-              </tr>
-              
-              <tr>
-                <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/hlp_mng/hlp_skin.html');" class="subMenu">模板文档结构</a> </td>
-  
-              </tr>
-            </tbody></table>
-          </td>
-        </tr>
-      </tbody></table>
-	</div>
-<script language="javascript" type="text/javascript">
-<!--
-	showmenu(2);
-//-->
-</script>
 
 
-</body></html>
+        <title>代理平台管理系统</title>
+        <link href="../Public/SuperAdmin/css/style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+
+        <div id="menu1" style="display: none; ">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody><tr>
+                        <td valign="top">
+                            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0">
+                                <tbody><tr>
+                                        <td height="25" align="center" class="menu_table">系统设置</td>
+                                    </tr>
+                                </tbody></table>
+                            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="f4f5f7" style="border:1px solid #99b9da; background:#edf3f9; margin-bottom:5px;">
+                                <tbody><tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/plt_mng/tep_idx.asp');" class="subMenu">模板切换预览</a><span class="newSpan">NEW</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/plt_mng/index.asp');" class="subMenu">基本参数设置</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/plt_mng/dns_idx.asp');" class="subMenu">域名接口设置</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/plt_mng/servicer.asp');" class="subMenu">客服列表设置</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/plt_mng/friendlink.asp');" class="subMenu">友情链接管理</a></td>
+                                    </tr>
+
+
+                                    <!-- <tr>
+                          <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/plt_mng/uploadLogo.asp');" class="subMenu" >上传Logo图片</a></td>
+                        </tr> 
+                        <tr>
+                          <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/plt_mng/addFootCode.asp');" class="subMenu" >自定义网页底部代码</a></td>
+                        </tr>-->
+                                    <!--新增诚聘英才链接-->
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/plt_mng/cpyc.asp');" class="subMenu">诚聘英才信息发布</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('hlpmng/help_lst.asp');" class="subMenu">自定义帮助</a>
+                                        </td>
+                                    </tr>
+
+
+
+                                    <!--end-->
+                                </tbody></table>
+                            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0">
+                                <tbody><tr>
+                                        <td height="25" align="center" class="menu_table">邮件发送设置</td>
+                                    </tr>
+                                </tbody></table>
+                            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="f4f5f7" style="border:1px solid #99b9da; background:#edf3f9; margin-bottom:5px;">
+                                <tbody><tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/plt_mng/acc_edt.asp');" class="subMenu">邮件发送帐号</a></td>
+                                    </tr>
+
+                                    <!--新增邮件正文模板设置-->
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/snd_mng/snd_cont_edt.asp');" class="subMenu">邮件正文设置</a>
+                                        </td>
+                                    </tr>
+                                    <!--end-->
+
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/snd_mng/snd_edt.asp');" class="subMenu">邮件签名设置</a></td>
+                                    </tr>
+                                </tbody></table>
+
+                            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0">
+                                <tbody><tr>
+                                        <td height="25" align="center" class="menu_table">财务相关设置</td>
+                                    </tr>
+                                </tbody></table>
+                            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="f4f5f7" style="border:1px solid #99b9da; background:#edf3f9; margin-bottom:5px;">
+                                <tbody><tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/plt_mng/pay_idx.asp');" class="subMenu">付款帐号设置</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/plt_mng/onl_idx.asp');" class="subMenu">在线支付接口</a><span class="newSpan">NEW</span></td>
+                                    </tr>
+                                </tbody></table>
+
+                            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0">
+                                <tbody><tr>
+                                        <td height="25" align="center" class="menu_table">问题反馈系统</td>
+                                    </tr>
+                                </tbody></table>
+                            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="f4f5f7" style="border:1px solid #99b9da; background:#edf3f9; margin-bottom:5px;">
+                                <tbody><tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('artmng/wrd_set.asp');" class="subMenu">问题反馈设置</a><span class="newSpan">NEW</span></td>
+                                    </tr>
+                                </tbody></table>
+
+                        </td>
+                    </tr>
+                </tbody></table>
+        </div>
+
+        <div id="menu2" style="display:block;">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody><tr>
+                        <td valign="top">
+                            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0">
+                                <tbody><tr>
+                                        <td height="25" align="center" class="menu_table">财务基本操作</td>
+                                    </tr>
+                                </tbody></table>
+                            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="f4f5f7" style="border:1px solid #99b9da; background:#edf3f9; margin-bottom:5px;">
+                                <tbody><tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('fncmng/fnc_ruk.asp')" class="SubMenu">汇款入帐</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('fncmng/fnc_tui.asp')" class="SubMenu">退款出帐</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('fncmng/fnc_tui_ruk.asp')" class="SubMenu">退款入户</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('fncmng/fnc_kou.asp')" class="SubMenu">业务扣款</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('fncmng/fnc_fan.asp')" class="SubMenu">优惠返款</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('fncmng/fnc_brw.asp')" class="SubMenu">资金借用</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('fncmng/fnc_hua.asp')" class="SubMenu">借款归还</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('fncmng/fnc_don.asp')" class="SubMenu">资金冻结</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('fncmng/fnc_jie.asp')" class="SubMenu">解除冻结</a></td>
+                                    </tr>
+                                </tbody></table>
+                            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0">
+                                <tbody><tr>
+                                        <td height="25" align="center" class="menu_table">财务流水查看</td>
+                                    </tr>
+                                </tbody></table>
+                            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="f4f5f7" style="border:1px solid #99b9da; background:#edf3f9; margin-bottom:5px;">
+                                <tbody><tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('fncmng/fnc_lst.asp')" class="SubMenu">财务流水查看</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('fncmng/onl_lst.asp')" class="SubMenu">在线支付查看</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('fncmng/onl_odr.asp')" class="SubMenu">支付单号查看</a></td>
+                                    </tr>
+                                </tbody></table>
+
+                        </td>
+                    </tr>
+                </tbody></table>
+        </div>
+
+        <div id="menu3" style="display: none; ">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody><tr>
+                        <td valign="top">
+                            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0">
+                                <tbody><tr>
+                                        <td height="25" align="center" class="menu_table">会员管理</td>
+                                    </tr>
+                                </tbody></table>
+                            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="f4f5f7" style="border:1px solid #99b9da; background:#edf3f9; margin-bottom:5px;">
+                                <tbody><tr>
+                                        <td width="125" class="menu_td"><a href="javascript:showmenuurl('memmng/mem_lst.asp');" class="subMenu">全部用户</a></td>
+                                    </tr>
+
+                                    <!--
+                        <tr>
+                          <td align="left" class="menu_td"><a href="javascript:showmenuurl('memmng/mem_lst.asp?querytype=1&qprc=-2');" class="subMenu" >代理用户</a></td>
+                        </tr>
+                                    -->
+
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('memmng/index.asp');" class="subMenu">会员查询</a></td>
+                                    </tr>
+                                </tbody></table>
+
+                        </td>
+                    </tr>
+                </tbody></table>
+        </div>
+
+        <div id="menu4" style="display: none; ">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody><tr>
+                        <td valign="top">
+                            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0">
+                                <tbody><tr>
+                                        <td height="25" align="center" class="menu_table">已购买产品</td>
+                                    </tr>
+                                </tbody></table>
+                            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="f4f5f7" style="border:1px solid #99b9da; background:#edf3f9; margin-bottom:5px;">
+                                <tbody><tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('pdtmng/dme_mng/dme_lst.asp')" class="SubMenu">英文域名</a> </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('pdtmng/dmc_mng/dmc_lst.asp')" class="SubMenu">中文域名</a> </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('pdtmng/hst_mng/hst_lst.asp');" class="subMenu">虚拟主机</a></td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('pdtmng/ot5_mng/ot5_lst.asp');" class="subMenu">企业建站</a> </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('pdtmng/lce_mng/lce_lst.asp');" class="subMenu">商务授权</a> </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('pdtmng/ot8_mng/ot8_lst.asp');" class="subMenu">软件推广</a> </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('pdtmng/sql_mng/sql_lst.asp');" class="subMenu">数据库</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('pdtmng/eml_mng/eml_lst.asp');" class="subMenu">企业邮局</a> </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('pdtmng/ot1_mng/ot1_lst.asp');" class="subMenu">智能加速</a> </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('pdtmng/ot2_mng/ot2_lst.asp');" class="subMenu">VPS</a> </td>
+                                    </tr>
+                                </tbody></table>
+                        </td>
+                    </tr>
+                </tbody></table>
+        </div>
+
+        <div id="menu5" style="display: none; ">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody><tr>
+                        <td valign="top">
+                            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0">
+                                <tbody><tr>
+                                        <td height="25" align="center" class="menu_table">订单日志管理</td>
+                                    </tr>
+                                </tbody></table>
+                            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="f4f5f7" style="border:1px solid #99b9da; background:#edf3f9; margin-bottom:5px;">
+                                <tbody><tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('logmng/odr_lst.asp');" class="subMenu">订单列表</a> </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('logmng/aff_lst.asp');" class="subMenu">操作日志</a> </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('logmng/log_lst.asp');" class="subMenu">登录日志</a></td>
+                                    </tr>
+                                </tbody></table>
+                            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0">
+                                <tbody><tr>
+                                        <td height="25" align="center" class="menu_table">问题反馈系统</td>
+                                    </tr>
+                                </tbody></table>
+                            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="f4f5f7" style="border:1px solid #99b9da; background:#edf3f9; margin-bottom:5px;">
+                                <tbody><tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('artmng/wrd_lst.asp?qu1=0');" class="subMenu">未回复问题</a> </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('artmng/wrd_lst.asp?qu1=1');" class="subMenu">已回复问题</a> </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('artmng/wrd_lst.asp');" class="subMenu">所有问题</a></td>
+                                    </tr>			 
+                                </tbody></table>
+                            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0">
+                                <tbody><tr>
+                                        <td height="25" align="center" class="menu_table">新闻公告管理</td>
+                                    </tr>
+                                </tbody></table>
+                            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="f4f5f7" style="border:1px solid #99b9da; background:#edf3f9; margin-bottom:5px;">
+                                <tbody><tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('artmng/nws_lst.asp');" class="subMenu">站内公告管理</a> </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('artmng/art_lst.asp');" class="subMenu">行业新闻管理</a> </td>
+                                    </tr>
+                                </tbody></table>
+                            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0">
+                                <tbody><tr>
+                                        <td height="25" align="center" class="menu_table">网站安全管理</td>
+                                    </tr>
+                                </tbody></table>
+                            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="f4f5f7" style="border:1px solid #99b9da; background:#edf3f9; margin-bottom:5px;">
+                                <tbody><tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/sys_mng/ip_lst.asp');" class="subMenu">IP封锁管理</a> </td>
+                                    </tr>
+                                </tbody></table>
+                        </td>
+                    </tr>
+                </tbody></table>
+        </div>
+
+        <div id="menu6" style="display: none; ">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody><tr>
+                        <td valign="top">
+                            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0">
+                                <tbody><tr>
+                                        <td height="25" align="center" class="menu_table">产品管理</td>
+                                    </tr>
+                                </tbody></table>
+                            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="f4f5f7" style="border:1px solid #99b9da; background:#edf3f9; margin-bottom:5px;">
+                                <tbody><tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('{$__SuperAdmin__}Index/pd_lst?type=index');" class="subMenu">产品列表</a> </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('{$__SuperAdmin__}Index/pd_tpe');" class="subMenu">产品分类</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('{$__SuperAdmin__}Index/pd_rcm');" class="subMenu">产品首页推荐</a></td>
+                                    </tr>
+                                </tbody></table>
+                        </td>
+                    </tr>
+                </tbody></table>
+        </div>
+
+        <div id="menu7" style="display: none; ">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody><tr>
+                        <td valign="top">
+                            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0">
+                                <tbody><tr>
+                                        <td height="25" align="center" class="menu_table">系统帮助</td>
+                                    </tr>
+                                </tbody></table>
+                            <table width="214" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="f4f5f7" style="border:1px solid #99b9da; background:#edf3f9; margin-bottom:5px;">
+                                <tbody><tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/hlp_mng/hlp_idx.asp');" class="subMenu">帮助信息</a> </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/hlp_mng/mapsite.asp');" class="subMenu">平台地图</a> </td>
+
+
+                                    </tr>
+
+                                    <tr>
+                                        <td align="left" class="menu_td"><a href="javascript:showmenuurl('sysmng/hlp_mng/hlp_skin.html');" class="subMenu">模板文档结构</a> </td>
+
+                                    </tr>
+                                </tbody></table>
+                        </td>
+                    </tr>
+                </tbody></table>
+        </div>
+        <script language="javascript" type="text/javascript">
+            <!--
+            showmenu(2);
+            //-->
+        </script>
+
+
+    </body></html>

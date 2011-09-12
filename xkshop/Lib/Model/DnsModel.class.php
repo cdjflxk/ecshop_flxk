@@ -10,8 +10,8 @@
  *
  * @author Administrator
  */
-class VirtualModel extends Model{
-	protected $trueTableName = 'xk_dns'; 
+class DnsModel extends Model{
+	protected $trueTableName = 'xk_product_dns'; 
         
      protected $_validate = array(
         array('name', 'require', '名称必填！'), //默认情况下用正则进行验证
