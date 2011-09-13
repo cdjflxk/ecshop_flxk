@@ -22,6 +22,7 @@ class IndexAction extends Action {
     	$this->assign('__SuperAdmin__', __SuperAdmin__);
         $this->display();
     }
+    
     public function bottom() {
         $this->display();
     }
