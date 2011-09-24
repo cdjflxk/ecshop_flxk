@@ -12,10 +12,8 @@ class VirtualAction extends Action {
         $this->display('Virtual/pd_lst');
     }
 
-    public function pd_save() {
+    public function pd_save($id) {
         $virtualModel = new VirtualModel();
-        $id = "";
-        $id = $_POST["id"];
         if ($id == "") {
             // add
             $virtualModel->create();
@@ -25,7 +23,7 @@ class VirtualAction extends Action {
             $virtualModel->create();
             $virtualModel->save();
         }
-        redirect("Virtual/pd_lst?type=virtual", 2, "保存成功,将在2秒钟后自动跳转");
+        $this->pd_lst();
     }
 
     public function pd_edt($id) {

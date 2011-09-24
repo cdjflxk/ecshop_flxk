@@ -1,5 +1,6 @@
 <?php
 import("@.Action.SuperAdmin.VirtualAction");
+import("@.Action.SuperAdmin.DnsAction");
 class IndexAction extends Action {
 
     public function index() {
@@ -32,15 +33,22 @@ class IndexAction extends Action {
     	}else if($type == "virtual"){
              $virtualAction = new VirtualAction();
              $virtualAction->pd_lst();     		
+    	}else if($type == "dns"){
+             $dnsAction = new DnsAction();
+             $dnsAction->pd_lst();     		
     	}
     }
  
     public function pd_save() {
         $type = $_GET["type"];
+        $id = $_POST["id"];
         if($type == "virtual"){
              $virtualAction = new VirtualAction();
-             $virtualAction->pd_save();     		
-    	}
+             $virtualAction->pd_save($id);     		
+    	}else if($type == "dns"){
+             $dnsAction = new DnsAction();
+             $dnsAction->pd_save($id);                
+        }
     }
     
     public function pd_edt() {
@@ -49,6 +57,9 @@ class IndexAction extends Action {
         if($type == "virtual"){
              $virtualAction = new VirtualAction();
              $virtualAction->pd_edt($id);     		
+    	} else if($type == "dns"){
+             $dnsAction = new DnsAction();
+             $dnsAction->pd_edt($id);     		
     	}   
     }
     
@@ -57,6 +68,9 @@ class IndexAction extends Action {
         if($type == "virtual"){
              $virtualAction = new VirtualAction();
              $virtualAction->pd_add();     		
+    	}else if($type == "dns"){
+             $dnsAction = new DnsAction();
+             $dnsAction->pd_add();     		
     	}
     }
     

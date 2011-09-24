@@ -10,9 +10,9 @@
 // +----------------------------------------------------------------------
 
 //定义模块地址
-define('__CommonAdmin__','http://localhost/flxksoft/ecshop_flxk/xkshop/index.php/CommonAdmin/');
-define('__Home__','http://localhost/flxksoft/ecshop_flxk/xkshop/index.php/');
-define('__SuperAdmin__','http://localhost/flxksoft/ecshop_flxk/xkshop/index.php/SuperAdmin/');
+define('__CommonAdmin__','http://localhost/ecshop_flxk/xkshop/index.php/CommonAdmin/');
+define('__Home__','http://localhost/ecshop_flxk/xkshop/index.php/');
+define('__SuperAdmin__','http://localhost/ecshop_flxk/xkshop/index.php/SuperAdmin/');
 //在调试 模式下不生成项目的核心缓存
 define('NO_CACHE_RUNTIME',True);
 // 定义ThinkPHP框架路径
