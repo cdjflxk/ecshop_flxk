@@ -1,0 +1,191 @@
+
+<!-- saved from url=(0057)http://www.flxkdns.com/umanage/sysmng/pdt_mng/pdt_lst.asp -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link id="style_sheet" href="../Public/SuperAdmin/css/normal.css"
+	type="text/css" rel="stylesheet">
+<script language="javascript">
+function showurl(url)
+{
+if (top.showurlinfrm_dtl)
+{
+if ( ! top.canResize )
+			{
+				parent.parent.frm_btm.chgfrm() ;
+				parent.frm_dtl.location.href=url;
+			}
+else
+parent.frm_dtl.location.href=url;			
+}
+else
+location.href=url;
+}
+function confirmit()
+{
+if(confirm("是否确认此操作？"))
+return true;
+else
+return false;
+}
+</script>
+</head>
+<body topmargin="0" marginheight="0" leftmargin="0" marginwidth="0">
+<table width="95%" border="0" cellspacing="0" cellpadding="0">
+	<tbody>
+		<tr>
+			<td height="5" style="line-height: 1px; font-size: 1px;">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+
+
+<script language="javascript">
+function checkAll()
+  {
+    for (var i=0;i<document.log_form.elements.length;i++)
+    {
+      var e = document.log_form.elements[i];
+      var boolValue = document.log_form.selectAll.checked;
+      if (e.name != 'selectAll')
+	  {
+        e.checked = boolValue;
+	  }
+    }
+  }
+function confirmit(){
+	var sellprdlist='';
+	var notsellprdlist='';
+	var theform=document.log_form;
+    for (var i=0;i<theform.selllist.length;i++)
+    {
+      var e = theform.selllist[i];
+      if (e.name != 'selectAll')
+	  {
+        if(e.checked==true){
+			sellprdlist=sellprdlist+e.value+',';
+		}else{
+			notsellprdlist=notsellprdlist+e.value+',';
+		}
+	  }
+    }
+	theform.sellprdlist.value=sellprdlist;
+	theform.notsellprdlist.value=notsellprdlist;
+	//alert(sellprdlist);
+	//alert(notsellprdlist);
+	theform.submit();
+}
+</script>
+
+<script language="javascript">
+function ifdel(ptid,gid)
+{
+if(confirm("提示：是否确认删除！"))
+showurl("pdt_mng.asp?module=pdt%5Fdel&ptid="+ptid+"&gid="+gid);
+}
+</script>
+<table cellspacing="2" cellpadding="0" width="100%" border="0">
+	<tbody>
+		<tr>
+			<td colspan="2" valign="middle">
+			<table class="line" cellspacing="0" cellpadding="0" width="98%"
+				border="0" align="center">
+				<tbody>
+					<tr>
+						<td valign="bottom" width="25%" height="20"><font
+							color="#000000" class="ddropshadow"><b><span
+							class="enbold"><strong>产品列表</strong></span></b></font></td>
+						<td valign="bottom" nowrap="" align="right" width="75%">&nbsp;</td>
+					</tr>
+					<tr>
+						<td align="middle" width="100%" colspan="2" height="5"></td>
+					</tr>
+					<tr>
+						<td align="middle" width="100%" colspan="2" height="2"
+							class="menuline"></td>
+					</tr>
+				</tbody>
+			</table>
+			<div
+				style="margin: 10px; padding: 10px; border: 1px #FF9000 solid; background: #FFF9F9">[提示]：产品信息修改后，必须重新生成系统静态配置文件才能生效！<a
+				href="http://www.flxkdns.com/umanage/sysmng/plt_mng/make_static.asp">点此立即生成系统静态配置</a></div>
+			<br>
+			</td>
+		</tr>
+		<tr>
+			<td height="28" colspan="2" align="center" valign="top">
+			<div align="center">
+                      <!-- 公共的产品导航-->     
+                      <include file="./Tpl/default/SuperAdmin/lib/product_nav.htm" />
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tbody>
+					<tr>
+						<td height="8"></td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			<br>
+			<form action="pd_add" method="post" name="log_form">
+			<table border="0" width="98%" align="center" cellpadding="0"
+				cellspacing="1" class="dudb">
+				<tbody>
+					<tr>
+						<td height="20" align="center" width="6%" class="dudleyc">序号</td>
+						<td align="center" width="20%" class="dudleyc">名称</td>
+						<td align="center" class="dudleyc">销售<input type="checkbox"
+							name="selectAll" onclick="return checkAll();" value="ON"
+							class="chkall"></td>
+
+						<td align="center" width="8%" class="dudleyc">编号</td>
+						<td align="center" width="10%" class="dudleyc">DNS解析条数</td>
+						<td align="center" width="10%" class="dudleyc">注册接口商</td>
+						<td align="center" width="12%" class="dudleyc">二级分类</td>
+						<td align="center" width="12%" class="dudleyc">顶级分类</td>
+						<!-- <td  align=center width="5%" class=dudleyc>开通</td> -->
+						<td align="center" width="9%" class="dudleyc">状态</td>
+						<td align="center" class="dudleyc">管理</td>
+					</tr>
+					<foreach name="dnss" item="dns">
+					<tr>
+						<td height="22" align="center" class="dudleyc2">{$dns.id}</td>
+						<td align="left" class="dudleyc2"><a class="commonface"
+							href="javascript:showurl('pdt_edt.asp?g_prd=dxnet200_0807');">{$dns.name}</a></td>
+						<td align="center" class="dudleyc2"><input type="checkbox"
+							checked="" value="dxnet200_0807" name="is_sale"></td>
+						<td align="center" class="dudleyc2">{$dns.type}</td>
+						<td align="center" class="dudleyc2">{$dns.dns_count}</td>
+						<td align="center" class="dudleyc2">{$dns.registrar}</td>
+						<td align="left" class="dudleyc2">{$dns.second_category}</td>
+						<td align="left" class="dudleyc2">{$dns.top_categroy}</td>
+						<!--  <td  align=left class=dudleyc2> 
+		                <font color=#ff0000>实时</font> </td> -->
+						<td align="left" class="dudleyc2">{$dns.status}</td>
+						<td align="center" class="dudleyc2"><a class="commonface"
+							href="javascript:showurl('pd_edt?id={$dns.id}&type=dns');">修改</a></td>
+					</tr>
+					</foreach>
+				</tbody>
+			</table>
+			<br>
+
+			<input type="button" name="Submit" value=" 确认销售选中的产品列表 "
+				onclick="javascript:return confirmit();"> <input
+				type="button" value="添加" onclick="javascript:showurl('pd_add?type=dns');">
+				
+		</form>
+		<tr>
+			<td height="20" colspan="2" align="center" valign="top">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+
+
+
+
+
+</body>
+</html>

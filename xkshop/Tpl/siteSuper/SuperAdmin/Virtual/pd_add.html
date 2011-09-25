@@ -1,0 +1,627 @@
+<!-- include virtual="/umanage/sysmng/prc_mng/checkPwd.asp" -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link id="style_sheet" href="../Public/SuperAdmin/css/normal.css"
+	type="text/css" rel="stylesheet">
+<script language="JavaScript">
+	function loadForm() {
+		editor.location.reload();
+		return true;
+	}
+
+	function loadeditor() {
+		editor.HtmlEdit.document.body.innerHTML = document.myform.Content.value;
+	}
+	function editcmd() {
+		if (editor.EditMode.checked == true)
+			document.myform.Content.value = editor.HtmlEdit.document.body.innerText;
+		else
+			document.myform.Content.value = editor.HtmlEdit.document.body.innerHTML;
+		return true;
+
+	}
+</script>
+<script src="../Public/SuperAdmin/htmlarea/dialog.js"></script>
+<script src="../Public/SuperAdmin/htmlarea/popupwin.js"></script>
+<script src="../Public/SuperAdmin/htmlarea/en_002.js"></script>
+</head>
+<body style="font-size: 9pt; border: 2px groove;" topmargin="0"
+	leftmargin="0" onload="javascipt:setTimeout('loadForm()',200);"
+	marginheight="0" marginwidth="0">
+
+<script language="javascript">
+	function toselected() {
+		if (myform.g_tag.options(myform.g_tag.options.selectedIndex).value == "dmd"
+				|| myform.g_tag.options(myform.g_tag.options.selectedIndex).value == "dmcnd") {
+			domainreg.style.display = "none";
+			domaindel.style.display = "block";
+		} else {
+			domainreg.style.display = "block";
+			domaindel.style.display = "none";
+		}
+	}
+</script>
+
+<script type="text/javascript">
+	_editor_lang = "en";
+	_editor_url = "../Public/SuperAdmin/htmlarea/";
+</script>
+<script type="text/javascript"
+	src="../Public/SuperAdmin/htmlarea/htmlarea.js"></script>
+<style type="text/css">
+@import url(../Public/SuperAdmin/css/htmlarea.css);
+</style>
+<script type="text/javascript">
+	HTMLArea.loadPlugin("SpellChecker");
+	var editor = null;
+	window.onload = function initEditor() {
+
+		editor = new HTMLArea("Content");
+
+		// register the SpellChecker plugin
+		editor.registerPlugin(SpellChecker);
+
+		editor.generate();
+		return false;
+	}
+</script>
+<script type="text/javascript"
+	src="../Public/SuperAdmin/htmlarea/spell-checker.js"></script>
+<script type="text/javascript" src="../Public/SuperAdmin/htmlarea/en.js"></script>
+
+
+<table border="0" cellpadding="0" cellspacing="2" width="100%">
+	<tbody>
+		<tr>
+			<td colspan="2" align="center" valign="middle">
+			<table class="line" align="center" border="0" cellpadding="0"
+				cellspacing="0" width="98%">
+				<tbody>
+					<tr>
+						<td height="20" valign="bottom" width="25%"><font
+							class="ddropshadow" color="#000000"><b><span
+							class="enbold"><strong>产品修改</strong></span></b></font></td>
+						<td align="right" nowrap="nowrap" valign="bottom" width="75%">&nbsp;
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center" height="5" width="100%"></td>
+					</tr>
+					<tr>
+						<td colspan="2" class="menuline" align="center" height="2"
+							width="100%"></td>
+					</tr>
+				</tbody>
+			</table>
+			<br>
+			<table bordercolordark="#FFFFFF" align="center" border="0"
+				cellpadding="0" cellspacing="0" height="24" width="95%">
+				<tbody>
+					<tr align="center">
+						<td align="center" height="22">
+                                                  <!-- 公共的产品导航-->     
+                                                  <include file="./Tpl/default/SuperAdmin/lib/product_nav.htm" />
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<br>
+		<form action="pd_save?type=virtual" method="post" name="myform">
+		<tr>
+			<td colspan="2" height="28" valign="top">
+			<table class="dudtb" align="center" border="0" cellpadding="10"
+				cellspacing="0" width="80%">
+				<tbody>
+					<tr>
+						<td><b>基本信息</b></td>
+					</tr>
+					<tr>
+						<td class="datagroup">
+						<table class="dudtb" border="0" cellpadding="0" cellspacing="0"
+							width="98%">
+							<tbody>
+								<tr>
+									<td height="22">产品二级分类</td>
+									<td>：</td>
+									<td><select name="second_category">
+										<option value="全能主机">全能主机</option>
+										<option value="57">静态主机</option>
+										<option value="58">.NET主机</option>
+										<option value="LINUX主机" selected="selected">LINUX主机</option>
+										<option value="64">JSP主机</option>
+										<option value="12">双线全能主机</option>
+										<option value="18">双线静态主机</option>
+										<option value="50">双线.NET主机</option>
+										<option value="14">双线LINUX主机</option>
+										<option value="20">双线JSP主机</option>
+										<option value="17">特色功能主机</option>
+										<option value="96">网店主机</option>
+										<option value="81">香港.NET主机</option>
+										<option value="82">香港JSP主机</option>
+										<option value="83">香港LINUX主机</option>
+										<option value="84">香港网店主机</option>
+										<option value="85">香港全能主机</option>
+										<option value="86">美国全能主机</option>
+										<option value="87">美国LINUX主机</option>
+										<option value="88">美国JSP主机</option>
+										<option value="89">美国.NET主机</option>
+									</select></td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+								</tr>
+								<tr>
+									<td height="22">市场价/单位</td>
+									<td>：</td>
+									<td><input name="market_price" size="10" value="{$market_price}" type="text">
+									元每 <select name="price_unit">
+										<option value="0">天</option>
+										<option value="1">周</option>
+										<option value="2">月</option>
+										<option value="3">季</option>
+										<option value="4">半年</option>
+										<option value="5" selected="selected">年</option>
+										<option value="6">份</option>
+										<option value="7">套</option>
+									</select></td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td height="22">注册会员的折扣</td>
+									<td>：</td>
+									<td><input name="discount" size="28" value="{$discount}" type="text">
+									</td>
+									<td>注册会员的折扣</td>
+								</tr>
+								<tr>
+									<td height="22">排列顺序</td>
+									<td>：</td>
+									<td><input name="order" size="28" value="{$order}" type="text">
+									</td>
+									<td>页面的排列顺序:从 1 - 100</td>
+								</tr>
+								<tr>
+									<td height="22" width="20%">是否选择销售</td>
+									<td width="10">：</td>
+									<td width="40%"><input name="is_sale" value="1"
+										checked="checked" type="radio">销售 <input value="0"
+										name="is_sale" type="radio">不销售</td>
+									<td>本站是否销售此产品</td>
+								</tr>
+								<tr>
+									<td height="22">商品是否销售原因</td>
+									<td>：</td>
+									<td><input name="sale_reason" size="28"
+										style="color: rgb(255, 0, 0);" type="text" value="{$sale_reason}"></td>
+									<td>保持为空则表正常销售</td>
+								</tr>
+								<tr>
+
+									<td height="20" width="20%">名称</td>
+									<td width="10">：</td>
+									<td width="40%"><input name="name" size="28"
+										value="{$name}" type="text"></td>
+									<td>产品显示的名称</td>
+								</tr>
+							
+								<tr>
+									<td height="22">图片链接</td>
+									<td>：</td>
+									<td colspan="2"><input name="image" size="58"
+										value="{$image}" type="text"></td>
+								</tr>
+
+								<tr>
+									<td height="22">简短说明</td>
+									<td>：</td>
+									<td colspan="2"><input name="short_description" size="58"
+										value="{$short_description}"
+										type="text"></td>
+								</tr>
+								<tr>
+									<td height="25">&nbsp;</td>
+									<td height="22">&nbsp;</td>
+
+								</tr>
+								<tr>
+									<td height="22">详细说明</td>
+									<td>：</td>
+									<td colspan="2">
+
+									<div class="htmlarea">
+									<div class="toolbar">
+									<table border="0px" cellpadding="0px" cellspacing="0px">
+										<tbody>
+											<tr>
+												<td><select>
+													<option selected="selected"
+														value="arial,helvetica,sans-serif">Arial</option>
+													<option value="courier new,courier,monospace">Courier
+													New</option>
+													<option value="georgia,times new roman,times,serif">Georgia</option>
+													<option value="tahoma,arial,helvetica,sans-serif">Tahoma</option>
+													<option value="times new roman,times,serif">Times
+													New Roman</option>
+													<option value="verdana,arial,helvetica,sans-serif">Verdana</option>
+													<option value="impact">impact</option>
+													<option value="wingdings">WingDings</option>
+												</select></td>
+												<td>
+												<div class="space"></div>
+												</td>
+												<td><select>
+													<option selected="selected" value="1">1 (8 pt)</option>
+													<option value="2">2 (10 pt)</option>
+													<option value="3">3 (12 pt)</option>
+													<option value="4">4 (14 pt)</option>
+													<option value="5">5 (18 pt)</option>
+													<option value="6">6 (24 pt)</option>
+													<option value="7">7 (36 pt)</option>
+												</select></td>
+												<td>
+												<div class="space"></div>
+												</td>
+												<td><select>
+													<option selected="selected" value="h1">Heading 1</option>
+													<option value="h2">Heading 2</option>
+													<option value="h3">Heading 3</option>
+													<option value="h4">Heading 4</option>
+													<option value="h5">Heading 5</option>
+													<option value="h6">Heading 6</option>
+													<option value="p">Normal</option>
+													<option value="address">Address</option>
+													<option value="pre">Formatted</option>
+												</select></td>
+												<td>
+												<div class="space"></div>
+												</td>
+												<td>
+												<div class="button" title="Bold"><img
+													style="width: 18px; height: 18px;"
+													src="../Public/SuperAdmin/images/ed_format_bold.gif"></div>
+												</td>
+												<td>
+												<div class="button" title="Italic"><img
+													style="width: 18px; height: 18px;"
+													src="../Public/SuperAdmin/images/ed_format_italic.gif"></div>
+												</td>
+												<td>
+												<div class="button" title="Underline"><img
+													style="width: 18px; height: 18px;"
+													src="../Public/SuperAdmin/images/ed_format_underline.gif"></div>
+												</td>
+												<td>
+												<div class="button" title="Strikethrough"><img
+													style="width: 18px; height: 18px;"
+													src="../Public/SuperAdmin/images/ed_format_strike.gif"></div>
+												</td>
+												<td>
+												<div class="separator"></div>
+												</td>
+												<td>
+												<div class="button" title="Subscript"><img
+													style="width: 18px; height: 18px;"
+													src="../Public/SuperAdmin/images/ed_format_sub.gif"></div>
+												</td>
+												<td>
+												<div class="button" title="Superscript"><img
+													style="width: 18px; height: 18px;"
+													src="../Public/SuperAdmin/images/ed_format_sup.gif"></div>
+												</td>
+												<td>
+												<div class="separator"></div>
+												</td>
+												<td>
+												<div class="button" title="Copy selection"><img
+													style="width: 18px; height: 18px;"
+													src="../Public/SuperAdmin/images/ed_copy.gif"></div>
+												</td>
+												<td>
+												<div class="button" title="Cut selection"><img
+													style="width: 18px; height: 18px;"
+													src="../Public/SuperAdmin/images/ed_cut.gif"></div>
+												</td>
+												<td>
+												<div class="button" title="Paste from clipboard"><img
+													style="width: 18px; height: 18px;"
+													src="../Public/SuperAdmin/images/ed_paste.gif"></div>
+												</td>
+												<td>
+												<div class="space"></div>
+												</td>
+												<td>
+												<div class="button" title="Undoes your last action"><img
+													style="width: 18px; height: 18px;"
+													src="../Public/SuperAdmin/images/ed_undo.gif"></div>
+												</td>
+												<td>
+												<div class="button" title="Redoes your last action"><img
+													style="width: 18px; height: 18px;"
+													src="../Public/SuperAdmin/images/ed_redo.gif"></div>
+												</td>
+												<td>
+												<div class="separator"></div>
+												</td>
+												<td>
+												<div class="button" title="Spell-check"><img
+													style="width: 18px; height: 18px;"
+													src="../Public/SuperAdmin/images/spell-check.gif"></div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<table border="0px" cellpadding="0px" cellspacing="0px">
+										<tbody>
+											<tr>
+												<td>
+												<div class="button buttonPressed" title="Justify Left"><img
+													style="width: 18px; height: 18px;"
+													src="../Public/SuperAdmin/images/ed_align_left.gif"></div>
+												</td>
+												<td>
+												<div class="button" title="Justify Center"><img
+													style="width: 18px; height: 18px;"
+													src="../Public/SuperAdmin/images/ed_align_center.gif"></div>
+												</td>
+												<td>
+												<div class="button" title="Justify Right"><img
+													style="width: 18px; height: 18px;"
+													src="../Public/SuperAdmin/images/ed_align_right.gif"></div>
+												</td>
+												<td>
+												<div class="button" title="Justify Full"><img
+													style="width: 18px; height: 18px;"
+													src="../Public/SuperAdmin/images/ed_align_justify.gif"></div>
+												</td>
+												<td>
+												<div class="separator"></div>
+												</td>
+												<td>
+												<div class="button" title="Direction left to right"><img
+													style="width: 18px; height: 18px;"
+													src="../Public/SuperAdmin/images/ed_left_to_right.gif"></div>
+												</td>
+												<td>
+												<div class="button" title="Direction right to left"><img
+													style="width: 18px; height: 18px;"
+													src="../Public/SuperAdmin/images/ed_right_to_left.gif"></div>
+												</td>
+												<td>
+												<div class="separator"></div>
+												</td>
+												<td>
+												<div class="button" title="Ordered List"><img
+													style="width: 18px; height: 18px;"
+													src="../Public/SuperAdmin/images/ed_list_num.gif"></div>
+												</td>
+												<td>
+												<div class="button" title="Bulleted List"><img
+													style="width: 18px; height: 18px;"
+													src="../Public/SuperAdmin/images/ed_list_bullet.gif"></div>
+												</td>
+												<td>
+												<div class="button" title="Decrease Indent"><img
+													style="width: 18px; height: 18px;"
+													src="../Public/SuperAdmin/images/ed_indent_less.gif"></div>
+												</td>
+												<td>
+												<div class="button" title="Increase Indent"><img
+													style="width: 18px; height: 18px;"
+													src="../Public/SuperAdmin/images/ed_indent_more.gif"></div>
+												</td>
+												<td>
+												<div class="separator"></div>
+												</td>
+												<td>
+												<div class="button" title="Font Color"><img
+													style="width: 18px; height: 18px;"
+													src="../Public/SuperAdmin/images/ed_color_fg.gif"></div>
+												</td>
+												<td>
+												<div class="button" title="Background Color"><img
+													style="width: 18px; height: 18px;"
+													src="../Public/SuperAdmin/images/ed_color_bg.gif"></div>
+												</td>
+												<td>
+												<div class="separator"></div>
+												</td>
+												<td>
+												<div class="button" title="Horizontal Rule"><img
+													style="width: 18px; height: 18px;"
+													src="../Public/SuperAdmin/images/ed_hr.gif"></div>
+												</td>
+												<td>
+												<div class="button" title="Insert Web Link"><img
+													style="width: 18px; height: 18px;"
+													src="../Public/SuperAdmin/images/ed_link.gif"></div>
+												</td>
+												<td>
+												<div class="button" title="Insert/Modify Image"><img
+													style="width: 18px; height: 18px;"
+													src="../Public/SuperAdmin/images/ed_image.gif"></div>
+												</td>
+												<td>
+												<div class="button" title="Insert Table"><img
+													style="width: 18px; height: 18px;"
+													src="../Public/SuperAdmin/images/insert_table.gif"></div>
+												</td>
+												<td>
+												<div class="button" title="Toggle HTML Source"><img
+													style="width: 18px; height: 18px;"
+													src="../Public/SuperAdmin/images/ed_html.gif"></div>
+												</td>
+												<td>
+												<div class="separator"></div>
+												</td>
+												<td>
+												<div class="button" title="Enlarge Editor"><img
+													style="width: 18px; height: 18px;"
+													src="../Public/SuperAdmin/images/fullscreen_maximize.gif"></div>
+												</td>
+												<td>
+												<div class="separator"></div>
+												</td>
+												<td>
+												<div class="button" title="Help using editor"><img
+													style="width: 18px; height: 18px;"
+													src="../Public/SuperAdmin/images/ed_help.gif"></div>
+												</td>
+												<td>
+												<div class="button" title="About this editor"><img
+													style="width: 18px; height: 18px;"
+													src="../Public/SuperAdmin/images/ed_about.gif"></div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</div>
+									<iframe style="border-width: 1px; width: 708px; height: 313px;"></iframe>
+									<div class="statusBar"><span class="statusBarTree">Path:
+									<a title="" href="#">body</a></span></div>
+									</div>
+									<textarea id="Content" name="Content"
+										style="display: none; width: 708px; height: 313px;" rows="24"
+										cols="80"></textarea> <!--  <iframe ID="editor" src="/ucenter/incs/htmledit.asp?width=450&height=160" frameborder=1 scrolling=no width="460" height="250"></iframe> -->
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+					<tr>
+						<td align="center"><input name="Submit" value="保 存"
+							class="btxx" onclick="javascript:return editcmd();" type="submit">
+						<input name="Submit2" value="清 除" class="btxx"
+							onclick="javascript:document.myform.reset();" type="button">
+						<br>
+						</td>
+					</tr>
+
+
+					<tr>
+						<td><b>主机必填</b></td>
+					</tr>
+					<tr>
+						<td class="datagroup">
+						<table class="dudtb" border="0" cellpadding="0" cellspacing="0"
+							width="98%">
+							<tbody>
+								<tr>
+									<td height="22" width="20%">操作系统<font color="#FF0000">*</font></td>
+									<td width="10">：</td>
+									<td width="40%"><select name="os"
+										style="font-size: 9pt" size="1">
+										<option value="1" selected="selected">linux</option>
+										<option value="2">windows</option>
+									</select></td>
+									<td>空间的操作系统</td>
+								</tr>
+								<tr>
+									<td height="22">空间大小<font color="#FF0000">*</font></td>
+									<td>：</td>
+									<td width="40%"><input name="size" size="23" value="{$size}"
+										type="text"> M</td>
+									<td>主机空间容量</td>
+								</tr>
+								<tr>
+									<td height="22">并发连接数<font color="#FF0000">*</font></td>
+									<td>：</td>
+									<td width="40%"><input name="connection_count" size="23" value="{$connection_count}"
+										type="text"> 个</td>
+									<td>指IIS并发连接数</td>
+								</tr>
+								<tr>
+									<td height="22">可绑定域名数<font color="#FF0000">*</font></td>
+									<td>：</td>
+									<td width="40%"><input name="domain_count" size="23"
+										value="{$domain_count}" type="text"> 个</td>
+									<td>指可以同时绑定多少个域名</td>
+								</tr>
+
+								<tr>
+									<td height="22">试用时间<font color="#FF0000">*</font></td>
+									<td>：</td>
+									<td><input name="trial_time" size="23" value="{$trial_time}" type="text">
+									天</td>
+									<td>主机试用天数,0表示不可试用</td>
+								</tr>
+								<tr>
+									<td height="22">可放网站数目<font color="#FF0000">*</font></td>
+									<td>：</td>
+									<td width="40%"><input name="site_count" size="23"
+										value="{$site_count}" type="text"> 个</td>
+									<td>指可以同时放几个网站</td>
+								</tr>
+								<tr>
+									<td height="22">脚本支持<font color="#FF0000">*</font></td>
+									<td>：</td>
+									<td colspan="2"><input name="script" value="1"
+										checked="checked" type="checkbox"> asp <input
+										name="script" value="1" type="checkbox" checked="checked"> php <input
+										name="g_appid_cgi" value="1" type="checkbox"> cgi <input
+										name="g_appid_net" value="1" type="checkbox">
+								</tr>
+								<tr>
+									<td height="22">流量限制<font color="#FF0000">*</font></td>
+									<td>&nbsp;</td>
+									<td width="40%"><input name="flow" size="23"
+										value="{$flow}" type="text"> G（1G=1024M）</td>
+									<td>主机的月流量限制(0表不限制),当月超过限制将被自动停止WEB服务，第二个月第一天自动开启</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+
+					<tr>
+						<td><b>选填项</b></td>
+					</tr>
+					<tr>
+						<td class="datagroup">
+						<table class="dudtb" border="0" cellpadding="0" cellspacing="0"
+							width="98%">
+							<tbody>
+								<tr>
+									<td height="22" width="20%">赠送产品<font color="#FF0000">*</font></td>
+									<td width="10">：</td>
+									<td><input name="free_gift"
+										value="{$free_gift}"></td>
+									<td>&nbsp;</td>
+								</tr>
+
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			</td>
+		</tr>
+		</form>
+	</tbody>
+</table>
+
+<table id="domainreg" height="0" width="0">
+	<tbody>
+		<tr>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+<table id="domaindel" height="0" width="0">
+	<tbody>
+		<tr>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+
+
+
+
+
+
+</body>
+</html>
