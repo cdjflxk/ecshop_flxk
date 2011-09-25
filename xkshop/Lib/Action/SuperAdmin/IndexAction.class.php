@@ -1,6 +1,7 @@
 <?php
 import("@.Action.SuperAdmin.VirtualAction");
 import("@.Action.SuperAdmin.DnsAction");
+import("@.Action.SuperAdmin.TemplateAction");
 class IndexAction extends Action {
 
     public function index() {
@@ -36,9 +37,12 @@ class IndexAction extends Action {
     	}else if($type == "dns"){
              $dnsAction = new DnsAction();
              $dnsAction->pd_lst();     		
+    	}else if($type == "template"){
+             $templateAction = new TemplateAction();
+             $templateAction->pd_lst();     		
     	}
     }
- 
+    
     public function pd_save() {
         $type = $_GET["type"];
         $id = $_POST["id"];
@@ -48,6 +52,9 @@ class IndexAction extends Action {
     	}else if($type == "dns"){
              $dnsAction = new DnsAction();
              $dnsAction->pd_save($id);                
+        }else if($type == "template"){
+             $templateAction = new TemplateAction();
+             $templateAction->pd_save($id);                
         }
     }
     
@@ -60,6 +67,24 @@ class IndexAction extends Action {
     	} else if($type == "dns"){
              $dnsAction = new DnsAction();
              $dnsAction->pd_edt($id);     		
+    	} else if($type == "template"){
+             $templateAction = new TemplateAction();
+             $templateAction->pd_edt($id);   		
+    	}   
+    }
+    
+    public function pd_delete() {
+         $id = $_GET["id"];
+         $type = $_GET["type"];
+        if($type == "virtual"){
+             $virtualAction = new VirtualAction();
+             $virtualAction->pd_delete($id);     		
+    	} else if($type == "dns"){
+             $dnsAction = new DnsAction();
+             $dnsAction->pd_delete($id);     		
+    	} else if($type == "template"){
+             $templateAction = new TemplateAction();
+             $templateAction->pd_delete($id);   		
     	}   
     }
     
@@ -71,6 +96,9 @@ class IndexAction extends Action {
     	}else if($type == "dns"){
              $dnsAction = new DnsAction();
              $dnsAction->pd_add();     		
+    	}else if($type == "template"){
+             $templateAction = new TemplateAction();
+             $templateAction->pd_add();     		
     	}
     }
     

@@ -6,7 +6,7 @@ class VirtualAction extends Action {
 
     public function pd_lst() {
         $this->assign('type', 'virtual');
-        $virtualModel = M('Virtual');
+        $virtualModel = new VirtualModel();
         $map = $virtualModel->select();
         $this->assign('virtuals', $map);
         $this->display('Virtual/pd_lst');

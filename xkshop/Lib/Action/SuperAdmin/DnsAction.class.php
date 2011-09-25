@@ -6,7 +6,7 @@ class DnsAction extends Action {
 
     public function pd_lst() {
         $this->assign('type', 'dns');
-        $dnsModel = M('Dns');
+        $dnsModel = new DnsModel();
         $map = $dnsModel->select();
         $this->assign('dnss', $map);
         $this->display('Dns/pd_lst');
@@ -29,8 +29,8 @@ class DnsAction extends Action {
     public function pd_edt($id) {
         if ($id != "") {
             $condition['id'] = $id;
-            $virtualModel = new VirtualModel();
-            $record = $virtualModel->where($condition)->select();
+            $dnsModel = new DnsModel();
+            $record = $dnsModel->where($condition)->select();
         }
         $this->assign('dns', $record[0]);
         $this->display('Dns/pd_edt');
