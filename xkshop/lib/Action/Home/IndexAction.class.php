@@ -1,19 +1,23 @@
 <?php
-import("@.Action.ModelAction.IndexModelAction");
 import("@.Model.VirtualModel");
 import("@.Model.UserModel");
 class IndexAction extends Action {
 
     public function index() {
-        $indexModelAction = new IndexModelAction();
-        $map = $indexModelAction->queryAllToSigleMap();
-        $this->assign('sessionName', $_SESSION['name']);
-        $this->assign('title', $map['title']);
-        $this->assign('keywords', $map['keywords']);
-        $this->assign('description', $map['description']);
-        $this->assign('phone', $map['phone']);
-        $this->assign('__CommonAdmin__', __CommonAdmin__);
-        $this->display();
+    	$operation = $_GET["operation"];
+    	if(empty($operation)){
+	        $indexModel = new IndexModel();
+	        $map = $indexModel->select();
+	        $this->assign('sessionName', $_SESSION['name']);
+	        $this->assign('title', $map['title']);
+	        $this->assign('keywords', $map['keywords']);
+	        $this->assign('description', $map['description']);
+	        $this->assign('phone', $map['phone']);
+	        $this->assign('__CommonAdmin__', __CommonAdmin__);
+	        $this->display();    		
+    	}
+
+        
     }
 
     public function dns() {
