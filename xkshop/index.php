@@ -9,6 +9,9 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
+//root
+define( '_JEXEC', 1 );  
+
 //定义模块地址
 define('__CommonAdmin__','http://localhost/ecshop_flxk/xkshop/index.php/CommonAdmin/');
 define('__Home__','http://localhost/ecshop_flxk/xkshop/index.php/');
