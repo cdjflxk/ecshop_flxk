@@ -1,6 +1,7 @@
 <?php
 import("@.Model.VirtualModel");
 import("@.Model.UserModel");
+import("@.Model.IndexModel");
 class IndexAction extends Action {
 
     public function index() {
