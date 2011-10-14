@@ -11,6 +11,7 @@
 // $Id$
 
 import('TagLib');
+import('@.Control.XkControl');
 
 /**
  +------------------------------------------------------------------------------
@@ -23,7 +24,7 @@ import('TagLib');
  * @version   $Id$
  +------------------------------------------------------------------------------
  */
-class TagLibXkData extends TagLib
+class TagLibXkdata extends TagLib
 {//类定义开始
 
     // 标签定义
@@ -48,7 +49,7 @@ class TagLibXkData extends TagLib
      * @return string
      +----------------------------------------------------------
      */
-    public function _XkData($attr,$content)
+    public function _xkdata($attr,$content)
     {
     	$xkControl = XkControl::getInstance();
         $tag      = $this->parseXmlAttr($attr,'xkdata');

@@ -2,7 +2,7 @@
 
 class XkControl {
 	
-	private static $xkControl = null;
+	static private $xkControl = null;
 
     public function dispach($action) {
 		
@@ -16,7 +16,7 @@ class XkControl {
 		
     }
     
-    public static function getInstance(){
+    static public function getInstance(){
     	if(!empty($xkControl)){
     		return $xkControl;
     	}else{
