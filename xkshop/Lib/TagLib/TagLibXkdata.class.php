@@ -11,8 +11,7 @@
 // $Id$
 
 import('TagLib');
-import('@.Control.XkControl');
-
+import("@.Control.XkControl");
 /**
  +------------------------------------------------------------------------------
  * CX标签库解析类
