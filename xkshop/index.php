@@ -23,6 +23,7 @@ define('THINK_PATH', 'ThinkPHP');
 //定义项目名称和路径
 define('APP_NAME', 'xkshop');
 define('APP_PATH', '.');
+define("XK_PATH",dirname($_SERVER['SCRIPT_FILENAME']));
 // 加载框架公共入口文件
 require(THINK_PATH."/ThinkPHP.php");
 //实例化一个网站应用实例

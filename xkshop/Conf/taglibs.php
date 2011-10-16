@@ -1,5 +1,5 @@
  <?php
  return array(
- 	'Xkdata'=>'@.TagLib.TagLibXkdata'
+ 	'Xkdata'=>'@.Plugin.Core.Taglib.TagLibXkdata'
  );
  ?>

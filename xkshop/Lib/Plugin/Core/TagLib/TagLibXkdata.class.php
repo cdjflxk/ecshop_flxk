@@ -52,10 +52,12 @@ class TagLibXkdata extends TagLib
     {
     	$xkControl = XkControl::getInstance();
         $tag      = $this->parseXmlAttr($attr,'xkdata');
-        $action   =  '\''.$tag['action']. '\'';
+        $action   = $tag['action'];
+        $var  = $tag['result'];
         $result = "";
         if(!empty($action)) {
-            $result   =  $xkControl->dispach($action);
+            $result = $xkControl->dispach($action);
+            $result = "<?php $".$var."=".$result." ?>";
         }else{
             Log::Write("no action be defined","ERR");
         }
