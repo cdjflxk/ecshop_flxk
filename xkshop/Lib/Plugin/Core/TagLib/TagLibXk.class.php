@@ -23,13 +23,13 @@ import("@.Control.XkControl");
  * @version   $Id$
  +------------------------------------------------------------------------------
  */
-class TagLibXkdata extends TagLib
+class TagLibXk extends TagLib
 {//类定义开始
 
     // 标签定义
     protected $tags   =  array(
         // 标签定义： attr 属性列表 close 是否闭合（0 或者1 默认1） alias 标签别名 level 嵌套层次
-        'xkdata'=>array('attr'=>'action','level'=>1),
+        'data'=>array('attr'=>'action','level'=>1),
         );
         
     protected $xkControl = null;
@@ -48,10 +48,10 @@ class TagLibXkdata extends TagLib
      * @return string
      +----------------------------------------------------------
      */
-    public function _xkdata($attr,$content)
+    public function _data($attr,$content)
     {
     	$xkControl = XkControl::getInstance();
-        $tag      = $this->parseXmlAttr($attr,'xkdata');
+        $tag      = $this->parseXmlAttr($attr,'data');
         $action   = $tag['action'];
         $var  = $tag['result'];
         $result = "";

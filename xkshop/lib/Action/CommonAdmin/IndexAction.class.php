@@ -14,26 +14,6 @@ class IndexAction extends Action {
         $this->display();
     }
     
-    public function login() {
-        $username = $_POST['username'];
-        $pwd = $_POST['pwd'];
-        $userModel = new UserModel();
-        $isRight = $userModel->checkPwd($username, $pwd);
-        if ($isRight) {
-            $_SESSION['name'] = $username;
-            redirect(index);
-        } else {
-            redirect(loginFail);
-        }
-    }
-
-    public function loginOut() {
-        if (array_key_exists('name', $_SESSION)) {
-            unset($_SESSION['name']);
-        }
-        header("Location:{$__Home__}/Index/index");
-    }
-
 }
 
 ?>
