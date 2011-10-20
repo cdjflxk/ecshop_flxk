@@ -1,0 +1,7 @@
+#nav_sub .selected{ background:url(../images/subed_bg.jpg);color:#fff}
+#nav_sub ul{height:33px;line-height:33px;list-style:none; margin:0; padding:5px 0; font-size:12px;}
+#nav_sub li{float:left;text-align:center;cursor:pointer;margin:0; padding:0; width:135px; height:33px; line-height:33px;
+background:url(../images/subli_bg.jpg)}
+#nav_sub li a:hover{ color:#fff;}
+#nav_sub li:hover{background:url(../images/subed_bg.jpg); color:#fff;}
+#nav_sub #nav_content{margin:0px;padding:10px;width:600px;height:140px; background:url(../images/sub_bg.jpg) repeat-x; font-size:12px;}

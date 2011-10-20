@@ -1,0 +1,65 @@
+		<!--登录插件-->
+		<xk:data action="User/isLogin" result="isLogin">
+		</xk:data> 
+		<eq name="isLogin" value="true">
+		<div class="login_r_link">
+		<div class="login_r_link_t">
+		<h2>用户登录</h2>
+		</div>
+		<div class="login_r_link_c">
+		
+		<table border="0" cellspacing="0" cellpadding="0">
+			<tbody>
+				<tr>
+					<td height="33"><a href="http://www.flxkdns.com/umanage/"><font
+						color="#FF0000">进入系统后台管理界面</font></a> 用户：<font color="#000000">changdejie</font>
+					级别：<font color="#000000">基础代理</font> &nbsp; <a
+						href="http://www.flxkdns.com/ucenter/"><font color="#000080">管理中心</font></a>
+					&nbsp; <a href="http://www.flxkdns.com/members/quit.asp"><font
+						color="#f00000">退出</font></a> &nbsp;</td>
+					<td height="33"><a
+						href="http://www.flxkdns.com/members/usr_reg.asp">注册用户</a>&nbsp;&nbsp;&nbsp;<font
+						class="gray_font">|</font>&nbsp;&nbsp;&nbsp;<a
+						href="http://www.flxkdns.com/members/getpass.asp">取回密码</a>&nbsp;&nbsp;&nbsp;<font
+						class="gray_font">|</font>&nbsp;&nbsp;&nbsp;<a
+						href="http://www.flxkdns.com/help/">帮助中心</a></td>
+				</tr>
+			</tbody>
+		</table>
+		
+		
+		</div>
+		<div class="login_r_link_r"></div>
+		</div>
+		<else />
+		<div class="login_r_link">
+		<div class="login_r_link_t">
+		<h2>用户登录</h2>
+		</div>
+		<div class="login_r_link_c">
+		
+		<table border="0" cellspacing="0" cellpadding="0">
+			<tbody>
+				<tr>
+					<td height="33">
+					<form name="login_form" action="/ucenter/members/login.asp"
+						method="post">账户 <label for="username"></label> <input
+						name="usrname" type="text" id="usrname" class="username" size="15"
+						maxlength="20"> 密码 <label for="password"></label> <input
+						name="usrpass" type="password" id="usrpass" class="password"
+						size="15" maxlength="20"> <input type="submit" name="button"
+						id="submit" class="submit" value="登录"></form>
+					</td>
+					<td height="33"><a href="/members/usr_reg.asp">注册用户</a>&nbsp;&nbsp;&nbsp;<font
+						class="gray_font">|</font>&nbsp;&nbsp;&nbsp;<a
+						href="/members/getpass.asp">取回密码</a>&nbsp;&nbsp;&nbsp;<font
+						class="gray_font">|</font>&nbsp;&nbsp;&nbsp;<a href="/help/">帮助中心</a></td>
+				</tr>
+			</tbody>
+		</table>
+		</div>
+		<div class="login_r_link_r"></div>
+		</div>
+		</eq>
+
+<!--login_r_link end-->
