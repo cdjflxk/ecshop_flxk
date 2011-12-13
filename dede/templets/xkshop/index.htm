@@ -1,0 +1,51 @@
+<!-- saved from url=(0023)http://www.flxkdns.com/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><script language="javascript" src="{dede:global.cfg_templeturl /}/xkshop/images/115669.js" charset="utf-8"></script><script language="javascript" src="{dede:global.cfg_templeturl /}/xkshop/images/getonline" charset="utf-8" type="text/javascript"></script><script language="javascript" src="{dede:global.cfg_templeturl /}/xkshop/images/115669_code.js" charset="utf-8" type="text/javascript"></script><link type="text/css" rel="stylesheet" href="{dede:global.cfg_templeturl /}/xkshop/css/skin.css"><style type="text/css">.kfoutbox{right:20px; kf54kefuqqtop:50px;}.kfboxmenu{display:none;}/**/</style><style type="text/css" media="screen">#swfContent {visibility:hidden}</style></head><body>
+{dede:include filename="head.htm"/}
+{dede:include filename="index_toobar.htm"/}
+<!--header end-->
+<script type="text/javascript">
+var site_url = window.location.href.toLowerCase();
+switch (true) {
+	case site_url.indexOf("/pdtshw/ot5shw/product.asp") > 0 :
+		$("#nav li").attr("class","");
+		$("#nav li").eq(1).attr("class","nav_local");
+		break;
+	case site_url.indexOf("/pdtshw/ot5shw/index.asp") > 0 || site_url.indexOf("/pdtshw/ot5shw/tem_diy.asp") > 0 || site_url.indexOf("/pdtshw/ot5shw/tem_web.asp") > 0 || site_url.indexOf("/pdtshw/ot5shw/steps.asp") > 0	:
+		$("#nav li").attr("class","");
+		$("#nav li").eq(2).attr("class","nav_local");
+		break;
+	case site_url.indexOf("/pdtshw/ot5shw/template_show.asp") > 0 :
+		$("#nav li").attr("class","");
+		$("#nav li").eq(3).attr("class","nav_local");
+		break;
+	case site_url.indexOf("/pdtshw/shpshw/") > 0 :
+		$("#nav li").attr("class","");
+		$("#nav li").eq(4).attr("class","nav_local");
+		break;
+	case site_url.indexOf("/pdtshw/dmeshw/") > 0 :
+		$("#nav li").attr("class","");
+		$("#nav li").eq(5).attr("class","nav_local");
+		break;
+	case site_url.indexOf("/pdtshw/hstshw/") > 0 :
+		$("#nav li").attr("class","");
+		$("#nav li").eq(6).attr("class","nav_local");
+		break;
+	case site_url.indexOf("/pdtshw/ot2shw/") > 0 :
+		$("#nav li").attr("class","");
+		$("#nav li").eq(7).attr("class","nav_local");
+		break;
+	case site_url.indexOf("/pdtshw/emlshw/") > 0 :
+		$("#nav li").attr("class","");
+		$("#nav li").eq(8).attr("class","nav_local");
+		break;
+	default :
+		$("#nav li").attr("class","");
+		$("#nav li").eq(0).attr("class","nav_local");
+} 
+</script>
+<!--20110414 zpf-->
+<link href="{dede:global.cfg_templeturl /}/xkshop/css/webstyle.css" rel="stylesheet" type="text/css">
+{dede:include filename="index_body.htm"/}
+{dede:include filename="footer.htm"/}
+<!--main end-->
+</body></html>

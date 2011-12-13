@@ -1,0 +1,735 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DedeCMS V5.3.1正式版免费下载_星空软件</title>
+<meta name="keywords" content="免费下载,正式版,V5.3.1,DedeCMS," />
+<meta name="description" content="安装包最后更新时间： 2009-01-14 主程序更新为：5.3.1 版本 DedeCMS V5.3是织梦组建团队后推出的又一力作，本次发布的新版本，延续了以往的简单、易用、高效，并且在这一版本中进一步加强了模块的概念，是站长建站首选利器，通过不同的模型组合，可组建出地" />
+<link href="/dede/templets/default/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/dede/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function CheckLogin()
+{
+	var taget_obj = document.getElementById('_ajax_feedback');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/dede/member/ajax_feedback.php");
+	DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/dede/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+	DedeXHTTP = null;
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/dede/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+	DedeXHTTP = null;
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/dede/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body class="downlist">
+<div class="header_top">  
+    <div class="w960 center">  
+     <span id="time" class="time">织梦CMS - 轻松建站从此开始！</span>
+     <div class="toplinks"><a href="/dede/plus/heightsearch.php" target="_blank">高级搜索</a>|<a href="/dede/data/sitemap.html" target="_blank">网站地图</a>|<a href="/dede/tags.php">TAG标签</a><a href="/dede/data/rssmap.html" class="rss">RSS订阅</a><span>[<a href=""onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://localhost');">设为首页</a>] [<a href="javascript:window.external.AddFavorite('http://localhost','星空软件')">加入收藏</a>]</span></div>
+    </div> 
+</div>
+<div class="header">
+	<div class="top w960 center">
+      <div class="title">
+        <h1><a href="http://localhost"><img src="/dede/templets/default/images/logo.gif" height="54" width="216" alt="星空软件"/></a> </h1>
+      </div>
+      <div class="banner"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=ctenttpbanner1&charset=gbk"></script></div>
+      <div class="banner2"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=ctenttpbanner2&charset=gbk"></script></div>
+       
+	</div><!-- //top -->
+	<!-- //菜单 -->
+	<div class="module blue mT10 wrapper w963">
+  	<div class="top">
+    	<!-- //如果不使用currentstyle，可以在channel标签加入 cacheid='channeltoplist' 属性提升性能 -->
+    <div id="navMenu">
+    	<ul>
+      	<li><a href='/dede/'><span>主页</span></a></li>
+      	
+      	<li><a href='/dede/a/webbase/'  rel='dropmenu1'><span>网页基础</span></a></li>
+      	
+      	<li><a href='/dede/a/pics/' ><span>站长图集</span></a></li>
+      	<li class='hover'><a href='/dede/a/downloads/' ><span>软件下载</span></a></li>
+      	<li><a href='/dede/a/shops/' ><span>商品销售</span></a></li>
+      	
+      	<li><a href='/dede/a/infos/' ><span>分类信息</span></a></li>
+      	
+      	<li><a href='http://www.dedecms.com' ><span>织梦CMS</span></a></li>
+      	
+      	<li><a href='http://docs.dedecms.com' ><span>帮助文档</span></a></li>
+      	
+      	<li><a href='/dede/a/xunizhuji/'  rel='dropmenu12'><span>虚拟主机</span></a></li>
+      	
+    	</ul>
+    </div>	
+    <div class="search">
+      <form  name="formsearch" action="/dede/plus/search.php">
+        <div class="form">
+          <h4>搜索</h4>
+           <input type="hidden" name="kwtype" value="0" />
+           <input name="q" type="text" class="search-keyword" id="search-keyword" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}" />
+           <select name="searchtype" class="search-option" id="search-option">
+               <option value="title" selected='1'>检索标题</option>
+               <option value="titlekeyword">智能模糊</option>
+           </select>
+          <button type="submit" class="search-submit">搜索</button>
+        </div>
+        </form>
+        <div class="tags">
+          <h4>热门标签:</h4>
+          <ul>
+          
+            <li><a href='/dede/tags.php?/dedecms5.1/'>dedecms5.1</a></li>
+          
+            <li><a href='/dede/tags.php?/sp1/'>sp1</a></li>
+          
+            <li><a href='/dede/tags.php?/%E5%85%8D%E8%B4%B9%E7%89%88/'>免费版</a></li>
+          
+          </ul>
+        </div>
+    </div><!-- //search -->
+		</div>
+	</div>
+</div><!-- //header -->
+
+<!-- /header -->
+
+<div class="w960 center clear mt1">
+	<div class="pleft">
+		<div class="place">
+			<strong>当前位置:</strong> <a href='http://localhost/dede'>主页</a> > <a href='/dede/a/downloads/'>软件下载</a> > 
+		</div><!-- /place -->
+		<div class="viewbox">
+			<div class="title">
+				<h2>DedeCMS V5.3.1正式版免费下载</h2>
+			</div><!-- /title -->
+			<div class="infolist">
+				<small>软件类型：</small><span>国产软件</span>
+				<small>授权方式：</small><span>开源软件</span>
+				<small>界面语言：</small><span>简体中文</span>
+				<small>软件大小：</small><span>2.6 MB</span>
+				<small>文件类型：</small><span>.gz</span>
+				<small>运行环境：</small><span>Win2003,WinXP,Win2000,Win9X</span>
+				<small>软件等级：</small><span>★★★☆☆</span>
+				<small>发布时间：</small><span>2010-04-07</span>
+				<small>官方网址：</small><span>http://www.dedecms.com</span>
+        <small>演示网址：</small><span>http://www.dedecms.com</span>
+        <small>下载次数：</small><span><script src="/dede/plus/disdls.php?aid=78" language="javascript"></script></span>
+			</div><!-- /info -->
+			<div class="picview">
+				<img src='http://www.dedecms.com/demoimg/uploads/allimg/100407/1_040G030205240.jpg' />
+			</div><!-- /info -->
+			<div class="labeltitle">
+				<strong>软件介绍</strong>
+			</div>
+			<div class="content"><div id="contentMidPicAD" style="float:right; clear:both; top:0; vertical-align:top;"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=contentmidpicad&charset=gbk"></script></div>
+				<p><font size="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: rgb(255,0,0); font-weight: bold">安装包最后更新时间：</span></font><span style="color: rgb(255,0,0); font-weight: bold">2009-01-14 &nbsp; 主程序更新为：5.3.1 版本</span><br />
+<font size="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DedeCMS V5.3是织梦组建团队后推出的又一力作，本次发布的新版本，延续了以往的简单、易用、高效，并且在这一版本中进一步加强了模块的概念，是站长建站首选利器，通过不同的模型组合，可组建出地方门户、行业门户、政府及企事业站点等各种应用。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本次发布的新版对内核进行了重大升级，规范了核心文件并重写了会员相关程序。同时，这次对模板引擎做了很大的调整，在保留原有模板特性的同时，这次新版本中更侧重了规范、易用、可扩展，使模板制作变得更方便。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在增强用户体验的同时，我们更侧重程序的功能健壮及易用，此次新版本中织梦加入了更多新功能，例如：模块安装及打包、文件指纹校验、WAP站点访问、商品及支付接口等，同时对模型、栏目及文档处理各个方面都做了升级。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;历时4年不断发展，DedeCMS日益走向成熟，我们的产品，得到了数以万计站长的肯定，这次全新V5.3的发布，犹如雪中送炭，给百万站长在这寒冬带来一丝温暖。<br />
+<br />
+</font><font size="3"><strong>程序发布专题页：</strong><br />
+<a href="../../../v53/" target="_blank">http://www.dedecms.com/v53/</a><br />
+<br />
+<strong>服务器套件：</strong><br />
+<a href="http://bbs.dedecms.com/86501.html" target="_blank">DedeAMPZ-PHP环境整合套件(下载)</a><br />
+<br />
+<strong>安装手册：</strong><br />
+<a href="http://bbs.dedecms.com/107102.html" target="_blank">DedeCMS安装手册</a><br />
+<br />
+<strong>使用帮助：</strong><br />
+<a href="http://help.dedecms.com/" target="_blank">DedeCMS V5.3教程中心</a><br />
+<br />
+<a href="http://service.dedecms.com/" target="_blank">织梦客户服务中心</a><br />
+<br />
+<strong>相关文档：</strong><br />
+新版本、新内核、新功能 Dede V5.3抢先看<br />
+<a href="http://bbs.dedecms.com/104187.html" target="_blank">http://bbs.dedecms.com/104187.html</a><br />
+<br />
+DedeCMS V5.3正式版功能盘点之：模块-让您拥有更加健壮的系统<br />
+<a href="http://bbs.dedecms.com/107109.html" target="_blank">http://bbs.dedecms.com/107109.html</a><br />
+<br />
+DedeCMS V5.3正式版功能盘点之：自定义模型-让网站变得更丰富<br />
+<a href="http://bbs.dedecms.com/107140.html" target="_blank">http://bbs.dedecms.com/107140.html</a><br />
+<br />
+DedeCMS V5.3正式版功能盘点之：织梦模板-原来做模板如此灵活简单<br />
+<a href="http://bbs.dedecms.com/107325.html" target="_blank">http://bbs.dedecms.com/107325.html</a><br />
+<br />
+DedeCMS V5.3正式版功能盘点之：会员中心-网站和会员都动起来<br />
+<a href="http://bbs.dedecms.com/107285.html" target="_blank">http://bbs.dedecms.com/107285.html</a><br />
+<br />
+DedeCMS V5.3正式版功能盘点之：自由列表-让你想怎么调用就怎么调用<br />
+<a href="http://bbs.dedecms.com/107346.html" target="_blank">http://bbs.dedecms.com/107346.html</a><br />
+<br />
+DedeCMS V5.3正式版功能盘点之：文件指纹校验-升级无忧<br />
+<a href="http://bbs.dedecms.com/107408.html" target="_blank">http://bbs.dedecms.com/107408.html</a><br />
+<br />
+DedeCms V5.3 主要新增及升级功能列表<br />
+<a href="http://bbs.dedecms.com/103512.html" target="_blank">http://bbs.dedecms.com/103512.html</a><br />
+<br />
+[v53使用]DedeCMS补丁后台自动更新，清晰一目了然<br />
+<a href="http://bbs.dedecms.com/106994.html" target="_blank">http://bbs.dedecms.com/106994.html</a> <br />
+<br />
+[v53使用]栏目当单页面使用，企业站元素贴心服务<br />
+<a href="http://bbs.dedecms.com/107045.html" target="_blank">http://bbs.dedecms.com/107045.html</a> <br />
+<br />
+</font></p>
+<p><font size="3"><strong><font color="#0000ff">DEDECMS v5.3&nbsp;与 HDWIKI V4.0.4 官方整合专版</font></strong><br />
+</font><font size="3"><a href="http://www.dedecms.com/hdwiki/">http://www.dedecms.com/hdwiki/</a></font></p>
+<p><br />
+<br />
+<br />
+<strong>产品特性：</strong><br />
+<strong>良好的用户口碑，丰富的开源经验</strong><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DedeCMS是国内知名内容管理系统，经过长达4年之久的广泛应用和复杂化环境的检测，织梦系统在安全性、稳定性、易用性方面具有较高的声誉，倍受广大站长推崇。 <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DedeCMS 采用PHP+MySQL技术开发，程序源代码完全开放，在尊重版权的前提下能极大的满足站长对于网站程序进行二次开发。DedeCMS是国内第一家开源的 内容管理系统，自诞生以来，始终坚持开源、免费原则。众所周知，开源程序在代码规范性、程序安全性有着较高的要求，DedeCMS拥有4年的开源经验，其 灵活的产品架构、极强的可扩展性和可伸缩性能最大化满足站长目前及今后的应用需求。 <br />
+<br />
+<strong>灵活的模块组合，让网站更丰富</strong><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;往 往一个网站通过单一的内容发布系统是远远不能满足用户的需求的，尤其在Web2.0提倡互动、分享的大趋势下，用户非常希望在传统的内容信息网站中加入 问答、圈子等一些互动型的功能。但如果基于原来系统进行开发，整个系统易用性会受到影响，如果使用别的系统，整个网站就不能一体化管理，在这种问题 下，DedeCMS推出了模块的功能，程序用户可以像在Winodws里面安装软件一样，下载相应的模块进行安装，网站就会增加这些特殊的功能。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这样一来，更加方便软件用户对自己的网站进行扩展，达到自己满意的效果。<br />
+<br />
+<br />
+<strong>简单易用的模板引擎，网站界面想换就换</strong><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DedeCMS的模板引擎简单、易用，采用了XML标记风格，只要懂HTML就可以修改制作模板。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;很 多的用户都为每次网站改版费尽苦心，因为按照老式的网站制作流程，改版需要修改的不单单是一个界面，还要涉及到程序修改。最后成了一次改版，几乎等于网站 重构。DedeCMS就解决了这一烦恼，只需要熟悉一些DedeCMS的模板标记，只要懂HTML，就能随意对模板文件进行修改，而且每次升级只 需要更新模板文件即可，做到了程序和页面很大程度上的分离。 <br />
+<br />
+<strong>便捷自定义模型</strong><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DedeCMS为用户提供了方便快捷的用户自定义模型，您可以使用这个功能根据自身需求来创建各式各样的站点，如果您了解部分二次开发知识，即能想到就能做到。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;往 往很多站点，希望能够创建如在线视频播放、在线音乐试听，或者是商品信息发布等类型的内容站点，尽管这些模型系统中没有，但您现在可以使用 DedeCMS来自主创建，您只需要先想好自己内容的字段，如：专辑名称、演唱、发行日期等，然后思考这些字段是用哪种字段类型，如：文本、时间、文件上 传，接下来只需要在后台的模型管理中按照说明添加即可，想到就能做到。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这种模型的功能有一个很大的好处就是您可以自己去扩展网站后续的功能，不要再去花费财力物力去开发，免去了很多烦恼。 <br />
+<br />
+<strong>高效的动态静态页面部署</strong><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DedeCMS为用户提供了强大的动态静态部署的功能，用户可以在后台栏目中进行统一的设置，也可以对单独某一篇内容进行静态部署。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这种静态部署最大的优势在于：1.减少数据库负担、降低人力维护成本；2.利于搜索引擎对网站的友好程度，提高搜索引擎对网站收录量；3.很大程度上提高了用户访问的效率。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;这样一来，一些地区门户、行业网站、甚至政府部门信息类网站都免去了因为大量数据访问速率下降的后顾之忧。 <br />
+<br />
+<strong>灵活的商业运营模式</strong><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DedeCMS中提供了较为完善的会员产品体系、会员等级体系、虚拟货币管理体系，并且提供了较完整的支付接口方式，可以设置会员浏览不同内容进行金币消费，这样对行业门户、企事业单位制定开展各种基于网站平台的商业运营方案。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;会员可以通过购买点卡进行充值，同时也可以购买包月、包年的服务来阅读某一部分的内容，如果某些内容只能给特定会员浏览，会员必须达到某个等级才能够扣点阅读，网站可以通过销售点券、会员等级服务进行盈利。 <br />
+<br />
+<strong>流畅专业界面设计，良好的用户体验</strong><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DedeCMS 的界面设计遵循国际最新W3C网页设计标准，在开发时期，我们经过IE6、IE7、火狐、Opera等主流浏览器上进行测试，都能够保证您 网站浏览的流畅、完整，DedeCMS页面设计遵循标准情况下尽量的减少了各个浏览器中存在的差异，系统不会因为不同的浏览器受到限制。我们优秀的页面设 计师能够让网站提高用户体验，及网站亲和力。<br />
+<br />
+<strong>指纹验证，升级无忧</strong><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在全新的织梦系统中，新增加了文件指 纹校验功能，通过他你可以对比系统原始文件，以确保当前文件是否被修改，同时也可以同官方的原始指纹进行对比，来获取差异文件，这样更方便用户升级自己的 系统。同时，配合我们的病毒扫描程序，让您的网站的安全性得到进一步提升。当然，官方贴心的系统消息，不仅让您了解到当前版本系统最后更新日期，以便确认 是否有更新补丁，并且能及时了解DedeCMS最新信息，让您用的更加放心。<br />
+<br />
+<strong>低维护成本</strong><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开发一个网站大家都知道需要动用大量的人力物力，不单单开发时需要耗费，后期维护升级也需要。因为必要的硬件投入必不可少，这时候只有有效控制开发、维护成本，才能够让用户的总成本降低。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这 样一来DedeCMS引入了独创模板引擎技术、自定义标签功能，实现网站程序和界面分离的平台搭建效果，改变了传统的“功能开发→页面设计→整合”制作 方式，达到降低人力成本的目的，当然我们内置的可视化编辑器可以让您的信息录入如同操作word软件一样方便快捷，上手也非常容易。<br />
+&nbsp;&nbsp;&nbsp; DedeCMS这种网站建设流程，让软件用户在不改变网站高效、轻便等特性的情况下还减少了总成本。<br />
+<br />
+<strong>国际语言支持</strong><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DedeCMS从V5.3开始，以UTF-8国际编码为基准进行开发，让您的网站可以扩展任意一种语言。 <br />
+<br />
+<strong>会员互动，让您的网站火起来</strong><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一个网站最重要的就是用户，DedeCMS提供了强大的用户中心，通过会员中心可以让用户进行内容分享、交友、短信、个人空间等一系列的操作，甚至通过模块扩展还可以让会员进行群组交流、问答等互动。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网站需要有粘性，才可以留住用户，通过一个强大的会员中心可以留住您的网站用户，也可以寻找到盈利模式。<br />
+<br />
+<br />
+<br />
+<strong>产品适合应用于以下领域：</strong><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;企业网站：无论大型还是中小型企业，利用网络传递信息在一定程度上提高了办事的效率，提高企业的竞争力；<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;政府机关：通过建立政府门户，有利于各种信息和资源的整合，为政府和社会公众之间加强联系和沟通，从而使政府可以更快、更便捷、更有效开展工作；<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;教育机构：通过网络信息的引入，使得教育机构之间及教育机构内部和教育者之间进行信息传递，全面提升教育类网站的层面；<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;媒体机构：互联网这种新媒体已经强而有力的冲击了传统媒体，在这个演变过程中，各类媒体机构应对自己核心有一个重新认识和重新发展的过程，建立一个数字技术平台以适应数字化时代的需求；<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;行业网站：针对不同行业，强化内部的信息划分，体现行业的特色，网站含有行业的动态信息、产品、市场、技术、人才等信息，树立行业信息权威形象，为行业内产品供应链管理，提供实际的商业机会；<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;个人站长：兴趣为主导，建立各种题材新颖，内容丰富的网站，通过共同兴趣的信息交流，可以让您形成自己具有特色的用户圈，产生个人需求，并为其服务；<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;收费网站：内容收费类型的网站，用户可以在线提供产品销售，或者内容收费，简单清晰的盈利模式，确保您以最小的投资，取得最大的回报；<br />
+<br />
+<br />
+<strong>新增及升级功能列表：</strong><br />
+&nbsp;&nbsp;&nbsp; 1.&nbsp;&nbsp;增加批量创建栏目功能<br />
+&nbsp;&nbsp;&nbsp;&nbsp;2.&nbsp;&nbsp;栏目管理处增加“内容”项目，代替原来在栏目管理中使用单独页<br />
+&nbsp;&nbsp;&nbsp;&nbsp;3.&nbsp;&nbsp;增加内容模型导出、导入功能<br />
+&nbsp;&nbsp;&nbsp;&nbsp;4.&nbsp;&nbsp;内容模型增加“联动类型字段”的支持<br />
+&nbsp;&nbsp;&nbsp;&nbsp;5.&nbsp;&nbsp;取消内容模型原来的自定义主表功能，增加单表内容模型<br />
+&nbsp;&nbsp;&nbsp;&nbsp;6.&nbsp;&nbsp;增加内容回收站功能<br />
+&nbsp;&nbsp;&nbsp;&nbsp;7.&nbsp;&nbsp;增加“商品”模型，并提供相关支付接口<br />
+&nbsp;&nbsp;&nbsp;&nbsp;8.&nbsp;&nbsp;增加自定义表单功能<br />
+&nbsp;&nbsp;&nbsp;&nbsp;9.&nbsp;&nbsp;升级“模块管理”功能<br />
+&nbsp;&nbsp;&nbsp;&nbsp;10. 升级评论系统<br />
+&nbsp;&nbsp;&nbsp;&nbsp;11. 升级采集系统，主要亮点：<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a、向导式创建规则<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b、支持同一规则中指定多个不同的导出栏目<br />
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c、支持监控采集模式，简单重复采集历史内容是否有更新的过程<br />
+&nbsp;&nbsp;&nbsp;&nbsp;12. 升级会员中心，在保证安全性的同时使里面的各项操作更简单易用<br />
+&nbsp;&nbsp;&nbsp;&nbsp;13. 开放默认的文章系统 WAP 浏览模式<br />
+&nbsp;&nbsp;&nbsp;&nbsp;14. 升级模板管理功能，除了可以方便的在线创建勾子碎片标签外，对主要的模板都进行了注解说明<br />
+&nbsp;&nbsp;&nbsp;&nbsp;15. 升级了广告管理、友情链接等插件<br />
+&nbsp;&nbsp;&nbsp;&nbsp;16. 增加在线切缩略图功能<br />
+&nbsp;&nbsp;&nbsp;&nbsp;17. 增加了“挑错管理”功能，允许用户对错误信息进行反馈<br />
+&nbsp;&nbsp;&nbsp;&nbsp;18. 优化列表统计引擎和缓存引擎，使系统在保证灵活性的同时也有更好的性能<br />
+&nbsp;&nbsp;&nbsp;&nbsp;19. 增加初始文件效验功能<br />
+&nbsp;&nbsp;&nbsp;&nbsp;20. 增加在线直接升级功能，更方便用户获得自己需要的升级包<br />
+&nbsp;&nbsp;&nbsp;&nbsp;21. 支持栏目列表使用伪静态<br />
+&nbsp;&nbsp;&nbsp;&nbsp;22. 支持游客投稿、模型投稿增加各种个性化设置<br />
+<br />
+<strong>升级说明：</strong><br />
+&nbsp;&nbsp;&nbsp;&nbsp;由于5.3版的改动涉及内核升级，因此有部份功能或模板不一定完全兼容，但我们仍建议用户尽量升级到这个版本，以确保系统的安全和可发展性。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;DedeCMS 支持整合主流的BBS、商城、博客等系统，具体相关接口请到官方论坛查询。<br />
+&nbsp;</p>
+			</div>
+			<div class="labeltitle">
+				<strong>下载地址</strong>
+			</div>
+			<div class="content">
+				<ul class="downurllist">
+                	<li><a href="/dede/plus/download.php?open=2&id=78&uhash=e10cfae2115a5d85518fcbcc" target="_blank">V53-GBK版安装程序本地下载</a></li><li><a href="/dede/plus/download.php?open=2&id=78&uhash=9243b9ffb1d579108e869a88" target="_blank">V53-UTF8版安装程序本地下载</a></li><li><a href="/dede/plus/download.php?open=2&id=78&uhash=3ae72690aa9fbd88e56b0fea" target="_blank">V53-繁體中文UTF-8版安裝程式本地下载</a></li><li><a href="/dede/plus/download.php?open=2&id=78&uhash=43c83faebf3a69e5d938a03b" target="_blank">V3.1、4.1升级程序</a></li><li><a href="/dede/plus/download.php?open=2&id=78&uhash=03911c05abfb4aa6afdd713d" target="_blank">V5.0、5.1 GBK版升级程序</a></li><li><a href="/dede/plus/download.php?open=2&id=78&uhash=1e021467181c274b1007f0de" target="_blank">V5.0、5.1 UTF8版升级程序</a></li><li><a href="/dede/plus/download.php?open=2&id=78&uhash=30afbe4252f9e59975af6d7d" target="_blank">DedeCmsV5.3GBK + HDwiki 4.04 互动百科整合安装包</a></li><li><a href="/dede/plus/download.php?open=2&id=78&uhash=54bf749161224a7dabcaa144" target="_blank">DedeCmsV5.3UTF8 + HDwiki 4.04 互动百科整合安装包</a></li>
+                </ul>
+			</div>
+			<div class="labeltitle">
+				<strong>下载说明</strong>
+			</div>
+			<div class="intro">
+				<p>?推荐使用第三方专业下载工具下载本站软件，使用 WinRAR v3.10 以上版本解压本站软件。<br />	
+?如果这个软件总是不能下载的请点击报告错误,谢谢合作!!<br />	
+?下载本站资源，如果服务器暂不能下载请过一段时间重试！<br />	
+?如果遇到什么问题，请到本站论坛去咨寻，我们将在那里提供更多 、更好的资源！<br />	
+?本站提供的一些商业软件是供学习研究之用，如用于商业用途，请购买正版。</p>
+			</div>
+			<div class="newdigg" id="newdigg">
+				<div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',78)">
+					<div class="digg_act">顶一下</div>
+					<div class="digg_num">(0)</div>
+					<div class="digg_percent">
+						<div class="digg_percent_bar"><span style="width:0%"></span></div>
+						<div class="digg_percent_num">0%</div>
+					</div>
+				</div>
+				<div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',78)">
+					<div class="digg_act">踩一下</div>
+					<div class="digg_num">(0)</div>
+					<div class="digg_percent">
+						<div class="digg_percent_bar"><span style="width:0%"></span></div>
+						<div class="digg_percent_num">0%</div>
+					</div>
+				</div>
+			</div>
+			 <script language="javascript" type="text/javascript">getDigg(78);</script>
+			<div class="boxoff">
+				<strong>------分隔线----------------------------</strong>
+			</div>
+			<div class="handle">
+				<div class="context">
+					<ul>
+						<li>上一篇：<a href='/dede/a/downloads/2010/0407/77.html'>DedeCmsV5.1FreeSP1正式版发布</a> </li>
+						<li>下一篇：<a href='/dede/a/downloads/2010/0407/79.html'>DedeCMS V5.5正式版正式发布(Build-0912)</a> </li>
+					</ul>
+				</div><!-- /context -->
+				<div class="actbox">
+					<ul>
+						<li id="act-fav"><a href="/dede/plus/stow.php?aid=78" target="_blank">收藏</a></li>
+						<li id="act-err"><a href="/dede/plus/erraddsave.php?aid=78&title=DedeCMS V5.3.1正式版免费下载" target="_blank">挑错</a></li>
+						<li id="act-pus"><a href="/dede/plus/recommend.php?aid=78" target="_blank">推荐</a></li>
+						<li id="act-pnt"><a href="#" onClick="window.print();">打印</a></li>
+					</ul>
+				</div><!-- /actbox -->
+			</div><!-- /handle -->
+		</div><!-- /viewbox -->
+
+<!-- //AJAX评论区 -->
+<!-- //主模板必须要引入/dede/include/dedeajax2.js -->
+<a name='postform'></a>
+<div class="mt1">
+  <dl class="tbox">
+    <dt> <strong>发表评论</strong> <span class="more"></span> </dt>
+    <dd>
+      <div class="dede_comment_post">
+        <form action="#" method="post" name="feedback" onsubmit="return false;">
+          <input type="hidden" name="dopost" value="send" />
+          <input type="hidden" name="comtype" value="comments">
+          <input type="hidden" name="aid" value="78" />
+          <input type="hidden" name="fid" id='feedbackfid' value="0" />
+          <div class="dcmp-title"> <small>请自觉遵守互联网相关的政策法规，严禁发布色情、暴力、反动的言论。</small> </div>
+          <!-- /dcmp-title -->
+          <div class="dcmp-stand"> <strong>评价:</strong>
+            <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" />
+            <label for="dcmp-stand-neu"><img src="/dede/templets/default/images/cmt-neu.gif" />中立</label>
+            <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" />
+            <label for="dcmp-stand-good"><img src="/dede/templets/default/images/cmt-good.gif" />好评</label>
+            <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" />
+            <label for="dcmp-stand-bad"><img src="/dede/templets/default/images/cmt-bad.gif" />差评</label>
+          </div>
+          <!-- /dcmp-stand -->
+          <div class="clr"></div>
+          <div class="dcmp-content">
+            <script type="text/javascript">
+					//<![CDATA[
+					window.CKEDITOR_BASEPATH='/dede/include/ckeditor/';
+					//]]>
+                    </script>
+            <script type="text/javascript" src="/dede/include/ckeditor/ckeditor.js?t=B8DJ5M3"></script>
+            <script type="text/javascript">//<![CDATA[
+CKEDITOR.config.ubb_smiley = {"高兴":"{s:1}","撇嘴":"{s:2}","抓狂":"{s:3}","汗":"{s:4}","惊恐":"{s:5}","奋斗":"{s:6}","疑问":"{s:7}","晕":"{s:8}","偷笑":"{s:9}","可爱":"{s:10}","疑惑":"{s:11}","酷":"{s:12}","暴汗":"{s:13}","呕吐":"{s:14}","大笑":"{s:15}","色":"{s:16}"}
+//]]></script>
+<textarea name="msg" rows="8" cols="60"></textarea>
+<script type="text/javascript">//<![CDATA[
+CKEDITOR.replace('msg', {"extraPlugins":"dedepage,multipic,addon,bbcode","fontSize_sizes":"30\/30%;50\/50%;100\/100%;120\/120%;150\/150%;200\/200%;300\/300%","disableObjectResizing":"true","smiley_path":"\/dede\/images\/smiley\/","smiley_images":["1.gif","2.gif","3.gif","4.gif","5.gif","6.gif","7.gif","8.gif","9.gif","10.gif","11.gif","12.gif","13.gif","14.gif","15.gif","16.gif"],"smiley_descriptions":["高兴","撇嘴","抓狂","汗","惊恐","奋斗","疑问","晕","偷笑","可爱","疑惑","酷","暴汗","呕吐","大笑","色"],"toolbar":[["Source","-","Bold","Italic","Underline","-"],["FontSize","TextColor"],["Link","Unlink","Smiley"]],"height":100,"skin":"kama"});
+//]]></script>
+ </div>
+          <!-- /dcmp-content -->
+          <div class="dcmp-post">
+            <!--未登陆-->
+            <div class="dcmp-userinfo" id="_ajax_feedback"> 用户名:
+              <input type="text" name="username" size="16" class="ipt-txt" style="text-transform: uppercase;"/>
+              
+              验证码:
+              <input type="text" name="validate" size="4" class="ipt-txt" style="text-transform:uppercase;"/>
+              <img src= "/dede/include/vdimgck.php" id="validateimg" style="cursor:pointer" onclick="this.src=this.src+'?'" title="点击我更换图片" alt="点击我更换图片"  class="vdimg"/>
+              <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+              <label for="dcmp-submit-guest" />
+              匿名?
+              </label>
+            </div>
+            
+            <script language="javascript" type="text/javascript">CheckLogin();</script>
+            
+            <div class="dcmp-submit">
+              <button type="button" onClick='PostComment()'>发表评论</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </dd>
+  </dl>
+</div>
+<!-- //评论表单区结束 -->
+<!-- //评论内容区 -->
+<a name='commettop'></a>
+<div class="mt1">
+  <dl class="tbox">
+    <dt> <strong>最新评论</strong> <span class="more"><a href="/dede/plus/feedback.php?aid=78">进入详细评论页&gt;&gt;</a></span> </dt>
+    <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+    <dd id='commetcontentNew'></dd>
+    <dd id='commetcontent'></dd>
+  </dl>
+</div>
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/dede/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/dede/plus/feedback_ajax.php?dopost=getlist&aid=78&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var msg = CKEDITOR.instances.msg.getData();
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/dede/images/loadinglit.gif' />正在发送中...</div>";
+		if(msg=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(msg.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		/*
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		*/
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'utf-8';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '78');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', msg);
+		myajax.SendPost2('/dede/plus/feedback_ajax.php');
+		//msg = '';
+		CKEDITOR.instances.msg.setData('');
+		//taget_obj.removeAttribute('id');
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/dede/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+		
+}
+function quoteCommet(fid)
+{
+	    document.feedback.fid.value = fid;
+}
+  
+function ajaxFeedback(aid, fid, type)
+{
+	
+	var taget_obj = $DE('ajaxfeedback_'+fid);
+	if(taget_obj.innerHTML == '')
+	{
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x');
+		myajax.SendGet2("/dede/plus/feedback.php?aid="+aid+"&fid="+fid+"&action=quote&type=ajax");
+		eval('var result = typeof CKEDITOR.instances.msg_'+fid);
+		if(result != 'undefined')
+		{
+			// 删除实例
+			eval('var edit = CKEDITOR.instances.msg_'+fid);
+			CKEDITOR.remove(edit);
+		}
+		CKEDITOR.replace(document.getElementById('msg_'+fid) , CKEDITOR.instances.msg.config);
+		scroll(0, taget_obj.offsetTop - 120);
+		var formname = 'f = document.ajaxfeedback_'+fid;
+		eval(formname);
+		if(f.validate)
+		{
+			if($DE('vdimg_'+fid)) $DE('vdimg_'+fid).src = "/dede/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+		
+		DedeXHTTP = null;
+	}
+}
+
+
+
+function ajaxQuotePost(fid)
+{
+	var formname = 'f = document.ajaxfeedback_'+fid;
+	eval(formname);
+	//var f = document.formname;
+	//var f = f[0];
+	var nvalidate = '';
+	var nnotuser = '';
+	var nusername = '';
+	var npwd = '';
+	var taget_obj = $DE('commetcontentNew');
+	var waithtml = "<div style='line-height:30px'><img src='/dede/images/loadinglit.gif' />正在发送中...</div>";
+	eval('var msg = CKEDITOR.instances.msg_'+fid+'.getData()');
+
+	if(f.validate)
+	{
+		if(f.validate.value=='') {
+			alert("请填写验证码！");
+			return;
+		}
+		else {
+			nvalidate = f.validate.value;
+		}
+	}
+	var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+	
+	if(f.notuser.checked) nnotuser = '1';
+	if(f.username) nusername = f.username.value;
+	if(f.pwd) npwd = f.pwd.value;
+	
+	myajax.sendlang = 'utf-8';
+	myajax.AddKeyN('dopost', 'send');
+	myajax.AddKeyN('aid', '78');
+	myajax.AddKeyN('fid', f.fid.value);
+	myajax.AddKeyN('type', 'ajax');
+	myajax.AddKeyN('comtype', f.comtype.value);
+	myajax.AddKeyN('isconfirm','yes');
+	
+	myajax.AddKeyN('typeid', f.typeid.value);
+	myajax.AddKeyN('quotemsg', f.quotemsg.value);
+	myajax.AddKeyN('validate', nvalidate);
+	myajax.AddKeyN('notuser', nnotuser);
+	myajax.AddKeyN('username', nusername);
+	myajax.AddKeyN('pwd', npwd);
+	myajax.AddKeyN('msg', msg);
+	myajax.SendPost2('/dede/plus/feedback_ajax.php');
+	//alert(f.quotemsg.value);
+	if($DE('ajaxfeedback_'+fid).innerHTML != null)
+	{
+		$DE('ajaxfeedback_'+fid).innerHTML = '';
+	}
+	scroll(0, taget_obj.offsetTop);
+}
+LoadCommets(1);
+</script>
+<!-- //评论内容区结束 -->
+
+	
+	</div><!-- /pleft -->
+
+	<div class="pright">
+        <div>
+          <dl class="tbox">
+				<dt><strong>栏目列表</strong></dt>
+				<dd>
+					<ul class="d6">
+                      
+					</ul>
+				</dd>
+			</dl>
+        </div>
+		<div id="contentRtPicAD" style="margin:10px auto"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=contentrtpicad&charset=gbk"></script></div>
+        	<div class="infos_userinfo">
+ 			
+   	 	</div>
+
+		<div class="downrange mt1">
+			<dl class="tbox">
+				<dt><strong>推荐软件</strong></dt>
+				<dd>
+					<ul class="f1">
+                    <li>
+							<a href="/dede/a/downloads/2010/0407/76.html">DedeCms V5.1（GBK/UTF8）版</a>
+							<span><small>好评:</small>0</span>
+							<span><small>人气:</small>56</span>
+						</li>
+<li>
+							<a href="/dede/a/downloads/2010/0407/74.html">DedeCms OX V4.0版下载</a>
+							<span><small>好评:</small>0</span>
+							<span><small>人气:</small>194</span>
+						</li>
+
+					</ul>
+				</dd>
+			</dl>
+		</div><!-- /downrange -->
+
+		<div class="hot mt1">
+			<dl class="tbox">
+				<dt><strong>热门软件</strong></dt>
+				<dd>
+					<ul class="c1 ico2">
+                    <li><a href="/dede/a/downloads/2010/0407/74.html">DedeCms OX V4.0版下载</a></li>
+<li><a href="/dede/a/downloads/2010/0407/73.html">DedeCms V3.1 正式版下载</a></li>
+<li><a href="/dede/a/downloads/2010/0407/79.html">DedeCMS V5.5正式版正式发布</a></li>
+<li><a href="/dede/a/downloads/2010/0407/75.html">DeDeCms V5 正式版发布</a></li>
+<li><a href="/dede/a/downloads/2010/0407/78.html">DedeCMS V5.3.1正式版免费下载</a></li>
+<li><a href="/dede/a/downloads/2010/0407/77.html">DedeCmsV5.1FreeSP1正式版发布</a></li>
+<li><a href="/dede/a/downloads/2010/0407/80.html">DedeAMPZ-PHP环境整合套件</a></li>
+<li><a href="/dede/a/downloads/2010/0407/76.html">DedeCms V5.1（GBK/UTF8）版</a></li>
+
+					</ul>
+				</dd>
+			</dl>
+		</div>
+        <div id="contentRtPicAD2" style="margin:10px auto"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=contentrtpicad2&charset=gbk"></script></div>
+	</div><!-- /pright -->
+</div>
+<div id="innerfooterAD2" style="margin:10px auto; width:726px"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=innerfooterad2&charset=gbk"></script></div>
+
+<!-- //底部模板 -->
+<div class="footer w960 center mt1 clear">
+	<!-- 
+		为了支持织梦团队的发展,请您保留织梦内容管理系统的链接信息.
+		我们对支持织梦团队发展的朋友表示真心的感谢!织梦因您更精彩!
+	-->
+    <div class="footer_left"></div>
+    <div class="footer_body">
+	<p class="powered">    
+		Powered by <a href="http://www.dedecms.com" title="织梦内容管理系统(DedeCms)--国内最专业的PHP网站管理系统，轻松建站的首选利器。" target="_blank"><strong>DedeCMS_V57_UTF8_SP1</strong></a> &copy; 2004-2011 <a href="http://www.desdev.cn/" target="_blank">DesDev</a> Inc.<br /><div class="copyright">Copyright &copy; 2004-2011 DEDECMS. 织梦科技 版权所有&nbsp;&nbsp;</div></p>        
+<!-- /powered -->
+   </div>
+   <div class="footer_right"></div>
+</div>
+<!-- /footer -->
+<script src="/dede/plus/count.php?aid=78&mid=1" language="javascript"></script>
+</body>
+</html>

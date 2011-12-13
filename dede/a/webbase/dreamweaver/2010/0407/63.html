@@ -1,0 +1,575 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>通过Dreamweaver设计网页时组织CSS的建议_星空软件</title>
+<meta name="keywords" content="通过Dreamweaver设计网页时组织C" />
+<meta name="description" content="一般地讲，样式表（style sheet）就是控制网页内容外观的格式化的规则的集合。可以以三种不同的方式在你的页面中使用CSS：" />
+<link href="/dede/templets/default/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/dede/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/dede/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/dede/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/dede/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/dede/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body class="articleview">
+<div class="header_top">  
+    <div class="w960 center">  
+     <span id="time" class="time">织梦CMS - 轻松建站从此开始！</span>
+     <div class="toplinks"><a href="/dede/plus/heightsearch.php" target="_blank">高级搜索</a>|<a href="/dede/data/sitemap.html" target="_blank">网站地图</a>|<a href="/dede/tags.php">TAG标签</a><a href="/dede/data/rssmap.html" class="rss">RSS订阅</a><span>[<a href=""onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://localhost');">设为首页</a>] [<a href="javascript:window.external.AddFavorite('http://localhost','星空软件')">加入收藏</a>]</span></div>
+    </div> 
+</div>
+<div class="header">
+	<div class="top w960 center">
+      <div class="title">
+        <h1><a href="http://localhost"><img src="/dede/templets/default/images/logo.gif" height="54" width="216" alt="星空软件"/></a> </h1>
+      </div>
+      <div class="banner"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=ctenttpbanner1&charset=gbk"></script></div>
+      <div class="banner2"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=ctenttpbanner2&charset=gbk"></script></div>
+       
+	</div><!-- //top -->
+	<!-- //菜单 -->
+	<div class="module blue mT10 wrapper w963">
+  	<div class="top">
+    	<!-- //如果不使用currentstyle，可以在channel标签加入 cacheid='channeltoplist' 属性提升性能 -->
+    <div id="navMenu">
+    	<ul>
+      	<li><a href='/dede/'><span>主页</span></a></li>
+      	<li class='hover'><a href='/dede/a/webbase/'  rel='dropmenu1'><span>网页基础</span></a></li>
+      	<li><a href='/dede/a/pics/' ><span>站长图集</span></a></li>
+      	
+      	<li><a href='/dede/a/downloads/' ><span>软件下载</span></a></li>
+      	
+      	<li><a href='/dede/a/shops/' ><span>商品销售</span></a></li>
+      	
+      	<li><a href='/dede/a/infos/' ><span>分类信息</span></a></li>
+      	
+      	<li><a href='http://www.dedecms.com' ><span>织梦CMS</span></a></li>
+      	
+      	<li><a href='http://docs.dedecms.com' ><span>帮助文档</span></a></li>
+      	
+      	<li><a href='/dede/a/xunizhuji/'  rel='dropmenu12'><span>虚拟主机</span></a></li>
+      	
+    	</ul>
+    </div>	
+    <div class="search">
+      <form  name="formsearch" action="/dede/plus/search.php">
+        <div class="form">
+          <h4>搜索</h4>
+           <input type="hidden" name="kwtype" value="0" />
+           <input name="q" type="text" class="search-keyword" id="search-keyword" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}" />
+           <select name="searchtype" class="search-option" id="search-option">
+               <option value="title" selected='1'>检索标题</option>
+               <option value="titlekeyword">智能模糊</option>
+           </select>
+          <button type="submit" class="search-submit">搜索</button>
+        </div>
+        </form>
+        <div class="tags">
+          <h4>热门标签:</h4>
+          <ul>
+          
+            <li><a href='/dede/tags.php?/dedecms5.1/'>dedecms5.1</a></li>
+          
+            <li><a href='/dede/tags.php?/sp1/'>sp1</a></li>
+          
+            <li><a href='/dede/tags.php?/%E5%85%8D%E8%B4%B9%E7%89%88/'>免费版</a></li>
+          
+          </ul>
+        </div>
+    </div><!-- //search -->
+		</div>
+	</div>
+</div><!-- //header -->
+
+<!-- /header -->
+<div class="w960 center clear mt1">
+<div class="pleft">
+ <div class="place"> <strong>当前位置:</strong> <a href='http://localhost/dede'>主页</a> > <a href='/dede/a/webbase/'>网页基础</a> > <a href='/dede/a/webbase/dreamweaver/'>Dreamweaver</a> >  </div>
+ <!-- /place -->
+ <div class="viewbox">
+  <div class="title">
+   <h2>通过Dreamweaver设计网页时组织CSS的建议</h2>
+  </div>
+  <!-- /title -->
+  <div class="info"> <small>时间:</small>2010-04-07 09:39<small>来源:</small> <small>作者:</small> <small>点击:</small>
+   <script src="/dede/plus/count.php?view=yes&aid=63&mid=1" type='text/javascript' language="javascript"></script>
+   次</div>
+  <!-- /info -->
+  
+  <div class="intro">一般地讲，样式表（style sheet）就是控制网页内容外观的格式化的规则的集合。可以以三种不同的方式在你的页面中使用CSS：</div>
+  
+  <div class="content">
+   <table width='100%'>
+    <tr>
+     <td><div id="contentMidPicAD" style="float:right; clear:both; top:0; vertical-align:top;"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=contentmidpicad&charset=gbk"></script></div>
+      <p>一般地讲，样式表（style sheet）就是控制网页内容外观的格式化的规则的集合。可以以三种不同的方式在你的页面中使用CSS：</p><p>代码式（Inline）：写入到代码中的一次性的样式。<br />内嵌式（Embedded）：可控制一个页面中所有元素的样式表<br />外联式（External）：可控制许多页面中的元素的样式表<span class="web"></span></p><p>事实上，许多站点都根据需要把这三种方式结合起来使用。</p><p>在使用CSS时一个需要重点考虑的事实是不同的浏览器以及同一浏览器的不同版本以不同的方式来解析CSS。除了网络浏览器的差异之外，你还要意识到还有很多其他的浏览器，比如听力浏览器，基于电视的浏览器以及Palm pilot和TTY（teletypewriter，远程打字机）一类的手持设备。</p><p>最佳习惯是指什么？<span class="web"></span></p><p>大多数技术都有自己约定俗成的标准。CSS也不例外。虽然并非网络上存在的所有CSS都很规范，但按照现有标准来使用CSS却还是不无裨益的。一般来说，开发人员应尽可能将内容与报告分离开来。这样做的好处在于：</p><p>1：增加站点的寿命</p><p>不规范的样式表可能在当时觉得很方便，但新版本的浏览器出来以后，很可能就会出现兼容性问题。到时逐页修改站点就是一项非常费时的工作同时也使使用CSS失去了意义。</p><p>2：让你的站点对所有的用户以及浏览器都适用。</p><p>有些地方的政府已经立法要求网站必须让残障人士也同样可以浏览。为残障认识设计的浏览设备，比如听力浏览器，对CSS规范性要求极其严格。</p><p>3：让站点更新和维护更加轻松。<span class="web"></span></p><p>使用方式得当的话，CSS可让你在一个页面中的调整快速应用到所有页面中去。</p><p>你首先要做的选择是使用哪一种样式表。当涉及到最佳习惯时，对不同样式表的分析如下：<span class="web"></span></p><p>Inline CSS；简单地说，你应该尽量避免使用。除了一些其他的缺点之外，使用Inline CSS意味着你并没有利用到CSS的真正优点，即你并没有将内容与格式分离开。DW使用Inline CSS主要是为了定位页面元素（这些元素在DW的用户界面中称为“层（layer）”），或者为了使用某个DHTML特效，它需要使用Inline 样式的Javascript来改变一个对象的属性。<span class="web"></span></p><p>Embedded CSS：它也不是最理想的，因为它只能对当前页面施加影响。在更新的过程中，如果某一个页面丢失，将会使站点的风格不一致；另外，当用户浏览你的站点时，每一页都要下载一次样式表信息。</p><p>External CSS：这是你的第一选择。External CSS可以让所有连接到它的页面保持一致的外观风格；提纲挈领，更改一次，轻松更新所有相关页面；让你的页面体积更小，浏览速度更快。其他的一些最佳习惯将在下文分析具体的CSS特性时提及。</p><p>在DW中创建CSS样式表</p><p>在DW中创建CSS样式表时（Text 》CSS Style 》New style sheet），在弹出的对话框中，你有两个选择：新样式表文档（New Style Sheet File） 和只用于当前页（This Document Only）。选中“New Style Sheet File ”你就开始了创建External CSS的过程。这个选项要求你在真正的创建过程之前先命名样式表并为它选定一个保存位置；另外一个选项，This Document Only，则会直接把相关代码写入到页面的部分。</p><p>你也可以在“新样式（New style）”对话框中选择一个现存的样式表来编辑或添加新的定义。</p><p>应该连接到External CSS还是导入？</p><p>创建外部样式表以后，你需要把它附加在每个页面上（或是模板）。要这样做，可以在CSS面板上淡季“附加样式表（Attach Style Sheet）”按纽，此时会弹出连接外部样式表 （Link External Style Sheet）对话框，在上面可以浏览到你的目标样式表的名字，找到以后，你可以选择连接（link） 或者导入（import ）此外部样式表。</p><p>连接是最常用的方式，选择“link”即可把样式表连接到页面。它会在你的页面中加入下面的标记：</p><p>所有支持CSS的浏览器都支持连接选项。如果你想一些比较旧的浏览器（比如Netscape 4.x）也能“看到”这个样式表的话，就要采用下面的方法。</p><p>如果你选择“导入”选项，所用的标记为：</p><p>NetSscape4会完全忽略导入的CSS，而按照连接的CSS来解释页面。这样我们就可以放心使用CSS中的新功能，不必担心浏览器的兼容性问题了。</p><p>CSS属性检查器</p><p>在DW的属性检查器中可以轻易切换到CSS模式。缺省情况下，属性检查器会显示原始的HTML模式下字体标签。点击字体下拉菜单旁边的小“A”，你就可以看到目前可用的CSS样式表，而不是字体标签列表。同时，你也可以轻松切回到HTML模式。</p><p>现成的CSS样式表</p><p>DW中一个令人激动的CSS特性就是它包含了已制作好的CSS样式表。CSS的新用户可以先体验一下。选择File > New，在弹出的新文档对话框中选择选中CSS style sheets，在右边的方框中会出现所有可用的CSS列表。为了实践我们所说的最佳习惯，选择一个标记为“Accessible”的。</p><p>将文档保存在站点文件夹内，然后就可以用上述的方法来把CSS附加在你的文档中了。<span class="web"></span></p><p>设计时间样式表（Design Time style sheets）</p><p>DW的这一特性可以让你在设计视图下工作时将样式表应用到页面，让你对站点的外观有一个更直观的认识。设计时间样式表将不会出现在站点内。从我们的最佳习惯的观点来讲，这一特性是非常有用的。如果你使用同时导入和连接两种方式（如上所述），附加设计时间样式表可以让你使用其中的任何一个来开发站点。当你想看在另一个样式表下页面外观如何时，你可以轻松更改为另一个样式表。<span class="web"></span></p><p>对于要将CSS应用于服务器端（比如ASP, PHP, or ColdFusion）或是要在客户端通过Javascript来存取的开发者来说，设计时间样式表同样有用。服务器端样式表也是处理客户端浏览器对CSS支持不好的又一种方式。但在以前版本的DW中，这种方式却不能让你在设计阶段查看CSS的实际效果。设计时间样式表让你实时查看样式表效果，所以你可在DW中以可视界面工作。另外一个好处就是当你上传站点文件时，你不必再检查整个站点寻找冗余的样式表了。</p><p>验证</p><p>无论你是自己创建样式表还是编辑现有的样式表，验证可以确保你不会误用不标准的标签或错误的代码。DW本身不包含CSS验证程序，你可以使用W3C站点提供的验证服务。<span class="web"></span></p><p>在DW内你可以验证HTML 或DHTML标签（ File > Check Page > Validate Markup (for HTML) 或 File > Check Page > Validate as XML for XHTML.）。在开发基于CSS的站点时，DW提供了很多辅助工具。有了MW MX的帮助，再加上对CSS良好的理解，你就可以开发出能经受时间考验的站点了。( 负责编辑：kaso )</p>
+            <p align="center"> </p>
+      
+      (责任编辑：admin)</td>
+    </tr>
+   </table>
+  </div>
+  <!-- /content -->
+  <div class="dede_pages">
+   <ul class="pagelist">
+    
+   </ul>
+  </div>
+  <!-- /pages -->
+  <!-- //顶踩 -->
+  <div class="newdigg" id="newdigg">
+   <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',63)">
+    <div class="digg_act">顶一下</div>
+    <div class="digg_num">(0)</div>
+    <div class="digg_percent">
+     <div class="digg_percent_bar"><span style="width:0%"></span></div>
+     <div class="digg_percent_num">0%</div>
+    </div>
+   </div>
+   <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',63)">
+    <div class="digg_act">踩一下</div>
+    <div class="digg_num">(0)</div>
+    <div class="digg_percent">
+     <div class="digg_percent_bar"><span style="width:0%"></span></div>
+     <div class="digg_percent_num">0%</div>
+    </div>
+   </div>
+  </div>
+  <script language="javascript" type="text/javascript">getDigg(63);</script>
+  <!-- //顶踩部份的源码结束 -->
+  <!-- //分享代码开始 -->
+  
+  <!-- //分享代码结束 -->
+  <div class="boxoff"> <strong>------分隔线----------------------------</strong> </div>
+  <div class="handle">
+   <div class="context">
+    <ul>
+     <li>上一篇：<a href='/dede/a/webbase/dreamweaver/2010/0407/62.html'>在Dreamweaver8.0.2中为插入的Flash添加透明或其他参数</a> </li>
+     <li>下一篇：<a href='/dede/a/webbase/dreamweaver/2010/0407/64.html'>Dreamweaver cs3新功能Spry效果试用</a> </li>
+    </ul>
+   </div>
+   <!-- /context -->
+   <div class="actbox">
+    <ul>
+     <li id="act-fav"><a href="/dede/plus/stow.php?aid=63" target="_blank">收藏</a></li>
+     <li id="act-err"><a href="/dede/plus/erraddsave.php?aid=63&title=通过Dreamweaver设计网页时组织CSS的建议" target="_blank">挑错</a></li>
+     <li id="act-pus"><a href="/dede/plus/recommend.php?aid=63" target="_blank">推荐</a></li>
+     <li id="act-pnt"><a href="#" onClick="window.print();">打印</a></li>
+    </ul>
+   </div>
+   <!-- /actbox -->
+  </div>
+  <!-- /handle -->
+ </div>
+ <!-- /viewbox -->
+ <!-- //AJAX评论区 -->
+ <!-- //主模板必须要引入/dede/include/dedeajax2.js -->
+<a name='postform'></a>
+<div class="mt1">
+  <dl class="tbox">
+    <dt> <strong>发表评论</strong> <span class="more"></span> </dt>
+    <dd>
+      <div class="dede_comment_post">
+        <form action="#" method="post" name="feedback" onsubmit="return false;">
+          <input type="hidden" name="dopost" value="send" />
+          <input type="hidden" name="comtype" value="comments">
+          <input type="hidden" name="aid" value="63" />
+          <input type="hidden" name="fid" id='feedbackfid' value="0" />
+          <div class="dcmp-title"> <small>请自觉遵守互联网相关的政策法规，严禁发布色情、暴力、反动的言论。</small> </div>
+          <!-- /dcmp-title -->
+          <div class="dcmp-stand"> <strong>评价:</strong>
+            <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" />
+            <label for="dcmp-stand-neu"><img src="/dede/templets/default/images/cmt-neu.gif" />中立</label>
+            <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" />
+            <label for="dcmp-stand-good"><img src="/dede/templets/default/images/cmt-good.gif" />好评</label>
+            <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" />
+            <label for="dcmp-stand-bad"><img src="/dede/templets/default/images/cmt-bad.gif" />差评</label>
+          </div>
+          <!-- /dcmp-stand -->
+          <div class="clr"></div>
+          <div class="dcmp-content">
+            <script type="text/javascript">
+					//<![CDATA[
+					window.CKEDITOR_BASEPATH='/dede/include/ckeditor/';
+					//]]>
+                    </script>
+            <script type="text/javascript" src="/dede/include/ckeditor/ckeditor.js?t=B8DJ5M3"></script>
+            <script type="text/javascript">//<![CDATA[
+CKEDITOR.config.ubb_smiley = {"高兴":"{s:1}","撇嘴":"{s:2}","抓狂":"{s:3}","汗":"{s:4}","惊恐":"{s:5}","奋斗":"{s:6}","疑问":"{s:7}","晕":"{s:8}","偷笑":"{s:9}","可爱":"{s:10}","疑惑":"{s:11}","酷":"{s:12}","暴汗":"{s:13}","呕吐":"{s:14}","大笑":"{s:15}","色":"{s:16}"}
+//]]></script>
+<textarea name="msg" rows="8" cols="60"></textarea>
+<script type="text/javascript">//<![CDATA[
+CKEDITOR.replace('msg', {"extraPlugins":"dedepage,multipic,addon,bbcode","fontSize_sizes":"30\/30%;50\/50%;100\/100%;120\/120%;150\/150%;200\/200%;300\/300%","disableObjectResizing":"true","smiley_path":"\/dede\/images\/smiley\/","smiley_images":["1.gif","2.gif","3.gif","4.gif","5.gif","6.gif","7.gif","8.gif","9.gif","10.gif","11.gif","12.gif","13.gif","14.gif","15.gif","16.gif"],"smiley_descriptions":["高兴","撇嘴","抓狂","汗","惊恐","奋斗","疑问","晕","偷笑","可爱","疑惑","酷","暴汗","呕吐","大笑","色"],"toolbar":[["Source","-","Bold","Italic","Underline","-"],["FontSize","TextColor"],["Link","Unlink","Smiley"]],"height":100,"skin":"kama"});
+//]]></script>
+ </div>
+          <!-- /dcmp-content -->
+          <div class="dcmp-post">
+            <!--未登陆-->
+            <div class="dcmp-userinfo" id="_ajax_feedback"> 用户名:
+              <input type="text" name="username" size="16" class="ipt-txt" style="text-transform: uppercase;"/>
+              
+              验证码:
+              <input type="text" name="validate" size="4" class="ipt-txt" style="text-transform:uppercase;"/>
+              <img src= "/dede/include/vdimgck.php" id="validateimg" style="cursor:pointer" onclick="this.src=this.src+'?'" title="点击我更换图片" alt="点击我更换图片"  class="vdimg"/>
+              <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+              <label for="dcmp-submit-guest" />
+              匿名?
+              </label>
+            </div>
+            
+            <script language="javascript" type="text/javascript">CheckLogin();</script>
+            
+            <div class="dcmp-submit">
+              <button type="button" onClick='PostComment()'>发表评论</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </dd>
+  </dl>
+</div>
+<!-- //评论表单区结束 -->
+<!-- //评论内容区 -->
+<a name='commettop'></a>
+<div class="mt1">
+  <dl class="tbox">
+    <dt> <strong>最新评论</strong> <span class="more"><a href="/dede/plus/feedback.php?aid=63">进入详细评论页&gt;&gt;</a></span> </dt>
+    <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+    <dd id='commetcontentNew'></dd>
+    <dd id='commetcontent'></dd>
+  </dl>
+</div>
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/dede/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/dede/plus/feedback_ajax.php?dopost=getlist&aid=63&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var msg = CKEDITOR.instances.msg.getData();
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/dede/images/loadinglit.gif' />正在发送中...</div>";
+		if(msg=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(msg.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		/*
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		*/
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'utf-8';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '63');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', msg);
+		myajax.SendPost2('/dede/plus/feedback_ajax.php');
+		//msg = '';
+		CKEDITOR.instances.msg.setData('');
+		//taget_obj.removeAttribute('id');
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/dede/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+		
+}
+function quoteCommet(fid)
+{
+	    document.feedback.fid.value = fid;
+}
+  
+function ajaxFeedback(aid, fid, type)
+{
+	
+	var taget_obj = $DE('ajaxfeedback_'+fid);
+	if(taget_obj.innerHTML == '')
+	{
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x');
+		myajax.SendGet2("/dede/plus/feedback.php?aid="+aid+"&fid="+fid+"&action=quote&type=ajax");
+		eval('var result = typeof CKEDITOR.instances.msg_'+fid);
+		if(result != 'undefined')
+		{
+			// 删除实例
+			eval('var edit = CKEDITOR.instances.msg_'+fid);
+			CKEDITOR.remove(edit);
+		}
+		CKEDITOR.replace(document.getElementById('msg_'+fid) , CKEDITOR.instances.msg.config);
+		scroll(0, taget_obj.offsetTop - 120);
+		var formname = 'f = document.ajaxfeedback_'+fid;
+		eval(formname);
+		if(f.validate)
+		{
+			if($DE('vdimg_'+fid)) $DE('vdimg_'+fid).src = "/dede/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+		
+		DedeXHTTP = null;
+	}
+}
+
+
+
+function ajaxQuotePost(fid)
+{
+	var formname = 'f = document.ajaxfeedback_'+fid;
+	eval(formname);
+	//var f = document.formname;
+	//var f = f[0];
+	var nvalidate = '';
+	var nnotuser = '';
+	var nusername = '';
+	var npwd = '';
+	var taget_obj = $DE('commetcontentNew');
+	var waithtml = "<div style='line-height:30px'><img src='/dede/images/loadinglit.gif' />正在发送中...</div>";
+	eval('var msg = CKEDITOR.instances.msg_'+fid+'.getData()');
+
+	if(f.validate)
+	{
+		if(f.validate.value=='') {
+			alert("请填写验证码！");
+			return;
+		}
+		else {
+			nvalidate = f.validate.value;
+		}
+	}
+	var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+	
+	if(f.notuser.checked) nnotuser = '1';
+	if(f.username) nusername = f.username.value;
+	if(f.pwd) npwd = f.pwd.value;
+	
+	myajax.sendlang = 'utf-8';
+	myajax.AddKeyN('dopost', 'send');
+	myajax.AddKeyN('aid', '63');
+	myajax.AddKeyN('fid', f.fid.value);
+	myajax.AddKeyN('type', 'ajax');
+	myajax.AddKeyN('comtype', f.comtype.value);
+	myajax.AddKeyN('isconfirm','yes');
+	
+	myajax.AddKeyN('typeid', f.typeid.value);
+	myajax.AddKeyN('quotemsg', f.quotemsg.value);
+	myajax.AddKeyN('validate', nvalidate);
+	myajax.AddKeyN('notuser', nnotuser);
+	myajax.AddKeyN('username', nusername);
+	myajax.AddKeyN('pwd', npwd);
+	myajax.AddKeyN('msg', msg);
+	myajax.SendPost2('/dede/plus/feedback_ajax.php');
+	//alert(f.quotemsg.value);
+	if($DE('ajaxfeedback_'+fid).innerHTML != null)
+	{
+		$DE('ajaxfeedback_'+fid).innerHTML = '';
+	}
+	scroll(0, taget_obj.offsetTop);
+}
+LoadCommets(1);
+</script>
+<!-- //评论内容区结束 -->
+ </div>
+<!-- //左边内容结束 -->
+<!-- //右边内容开始 -->
+<div class="pright"> 
+ <div class="pright">
+  <div>
+   <dl class="tbox">
+    <dt><strong>栏目列表</strong></dt>
+    <dd>
+     <ul class="d6">
+      
+      <li><a href='/dede/a/webbase/html/'>HTML</a></li>
+      
+      <li><a href='/dede/a/webbase/div-css/'>DIV&CSS</a></li>
+      
+      <li><a href='/dede/a/webbase/javascript-ajax/'>Javascript/Ajax</a></li>
+      <li><a href='/dede/a/webbase/dreamweaver/' class='thisclass'>Dreamweaver</a></li>
+     </ul>
+    </dd>
+   </dl>
+  </div>
+  <div id="contentRtPicAD" style="margin:10px auto"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=contentrtpicad&charset=gbk"></script></div>
+  <div class="commend mt1">
+   <dl class="tbox light">
+    <dt class='light'><strong>推荐内容</strong></dt>
+    <dd class='light'>
+     <ul class="d4">
+      <li><a href="/dede/a/webbase/dreamweaver/2010/0408/106.html">{dede:招聘启事 标题='织梦大家庭新</a>
+       <p>2010年，新一年，新征程……
+织梦大家庭招募能够共同创业的新...</p>
+      </li>
+
+     </ul>
+    </dd>
+   </dl>
+  </div>
+  <!-- /commend -->
+  <div class="hot mt1">
+   <dl class="tbox light">
+    <dt class='light'><strong>热点内容</strong></dt>
+    <dd class='light'>
+     <ul class="c1 ico2">
+      <li><a href="/dede/a/webbase/dreamweaver/2010/0408/106.html">{dede:招聘启事 标题='织梦</a></li>
+<li><a href="/dede/a/webbase/dreamweaver/2010/0407/54.html">使用Dreamweaver批量做web网页</a></li>
+<li><a href="/dede/a/webbase/dreamweaver/2010/0407/55.html">用 Dreamweaver 8 搞定web标准</a></li>
+<li><a href="/dede/a/webbase/dreamweaver/2010/0407/56.html">Dreamweaver cs3 彩蛋</a></li>
+<li><a href="/dede/a/webbase/dreamweaver/2010/0407/57.html">插入的Flash添加透明或其他</a></li>
+<li><a href="/dede/a/webbase/dreamweaver/2010/0407/58.html">Dreamweaver8轻松实现文本的</a></li>
+<li><a href="/dede/a/webbase/dreamweaver/2010/0407/59.html">Dreamweaver基础教程：层及其</a></li>
+<li><a href="/dede/a/webbase/dreamweaver/2010/0407/60.html">Dreamweaver中加入竖直线的问</a></li>
+<li><a href="/dede/a/webbase/dreamweaver/2010/0407/61.html">Dreamweaver CS3新功能</a></li>
+<li><a href="/dede/a/webbase/dreamweaver/2010/0407/62.html">在Dreamweaver8.0.2中为插入的</a></li>
+
+     </ul>
+    </dd>
+   </dl>
+  </div>
+  <div id="contentRtPicAD2" style="margin:10px auto"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=contentrtpicad2&charset=gbk"></script></div>
+ </div>
+ <!-- /pright -->
+</div>
+<div id="innerfooterAD2" style="margin:10px auto; width:726px"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=innerfooterad2&charset=gbk"></script></div>
+
+<!-- //底部模板 -->
+<div class="footer w960 center mt1 clear">
+	<!-- 
+		为了支持织梦团队的发展,请您保留织梦内容管理系统的链接信息.
+		我们对支持织梦团队发展的朋友表示真心的感谢!织梦因您更精彩!
+	-->
+    <div class="footer_left"></div>
+    <div class="footer_body">
+	<p class="powered">    
+		Powered by <a href="http://www.dedecms.com" title="织梦内容管理系统(DedeCms)--国内最专业的PHP网站管理系统，轻松建站的首选利器。" target="_blank"><strong>DedeCMS_V57_UTF8_SP1</strong></a> &copy; 2004-2011 <a href="http://www.desdev.cn/" target="_blank">DesDev</a> Inc.<br /><div class="copyright">Copyright &copy; 2004-2011 DEDECMS. 织梦科技 版权所有&nbsp;&nbsp;</div></p>        
+<!-- /powered -->
+   </div>
+   <div class="footer_right"></div>
+</div>
+<!-- /footer -->
+</body>
+</html>

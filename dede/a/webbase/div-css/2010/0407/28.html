@@ -1,0 +1,946 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>为今后的项目制作空白CSS模板文件_星空软件</title>
+<meta name="keywords" content="模板,文件,空白,项目,制作,今后," />
+<meta name="description" content="如果你曾经收藏过许多关于CSS的最佳实践但还没开始利用它们，那么这篇文章将帮助你制作一个很好且很有组织的CSS文件来应用于一些CSS最佳实践。在 这里我将为为我的下一个项目制作一个基本的CSS模板文件。使用标准的重设(Reset)方法，定义一些基本的方便的类" />
+<link href="/dede/templets/default/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/dede/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/dede/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/dede/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/dede/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/dede/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body class="articleview">
+<div class="header_top">  
+    <div class="w960 center">  
+     <span id="time" class="time">织梦CMS - 轻松建站从此开始！</span>
+     <div class="toplinks"><a href="/dede/plus/heightsearch.php" target="_blank">高级搜索</a>|<a href="/dede/data/sitemap.html" target="_blank">网站地图</a>|<a href="/dede/tags.php">TAG标签</a><a href="/dede/data/rssmap.html" class="rss">RSS订阅</a><span>[<a href=""onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://localhost');">设为首页</a>] [<a href="javascript:window.external.AddFavorite('http://localhost','星空软件')">加入收藏</a>]</span></div>
+    </div> 
+</div>
+<div class="header">
+	<div class="top w960 center">
+      <div class="title">
+        <h1><a href="http://localhost"><img src="/dede/templets/default/images/logo.gif" height="54" width="216" alt="星空软件"/></a> </h1>
+      </div>
+      <div class="banner"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=ctenttpbanner1&charset=gbk"></script></div>
+      <div class="banner2"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=ctenttpbanner2&charset=gbk"></script></div>
+       
+	</div><!-- //top -->
+	<!-- //菜单 -->
+	<div class="module blue mT10 wrapper w963">
+  	<div class="top">
+    	<!-- //如果不使用currentstyle，可以在channel标签加入 cacheid='channeltoplist' 属性提升性能 -->
+    <div id="navMenu">
+    	<ul>
+      	<li><a href='/dede/'><span>主页</span></a></li>
+      	<li class='hover'><a href='/dede/a/webbase/'  rel='dropmenu1'><span>网页基础</span></a></li>
+      	<li><a href='/dede/a/pics/' ><span>站长图集</span></a></li>
+      	
+      	<li><a href='/dede/a/downloads/' ><span>软件下载</span></a></li>
+      	
+      	<li><a href='/dede/a/shops/' ><span>商品销售</span></a></li>
+      	
+      	<li><a href='/dede/a/infos/' ><span>分类信息</span></a></li>
+      	
+      	<li><a href='http://www.dedecms.com' ><span>织梦CMS</span></a></li>
+      	
+      	<li><a href='http://docs.dedecms.com' ><span>帮助文档</span></a></li>
+      	
+      	<li><a href='/dede/a/xunizhuji/'  rel='dropmenu12'><span>虚拟主机</span></a></li>
+      	
+    	</ul>
+    </div>	
+    <div class="search">
+      <form  name="formsearch" action="/dede/plus/search.php">
+        <div class="form">
+          <h4>搜索</h4>
+           <input type="hidden" name="kwtype" value="0" />
+           <input name="q" type="text" class="search-keyword" id="search-keyword" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}" />
+           <select name="searchtype" class="search-option" id="search-option">
+               <option value="title" selected='1'>检索标题</option>
+               <option value="titlekeyword">智能模糊</option>
+           </select>
+          <button type="submit" class="search-submit">搜索</button>
+        </div>
+        </form>
+        <div class="tags">
+          <h4>热门标签:</h4>
+          <ul>
+          
+            <li><a href='/dede/tags.php?/dedecms5.1/'>dedecms5.1</a></li>
+          
+            <li><a href='/dede/tags.php?/sp1/'>sp1</a></li>
+          
+            <li><a href='/dede/tags.php?/%E5%85%8D%E8%B4%B9%E7%89%88/'>免费版</a></li>
+          
+          </ul>
+        </div>
+    </div><!-- //search -->
+		</div>
+	</div>
+</div><!-- //header -->
+
+<!-- /header -->
+<div class="w960 center clear mt1">
+<div class="pleft">
+ <div class="place"> <strong>当前位置:</strong> <a href='http://localhost/dede'>主页</a> > <a href='/dede/a/webbase/'>网页基础</a> > <a href='/dede/a/webbase/div-css/'>DIV&CSS</a> >  </div>
+ <!-- /place -->
+ <div class="viewbox">
+  <div class="title">
+   <h2>为今后的项目制作空白CSS模板文件</h2>
+  </div>
+  <!-- /title -->
+  <div class="info"> <small>时间:</small>2010-04-07 09:32<small>来源:</small> <small>作者:</small> <small>点击:</small>
+   <script src="/dede/plus/count.php?view=yes&aid=28&mid=1" type='text/javascript' language="javascript"></script>
+   次</div>
+  <!-- /info -->
+  
+  <div class="intro">如果你曾经收藏过许多关于CSS的最佳实践但还没开始利用它们，那么这篇文章将帮助你制作一个很好且很有组织的CSS文件来应用于一些CSS最佳实践。在 这里我将为为我的下一个项目制作一个基本的CSS模板文件。使用标准的重设(Reset)方法，定义一些基本的方便的类</div>
+  
+  <div class="content">
+   <table width='100%'>
+    <tr>
+     <td><div id="contentMidPicAD" style="float:right; clear:both; top:0; vertical-align:top;"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=contentmidpicad&charset=gbk"></script></div>
+      <p><img alt="" src="http://www.dedecms.com/demoimg/uploads/allimg/c100407/12F60393415040-55N2.png" /><br />
+如果你曾经收藏过许多关于CSS的最佳实践但还没开始利用它们，那么这篇文章将帮助你制作一个很好且很有组织的CSS文件来应用于一些CSS最佳实践。在 这里我将为为我的下一个项目制作一个基本的CSS模板文件。使用标准的重设(Reset)方法，定义一些基本的方便的类，命名一些常见的页面区域等…</p>
+<p>在开始之前，创建一个新建文件夹并将它命名为”styles”(您也可以命名自己喜欢的名字)，然后在该文件夹下创建两个文件分别命名为“reset.css” 和 “style.css”。现在你的文件夹结构不出意外的话应该是这样的:</p>
+<blockquote>
+<p>–root<br />
+|<br />
+styles<br />
+– reset.css<br />
+– style.css<br />
+|</p>
+</blockquote>
+<h3>1-单独使用一个全局CSS重设方法</h3>
+<p>我以Eric Meyer的重设为基础。只是去掉了其中的<strong>“ins”, “del”和 “table”</strong>，因为我实在是很少使用它们，因为某些原因又重新定义了<strong>“strong”</strong> 和 <strong>“em”</strong>，我知道您也许会有自己的方式，所以您也可以自由为自己的文件定义。写完CSS重设后，将其存储为”reset.css”。</p>
+<blockquote>
+<p>html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {<br />
+margin: 0;<br />
+padding: 0;<br />
+border: 0;<br />
+outline: 0;<br />
+font-size: 100%;<br />
+vertical-align: baseline;<br />
+background: transparent;<br />
+}<br />
+ol, ul {<br />
+list-style: none;<br />
+}<br />
+blockquote, q {<br />
+quotes: none;<br />
+}<br />
+blockquote:before, blockquote:after, q:before, q:after {<br />
+content: ”;<br />
+content: none;<br />
+}<br />
+:focus {<br />
+outline: 0;<br />
+}<br />
+table {<br />
+border-collapse: collapse;<br />
+border-spacing: 0;<br />
+}<br />
+caption, th, td {<br />
+text-align: left;<br />
+font-weight: normal;<br />
+}<br />
+strong {<br />
+font-weight: bold;<br />
+}<br />
+em {<br />
+font-style: italic;<br />
+}</p>
+</blockquote>
+<p>在这个重设文件里我去掉了<strong>“body”</strong>样式，因为通常我们在不同的项目中都会定义不同的”body”样式，所以我们将它放在style.css文件中。</p>
+<h3>2-在顶部为样式表添加描述注释</h3>
+<p>现在我们打开style.css来开始写一些基本的样式。在创建一个新样式文件(style.css)后，第一件事应该是在文件顶部写一些结构性的 注释，用来描述一些样式的细节，比如版本、作者、作者的详细联系方式等，这将帮助你和其他前端开发人员使用该文件。描述细节应当包括像作者姓名、版本和提 供更多信息的URL地址。我比较喜欢，因为它比较广泛。</p>
+<blockquote>
+<p>/*<br />
+主题名称: 玫瑰主题<br />
+URI: the-theme’s-homepage<br />
+描述: a-brief-description<br />
+作者: 您的姓名<br />
+作者 URI: 您的-URI<br />
+模板: 在这里可以提示它的父级模板<br />
+版本: 版本号<br />
+彬Go-集前端开发/网页设计/网站可用性/用户体验于一体的趣味互联网生活<br />
+网址:http://blog.bingo929.com/<br />
+*/</p>
+</blockquote>
+<h3>3-定义便于搜索的目录表</h3>
+<p>现在，我们来一起定义我们样式的目录表。定义TOC能帮助其他人甚至自己更容易与阅读和理解代码。也许您会觉得这个没什么必要，但请相信我！</p>
+<p>首先让我们看看它应当是什么样子的:</p>
+<blockquote>
+<p>[目录表]<br />
+0- Reset<br />
+1- Global<br />
+2- Links<br />
+3- Headings<br />
+4- Header<br />
+5- Navigation<br />
+6- Middle<br />
+7- Forms<br />
+8- Extras<br />
+9- Footer</p>
+</blockquote>
+<p>正如您看到的，我们将目录表从0到9分成10部分。</p>
+<ul>
+    <li>TOC非常简单以至于它不会花费您超过1分钟的时间。</li>
+    <li>您不用为每个项目定义不同的TOC。</li>
+    <li>命名的使用非常普遍，所以可以适合模本的任何部分。</li>
+    <li>不使用动态的#ID和.class。</li>
+    <li>它并不大所以不会占用很多Kbytes。</li>
+    <li>顺序的数字很有用，用途请往下看。</li>
+</ul>
+<h3>4-使用注释将每个部分隔开并使用一个=标记</h3>
+<p>请看一下样式，在0部分我将之前的重设样式表reset.css导入。</p>
+<blockquote>
+<p>/* =0 Reset<br />
+–––––––––––––––––––––––––––––––––––––––––––––––––––*/<br />
+@import url(’reset.css’);<br />
+/* =1 Global</p>
+<p>–––––––––––––––––––––––––––––––––––––––––––––––––––*/<br />
+/* =2 Links<br />
+–––––––––––––––––––––––––––––––––––––––––––––––––––*/<br />
+/* =3 Headings<br />
+–––––––––––––––––––––––––––––––––––––––––––––––––––*/<br />
+/* =4 Header<br />
+–––––––––––––––––––––––––––––––––––––––––––––––––––*/<br />
+/* =5 Navigation<br />
+–––––––––––––––––––––––––––––––––––––––––––––––––––*/<br />
+/* =6 Middle<br />
+–––––––––––––––––––––––––––––––––––––––––––––––––––*/<br />
+/* =7 Form<br />
+–––––––––––––––––––––––––––––––––––––––––––––––––––*/<br />
+/* =8 Extra<br />
+–––––––––––––––––––––––––––––––––––––––––––––––––––*/<br />
+/* =9 Footer<br />
+–––––––––––––––––––––––––––––––––––––––––––––––––––*/</p>
+</blockquote>
+<p>在每个部分的分区注释中使用=标记，可以帮助您和您的团队其他成员快速找到需要的代码。大家都知道，在CSS样式中的声明几乎是不会使用等号的，所 以我们可以使用等号来帮助搜索。比如你想寻找表单的相关样式代码，可以先查看目录表中表单对应的数字，然后搜索”=7″便可以快速跳转到表单的相关代码区 域。</p>
+<h3>5-定义最常用的类</h3>
+<p>其实有一些类是我们要经常使用的，那我们为什么不一次性把它们都定义好呢？现在正是时候！我添加了一些个人比较喜欢的，当然您也可以按照自己的喜好进行增删改。将它们定义在“=1 Global”下。<br />
+我还把body选择器定义在了Global中。<br />
+<span><strong>注:一下定义类仅仅是比较简单的一些。</strong></span></p>
+<blockquote>
+<p>/* =1 Global<br />
+–––––––––––––––––––––––––––––––––––––––––––––––––––*/<br />
+body {<br />
+line-height: 1;<br />
+font: normal 12px Arial, Helvetica, sans-serif;<br />
+vertical-align: top;<br />
+background: #fff;<br />
+color: #000;<br />
+}<br />
+.right {<br />
+float: right;<br />
+}<br />
+.left {<br />
+float: left;<br />
+}<br />
+.align-left {<br />
+text-align: left;<br />
+}<br />
+.align-right {<br />
+text-align: right;<br />
+}<br />
+.align-center {<br />
+text-align:center;<br />
+}<br />
+.justify {<br />
+text-align:justify;<br />
+}<br />
+.hide {<br />
+display: none;<br />
+}<br />
+.clear {<br />
+clear: both;<br />
+}<br />
+.bold {<br />
+font-weight:bold;<br />
+}<br />
+.italic {<br />
+font-style:italic;<br />
+}<br />
+.underline {<br />
+border-bottom:1px solid;<br />
+}<br />
+.highlight {<br />
+background:#ffc;<br />
+}<br />
+img.centered {<br />
+display: block;<br />
+margin-left: auto;<br />
+margin-right: auto;<br />
+}<br />
+img.alignleft {<br />
+float:left;<br />
+margin:4px 10px 4px 0;<br />
+}<br />
+img.alignright {<br />
+float:right;<br />
+margin:4px 0 4px 10px;<br />
+}<br />
+.clearfix:after {<br />
+content: “.”;<br />
+display: block;<br />
+clear: both;<br />
+visibility: hidden;<br />
+line-height: 0;<br />
+height: 0;<br />
+}<br />
+.clearfix {<br />
+display: block;<br />
+}<br />
+html[xmlns] .clearfix {<br />
+display: block;<br />
+}<br />
+* html .clearfix {<br />
+height: 1%;<br />
+}</p>
+</blockquote>
+<h3>6-为链接和标题定义样式</h3>
+<p>最后，我们来定义适当的链接和标题的样式，因为他们在任何项目中都是必需的。如果你在制作某个网页，你不可能不是用它们。</p>
+<blockquote>
+<p>/* =2 Links<br />
+––––––––––––––––––––––––––––––––––––––––––––––––––*/<br />
+a:link, a:visited {<br />
+color: #333;<br />
+}<br />
+a:hover {<br />
+color: #111;<br />
+}<br />
+a:active {<br />
+color: #111;<br />
+}<br />
+/* =3 Headings<br />
+––––––––––––––––––––––––––––––––––––––––––––––––––*/<br />
+h1 {<br />
+font: bold 2em “Times New Roman”, Times, serif;<br />
+}<br />
+h2 {<br />
+font: bold 1.5em “Times New Roman”, Times, serif;<br />
+}<br />
+h3 {<br />
+font: bold 1.2em Arial, Geneva, Helvetica, sans-serif;<br />
+}<br />
+h4 {<br />
+font: bold 1em Arial, Geneva, Helvetica, sans-serif;<br />
+}<br />
+h5 {<br />
+font: bold 0.9em Arial, Geneva, Helvetica, sans-serif;<br />
+}</p>
+</blockquote>
+<h3>style.css模板的最终代码</h3>
+<blockquote>
+<p>/*<br />
+主题名称: 玫瑰主题<br />
+URI: the-theme’s-homepage<br />
+描述: a-brief-description<br />
+作者: 您的姓名<br />
+作者 URI: 您的-URI<br />
+模板: 在这里可以提示它的父级模板</p>
+<p>[目录表]<br />
+0- Reset<br />
+1- Global<br />
+2- Links<br />
+3- Headings<br />
+4- Header<br />
+5- Navigation<br />
+6- Middle<br />
+7- Forms<br />
+8- Extras<br />
+9- Footer<br />
+*/<br />
+/* =0 Reset<br />
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/<br />
+@import url(’reset.css’);</p>
+<p>/* =1 Global<br />
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/<br />
+body {<br />
+line-height: 1;<br />
+font: normal 12px Arial, Helvetica, sans-serif;<br />
+vertical-align: top;<br />
+background: #fff;<br />
+color: #000;<br />
+}<br />
+.right {<br />
+float: right;<br />
+}<br />
+.left {<br />
+float: left;<br />
+}<br />
+.align-left {<br />
+text-align: left;<br />
+}<br />
+.align-right {<br />
+text-align: right;<br />
+}<br />
+.align-center {<br />
+text-align:center;<br />
+}<br />
+.justify {<br />
+text-align:justify;<br />
+}<br />
+.hide {<br />
+display: none;<br />
+}<br />
+.clear {<br />
+clear: both;<br />
+}<br />
+.bold {<br />
+font-weight:bold;<br />
+}<br />
+.italic {<br />
+font-style:italic;<br />
+}<br />
+.underline {<br />
+border-bottom:1px solid;<br />
+}<br />
+.highlight {<br />
+background:#ffc;<br />
+}<br />
+img.centered {<br />
+display: block;<br />
+margin-left: auto;<br />
+margin-right: auto;<br />
+}<br />
+img.alignleft {<br />
+float:left;<br />
+margin:4px 10px 4px 0;<br />
+}<br />
+img.alignright {<br />
+float:right;<br />
+margin:4px 0 4px 10px;<br />
+}<br />
+.clearfix:after {<br />
+content: “.”;<br />
+display: block;<br />
+clear: both;<br />
+visibility: hidden;<br />
+line-height: 0;<br />
+height: 0;<br />
+}<br />
+.clearfix {<br />
+display: block;<br />
+}<br />
+html[xmlns] .clearfix {<br />
+display: block;<br />
+}<br />
+* html .clearfix {<br />
+height: 1%;<br />
+}<br />
+/* =2 Links<br />
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/<br />
+a:link, a:visited {<br />
+color: #333;<br />
+}<br />
+a:hover {<br />
+color: #111;<br />
+}<br />
+a:active {<br />
+color: #111;<br />
+}<br />
+/* =3 Headings<br />
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/<br />
+h1 {<br />
+font: bold 2em “Times New Roman”, Times, serif;<br />
+}<br />
+h2 {<br />
+font: bold 1.5em “Times New Roman”, Times, serif;<br />
+}<br />
+h3 {<br />
+font: bold 1.2em Arial, Geneva, Helvetica, sans-serif;<br />
+}<br />
+h4 {<br />
+font: bold 1em Arial, Geneva, Helvetica, sans-serif;<br />
+}<br />
+h5 {<br />
+font: bold 0.9em Arial, Geneva, Helvetica, sans-serif;<br />
+}<br />
+/* =4 Header<br />
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/<br />
+/* =5 Navigation<br />
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/<br />
+/* =6 Middle<br />
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/<br />
+/* =7 Form<br />
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/<br />
+/* =8 Extra<br />
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/<br />
+/* =9 Footer<br />
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/</p>
+</blockquote>
+<h3>总结</h3>
+<p>感谢大家阅读本文，CSS最佳实践在某种意义上的确会对我们提供很大的帮助。它可以帮助我们节省更多的工作时间，显著提高工作效率。如果您有任何看法或建议，欢迎。</p>
+<h3>下载源文件</h3>
+<p></p>
+<p>来源: 翻译：</p>
+            <p align="center"> </p>
+      
+      (责任编辑：admin)</td>
+    </tr>
+   </table>
+  </div>
+  <!-- /content -->
+  <div class="dede_pages">
+   <ul class="pagelist">
+    
+   </ul>
+  </div>
+  <!-- /pages -->
+  <!-- //顶踩 -->
+  <div class="newdigg" id="newdigg">
+   <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',28)">
+    <div class="digg_act">顶一下</div>
+    <div class="digg_num">(0)</div>
+    <div class="digg_percent">
+     <div class="digg_percent_bar"><span style="width:0%"></span></div>
+     <div class="digg_percent_num">0%</div>
+    </div>
+   </div>
+   <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',28)">
+    <div class="digg_act">踩一下</div>
+    <div class="digg_num">(0)</div>
+    <div class="digg_percent">
+     <div class="digg_percent_bar"><span style="width:0%"></span></div>
+     <div class="digg_percent_num">0%</div>
+    </div>
+   </div>
+  </div>
+  <script language="javascript" type="text/javascript">getDigg(28);</script>
+  <!-- //顶踩部份的源码结束 -->
+  <!-- //分享代码开始 -->
+  
+  <!-- //分享代码结束 -->
+  <div class="boxoff"> <strong>------分隔线----------------------------</strong> </div>
+  <div class="handle">
+   <div class="context">
+    <ul>
+     <li>上一篇：<a href='/dede/a/webbase/div-css/2010/0407/27.html'>用CSS设计你的搜索框</a> </li>
+     <li>下一篇：<a href='/dede/a/webbase/div-css/2010/0407/29.html'>简洁纯净的CSS表单设计实例</a> </li>
+    </ul>
+   </div>
+   <!-- /context -->
+   <div class="actbox">
+    <ul>
+     <li id="act-fav"><a href="/dede/plus/stow.php?aid=28" target="_blank">收藏</a></li>
+     <li id="act-err"><a href="/dede/plus/erraddsave.php?aid=28&title=为今后的项目制作空白CSS模板文件" target="_blank">挑错</a></li>
+     <li id="act-pus"><a href="/dede/plus/recommend.php?aid=28" target="_blank">推荐</a></li>
+     <li id="act-pnt"><a href="#" onClick="window.print();">打印</a></li>
+    </ul>
+   </div>
+   <!-- /actbox -->
+  </div>
+  <!-- /handle -->
+ </div>
+ <!-- /viewbox -->
+ <!-- //AJAX评论区 -->
+ <!-- //主模板必须要引入/dede/include/dedeajax2.js -->
+<a name='postform'></a>
+<div class="mt1">
+  <dl class="tbox">
+    <dt> <strong>发表评论</strong> <span class="more"></span> </dt>
+    <dd>
+      <div class="dede_comment_post">
+        <form action="#" method="post" name="feedback" onsubmit="return false;">
+          <input type="hidden" name="dopost" value="send" />
+          <input type="hidden" name="comtype" value="comments">
+          <input type="hidden" name="aid" value="28" />
+          <input type="hidden" name="fid" id='feedbackfid' value="0" />
+          <div class="dcmp-title"> <small>请自觉遵守互联网相关的政策法规，严禁发布色情、暴力、反动的言论。</small> </div>
+          <!-- /dcmp-title -->
+          <div class="dcmp-stand"> <strong>评价:</strong>
+            <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" />
+            <label for="dcmp-stand-neu"><img src="/dede/templets/default/images/cmt-neu.gif" />中立</label>
+            <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" />
+            <label for="dcmp-stand-good"><img src="/dede/templets/default/images/cmt-good.gif" />好评</label>
+            <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" />
+            <label for="dcmp-stand-bad"><img src="/dede/templets/default/images/cmt-bad.gif" />差评</label>
+          </div>
+          <!-- /dcmp-stand -->
+          <div class="clr"></div>
+          <div class="dcmp-content">
+            <script type="text/javascript">
+					//<![CDATA[
+					window.CKEDITOR_BASEPATH='/dede/include/ckeditor/';
+					//]]>
+                    </script>
+            <script type="text/javascript" src="/dede/include/ckeditor/ckeditor.js?t=B8DJ5M3"></script>
+            <script type="text/javascript">//<![CDATA[
+CKEDITOR.config.ubb_smiley = {"高兴":"{s:1}","撇嘴":"{s:2}","抓狂":"{s:3}","汗":"{s:4}","惊恐":"{s:5}","奋斗":"{s:6}","疑问":"{s:7}","晕":"{s:8}","偷笑":"{s:9}","可爱":"{s:10}","疑惑":"{s:11}","酷":"{s:12}","暴汗":"{s:13}","呕吐":"{s:14}","大笑":"{s:15}","色":"{s:16}"}
+//]]></script>
+<textarea name="msg" rows="8" cols="60"></textarea>
+<script type="text/javascript">//<![CDATA[
+CKEDITOR.replace('msg', {"extraPlugins":"dedepage,multipic,addon,bbcode","fontSize_sizes":"30\/30%;50\/50%;100\/100%;120\/120%;150\/150%;200\/200%;300\/300%","disableObjectResizing":"true","smiley_path":"\/dede\/images\/smiley\/","smiley_images":["1.gif","2.gif","3.gif","4.gif","5.gif","6.gif","7.gif","8.gif","9.gif","10.gif","11.gif","12.gif","13.gif","14.gif","15.gif","16.gif"],"smiley_descriptions":["高兴","撇嘴","抓狂","汗","惊恐","奋斗","疑问","晕","偷笑","可爱","疑惑","酷","暴汗","呕吐","大笑","色"],"toolbar":[["Source","-","Bold","Italic","Underline","-"],["FontSize","TextColor"],["Link","Unlink","Smiley"]],"height":100,"skin":"kama"});
+//]]></script>
+ </div>
+          <!-- /dcmp-content -->
+          <div class="dcmp-post">
+            <!--未登陆-->
+            <div class="dcmp-userinfo" id="_ajax_feedback"> 用户名:
+              <input type="text" name="username" size="16" class="ipt-txt" style="text-transform: uppercase;"/>
+              
+              验证码:
+              <input type="text" name="validate" size="4" class="ipt-txt" style="text-transform:uppercase;"/>
+              <img src= "/dede/include/vdimgck.php" id="validateimg" style="cursor:pointer" onclick="this.src=this.src+'?'" title="点击我更换图片" alt="点击我更换图片"  class="vdimg"/>
+              <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+              <label for="dcmp-submit-guest" />
+              匿名?
+              </label>
+            </div>
+            
+            <script language="javascript" type="text/javascript">CheckLogin();</script>
+            
+            <div class="dcmp-submit">
+              <button type="button" onClick='PostComment()'>发表评论</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </dd>
+  </dl>
+</div>
+<!-- //评论表单区结束 -->
+<!-- //评论内容区 -->
+<a name='commettop'></a>
+<div class="mt1">
+  <dl class="tbox">
+    <dt> <strong>最新评论</strong> <span class="more"><a href="/dede/plus/feedback.php?aid=28">进入详细评论页&gt;&gt;</a></span> </dt>
+    <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+    <dd id='commetcontentNew'></dd>
+    <dd id='commetcontent'></dd>
+  </dl>
+</div>
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/dede/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/dede/plus/feedback_ajax.php?dopost=getlist&aid=28&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var msg = CKEDITOR.instances.msg.getData();
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/dede/images/loadinglit.gif' />正在发送中...</div>";
+		if(msg=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(msg.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		/*
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		*/
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'utf-8';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '28');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', msg);
+		myajax.SendPost2('/dede/plus/feedback_ajax.php');
+		//msg = '';
+		CKEDITOR.instances.msg.setData('');
+		//taget_obj.removeAttribute('id');
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/dede/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+		
+}
+function quoteCommet(fid)
+{
+	    document.feedback.fid.value = fid;
+}
+  
+function ajaxFeedback(aid, fid, type)
+{
+	
+	var taget_obj = $DE('ajaxfeedback_'+fid);
+	if(taget_obj.innerHTML == '')
+	{
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x');
+		myajax.SendGet2("/dede/plus/feedback.php?aid="+aid+"&fid="+fid+"&action=quote&type=ajax");
+		eval('var result = typeof CKEDITOR.instances.msg_'+fid);
+		if(result != 'undefined')
+		{
+			// 删除实例
+			eval('var edit = CKEDITOR.instances.msg_'+fid);
+			CKEDITOR.remove(edit);
+		}
+		CKEDITOR.replace(document.getElementById('msg_'+fid) , CKEDITOR.instances.msg.config);
+		scroll(0, taget_obj.offsetTop - 120);
+		var formname = 'f = document.ajaxfeedback_'+fid;
+		eval(formname);
+		if(f.validate)
+		{
+			if($DE('vdimg_'+fid)) $DE('vdimg_'+fid).src = "/dede/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+		
+		DedeXHTTP = null;
+	}
+}
+
+
+
+function ajaxQuotePost(fid)
+{
+	var formname = 'f = document.ajaxfeedback_'+fid;
+	eval(formname);
+	//var f = document.formname;
+	//var f = f[0];
+	var nvalidate = '';
+	var nnotuser = '';
+	var nusername = '';
+	var npwd = '';
+	var taget_obj = $DE('commetcontentNew');
+	var waithtml = "<div style='line-height:30px'><img src='/dede/images/loadinglit.gif' />正在发送中...</div>";
+	eval('var msg = CKEDITOR.instances.msg_'+fid+'.getData()');
+
+	if(f.validate)
+	{
+		if(f.validate.value=='') {
+			alert("请填写验证码！");
+			return;
+		}
+		else {
+			nvalidate = f.validate.value;
+		}
+	}
+	var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+	
+	if(f.notuser.checked) nnotuser = '1';
+	if(f.username) nusername = f.username.value;
+	if(f.pwd) npwd = f.pwd.value;
+	
+	myajax.sendlang = 'utf-8';
+	myajax.AddKeyN('dopost', 'send');
+	myajax.AddKeyN('aid', '28');
+	myajax.AddKeyN('fid', f.fid.value);
+	myajax.AddKeyN('type', 'ajax');
+	myajax.AddKeyN('comtype', f.comtype.value);
+	myajax.AddKeyN('isconfirm','yes');
+	
+	myajax.AddKeyN('typeid', f.typeid.value);
+	myajax.AddKeyN('quotemsg', f.quotemsg.value);
+	myajax.AddKeyN('validate', nvalidate);
+	myajax.AddKeyN('notuser', nnotuser);
+	myajax.AddKeyN('username', nusername);
+	myajax.AddKeyN('pwd', npwd);
+	myajax.AddKeyN('msg', msg);
+	myajax.SendPost2('/dede/plus/feedback_ajax.php');
+	//alert(f.quotemsg.value);
+	if($DE('ajaxfeedback_'+fid).innerHTML != null)
+	{
+		$DE('ajaxfeedback_'+fid).innerHTML = '';
+	}
+	scroll(0, taget_obj.offsetTop);
+}
+LoadCommets(1);
+</script>
+<!-- //评论内容区结束 -->
+ </div>
+<!-- //左边内容结束 -->
+<!-- //右边内容开始 -->
+<div class="pright"> 
+ <div class="pright">
+  <div>
+   <dl class="tbox">
+    <dt><strong>栏目列表</strong></dt>
+    <dd>
+     <ul class="d6">
+      
+      <li><a href='/dede/a/webbase/html/'>HTML</a></li>
+      <li><a href='/dede/a/webbase/div-css/' class='thisclass'>DIV&CSS</a></li>
+      <li><a href='/dede/a/webbase/javascript-ajax/'>Javascript/Ajax</a></li>
+      
+      <li><a href='/dede/a/webbase/dreamweaver/'>Dreamweaver</a></li>
+      
+     </ul>
+    </dd>
+   </dl>
+  </div>
+  <div id="contentRtPicAD" style="margin:10px auto"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=contentrtpicad&charset=gbk"></script></div>
+  <div class="commend mt1">
+   <dl class="tbox light">
+    <dt class='light'><strong>推荐内容</strong></dt>
+    <dd class='light'>
+     <ul class="d4">
+      
+     </ul>
+    </dd>
+   </dl>
+  </div>
+  <!-- /commend -->
+  <div class="hot mt1">
+   <dl class="tbox light">
+    <dt class='light'><strong>热点内容</strong></dt>
+    <dd class='light'>
+     <ul class="c1 ico2">
+      <li><a href="/dede/a/webbase/div-css/2010/0407/21.html">5种方法立刻写出更好的</a></li>
+<li><a href="/dede/a/webbase/div-css/2010/0407/22.html">看看你是哪个等级的CSS开</a></li>
+<li><a href="/dede/a/webbase/div-css/2010/0407/23.html">img图片元素下多余空白解</a></li>
+<li><a href="/dede/a/webbase/div-css/2010/0407/24.html">30个基于CSS的导航和按钮优</a></li>
+<li><a href="/dede/a/webbase/div-css/2010/0407/25.html">精选30个优秀的CSS技术和实</a></li>
+<li><a href="/dede/a/webbase/div-css/2010/0407/26.html">CSS 中的黄金分割率</a></li>
+<li><a href="/dede/a/webbase/div-css/2010/0407/27.html">用CSS设计你的搜索框</a></li>
+<li><a href="/dede/a/webbase/div-css/2010/0407/28.html">为今后的项目制作空白C</a></li>
+<li><a href="/dede/a/webbase/div-css/2010/0407/29.html">简洁纯净的CSS表单设计实</a></li>
+<li><a href="/dede/a/webbase/div-css/2010/0407/30.html">精选15个国外CSS框架</a></li>
+
+     </ul>
+    </dd>
+   </dl>
+  </div>
+  <div id="contentRtPicAD2" style="margin:10px auto"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=contentrtpicad2&charset=gbk"></script></div>
+ </div>
+ <!-- /pright -->
+</div>
+<div id="innerfooterAD2" style="margin:10px auto; width:726px"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=innerfooterad2&charset=gbk"></script></div>
+
+<!-- //底部模板 -->
+<div class="footer w960 center mt1 clear">
+	<!-- 
+		为了支持织梦团队的发展,请您保留织梦内容管理系统的链接信息.
+		我们对支持织梦团队发展的朋友表示真心的感谢!织梦因您更精彩!
+	-->
+    <div class="footer_left"></div>
+    <div class="footer_body">
+	<p class="powered">    
+		Powered by <a href="http://www.dedecms.com" title="织梦内容管理系统(DedeCms)--国内最专业的PHP网站管理系统，轻松建站的首选利器。" target="_blank"><strong>DedeCMS_V57_UTF8_SP1</strong></a> &copy; 2004-2011 <a href="http://www.desdev.cn/" target="_blank">DesDev</a> Inc.<br /><div class="copyright">Copyright &copy; 2004-2011 DEDECMS. 织梦科技 版权所有&nbsp;&nbsp;</div></p>        
+<!-- /powered -->
+   </div>
+   <div class="footer_right"></div>
+</div>
+<!-- /footer -->
+</body>
+</html>

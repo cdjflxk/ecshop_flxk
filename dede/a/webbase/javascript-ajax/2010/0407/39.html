@@ -1,0 +1,587 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Web2.0十大Ajax安全漏洞以及成因_星空软件</title>
+<meta name="keywords" content="Web2.0十大Ajax安全漏洞以及成因" />
+<meta name="description" content="Ajax中没有固有的安全漏洞，但是对该技术向量的适配显著地改变了网络应用的开发途径以及方法论。以前，DCOM和CORBA组成核心中间件层的时候，将数据和对象序列化非常困难。" />
+<link href="/dede/templets/default/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="/dede/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/dede/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+}
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/dede/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/dede/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/dede/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+</head>
+<body class="articleview">
+<div class="header_top">  
+    <div class="w960 center">  
+     <span id="time" class="time">织梦CMS - 轻松建站从此开始！</span>
+     <div class="toplinks"><a href="/dede/plus/heightsearch.php" target="_blank">高级搜索</a>|<a href="/dede/data/sitemap.html" target="_blank">网站地图</a>|<a href="/dede/tags.php">TAG标签</a><a href="/dede/data/rssmap.html" class="rss">RSS订阅</a><span>[<a href=""onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://localhost');">设为首页</a>] [<a href="javascript:window.external.AddFavorite('http://localhost','星空软件')">加入收藏</a>]</span></div>
+    </div> 
+</div>
+<div class="header">
+	<div class="top w960 center">
+      <div class="title">
+        <h1><a href="http://localhost"><img src="/dede/templets/default/images/logo.gif" height="54" width="216" alt="星空软件"/></a> </h1>
+      </div>
+      <div class="banner"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=ctenttpbanner1&charset=gbk"></script></div>
+      <div class="banner2"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=ctenttpbanner2&charset=gbk"></script></div>
+       
+	</div><!-- //top -->
+	<!-- //菜单 -->
+	<div class="module blue mT10 wrapper w963">
+  	<div class="top">
+    	<!-- //如果不使用currentstyle，可以在channel标签加入 cacheid='channeltoplist' 属性提升性能 -->
+    <div id="navMenu">
+    	<ul>
+      	<li><a href='/dede/'><span>主页</span></a></li>
+      	<li class='hover'><a href='/dede/a/webbase/'  rel='dropmenu1'><span>网页基础</span></a></li>
+      	<li><a href='/dede/a/pics/' ><span>站长图集</span></a></li>
+      	
+      	<li><a href='/dede/a/downloads/' ><span>软件下载</span></a></li>
+      	
+      	<li><a href='/dede/a/shops/' ><span>商品销售</span></a></li>
+      	
+      	<li><a href='/dede/a/infos/' ><span>分类信息</span></a></li>
+      	
+      	<li><a href='http://www.dedecms.com' ><span>织梦CMS</span></a></li>
+      	
+      	<li><a href='http://docs.dedecms.com' ><span>帮助文档</span></a></li>
+      	
+      	<li><a href='/dede/a/xunizhuji/'  rel='dropmenu12'><span>虚拟主机</span></a></li>
+      	
+    	</ul>
+    </div>	
+    <div class="search">
+      <form  name="formsearch" action="/dede/plus/search.php">
+        <div class="form">
+          <h4>搜索</h4>
+           <input type="hidden" name="kwtype" value="0" />
+           <input name="q" type="text" class="search-keyword" id="search-keyword" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}" />
+           <select name="searchtype" class="search-option" id="search-option">
+               <option value="title" selected='1'>检索标题</option>
+               <option value="titlekeyword">智能模糊</option>
+           </select>
+          <button type="submit" class="search-submit">搜索</button>
+        </div>
+        </form>
+        <div class="tags">
+          <h4>热门标签:</h4>
+          <ul>
+          
+            <li><a href='/dede/tags.php?/dedecms5.1/'>dedecms5.1</a></li>
+          
+            <li><a href='/dede/tags.php?/sp1/'>sp1</a></li>
+          
+            <li><a href='/dede/tags.php?/%E5%85%8D%E8%B4%B9%E7%89%88/'>免费版</a></li>
+          
+          </ul>
+        </div>
+    </div><!-- //search -->
+		</div>
+	</div>
+</div><!-- //header -->
+
+<!-- /header -->
+<div class="w960 center clear mt1">
+<div class="pleft">
+ <div class="place"> <strong>当前位置:</strong> <a href='http://localhost/dede'>主页</a> > <a href='/dede/a/webbase/'>网页基础</a> > <a href='/dede/a/webbase/javascript-ajax/'>Javascript/Ajax</a> >  </div>
+ <!-- /place -->
+ <div class="viewbox">
+  <div class="title">
+   <h2>Web2.0十大Ajax安全漏洞以及成因</h2>
+  </div>
+  <!-- /title -->
+  <div class="info"> <small>时间:</small>2010-04-07 09:36<small>来源:</small> <small>作者:</small> <small>点击:</small>
+   <script src="/dede/plus/count.php?view=yes&aid=39&mid=1" type='text/javascript' language="javascript"></script>
+   次</div>
+  <!-- /info -->
+  
+  <div class="intro">Ajax中没有固有的安全漏洞，但是对该技术向量的适配显著地改变了网络应用的开发途径以及方法论。以前，DCOM和CORBA组成核心中间件层的时候，将数据和对象序列化非常困难。</div>
+  
+  <div class="content">
+   <table width='100%'>
+    <tr>
+     <td><div id="contentMidPicAD" style="float:right; clear:both; top:0; vertical-align:top;"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=contentmidpicad&charset=gbk"></script></div>
+      <p>JavaScript包含的Ajax是Web2.0应用的一个重要组成部分。该部分的进化发展使网络变成了超级平台。该转变同时也催生了新品种的病毒和蠕虫，比如Yamanner,Samy 以及Spaceflash等等。Google,Netflix,Yahoo 以及MySpace等门户网站在过去的几个月里都因为新的漏洞而蒙受一定损失。黑客们可以利用这些漏洞进行钓鱼，跨站点脚本(XSS)以及跨站点伪造(XSRF)请求等攻击。 </p><p>Ajax中没有固有的安全漏洞，但是对该技术向量的适配显著地改变了网络应用的开发途径以及方法论。以前，DCOM和CORBA组成核心中间件层的时候，将数据和对象序列化非常困难。Ajax使用简单的GET,POST或者SOAP调用，来转换XML,HTML,JS Array,JSON,JS Objects以及其他定制的对象；全部这些操作都不需要调用中间件层。Ajax的这种综合能力使应用服务器与浏览器之间的数据交换非常流畅。从服务器端传来的信息动态地被注入到当前的DOM相关环境，然后浏览器的DOM状态重置。在讲安全漏洞之前，我们先来看看促成Web2.0漏洞的关键因素。 </p><p>多重分散的终端点以及隐藏调用——Web2.0应用与Web1.0的主要区别就是信息访问机制的区别。比起它的前身Web1.0, Web2.0应用有数个Ajax终点。潜在的Ajax调用分散于整个浏览器页面，并且能够被各个事件分别调用。开发者恨难应付Ajax调用的这种分散性，并且由于这些调用是隐藏的，不那么明显，它还可能导致代码不规范。 </p><p>认证混乱——输入和输出内容认证是应用的重要因素之一。Web2.0应用使用桥，mashups,还有反馈等等。很多情况下，它假定“另一方”（读取服务器端或者客户端代码）已经实现了认证，这种混乱就导致了双方都没有实现适当的认证控制。 </p><p>不受信任的信息来源——Web2.0应用从很多不受信任的来源比如反馈，博客，搜索结果中获得信息。这些内容在提供给终端浏览器之前从来没有被认证，这就有可能引发跨站点攻击。黑客还有可能在浏览器中加载JavaScript，以便迫使浏览器发出跨域的调用并打开安全漏洞。那样的话，这些致命的漏洞就能被病毒和蠕虫利用。 </p><p>数据序列化——浏览器可以调用Ajax来实施数据序列化。它可以获取JS array,Objects,Feeds,XML文件，HTML 块以及JSON。如果这些序列块中的某一个被解析并修改了，黑客们就可以强迫浏览器执行恶意脚本。不受信任信息与数据序列化的结合，对终端用户的安全是致命的。 </p><p>动态脚本构成和执行——Ajax会建立一个后端通道，从服务器获取数据，然后将它传送给DOM。实现这一点的必要条件就是动态地执行JavaScripts，以便随时更新DOM或者浏览器页面缓存的状态。Ajax通过调用定制的功能或者eval()功能。未经认证的内容或者使用不安全的调用，轻则导致会话内容泄露，重则迫使浏览器执行恶意内容等各种后果。 </p><p>Web2.0应用可能因为上面提到的1个或多个失误而变得易受攻击。如果开发者不够审慎，没有花心思在安全管理上的话，那么服务器和浏览器端都会出现安全问题。以下是10个可能的安全漏洞的简要说明。 </p><p><strong>（1）畸形的JS对象序列</strong> </p><p>JavaScript支持面向对象编程(OOP)技术。它有很多不同的内置对象，也允许用户自己创建对象。使用者可以用new object() 或者自己编辑如下代码来创建新的对象。 </p><p /><span class="code"><pre>message = {
+from : "john@example.com",
+to : "jerry@victim.com",
+subject : "I am fine",
+body : "Long message here",
+showsubject : function(){document.write(this.subject)}
+};</pre></span><p>这是一个简单的消息对象，其中有2个字段需要电子邮件地址。我们可以使用Ajax来将该对象序列化并用JavaScript代码编译。程序员可以将它赋值到变量或者eval()。如果攻击者发送嵌入了脚本的恶意“主题”，那么读者就将成为跨站点脚本攻击的受害者。JS对象既包含数据也包含方法。对JS对象序列的不当使用将产生可以被诡计多端的注入代码利用的安全漏洞。 </p><p><strong>(2)JSON对注入</strong> </p><p>JavaScript对象符号(JSON)是一个简单而有效的少量数据交换格式，它包含对象，数组，Hash表，向量以及列表数据结构。JavaScript, Python, C, C++, C# 和Perl languages都支持JSON。JSON序列在Web2.0应用中是个非常有效的交换机制。开发者频繁使用Ajax和JSON，获取并传送必要的信息给DOM。下面是个简单的带有不同的name值对的JSON对象：“bookmarks”对象。 </p><p /><span class="code"><pre>{"bookmarks":[{"Link":"www.example.com","Desc":"Interesting link"}]}</pre></span><p>黑客们可以在Link或者Desc中注入恶意脚本。如果DOM和可执行程序被注入了，XSS目录也会被注入。这是使终端用户感染恶意内容的另一种方法。 </p><p><strong>(3)JS数组中毒</strong> </p><p>JS数组是另一个比较普遍的序列化对象。人们可以很容易地跨平台移植它，并且它在使用不同语言的结构中也很有效。感染一个JS数组可以扰乱整个DOM环境。黑客们可以在浏览器中使用简单的跨站点脚本攻击JS数组。下面是一个JS数组的例子： </p><p /><span class="code"><pre>new Array(“Laptop”, “Thinkpad”, “T60”, “Used”, “900$”, “It 
+is great and I have used it for 2 years”)</pre></span><p>该数组是从一个拍卖二手笔记本的网站传出来的。如果这个数组对象在服务器端没有被仔细处理，黑客就可以在最后字段中注入脚本。这种注入将危及浏览器安全并被攻击者利用。 </p><p><strong>(4)被修改的XML数据流</strong> </p><p>Ajax调用接受来自多个地址的XML。这些XML块来自运行在SOAP,REST或者XML-RPC的网络服务。这些网络服务是由从第三方的代理桥那里接收过来的。如果这些第三方XML数据流被攻击者修改过，那么攻击者就可能向其中注入恶意内容。 </p><p>浏览器从它自带的XML解析器接收该数据流。该解析器容易受不同的XML炸弹的攻击。人们也可以在该数据流中注入脚本，这样就可以导致跨站点脚本攻击(XSS)。浏览器接收未经认证的XML数据流的话，这就会危及终端客户端的安全。 </p><p><strong>(5)DOM中脚本注入</strong> </p><p>前四个漏洞都是由于序列化问题引起的。一旦浏览器收到序列化的对象数据流，开发者会发出某种调用来访问DOM。这种调用的目的是将新内容“重写”或者“重填”入DOM中，可以调用eval()这个定制功能，也可以使用document.write()。如果这些调用是在不受信任信息流上进行的，浏览器就有可能由于DOM的操作漏洞而受攻击。攻击者可以用很多document.*()调用来向DOM环境中注入XSS。 </p><p>例如，这段JavaScript代码：Document.write(product-review)。 </p><p>在这里，“Product-review”是从第三方blog上获得的变量。如果它含有JavaScript会怎样？答案很明显。这个JavaScript就会被浏览器运行。 </p><p><strong>（6）跨域访问和回调</strong> </p><p>Ajax不能从浏览器跨域访问。所有比较流行的浏览器都有个安全特性，那就是拦截跨域访问。一些网站服务为对象序列提供回调功能。开发者可以使用这个功能来把网站服务整合到浏览器本身。人们可以把该功能名传回，这样浏览器一找到回调对象数据流，它就会被浏览器中早已有的特殊功能名执行。 </p><p>这个回调对使用浏览器内认证的开发者来说是个额外负担。如果输入的对象数据流未经浏览器认证那么终端客户端就会成为跨域攻击的目标。不管是有意还是无意的，跨域服务可以向浏览器中注入恶意内容。该跨域调用在当前DOM环境中运行，于是导致当前对话也易受攻击。在实现应用之前，人们需要仔细检查整个跨域功能。 </p><p><strong>（7）RSS和Atom注入</strong> </p><p>联合的反馈，RSS以及Atom,是最普遍的一种将站点更新信息传到网络上的方法。许多新闻，博客，门户站点等等，都在网络上共享多个反馈。反馈是标准的XML文档，并且可以被任何程序接收。Web2.0应用使用窗口小部件或者浏览器内部元件整合了联合反馈。这些组件调用Ajax来访问反馈。 </p><p>这些反馈可以被终端用户方便地选择。一旦用户选择了它们，这些反馈就会被解析并注入到DOM中。那么如果这个反馈在注入之前没有被适当地认证过，就会出现一些安全问题。人们可以往浏览器中注入恶意链接或者JavaScript代码。注入之后，就大事不妙了，最终结果是XSS和对话被黑客拦截。 </p><p><strong>（8）单击炸弹</strong> </p><p>Web2.0应用可能不会很简单地就被黑客攻下，但他们可以对它进行基于事件的注入。人们可以将带有"onclick"字样的恶意链接用JavaScript注入。这样，浏览器就带着个随时等待终端用户右键点击来触发的炸弹。一旦用户点击了链接或按钮，能够启动炸弹的那个事件被启动了，那么攻击就成功了。此类攻击会导致对话被恶意代码拦截。 </p><p>这也是由于人们从那些没有经过正确验证的不受信任源处获得的信息，所导致的安全漏洞。为了利用该安全漏洞，它需要终端客户端触发一个事件。这个事件也许是诸如点击按钮或者链接的这种无害事件，但是点击后就使会用户损失惨重。它可能引起某个恶意事件，将当前对话信息发送给目标，又或者在当前浏览器环境中执行一系列脚本攻击。 </p><p><strong>(9) 基于Flash的跨域访问</strong> </p><p>黑客们可以使用Flash插件的Ajax接口，从而用浏览器中的JavaScritps发出GET和POST请求。这个接口使黑客们能进行跨域调用。为了避免安全问题，该Flash插件实现了根据策略访问其他域的功能。该策略可以通过在域的根部放置crossdomain.xml文件来配置。如果放置的文件配置不当——很普遍的现象——它就可能允许跨域访问。下面是一个配置不当的XML文档： </p><p>现在可以从浏览器自身发出跨域调用了。这个结构还有一些其他安全问题。基于Flash的丰富网络应用(RIA)如果配置错误的话，很容易由于Ajax的跨域访问Bug而被攻击。 </p><p><strong>(10) XSRF</strong> </p><p>跨域伪造请求(XSRF)是个老牌的攻击向量了，它迫使浏览器向不同的域发出HTTP GET或者POST请求；这些请求可以跨域在运行的应用逻辑中启动某种事件。它可能请求修改密码或者电子邮件地址等。浏览器调用它后，它重放cookie并获得身份认证。这就是该请求的关键部分。如果某个应用只根据cookie来判识身份，那么该攻击就会成功。 </p><p>Web2.0中Ajax是就XML-RPC,SOAP或者REST与后端网络服务进行对话的，通过GET和POST可以进行这些调用。换句话说，人们可以对这些网络服务进行跨站点调用，从而危及受害者与网络服务接口的身份信息。XSRF这个攻击向量很有趣，它在这个新界定的端点情况中创造了新的层次。这些终点可能是为Ajax或者网络服务而准备的，但它们也有可能被跨域请求所激活。 </p><p><strong>对安全漏洞的攻击以及相应对策</strong> </p><p>Web2.0应用有多个终端点；每个点都是威胁的侵入点。为了保证安全，我们应当保护好所有这些点。在将第三方信息发送给客户端之前要对其进行彻底处理。 </p><p>为了处理Ajax序列，必须在它们到达DOM之前对输入数据流进行验证。XML解析以及跨域安全问题也需要额外重视，并实施更好的安全管理措施。我们应当遵循那个最简单最笨拙的原则：不让未经认证的跨域信息进入浏览器。有趣的是，到目前为止，安全专家们都不主张使用客户端脚本来进行输入验证，因为这很容易被规避掉。 </p><p>Web2.0促成了很多浏览器安全相关的新的漏洞。利用这些安全漏洞很难但不是不可能。安全问题以及促成因素结合起来将严重影响那些大的网络团体，比如能被攻击者蠕虫和病毒利用的那些组织。最终将导致身份信息的泄漏。 </p><p><strong>结论</strong> </p><p>本文简单地讲了一些可能出现的关于Ajax漏洞。还有很多其他潜在的漏洞，比如利用跨域代理来在浏览器中建立单项通道或者存储变量。 </p><p>Web2.0中很多逻辑都转到了客户端。这会将整个应用暴露给一些严重的威胁。对整合来自多方的、不受信源的数据的迫切要求也将全面增加风险向量：XSS,XSRF,跨域问题以及客户端上的序列，还有不安全的网站服务，服务器端的XML-RPC和REST访问。相反地，Ajax可被用来构造优美的无缝数据整合。但是，任一不安全的调用或者信息流都会使其产事与愿违的效果，从而促成可被利用的安全漏洞。 </p><p>这些新技术向量很有前景，令很多人兴奋不已，但是攻击者，病毒和蠕虫作者对它更感兴趣。为了保障安全，开发者应当在这些细节方面格外小心。 </p><p /><p>============================================= </p><p>原文链接：http://www.net-security.org/article.php?id=956&p=1 </p><p>原文作者：Shreeraj Shah </p><p>原文来源：net square </p>
+            <p align="center"> </p>
+      
+      (责任编辑：admin)</td>
+    </tr>
+   </table>
+  </div>
+  <!-- /content -->
+  <div class="dede_pages">
+   <ul class="pagelist">
+    
+   </ul>
+  </div>
+  <!-- /pages -->
+  <!-- //顶踩 -->
+  <div class="newdigg" id="newdigg">
+   <div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',39)">
+    <div class="digg_act">顶一下</div>
+    <div class="digg_num">(0)</div>
+    <div class="digg_percent">
+     <div class="digg_percent_bar"><span style="width:0%"></span></div>
+     <div class="digg_percent_num">0%</div>
+    </div>
+   </div>
+   <div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',39)">
+    <div class="digg_act">踩一下</div>
+    <div class="digg_num">(0)</div>
+    <div class="digg_percent">
+     <div class="digg_percent_bar"><span style="width:0%"></span></div>
+     <div class="digg_percent_num">0%</div>
+    </div>
+   </div>
+  </div>
+  <script language="javascript" type="text/javascript">getDigg(39);</script>
+  <!-- //顶踩部份的源码结束 -->
+  <!-- //分享代码开始 -->
+  
+  <!-- //分享代码结束 -->
+  <div class="boxoff"> <strong>------分隔线----------------------------</strong> </div>
+  <div class="handle">
+   <div class="context">
+    <ul>
+     <li>上一篇：<a href='/dede/a/webbase/javascript-ajax/2010/0407/38.html'>Ajax 技术入门简介</a> </li>
+     <li>下一篇：<a href='/dede/a/webbase/javascript-ajax/2010/0407/40.html'>JavaScript开发时的五个小提示</a> </li>
+    </ul>
+   </div>
+   <!-- /context -->
+   <div class="actbox">
+    <ul>
+     <li id="act-fav"><a href="/dede/plus/stow.php?aid=39" target="_blank">收藏</a></li>
+     <li id="act-err"><a href="/dede/plus/erraddsave.php?aid=39&title=Web2.0十大Ajax安全漏洞以及成因" target="_blank">挑错</a></li>
+     <li id="act-pus"><a href="/dede/plus/recommend.php?aid=39" target="_blank">推荐</a></li>
+     <li id="act-pnt"><a href="#" onClick="window.print();">打印</a></li>
+    </ul>
+   </div>
+   <!-- /actbox -->
+  </div>
+  <!-- /handle -->
+ </div>
+ <!-- /viewbox -->
+ <!-- //AJAX评论区 -->
+ <!-- //主模板必须要引入/dede/include/dedeajax2.js -->
+<a name='postform'></a>
+<div class="mt1">
+  <dl class="tbox">
+    <dt> <strong>发表评论</strong> <span class="more"></span> </dt>
+    <dd>
+      <div class="dede_comment_post">
+        <form action="#" method="post" name="feedback" onsubmit="return false;">
+          <input type="hidden" name="dopost" value="send" />
+          <input type="hidden" name="comtype" value="comments">
+          <input type="hidden" name="aid" value="39" />
+          <input type="hidden" name="fid" id='feedbackfid' value="0" />
+          <div class="dcmp-title"> <small>请自觉遵守互联网相关的政策法规，严禁发布色情、暴力、反动的言论。</small> </div>
+          <!-- /dcmp-title -->
+          <div class="dcmp-stand"> <strong>评价:</strong>
+            <input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu" />
+            <label for="dcmp-stand-neu"><img src="/dede/templets/default/images/cmt-neu.gif" />中立</label>
+            <input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good" />
+            <label for="dcmp-stand-good"><img src="/dede/templets/default/images/cmt-good.gif" />好评</label>
+            <input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad" />
+            <label for="dcmp-stand-bad"><img src="/dede/templets/default/images/cmt-bad.gif" />差评</label>
+          </div>
+          <!-- /dcmp-stand -->
+          <div class="clr"></div>
+          <div class="dcmp-content">
+            <script type="text/javascript">
+					//<![CDATA[
+					window.CKEDITOR_BASEPATH='/dede/include/ckeditor/';
+					//]]>
+                    </script>
+            <script type="text/javascript" src="/dede/include/ckeditor/ckeditor.js?t=B8DJ5M3"></script>
+            <script type="text/javascript">//<![CDATA[
+CKEDITOR.config.ubb_smiley = {"高兴":"{s:1}","撇嘴":"{s:2}","抓狂":"{s:3}","汗":"{s:4}","惊恐":"{s:5}","奋斗":"{s:6}","疑问":"{s:7}","晕":"{s:8}","偷笑":"{s:9}","可爱":"{s:10}","疑惑":"{s:11}","酷":"{s:12}","暴汗":"{s:13}","呕吐":"{s:14}","大笑":"{s:15}","色":"{s:16}"}
+//]]></script>
+<textarea name="msg" rows="8" cols="60"></textarea>
+<script type="text/javascript">//<![CDATA[
+CKEDITOR.replace('msg', {"extraPlugins":"dedepage,multipic,addon,bbcode","fontSize_sizes":"30\/30%;50\/50%;100\/100%;120\/120%;150\/150%;200\/200%;300\/300%","disableObjectResizing":"true","smiley_path":"\/dede\/images\/smiley\/","smiley_images":["1.gif","2.gif","3.gif","4.gif","5.gif","6.gif","7.gif","8.gif","9.gif","10.gif","11.gif","12.gif","13.gif","14.gif","15.gif","16.gif"],"smiley_descriptions":["高兴","撇嘴","抓狂","汗","惊恐","奋斗","疑问","晕","偷笑","可爱","疑惑","酷","暴汗","呕吐","大笑","色"],"toolbar":[["Source","-","Bold","Italic","Underline","-"],["FontSize","TextColor"],["Link","Unlink","Smiley"]],"height":100,"skin":"kama"});
+//]]></script>
+ </div>
+          <!-- /dcmp-content -->
+          <div class="dcmp-post">
+            <!--未登陆-->
+            <div class="dcmp-userinfo" id="_ajax_feedback"> 用户名:
+              <input type="text" name="username" size="16" class="ipt-txt" style="text-transform: uppercase;"/>
+              
+              验证码:
+              <input type="text" name="validate" size="4" class="ipt-txt" style="text-transform:uppercase;"/>
+              <img src= "/dede/include/vdimgck.php" id="validateimg" style="cursor:pointer" onclick="this.src=this.src+'?'" title="点击我更换图片" alt="点击我更换图片"  class="vdimg"/>
+              <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+              <label for="dcmp-submit-guest" />
+              匿名?
+              </label>
+            </div>
+            
+            <script language="javascript" type="text/javascript">CheckLogin();</script>
+            
+            <div class="dcmp-submit">
+              <button type="button" onClick='PostComment()'>发表评论</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </dd>
+  </dl>
+</div>
+<!-- //评论表单区结束 -->
+<!-- //评论内容区 -->
+<a name='commettop'></a>
+<div class="mt1">
+  <dl class="tbox">
+    <dt> <strong>最新评论</strong> <span class="more"><a href="/dede/plus/feedback.php?aid=39">进入详细评论页&gt;&gt;</a></span> </dt>
+    <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+    <dd id='commetcontentNew'></dd>
+    <dd id='commetcontent'></dd>
+  </dl>
+</div>
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/dede/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/dede/plus/feedback_ajax.php?dopost=getlist&aid=39&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var msg = CKEDITOR.instances.msg.getData();
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/dede/images/loadinglit.gif' />正在发送中...</div>";
+		if(msg=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(msg.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		/*
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		*/
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'utf-8';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '39');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', msg);
+		myajax.SendPost2('/dede/plus/feedback_ajax.php');
+		//msg = '';
+		CKEDITOR.instances.msg.setData('');
+		//taget_obj.removeAttribute('id');
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/dede/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+		
+}
+function quoteCommet(fid)
+{
+	    document.feedback.fid.value = fid;
+}
+  
+function ajaxFeedback(aid, fid, type)
+{
+	
+	var taget_obj = $DE('ajaxfeedback_'+fid);
+	if(taget_obj.innerHTML == '')
+	{
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x');
+		myajax.SendGet2("/dede/plus/feedback.php?aid="+aid+"&fid="+fid+"&action=quote&type=ajax");
+		eval('var result = typeof CKEDITOR.instances.msg_'+fid);
+		if(result != 'undefined')
+		{
+			// 删除实例
+			eval('var edit = CKEDITOR.instances.msg_'+fid);
+			CKEDITOR.remove(edit);
+		}
+		CKEDITOR.replace(document.getElementById('msg_'+fid) , CKEDITOR.instances.msg.config);
+		scroll(0, taget_obj.offsetTop - 120);
+		var formname = 'f = document.ajaxfeedback_'+fid;
+		eval(formname);
+		if(f.validate)
+		{
+			if($DE('vdimg_'+fid)) $DE('vdimg_'+fid).src = "/dede/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+		
+		DedeXHTTP = null;
+	}
+}
+
+
+
+function ajaxQuotePost(fid)
+{
+	var formname = 'f = document.ajaxfeedback_'+fid;
+	eval(formname);
+	//var f = document.formname;
+	//var f = f[0];
+	var nvalidate = '';
+	var nnotuser = '';
+	var nusername = '';
+	var npwd = '';
+	var taget_obj = $DE('commetcontentNew');
+	var waithtml = "<div style='line-height:30px'><img src='/dede/images/loadinglit.gif' />正在发送中...</div>";
+	eval('var msg = CKEDITOR.instances.msg_'+fid+'.getData()');
+
+	if(f.validate)
+	{
+		if(f.validate.value=='') {
+			alert("请填写验证码！");
+			return;
+		}
+		else {
+			nvalidate = f.validate.value;
+		}
+	}
+	var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+	
+	if(f.notuser.checked) nnotuser = '1';
+	if(f.username) nusername = f.username.value;
+	if(f.pwd) npwd = f.pwd.value;
+	
+	myajax.sendlang = 'utf-8';
+	myajax.AddKeyN('dopost', 'send');
+	myajax.AddKeyN('aid', '39');
+	myajax.AddKeyN('fid', f.fid.value);
+	myajax.AddKeyN('type', 'ajax');
+	myajax.AddKeyN('comtype', f.comtype.value);
+	myajax.AddKeyN('isconfirm','yes');
+	
+	myajax.AddKeyN('typeid', f.typeid.value);
+	myajax.AddKeyN('quotemsg', f.quotemsg.value);
+	myajax.AddKeyN('validate', nvalidate);
+	myajax.AddKeyN('notuser', nnotuser);
+	myajax.AddKeyN('username', nusername);
+	myajax.AddKeyN('pwd', npwd);
+	myajax.AddKeyN('msg', msg);
+	myajax.SendPost2('/dede/plus/feedback_ajax.php');
+	//alert(f.quotemsg.value);
+	if($DE('ajaxfeedback_'+fid).innerHTML != null)
+	{
+		$DE('ajaxfeedback_'+fid).innerHTML = '';
+	}
+	scroll(0, taget_obj.offsetTop);
+}
+LoadCommets(1);
+</script>
+<!-- //评论内容区结束 -->
+ </div>
+<!-- //左边内容结束 -->
+<!-- //右边内容开始 -->
+<div class="pright"> 
+ <div class="pright">
+  <div>
+   <dl class="tbox">
+    <dt><strong>栏目列表</strong></dt>
+    <dd>
+     <ul class="d6">
+      
+      <li><a href='/dede/a/webbase/html/'>HTML</a></li>
+      
+      <li><a href='/dede/a/webbase/div-css/'>DIV&CSS</a></li>
+      <li><a href='/dede/a/webbase/javascript-ajax/' class='thisclass'>Javascript/Ajax</a></li>
+      <li><a href='/dede/a/webbase/dreamweaver/'>Dreamweaver</a></li>
+      
+     </ul>
+    </dd>
+   </dl>
+  </div>
+  <div id="contentRtPicAD" style="margin:10px auto"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=contentrtpicad&charset=gbk"></script></div>
+  <div class="commend mt1">
+   <dl class="tbox light">
+    <dt class='light'><strong>推荐内容</strong></dt>
+    <dd class='light'>
+     <ul class="d4">
+      <li><a href="/dede/a/webbase/javascript-ajax/2010/0407/35.html">用JavaScript的日期对象操控时间和日</a>
+       <p>软件开发中一个比较棘手的内容是使用时间和日期值；似乎每种...</p>
+      </li>
+<li><a href="/dede/a/webbase/javascript-ajax/2010/0407/43.html">JavaScript的9个陷阱及评点</a>
+       <p>来自Nine Javascript Gotchas, 以下是JavaScript容易犯错的九个陷阱。虽...</p>
+      </li>
+<li><a href="/dede/a/webbase/javascript-ajax/2010/0407/52.html">完全了解AJAX</a>
+       <p>尽管AJAX是个相对新生的术语，但其背后的技术却并不新颖。我们...</p>
+      </li>
+
+     </ul>
+    </dd>
+   </dl>
+  </div>
+  <!-- /commend -->
+  <div class="hot mt1">
+   <dl class="tbox light">
+    <dt class='light'><strong>热点内容</strong></dt>
+    <dd class='light'>
+     <ul class="c1 ico2">
+      <li><a href="/dede/a/webbase/javascript-ajax/2010/0407/39.html">Web2.0十大Ajax安全漏洞以及</a></li>
+<li><a href="/dede/a/webbase/javascript-ajax/2010/0407/34.html">JavaScript风格要素</a></li>
+<li><a href="/dede/a/webbase/javascript-ajax/2010/0407/35.html">用JavaScript的日期对象操控</a></li>
+<li><a href="/dede/a/webbase/javascript-ajax/2010/0407/36.html">减轻JavaScript测试和调试负</a></li>
+<li><a href="/dede/a/webbase/javascript-ajax/2010/0407/37.html">使用AJAX技术的十大理由</a></li>
+<li><a href="/dede/a/webbase/javascript-ajax/2010/0407/38.html">Ajax 技术入门简介</a></li>
+<li><a href="/dede/a/webbase/javascript-ajax/2010/0407/40.html">JavaScript开发时的五个小提</a></li>
+<li><a href="/dede/a/webbase/javascript-ajax/2010/0407/41.html">JavaScript：世界上误解最深</a></li>
+<li><a href="/dede/a/webbase/javascript-ajax/2010/0407/42.html">JavaScript基础知识总结</a></li>
+<li><a href="/dede/a/webbase/javascript-ajax/2010/0407/43.html">JavaScript的9个陷阱及评点</a></li>
+
+     </ul>
+    </dd>
+   </dl>
+  </div>
+  <div id="contentRtPicAD2" style="margin:10px auto"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=contentrtpicad2&charset=gbk"></script></div>
+ </div>
+ <!-- /pright -->
+</div>
+<div id="innerfooterAD2" style="margin:10px auto; width:726px"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=innerfooterad2&charset=gbk"></script></div>
+
+<!-- //底部模板 -->
+<div class="footer w960 center mt1 clear">
+	<!-- 
+		为了支持织梦团队的发展,请您保留织梦内容管理系统的链接信息.
+		我们对支持织梦团队发展的朋友表示真心的感谢!织梦因您更精彩!
+	-->
+    <div class="footer_left"></div>
+    <div class="footer_body">
+	<p class="powered">    
+		Powered by <a href="http://www.dedecms.com" title="织梦内容管理系统(DedeCms)--国内最专业的PHP网站管理系统，轻松建站的首选利器。" target="_blank"><strong>DedeCMS_V57_UTF8_SP1</strong></a> &copy; 2004-2011 <a href="http://www.desdev.cn/" target="_blank">DesDev</a> Inc.<br /><div class="copyright">Copyright &copy; 2004-2011 DEDECMS. 织梦科技 版权所有&nbsp;&nbsp;</div></p>        
+<!-- /powered -->
+   </div>
+   <div class="footer_right"></div>
+</div>
+<!-- /footer -->
+</body>
+</html>

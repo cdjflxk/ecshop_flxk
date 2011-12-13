@@ -1,0 +1,78 @@
+<!--header-->
+<div id="header">
+<!--top-->
+<div class="top">
+<!--logo-->
+<div id="logo"><img src="{dede:global.cfg_templeturl /}/xkshop/images/logo.gif" width="224" height="66"></div>
+<!--logo end-->
+<!--link_nav-->
+<div class="link_nav">
+<!--link-->
+<div class="link">
+<span class="l_hotlink">7 × 24小时服务热线：18701132241</span> <span class="l_m_link"><a href="http://www.flxkdns.com/ucenter/sshelp/help.asp">帮助中心</a>  |  <a href="http://www.flxkdns.com/help/price.asp">价格总览</a>  |  <a href="http://www.flxkdns.com/help/pay.asp">付款方式</a></span>
+</div>
+<!--link end-->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+function menuFix() {
+ var sfEls = document.getElementById("nav").getElementsByTagName("li");
+ for (var i=0; i<sfEls.length; i++) {
+  sfEls[i].onmouseover=function() {
+  this.className+=(this.className.length>0? " ": "") + "sfhover";
+  }
+  sfEls[i].onMouseDown=function() {
+  this.className+=(this.className.length>0? " ": "") + "sfhover";
+  }
+  sfEls[i].onMouseUp=function() {
+  this.className+=(this.className.length>0? " ": "") + "sfhover";
+  }
+  sfEls[i].onmouseout=function() {
+  this.className=this.className.replace(new RegExp("( ?|^)sfhover\\b"),
+
+"");
+  }
+ }
+}
+window.onload=menuFix;
+
+//--><!]]></script>
+<!--nav-->
+<div id="nav">
+<ul>
+<li class="nav_local"><a href="{dede:global.cfg_cmsurl/}/">首页</a></li>
+{dede:channel type='top' row='10' currentstyle="<li class='hover'><a href='~typelink~' ~rel~><span>~typename~</span></a></li>"}
+<li class=""><a href="[field:typeurl/]"[field:rel/]>[field:typename/]</a></li>
+{/dede:channel}
+</ul>
+</div>	
+<!--nav end-->
+</div>
+<!--link_nav end-->
+</div>
+<!--top end-->
+<!--login_r_link-->
+<div class="login_r_link">
+<div class="login_r_link_t"><h2>用户登录</h2></div>
+  <div class="login_r_link_c">
+  
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tbody><tr>
+      <td height="33"><form name="login_form" action="http://www.flxkdns.com/ucenter/members/login.asp" method="post">
+        账户
+        <label for="username"></label>
+        <input name="usrname" type="text" id="usrname" class="username" size="15" maxlength="20">
+      密码
+      <label for="password"></label>
+      <input name="usrpass" type="password" id="usrpass" class="password" size="15" maxlength="20">
+     
+        
+      <input type="submit" name="button" id="submit" class="submit" value="登录">
+      </form></td>
+      <td height="33"><a href="http://www.flxkdns.com/members/usr_reg.asp">注册用户</a>&nbsp;&nbsp;&nbsp;<font class="gray_font">|</font>&nbsp;&nbsp;&nbsp;<a href="http://www.flxkdns.com/members/getpass.asp">取回密码</a>&nbsp;&nbsp;&nbsp;<font class="gray_font">|</font>&nbsp;&nbsp;&nbsp;<a href="http://www.flxkdns.com/help/">帮助中心</a></td>
+    </tr>
+    </tbody></table>
+  </div>
+<div class="login_r_link_r"></div>
+</div>
+<!--login_r_link end-->
+
+</div>
